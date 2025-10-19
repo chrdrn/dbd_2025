@@ -1,0 +1,310 @@
+[
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "ImportantAssignment and course language\n\n\n\n\nThe course can be conducted in English or German (including presentations, pitches, and discussions), depending on the preferences expressed by students in the pre-course survey.\nRegardless of the feedback about the preferred course language, written assignments may be submitted in either German or English, depending on each student’s or group’s preference.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#course-description",
+    "href": "course-syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "Course description",
+    "text": "Course description\nIn this seminar, students are introduced to working with digital behavioral data (DBD). DBD refer to digital traces of human behavior that are knowingly or unknowingly left in online environments (e.g. social media, messengers, entertainment media, or digital collaboration tools). These rich data are increasingly available to social scientific research in the public interest, but can also be used to derive strategic insights for business decisions.\nStudents learn how to work with DBD alongside the entire research process—from data collection, preprocessing and analysis, to reporting and provision (e.g. via open science tools). Students first get a comprehensive overview of the ways in which DBD can be collected (e.g., API scraping, usage logging, mock-up virtual environments, or data donations), as well as the requirements for data protection, research ethics, and data quality. Afterwards, students apply their newly acquired knowledge in small projects on use cases from media and communication research. In doing so, they learn important computer-based methods with which large digital behavioral data sets (e.g. texts, images, usage behavior logs) can be processed and analyzed. By completing this module, participants will get an up-to-date overview and practical insights into how the potential of observational data (digital traces) can be used to better understand the behavior of media users in digital environments.\n\nFocus of the current course\nThe seminar in the winter term 2025/26 focuses on the empirical study of outdoor advertising in public spaces—from systematic documentation to content-related and data-based analysis. Participants will develop and test their own research designs to document advertising formats and motives, and explore potential effects. Various methodological approaches can be combined: in addition to designing a short survey instrument (e.g., in the form of an experience sampling design), the seminar involves documenting and describing advertising media (image or text documentation) and analyzing the collected data.\nDepending on their research focus, implementation, and data availability, participants may choose quantitative or qualitative approaches—ranging from (visual) content analysis and survey data analysis to geospatial data use. The seminar provides the necessary theoretical foundations and introduces methodological tools such as R or Python.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#learning-objectives",
+    "href": "course-syllabus.html#learning-objectives",
+    "title": "Syllabus",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nStudents will\n\noverview and understand central opportunities of DBD and accompanying challenges for data collection and preprocessing\nevaluate the strengths and weaknesses of different ways of collecting DBD\nget to know and understand central requirements for data protection, research ethics, and data quality\nget to know and overview key computational social science methods to analyze DBD\npractice and apply knowledge on DBD, statistics, and data analysis in small projects of their own",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#recommended-prerequisites",
+    "href": "course-syllabus.html#recommended-prerequisites",
+    "title": "Syllabus",
+    "section": "Recommended prerequisites",
+    "text": "Recommended prerequisites\n\nInterest in social scientific perspectives on media, communication, and digital technologies.\nBasic knowledge of working with statistical software such as Stata, R, Python, or SPSS is required.\nStudents are recommended, but not required, to also visit the lecture Data Science: Foundations, Tools, Applications in Socio-Economics and Marketing.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#organization-of-the-course",
+    "href": "course-syllabus.html#organization-of-the-course",
+    "title": "Syllabus",
+    "section": "Organization of the course",
+    "text": "Organization of the course\nRegistration for the course takes place via  StudOn. There you will receive the first information and instructions. Please make sure to complete the short pre-course survey before the seminar begins.\nAll slides, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website. I will regularly send out course announcements by e-mail, so please make sure to check your mail address associated with  StudOn regularly.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#preliminary-schedule",
+    "href": "course-syllabus.html#preliminary-schedule",
+    "title": "Syllabus",
+    "section": "(Preliminary) Schedule",
+    "text": "(Preliminary) Schedule\n\n\n\n\n\n\nNote\n\n\n\nFor the latest, more detailed version of the course schedule as well as the linked content of the individual sessions (e.g. slides or literature for the respective presentation), please see Schedule.\n\n\n\n\n\nSession\nDatum\nTime\nSession Type\nTopic\nRoom\n\n\n\n\n1\n24.10.2025\n09:45 - 11:15\n📖 Single Session\nKick-Off\n2.024 (FG)\n\n\n2\n29.01.2026\n09:00 - 16:00\n📚 Block Session\nFrom Theory to Questionnaire\n2.024 (FG)\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 Block Session\nFrom Questionnaire to the Field\n2.024 (FG)\n\n\n4\n30.01.2026\n09:00 - 16:00\n📚 Block Session\nFrom Field to Analysis\n2.024 (FG)\n\n\n5\n06.02.2026\n09:00 - 16:00\n📚 Block Session\nSummary & Evaluation\n2.024 (FG)\n\n\n\n\nInformation about the sessions\n\n📖 Single Session\nThe kick-off session provides an introduction to DBD and presents the course topic and organization.\n\n\n📚 Block Sessions\nThe block sessions are longer sessions (one full day) that allow for more in-depth work on specific topics. The block sessions will include presentations, discussion, and practical work in the form of group activities and exercises.\nThe goal of the sessions is to be as interactive as possible. My role as the instructor is to introduce new tools and techniques, but it is up to you to apply and explore them. Much of your work in this course will involve creating questionnaires, testing survey tools, and writing code.\nAs coding is a skill that is best learned by doing, you are expected to bring a laptop to the sessions were we are “live-coding” so that you can take part in the in-session exercises. Please make sure your laptop is fully charged before you come to class as the number of outlets in the classroom will not be sufficient to accommodate everyone.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#where-to-ask-questions",
+    "href": "course-syllabus.html#where-to-ask-questions",
+    "title": "Syllabus",
+    "section": "Where to ask questions",
+    "text": "Where to ask questions\n\nIf you have a question during the lecture, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.\nAny general questions about session content, assignments, or about the project should be posted into the  StudOn-Forum, so that everyone can benefit from the answers. There is a chance another student has already asked a similar question, so please check the other posts before adding a new question. If you know the answer to a question, I encourage you to respond!\nE-mails should be reserved for personal matters.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#assessment",
+    "href": "course-syllabus.html#assessment",
+    "title": "Syllabus",
+    "section": "Assessment",
+    "text": "Assessment\nIn order to obtain credits and a grade, participants are required to\n\nattend regularly (at least 80% of the sessions) and participate actively. A maximum of two sessions can be missed without excuse. This translates to one morning or afternoon of a block session. Absences beyond this limit can only be excused in cases of illness (i. e. with a medical certificate).\ncomplete various assignments as part of a portfolio. The type and scope of assignments depend on the number of participants and the project(s). Detailed information can be found in the section Assignments.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#academic-integrity",
+    "href": "course-syllabus.html#academic-integrity",
+    "title": "Syllabus",
+    "section": "Academic integrity",
+    "text": "Academic integrity\n\n\n\n\n\n\nImportantTL;DR\n\n\n\nDo not cheat!\n\n\nFor general information on formatting, style, citation, appendices, and the wording of the affidavit, see our Guide to Academic Writing.\n\nPolicy on sharing and reusing code\nI am well aware that a huge volume of code is available on the web to solve any number of problems. Unless I explicitly tell you not to use something, the course’s policy is that you may make use of any online resources (e.g. StackOverflow) but you must explicitly cite where you obtained any code you directly use (or use as inspiration). Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\n\n\nPolicy on use of generative artificial intelligence (AI):\nYou should treat generative AI, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course1: (1) Cognitive dimension: Working with AI should not reduce your ability to think clearly. We will practice using AI to facilitate—rather than hinder—learning. (2) Ethical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\n✅ AI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\n❌ AI tools for narrative: Unless instructed otherwise, you may not use generative AI to write narrative on assignments. In general, you may use generative AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#recommended-textbooks",
+    "href": "course-syllabus.html#recommended-textbooks",
+    "title": "Syllabus",
+    "section": "Recommended textbooks",
+    "text": "Recommended textbooks\n\nAtteveldt, W. van, Trilling, D., & Arcíla, C. (2021). Computational analysis of communication: A practical introduction to the analysis of texts, networks, and images with code examples in python and r. John Wiley & Sons.\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Handbook of Computational Social Science, Volume 1: Theory, Case Studies and Ethics (1st ed.). Routledge. https://doi.org/10.4324/9781003024583\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Handbook of computational social science, volume 2. Routledge. https://doi.org/10.4324/9781003025245\nHaim, M. (2023). Computational Communication Science: Eine Einführung. Springer Fachmedien Wiesbaden. https://link.springer.com/10.1007/978-3-658-40171-9\nSalganik, M. J. (2018). Bit by bit: Social research in the digital age. Princeton University Press.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-syllabus.html#footnotes",
+    "href": "course-syllabus.html#footnotes",
+    "title": "Syllabus",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThese guiding principles are based on Course Policies related to ChatGPT and other AI Tools developed by Joel Gladd, Ph.D↩︎",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "computing/computing-textbooks.html",
+    "href": "computing/computing-textbooks.html",
+    "title": "R textbooks",
+    "section": "",
+    "text": "While there is no official R textbook for the course, there are a few to look at:\n\n🔗 R for Data Science, 2nd Edition\n🔗 Data Visualization: A Practical Introduction\n🔗 Tidy modeling with R\n🔗 Text Mining with R",
+    "crumbs": [
+      "Working with R",
+      "R Textbooks"
+    ]
+  },
+  {
+    "objectID": "computing/computing-instructions_R.html",
+    "href": "computing/computing-instructions_R.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "ImportantAssignment\n\n\n\n\nPlease watch all the videos in the tutorial series on Introduction to R, RStudio & Quarto and Practical Work with R by December 1st, 2024 at the latest. The content conveyed in the videos (e.g., knowledge and application of certain functions to filter, summarize, or edit data) will be assumed as a foundation for session 7 of the seminar.\nIf you have questions and/or problems, please write a post in the forum of the StudOn course so that everyone can benefit from the answers. Use the prefix “Question/Problem R:” in the subject line and tag/add me. If available, please always include the material/video to which your question refers.",
+    "crumbs": [
+      "Working with R",
+      "R Video Tutorials"
+    ]
+  },
+  {
+    "objectID": "computing/computing-instructions_R.html#background",
+    "href": "computing/computing-instructions_R.html#background",
+    "title": "Introduction",
+    "section": "Background",
+    "text": "Background\nPractical work with R, RStudio, and Quarto is an integral part of the Digital Behavioral Data course. To accommodate different levels of prior knowledge while establishing a common “basic knowledge” for the course, we would like to provide you with a series of introductory videos to facilitate your (re)entry. Specifically, this consists of a mix of YouTube tutorials by  Andy Field, which initially teach the general handling of R, RStudio & Quarto, and the materials from CCS.Amsterdam, which focus on more “substantive” work with R. All tutorials are in English.",
+    "crumbs": [
+      "Working with R",
+      "R Video Tutorials"
+    ]
+  },
+  {
+    "objectID": "computing/computing-instructions_R.html#introduction-to-r-rstudio-quarto",
+    "href": "computing/computing-instructions_R.html#introduction-to-r-rstudio-quarto",
+    "title": "Introduction",
+    "section": "Introduction to R, RStudio & Quarto",
+    "text": "Introduction to R, RStudio & Quarto\n\nThis video tutorial series was created by  Andy Field to acompany his books An Adventure in Statistics (Field and Iles 2016) and Discovering Statistics Using R (Field, Miles, and Field 2012), and deals with the use of RStudio and Quarto for interacting with R.\nThe videos cover the installation of R, RStudio, and Quarto, the differences between them, a tour of RStudio, good workflows in RStudio, installing and loading packages, and using Quarto.\n\n\n\n\n\n\n\nCautionPlease note …\n\n\n\n\nMost of the exercises shown in the tutorial can be easily reproduced, either by manually entering the data or variables or by using your own files (e.g., when embedding graphics).\nHowever, some data used (e.g., in the session RStudio Working with Code: Part 3) is unfortunately not available publically. In this case, you can either use your own “data” to reproduce the examples or rely on built-in R datasets (such as airquality, mtcars, iris, etc.) by loading them with the data() command (e.g., data(mtcars)).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession\nTitel\nDauer\n\n\n\n\n1\n\n\n\n\n Installing R and RStudio\n06:13\n\n\n2\n\n\n\n\n Installing Quarto\n02:55\n\n\n3\n\n\n\n\n R Studio desktop workflow (2022)\n08:16\n\n\n4\n\n\n\n\n Customizing Rstudio\n08:03\n\n\n5\n\n\n\n\n Quarto visual editor [Part 1]\n10:20\n\n\n6\n\n\n\n\n Quarto visual editor [Part 2]\n13:19\n\n\n7\n\n\n\n\n Quarto visual editor [Part 3]\n10:39\n\n\n8\n\n\n\n\n Quarto visual editor [Part 4]\n04:28\n\n\n9\n\n\n\n\n Quarto visual editor [Part 5]\n12:10\n\n\n10\n\n\n\n\n RStudio Working with Code: Part 1\n07:41\n\n\n11\n\n\n\n\n RStudio Working with Code: Part 2\n14:08\n\n\n12\n\n\n\n\n RStudio Working with Code: Part 3\n08:44\n\n\n13\n\n\n\n\n RStudio Working with Code: Part 4\n06:47\n\n\n14\n\n\n\n\n RStudio Working with Code: Part 5\n07:07\n\n\n15\n\n\n\n\n RStudio Working with Code: Part 6\n05:48\n\n\n\nYou can also play the videos as a YouTube playlist.",
+    "crumbs": [
+      "Working with R",
+      "R Video Tutorials"
+    ]
+  },
+  {
+    "objectID": "computing/computing-instructions_R.html#practical-work-with-r",
+    "href": "computing/computing-instructions_R.html#practical-work-with-r",
+    "title": "Introduction",
+    "section": "Practical Work with R",
+    "text": "Practical Work with R\n\nCCS.Amsterdam is a group of “Computational” communication scientists from the University of Amsterdam and the Vrije Universiteit Amsterdam. In various research projects, these scientists aim to use and develop computational methods to answer social science research questions. This includes, among other things, the study of news streams, polarization, political microtargeting, fake news, and recommender design. A main goal of the group is to disseminate knowledge among a growing community of enthusiastic “Computational” communication scientists.\nThe series of tutorials curated by CCS.Amsterdam aims to teach the use of tidyverse functions for data cleaning, transformation, visualization, etc. The tutorials consist of both handouts, i.e., documents explaining the most important commands, and video tutorials covering the same material.\nThe table also lists chapters from Computational Analysis of Communication [CAC] and R for Data Science [R4DS], two 100% free and openly accessible books that also cover and possibly deepen the material of the respective session.\n\n\n\n\n\n\n\nCautionPlease note\n\n\n\n\nThe video tutorials may be slightly older than the handouts. In case of doubt, follow the content of the handouts rather than the videos.\nPlease note that the CAC offers R and Python examples side by side. You may need to actively select the R code examples.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession\nVideo-Tutorial\nMaterialien\nLiteratur\nDauer\n\n\n\n\n1\n\n\n\n\n R basics: commands, objects, and functions\n\n\n\n\n [Handout]\n\n\n\n\n [CAC] [R4DS]\n29:30\n\n\n2\n\n\n\n\n R Tidyverse: Data transformation\n\n\n\n\n [Handout]\n\n\n\n\n [CAC] [R4DS]\n22:19\n\n\n3\n\n\n\n\n R Tidyverse: Data summarization\n\n\n\n\n [Handout]\n\n\n\n\n [CAC] [R4DS]\n11:00\n\n\n4\n\n\n\n\n R ggplot2: Basics of data visualization\n\n\n\n\n [Handout]\n\n\n\n\n [CAC] [R4DS]\n35:14\n\n\n\nYou can also play the videos as a YouTube playlist.",
+    "crumbs": [
+      "Working with R",
+      "R Video Tutorials"
+    ]
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Digital Behavioral Data",
+    "section": "",
+    "text": "NoteInformation about the course site\n\n\n\nThis page provides an outline of the topics, contents, and assignments for the semester. Please note that the contents of the course sessions ( background information,  slides,  exercises and  tutorials) will be updated continuously throughout the semester, with all changes being documented here.",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Digital Behavioral Data",
+    "section": "Copyright",
+    "text": "Copyright\nThis content is licensed under a GPL-3.0 License.",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "computing/computing-useful_links.html",
+    "href": "computing/computing-useful_links.html",
+    "title": "Useful sources",
+    "section": "",
+    "text": "This is selection of useful R sources:\n\n Quarto tutorials by Andy Field\n Automatisierte Inhaltsanalyse mit R by Kornelius Puschmann\nBasiskurs R/RStudio by the Chair of Statistics and Econometrics at Friedrich-Alexander-Universität Erlangen-Nürnberg",
+    "crumbs": [
+      "Working with R",
+      "Useful R sources"
+    ]
+  },
+  {
+    "objectID": "computing/computing-cheatsheets.html",
+    "href": "computing/computing-cheatsheets.html",
+    "title": "R cheatsheets",
+    "section": "",
+    "text": "The following cheatsheets come from https://posit.co/resources/cheatsheets. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.",
+    "crumbs": [
+      "Working with R",
+      "R Cheatsheets"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html",
+    "href": "course-assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Research Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html#sec-portfolio",
+    "href": "course-assignments.html#sec-portfolio",
+    "title": "Assignments",
+    "section": "",
+    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Research Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html#sec-project-sketch",
+    "href": "course-assignments.html#sec-project-sketch",
+    "title": "Assignments",
+    "section": "👥 Write Research Project Sketch (40 Pts.)",
+    "text": "👥 Write Research Project Sketch (40 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Write a Research Project Sketch (including short Questionaire Sketch) as a group.\n📂 Submission format: PDF document (1,000 to 1,500 words, not including Abstract & Appendix with questionaire sketch)\n💡 Evaluation: Based on theoretical grounding, methodological clarity, and survey design quality.\n👥 Group size: 2-3 persons\n📅 Deadline: 18.12.2025, 23:59\n💬 Feedback option: You can book one individual feedback session (max. 30 minutes) in the last two weeks of November.\n\n\n\nThe goal of the Research Project Sketch is, for each group, to establish a solid foundation for a (potential) future implementation of the research project and to prepare for the block sessions in January. Based on the provided literature, each group is expected to design a research project that could be conducted as a (pretest) survey within the seminar.\nPlease choose the method, survey design, and topic according to your group’s interests and experience. Be selective about what you include: the aim is to write a cohesive and well-structured narrative that demonstrates a comprehensive and coherent (methodological) project plan, rather than a fundamental theoretical elaboration of the topic. The overall length of the written report should be between 1,000 and 1,500 words per group (excluding abstract & appendix).\nEach group may book one individual feedback session (max. 30 minutes) during the last two weeks of November. In the session, you can discuss your ideas, ask questions about the assignment, and receive feedback on your draft. Not all group members need to attend, but at least one representative should be present. The feedback session can be held in person or via Zoom.\n\n\n\nIntegration of a (Short) Questionaire Sketch\nAs an important part of your project sketch, please include a Questionnaire Sketch that specifies and operationalizes the central aspects of your research project. The questionnaire should take the form of a short survey consisting of no more than six questions or queries (e.g., image upload), designed to be completed within 1-2 minutes. You do not need to implement the survey technically; a written description is sufficient. Focus on using existing validated scales or items from the literature where possible.\nThe purpose of the questionnaire is to collect the key data required to answer your research question. Focus exclusively on the essential aspects of your study (e.g., exclude demographic questions). Attach the complete questionnaire as an appendix to your written report. It does not count toward the 1,500-word limit of the project sketch.\nPlease provide complete details of your survey design, including: - the exact wording of all questions, - the response options, - any relevant scales or measurements, and - appropriate citations for established items or scales, if applicable.\n\n\nRecommended structure and components\n\nTitle and Abstract\n\nWorking title of the project\nShort summary (about 100 to 200 words):\n\nWhat is the project about?\nWhat is its goal?\nWhat methods will be used?\nWhy is it relevant?\n\n\n\n\nTheoretical Background and Problem Statement:\n\nOverview of the research field, current debates, and why the topic matters\nKey theoretical concept(s) and/or model(s), and their relation to existing literature\nTheoretical and empirical background motivating the study\nClear research questions anchored in theory, with expected implications (and, if possible, explicit testable assumptions or hypotheses)\n\n\n\nMethodological Approach\n\nResearch design (qualitative, quantitative, or mixed methods)\nData basis (e.g., text corpus, interviews, surveys, experiments)\nAnalytical methods (e.g., content analysis, multilevel analysis, (visual) topic modeling, etc.)\nBrief outline of the workflow (data collection, processing, analysis, interpretation)\n\n\n\nQuestionaire Sketch\n\nDesign a short survey (max. 6 questions/items and 1-2 minutes) to collect key data for your project.\nFocus on the core aspects needed to answer your research question (exclude demographics).\nProvide complete details on question wording, response options, and any relevant scales or measures.\n\n\n\n\nEvaluation Criteria\nThe quality of the Research Project Sketch will be evaluated based on the following criteria:\n\n\n\nTotal\n30 Pts.\n\n\n\n\nTheoretic Background and Problem Statement\n5 Pts.\n\n\nMethodological Approach\n10 Pts.\n\n\nShort-Survey Design\n10 Pts.\n\n\nOrganization + formatting\n5 Pts.",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html#sec-peer-review",
+    "href": "course-assignments.html#sec-peer-review",
+    "title": "Assignments",
+    "section": "👤 Peer Review (20 Pts.)",
+    "text": "👤 Peer Review (20 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Critically review one other groups’ Research Project Sketch.\n📂 Submission format: Complete the digital peer review form.\n💡 Evaluation: Based on depth, coherence and constructiveness of the feedback.\n📅 Deadline: 05.01.2026, 23:59\n\n\n\nCritically reviewing others’ work is a crucial part of the scientific process. Each student will therefore be assigned one other group’s Research Project Sketch to review before the first block session. The goal is to briefly summarize the content of the report, evaluate its strengths and weaknesses, and provide constructive suggestions for improvement. Please complete the peer review form based on your reading of the assigned group’s Research Project Sketch. Your review should be thorough, constructive, and respectful. Focus on providing actionable feedback that can help the group improve their project. This will allow you to receive additional feedback before starting the practical work on your research project.\nDuring the peer review process (20.12.2025 until 05.01.2025), you will be provided with\n\nread-only access to one group’s Written Report Sketch, and\na link to a digital peer review form. The form contains both short item scales and open-ended questions.\n\nThe completed peer review forms will be shared with the respective groups before the first block session in January.\n\nEvaluation Criteria\nThe peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the other group’s report: research context and motivation, proposed methodological and analytical approach, and short-survey design. In particular, the depth, coherence and constructiveness of your feedback will be evaluated.",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html#sec-participation",
+    "href": "course-assignments.html#sec-participation",
+    "title": "Assignments",
+    "section": "👤 Participation (20 Pts..)",
+    "text": "👤 Participation (20 Pts..)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Participate in the pretest phase of the joint short survey.\n📂 Submission format: Active participation in the survey pretest\n💡 Evaluation: “Pass”, based on minimum participation frequency.\n\n\n\nIn this seminar, the research projects and questionnaires developed by the groups will be tested in practice through a pretest (or possibly a short pilot study). The goal is to create a “master” short survey that integrates elements from all group questionnaires. Several test runs may be necessary to ensure quality and functionality.\nThe pretest serves two main purposes: 1. Testing functionality, clarity, and effectiveness: The pretest allows students to test their developed questionnaire in a realistic environment, identify potential problems, and make improvements. 2. Generating preliminary data: Initial data can be used for exploratory analysis, helping students assess the feasibility of their research and analytical design and draw first conclusions.\nParticipation in the pretest is mandatory for all students. Further details—such as the exact procedure, schedule, and mode of participation—will be communicated in due time before the pretest.",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  },
+  {
+    "objectID": "course-assignments.html#sec-project-implementation",
+    "href": "course-assignments.html#sec-project-implementation",
+    "title": "Assignments",
+    "section": "Write Short Implementation Report (30 Pts.)",
+    "text": "Write Short Implementation Report (30 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Write a short report summarizing your group’s practical implementation and preliminary results.\n📂 Submission format: PDF document (1,000 to 1,500 words, excluding figures or tables) & syntax file\n💡 Evaluation: Based on clarity, depth of interpretation, and reflection on the implementation process.\n👥 Group size: Same as in the project sketch\n📅 Deadline: TBA (likely late February/mid March 2026)\n\n\n\nThe Implementation Report builds on your group’s Research Project Sketch and documents the experience and insights gained from putting your project into practice during the pretest phase. The report should not restate the full theoretical framework but instead focus on describing, interpreting, and critically evaluating your implementation and preliminary results.\nThe total length of the report should be between 1,000 and 1,500 words per group (excluding figures or tables). The report may be structured flexibly but should remain concise, logically organized, and analytically grounded\n\nRecommended Structure and Components\n\nIntroduction (ca. 150–200 words)\n\nBriefly restate your research question and objectives.\nSummarize the key aspects of your original project sketch (only as far as needed to contextualize your findings).\n\n\n\nImplementation and Procedure\n\nDescribe how you conducted your pretest or pilot study.\nMention the setup, sample, timeline, and any relevant technical or organizational steps.\nNote any deviations from your original plan and explain why they occurred.\n\n\n\nPreliminary Results and Interpretation\n\nPresent and interpret the main (descriptive) results of your pretest or pilot data.\nHighlight key patterns, insights, or unexpected findings.\nVisualize results if helpful (tables or simple plots are welcome).\n\n\n\nEvaluation and Reflection\n\nCritically assess the functionality, clarity, and validity of your questionnaire or data collection approach.\nDiscuss potential improvements, limitations, and lessons learned for future iterations.\nReflect on the coherence between your theoretical goals and the practical results.\n\n\n\n\nEvaluation Criteria\nThe written Implementation Report is worth 30 points, broken down as follows:\n\n\n\nTotal\n30 Pts.\n\n\n\n\nClarity of presentation and structure\n5 Pts.\n\n\nInterpretation of preliminary results\n5 Pts.\n\n\nMethodological Approach\n10 Pts.\n\n\nCritical evaluation and reflection\n10 Pts.\n\n\nOrganization + formatting\n5 Pts.",
+    "crumbs": [
+      "Course information",
+      "Assignments"
+    ]
+  }
+]
