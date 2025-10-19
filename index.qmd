@@ -1,0 +1,65 @@
+---
+title: "Digital Behavioral Data"
+subtitle: "Winter semester 2025/26"
+date: 10/20/2025
+date-modified: last-modified
+date-format: "DD.MM.YYYY"
+author: 
+  - name: Christoph Adrian 
+    url: /course-team.html
+    affiliation:  statArts GmbH
+    affiliation-url: https://www.statarts.de/
+---
+
+::: callout-note
+### Information about the course site
+
+This page provides an outline of the topics, contents, and assignments for the semester. Please note that the contents of the course sessions ({{< bi book >}} background information, {{< bi file-earmark-slides >}} slides, {{< bi pencil-square >}} exercises and {{< bi file-earmark-code >}} tutorials) will be updated continuously throughout the semester, with all changes being documented here.
+:::
+
+::: callout-important
+## Focus of the current course
+
+The seminar in the winter term 2025/26 focuses on the empirical study of **outdoor advertising in public spaces** – from systematic documentation to content-related and data-based analysis. Participants will develop and test their own research designs to capture advertising formats, motives, and potential effects. For more information, please refer to the [syllabus](/course-syllabus.html#focus-of-the-current-course).
+:::
+
+<!-- FIXME Add column with link to exercises / group activities -->
+
+| ID | Date | Time | Topic | Resources |
+|--------------|--------------|--------------|-------------------|--------------|
+| 1 | 24.10.2025 | 09:45 - 11:15 | 🚀 Kick-Off |  |
+| \- | \- |  | *✏️ Independent study and assignments* |  |
+| 2 | 09.01.2026 | 09:00 - 16:00 | 📚 From Theory to Questionaire |  |
+| 3 | 23.01.2026 | 09:00 - 16:00 | 📚 From Questionaire to Pretest |  |
+| 4 | 30.01.2026 | 09:00 - 16:00 | 📚 From Pretest to Analysis |  |
+| 5 | 06.02.2026 | 09:00 - 16:00 | 📚 Analysis and Evaluation |  |
+
+: {tbl-colwidths="\[5,10,10,50,25 \]"}
+
+## Copyright
+
+This content is licensed under a [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+```{r backup}
+#| echo: false
+knitr::knit_exit()
+```
+
+|   |   |   | Prepare | Slides | AE | Labs | HW | Exam | Project |
+|--------|--------|--------|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| Week | Date | Topic | 📖 | 🖥️ | 📋 | [💻](https://sakai.duke.edu/samigo-app/servlet/Login?id=6fa7ebf3-01af-42a6-91ba-3e813d3901221641094171786) | ✍️ | ✅ | 📂 |
+
+| Session | Date | Topic | Resources |
+|------------------|------------------|-------------------|------------------|
+|  | 📂 **Block 1** | **Introduction** |  |
+| 1 | 23.10.2024 | Kick-Off | [{{< bi book >}}](/sessions/session-03.html "Session 03"){aria-label="Session 03"} \| [{{< bi file-earmark-slides >}}](/slides/slides-03.html "Slides: Session 03"){aria-label="Slides Session 03"} \| [{{< bi file-earmark-code >}}](/tutorials/tutorial-03.html "Tutorial: Session 03"){aria-label="Tutorial Session 03"} \| [{{< bi pencil-square >}}](/exercises/exercise-03_solution.hmtl "Exercise: Session 03"){aria-label="Exercise Session 03"} |
+
+Icons
+
+-   Preparation: {{< bi book >}}
+-   Slides: {{< bi file-earmark-slides >}}
+-   Group Activity: {{< iconify octicon comment-discussion-24 >}}
+-   Application exercises: {{< iconify simple-icons googlecolab >}}
+-   
+
+[{{< bi file-earmark-slides >}}](/slides/ms-slides-07.html "Slides: Session 07"){aria-label="Slides Session 07"} \| [{{< bi pencil-square >}}](/exercises/ms-exercise-07_solution.html "Exercise: Session 07"){aria-label="Exercise Session 07"} \| [{{< bi file-earmark-code >}}](/exercises/ms-showcase-07.html "Showcase: Session 07"){aria-label="Showcase Session 07"} \| [{{< bi book >}}](/sessions/ms-session-07.html "Session 07"){aria-label="Session 07"}

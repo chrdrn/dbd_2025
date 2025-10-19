@@ -1,0 +1,212 @@
+---
+title: "Assignments"
+---
+
+## Portfolio assessment {#sec-portfolio}
+
+-   In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a `portfolio` assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.
+-   Assignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.
+-   The following list contains an overview of the assignments to be completed in the course:
+
+| Assignment | 100 Pts. |
+|---------------------------------------------------|---------------------|
+| [👥 Written assignment: Research Project Sketch](#sec-project-sketch) | 30 Pts. |
+| [👤 Peer Review: Research Project Sketch](#sec-peer-review) | 20 Pts. |
+| [👤 Participation: Pre-Test](#sec-participation) | 20 Pts. |
+| [👥 Written assignment: Research Report](#sec-project-implementation) | 30 Pts. |
+
+: Breakdown of the final grade
+
+::: callout-caution
+### Important Disclaimer
+
+-   **The final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session.** Accordingly, it is possible that  the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).
+:::
+
+## 👥 Write Research Project Sketch (40 Pts.) {#sec-project-sketch}
+
+::: callout-important
+### TL;DR
+
+- ✍️ **Task:** Write a Research Project Sketch (including short [Questionaire Sketch]{#sec-questionaire}) as a group.
+-   📂 **Submission format:** PDF document (1,000 to 1,500 words, not including Abstract & Appendix with questionaire sketch)
+-   💡 **Evaluation:** Based on theoretical grounding, methodological clarity, and survey design quality.
+-   👥 **Group size:** 2-3 persons
+-   📅 **Deadline:** *18.12.2025, 23:59*
+-   💬 **Feedback option:** You can book one individual feedback session (max. 30 minutes) in the last two weeks of November.
+:::
+
+The goal of the **Research Project Sketch** is, for each group, to establish a solid foundation for a (potential) future implementation of the research project and to prepare for the block sessions in January. Based on the provided literature, each group is expected to design a research project that could be conducted as a (pretest) survey within the seminar.
+
+Please choose the method, survey design, and topic according to your group’s interests and experience. Be selective about what you include: the aim is to write a **cohesive and well-structured narrative** that demonstrates a **comprehensive and coherent (methodological) project plan**, rather than a fundamental theoretical elaboration of the topic. The overall length of the written report should be between **1,000 and 1,500 words per group** (excluding abstract & appendix).
+
+Each group may book one **individual feedback session** (max. 30 minutes) during the last two weeks of November. In the session, you can discuss your ideas, ask questions about the assignment, and receive feedback on your draft. Not all group members need to attend, but at least one representative should be present. The feedback session can be held in person or via Zoom.
+
+<!-- TODO Add booking for feedback session -->
+
+<!-- Please book the feedback session in advance via [this link](https://calendly.com/christoph-adrian/30min). -->
+
+### Integration of a (Short) Questionaire Sketch {#sec-questionaire}
+
+As an important part of your project sketch, please include a **Questionnaire Sketch** that specifies and operationalizes the central aspects of your research project. The questionnaire should take the form of a **short survey** consisting of **no more than six questions or queries (e.g., image upload)**, designed to be completed within 1-2 minutes. You do not need to implement the survey technically; a written description is sufficient. Focus on using existing validated scales or items from the literature where possible.
+
+The purpose of the questionnaire is to collect the key data required to answer your research question. Focus exclusively on the essential aspects of your study (e.g., exclude demographic questions). Attach the complete questionnaire as an appendix to your written report. It does not count toward the 1,500-word limit of the project sketch.
+
+Please provide complete details of your survey design, including: 
+- the exact wording of all questions, 
+- the response options, 
+- any relevant scales or measurements, and 
+- appropriate citations for established items or scales, if applicable.
+
+### Recommended structure and components
+
+#### Title and Abstract
+
+-   Working title of the project
+-   Short summary (about 100 to 200 words):
+    -   What is the project about?
+    -   What is its goal?
+    -   What methods will be used?
+    -   Why is it relevant?
+
+#### Theoretical Background and Problem Statement:
+
+-   Overview of the research field, current debates, and why the topic matters
+-   Key theoretical concept(s) and/or model(s), and their relation to existing literature
+-   Theoretical and empirical background motivating the study
+-   Clear research questions anchored in theory, with expected implications (and, if possible, explicit testable assumptions or hypotheses)
+
+#### Methodological Approach
+
+-   Research design (qualitative, quantitative, or mixed methods)
+-   Data basis (e.g., text corpus, interviews, surveys, experiments)
+-   Analytical methods (e.g., content analysis, multilevel analysis, (visual) topic modeling, etc.)
+-   Brief outline of the workflow (data collection, processing, analysis, interpretation)
+
+#### Questionaire Sketch
+
+-   Design a short survey (max. 6 questions/items and 1-2 minutes) to collect key data for your project.
+-   Focus on the core aspects needed to answer your research question (exclude demographics).
+-   Provide complete details on question wording, response options, and any relevant scales or measures.
+
+### Evaluation Criteria
+The quality of the Research Project Sketch will be evaluated based on the following criteria:
+
+| Total                                      | 30 Pts. |
+|--------------------------------------------|--------|
+| Theoretic Background and Problem Statement | 5 Pts.  |
+| Methodological Approach                    | 10 Pts. |
+| Short-Survey Design                        | 10 Pts. |
+| *Organization + formatting*                | 5 Pts.  |
+
+## 👤 Peer Review (20 Pts.) {#sec-peer-review}
+
+::: callout-important
+### TL;DR
+
+-   ✍️ **Task:** Critically review **one other groups'** Research Project Sketch.
+-   📂 **Submission format:** Complete the digital peer review form.
+-   💡 **Evaluation:** Based on depth, coherence and constructiveness of the feedback.
+-   📅 **Deadline:** *05.01.2026, 23:59*
+:::
+
+Critically reviewing others’ work is a crucial part of the scientific process. Each student will therefore be assigned one other group’s Research Project Sketch to review before the first block session. The goal is to briefly summarize the content of the report, evaluate its strengths and weaknesses, and provide constructive suggestions for improvement. Please complete the peer review form based on your reading of the assigned group’s Research Project Sketch. Your review should be thorough, constructive, and respectful. Focus on providing actionable feedback that can help the group improve their project. This will allow you to receive additional feedback before starting the practical work on your research project.
+
+During the peer review process (20.12.2025 until 05.01.2025), you will be provided with
+
+-   read-only access to **one group’s Written Report Sketch**, and
+-   a link to a **digital peer review form**. The form contains both short item scales and open-ended questions.
+  
+The completed peer review forms will be shared with the respective groups before the first block session in January.
+
+### Evaluation Criteria
+
+The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the other group’s report: research context and motivation, proposed methodological and analytical approach, and short-survey design. In particular, the depth, coherence and constructiveness of your feedback will be evaluated.
+
+```{=html}
+<!-- #### Process and questions
+
+-   Open the Google Doc of the team you're reviewing and read their project draft.
+
+-   Then, go to Peer Review Google Doc template, fill out the relevant fields and answer the following questions:
+
+    -   *Describe the goal of the project.*
+    -   *Describe the data used or collected, if any. If the proposal does not include the use of a specific dataset, comment on whether the project would be strengthened by the inclusion of a dataset.*
+    -   *Describe the approaches, tools, and methods that will be used.*
+    -   *Is there anything that is unclear from the proposal?*
+    -   *Provide constructive feedback on how the group might be able to improve their project. Make sure your feedback includes at least one comment on the statistical modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.*
+    -   *What aspect of this project are you most interested in and would like to see highlighted in the presentation.*
+    -   *Provide constructive feedback on any issues with file and/or code organization.*
+    -   *(Optional) Any further comments or feedback?* -->
+```
+
+## 👤 Participation (20 Pts..) {#sec-participation}
+
+::: callout-important
+### TL;DR
+
+-   ✍️ **Task:** Participate in the pretest phase of the joint short survey.
+-   📂 **Submission format**: Active participation in the survey pretest
+-   💡 **Evaluation:** "Pass", based on minimum participation frequency.
+:::
+
+In this seminar, the research projects and questionnaires developed by the groups will be tested in practice through a **pretest** (or possibly a short pilot study). The goal is to create a **“master” short survey** that integrates elements from all group questionnaires. Several test runs may be necessary to ensure quality and functionality.
+
+The pretest serves two main purposes: 
+    1. **Testing functionality, clarity, and effectiveness**: The pretest allows students to test their developed questionnaire in a realistic environment, identify potential problems, and make improvements. 
+    2. **Generating preliminary data:** Initial data can be used for exploratory analysis, helping students assess the feasibility of their research and analytical design and draw first conclusions.
+
+Participation in the pretest is mandatory for all students. Further details—such as the exact procedure, schedule, and mode of participation—will be communicated in due time before the pretest.
+
+## Write Short Implementation Report (30 Pts.) {#sec-project-implementation}
+
+::: callout-important
+### TL;DR
+
+-   ✍️ **Task**: Write a short report summarizing your group’s practical implementation and preliminary results.
+-   📂 **Submission format**: PDF document (1,000 to 1,500 words, excluding figures or tables) & syntax file
+-   💡 **Evaluation**: Based on clarity, depth of interpretation, and reflection on the implementation process.
+-   👥 **Group size**: Same as in the project sketch
+-   📅 **Deadline**: TBA (likely late February/mid March 2026)
+:::
+
+The **Implementation Report** builds on your group’s Research Project Sketch and documents the experience and insights gained from putting your project into practice during the pretest phase. The report should not restate the full theoretical framework but instead focus on describing, interpreting, and critically evaluating your implementation and preliminary results.
+
+The total length of the report should be between **1,000 and 1,500 words per group** (excluding figures or tables). The report may be structured flexibly but should remain concise, logically organized, and analytically grounded
+
+### Recommended Structure and Components
+
+#### Introduction (ca. 150–200 words)
+
+-   Briefly restate your research question and objectives.
+-   Summarize the key aspects of your original project sketch (only as far as needed to contextualize your findings).
+
+#### Implementation and Procedure
+
+-   Describe how you conducted your pretest or pilot study.
+-   Mention the setup, sample, timeline, and any relevant technical or organizational steps.
+-   Note any deviations from your original plan and explain why they occurred.
+
+#### Preliminary Results and Interpretation
+
+-   Present and interpret the main (descriptive) results of your pretest or pilot data.
+-   Highlight key patterns, insights, or unexpected findings.
+-   Visualize results if helpful (tables or simple plots are welcome).
+
+#### Evaluation and Reflection
+
+-   Critically assess the functionality, clarity, and validity of your questionnaire or data collection approach.
+-   Discuss potential improvements, limitations, and lessons learned for future iterations.
+-   Reflect on the coherence between your theoretical goals and the practical results.
+
+### Evaluation Criteria
+
+The written Implementation Report is worth 30 points, broken down as follows:
+
+| Total                                 | 30 Pts. |
+|---------------------------------------|--------|
+| Clarity of presentation and structure | 5 Pts.  |
+| Interpretation of preliminary results | 5 Pts.  |
+| Methodological Approach               | 10 Pts. |
+| Critical evaluation and reflection    | 10 Pts. |
+| *Organization + formatting*           | 5 Pts.  |
