@@ -1,8 +1,8 @@
-# Digital behavioral data `<a href="https://chrdrn.github.io/dbd_2025"><img src="img/dbd_hex.png" align="right" height="150"/>``</a>`
+# Digital behavioral data <a href="https://chrdrn.github.io/dbd_2025"><img src="img/dbd_hex.png" align="right" height="150"/></a>
 
 <!-- badges: start -->
 
-[![Binder RStudio (TBD)](https://raw.githubusercontent.com/faucommsci/teaching_materials/main/images/badges/badge-binder_rstudio.svg)]()
+<!-- [![Binder RStudio (TBD)](https://raw.githubusercontent.com/faucommsci/teaching_materials/main/images/badges/badge-binder_rstudio.svg)]() -->
 
 <!-- badges: end -->
 
