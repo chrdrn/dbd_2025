@@ -1,0 +1,11 @@
+---
+title: "Useful sources"
+---
+
+This is selection of useful R sources: 
+
+-   {{< bi youtube >}} [Quarto tutorials](https://youtube.com/playlist?list=PLEzw67WWDg80-fT1hq2IZf7D62tRmKy8f&feature=shared) by Andy Field
+
+-   {{< bi globe >}} [Automatisierte Inhaltsanalyse mit R](http://inhaltsanalyse-mit-r.de/) by Kornelius Puschmann
+
+- {{< bi globe >}}[Basiskurs R/RStudio](https://www.studon.fau.de/crs3235361.html) by the [Chair of Statistics and Econometrics](https://www.statistics.rw.fau.eu/) at [Friedrich-Alexander-Universität Erlangen-Nürnberg](https://www.fau.eu/)
