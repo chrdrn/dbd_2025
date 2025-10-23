@@ -13,7 +13,7 @@ title: "Assignments"
 | [👥 Written assignment: Research Project Sketch](#sec-project-sketch) | 30 Pts. |
 | [👤 Peer Review: Research Project Sketch](#sec-peer-review) | 20 Pts. |
 | [👤 Participation: Pre-Test](#sec-participation) | 20 Pts. |
-| [👥 Written assignment: Research Report](#sec-project-implementation) | 30 Pts. |
+| [👥 Written assignment: Implementation Report](#sec-project-implementation) | 30 Pts. |
 
 : Breakdown of the final grade
 
@@ -23,7 +23,7 @@ title: "Assignments"
 -   **The final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session.** Accordingly, it is possible that  the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).
 :::
 
-## 👥 Write Research Project Sketch (40 Pts.) {#sec-project-sketch}
+## 👥 Write Research Project Sketch (30 Pts.) {#sec-project-sketch}
 
 ::: callout-important
 ### TL;DR
@@ -153,6 +153,7 @@ The peer review will be graded on the extent to which it comprehensively and con
 In this seminar, the research projects and questionnaires developed by the groups will be tested in practice through a **pretest** (or possibly a short pilot study). The goal is to create a **“master” short survey** that integrates elements from all group questionnaires. Several test runs may be necessary to ensure quality and functionality.
 
 The pretest serves two main purposes: 
+
     1. **Testing functionality, clarity, and effectiveness**: The pretest allows students to test their developed questionnaire in a realistic environment, identify potential problems, and make improvements. 
     2. **Generating preliminary data:** Initial data can be used for exploratory analysis, helping students assess the feasibility of their research and analytical design and draw first conclusions.
 
