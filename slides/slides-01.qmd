@@ -1,0 +1,458 @@
+---
+title: "Kick-Off"
+subtitle: "Session 01"
+date: 23 10 2024
+date-format: "DD.MM.YYYY"
+bibliography: references_slides.bib
+---
+
+# Agenda {background-image="img/slide_bg-agenda.png"}
+
+<!-- FIXME Agenda überarbeiten -->
+
+1.  [Kurze Vorstellungsrunde](#intro)
+2.  [Warum eigentlich Digital Behavioral Data?](#dbd-introduction)
+3.  [Grundidee und Thema des Kurses](#dbd-course)
+4.  [Oragnisatorisches](#orga)
+5.  [Themenverteilung](#topics)
+6.  [Fragen](#questions)
+
+```{r setup-slide-session}
+#| echo: false
+
+# Load packages
+library(jsonlite)
+library(tidyverse)
+library(here)
+library(countdown)
+
+# Load schedule
+source(here("slides/schedule.R"))
+```
+
+# `print("Hello course!")` {#intro background-image="img/slide_bg-section.png"}
+
+**Christoph Adrian**
+
+-   B.A. & M.Sc. Sozialökonomik und Dr. \@ FAU ➞ now [statArts GmbH](https://www.statarts.de/)
+-   Text as Data & Social Media Usage (Effects)
+-   Fließend in R, Grundkenntnisse in Python, SPSS & Stata
+-   #gerneperdu
+
+## Und nun zu Ihnen!
+
+#### Vorstellungsrunde
+
+<!-- TODO optional: Add graphic -->
+
+-   Wie heißen Sie?
+-   Was **studieren** Sie **aktuell**?
+-   Erfahrungen mit **Kommunikationswissenschaft**?
+-   Was verstehen Sie unter **digitalen Verhaltensdaten (DBD)**?
+-   Was ist eine **Außenwerbung**, die Ihnen **besonders im Gedächtnis geblieben** ist?
+
+::: notes
+-   Hintegrund und Vorwissen
+-   Mediennutzung
+:::
+
+# An Abundance of Possibilites {#dbd-introduction background-image="img/slide_bg-section.png"}
+
+Warum eigentlich **Digital Behavioral Data**?
+
+## Mehr Daten durch fortschreitende Digitalisierung
+
+#### Beispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren
+
+![Graphik aus @struminskaya2020](img/session-01/dbd_smartphone_development.jpeg){fig-align="center"}
+
+## Verknüpfung mit dem digitalen Raum
+
+#### Trend der Digitalisierung von Verhaltensweisen und Aktivitäten
+
+::::: columns
+::: {.column width="65%"}
+![Quelle: @keusch2021](img/session-01/dbd_matrix.png){fig-align="center" width="1024"}
+:::
+
+::: {.column width="35%"}
+<br>
+
+#### **Einschränkungen**
+
+-   **Selektive Nutzung** von bestimmten digitalen Geräten bzw. Funktionen
+-   Kategorisierung ist **Momentaufnahme** und nicht überschneidungsfrei
+:::
+:::::
+
+::: notes
+-   Einige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)
+-   Fehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte.
+:::
+
+## Ein Definitionsversuch von DBD
+
+#### nach @weller2021
+
+::::: columns
+::: {.column width="50%"}
+... fasst eine Vielzahl von möglichen **Datenquellen** zusammen, die verschiedene **Arten von Aktivitäten** aufzeichnen
+
+... können dabei helfen, **Meinungen, Verhalten und Merkmale der menschlichen Nutzung** digitaler Technologien zu erkennen
+:::
+
+::: {.column width="50%"}
+![](img/session-01/dbd_pictogram.svg){fig-align="center"}
+:::
+:::::
+
+## Die Lernziele des Kurses
+
+#### Die Studierenden werden ...
+
+-   einen **Überblick über die zentralen Möglichkeiten von DBD** und die damit verbundenen **Herausforderungen** bei der Datenerhebung und -aufbereitung bekommen
+-   lernen die **Stärken und Schwächen** verschiedener **Methoden zur Erhebung von DBD** bewerten
+-   zentrale Anforderungen an **Datenschutz, Forschungsethik und Datenqualität** kennen und verstehen lernen
+-   zentrale sozialwissenschaftliche **Methoden zur Analyse von DBD kennenlernen**
+-   das Wissen über DBD, Statistik und Datenanalyse in **eigenen kleinen Projekten** zu üben und anzuwenden
+
+::: notes
+-   Fokus auf praktischer Anwendung (weniger Theoriearbeit)
+:::
+
+# Wirkung visueller Kommunikation {#dbd-course background-image="img/slide_bg-section.png"}
+
+Projektarbeit zur Wahrnehmung und Wirkung von öffentlicher Außenwerbung mit DBD (und {{< iconify devicon rstudio >}} & {{< iconify devicon python >}})
+
+## Außenwerbung - was ist das eigentlich?
+
+#### Verschiedene Typen von Außenwerbung
+
+![](img/session-01/dbd-outdoor_advertising.png){fig-align="center"}
+
+## Visuelle Kommunikation trifft DBD
+
+#### Hintergrund zum Seminar
+
+-   **Außenwerbung als visuelles Kommunikationsmedium:**
+
+    -   macht sichtbar, wie Botschaften im öffentlichen Raum gestaltet und wahrgenommen werden
+    -   visuelle Daten (z. B. Fotos, Motive) sind zentral, um diese Formen empirisch zu erfassen und zu analysieren.
+
+-   **Verknüpfung mit digitalen Verhaltensdaten:**
+
+    -   ermöglicht die Analyse, wie visuelle Werbereize mit digitalen Spuren (z. B. Suchverhalten, Social-Media-Aktivität oder *Standortdaten*) zusammenhängen
+
+## Kartographierung verschiedener Außenwerbung
+
+#### Grundidee des Seminars: Verknpüfung von empirische Dokumentation und Analyse
+
+-   Teilnehmende entwickeln **eigene Forschungsdesigns** zur Erfassung von Werbeformaten, Motiven und Wirkungen (z.B. *Experience Sampling, Bild- und Textdokumentation oder Befragung*)
+-   Je nach Forschungsfokus, Umsetzung und Datenverfügbarkeit können Teilnehmende **quantitative oder qualitative Ansätze** wählen (z.B. (automatisierte) visuelle Inhaltsanalyse, MLM-Analyse von Umfragedaten, Nutzung geospatialer Daten)
+    -   ***Einschränkung: kein Schwerpunkt auf ikonographischen Analysen***
+
+## Messwiederholung in kurzen Abständen
+
+#### Beispiel für Forschungsdesign: Intensive Longitudinal Designs
+
+![](img/session-01/dbd-ild_example.png){fig-align="center"}
+
+> “an intensive longitudinal design involves sequential measurements on five or more occasions during which a change process is expected to unfold within each subject (e.g., person or other sampling [@bolger2013]
+
+## Variationen der Variationen
+
+#### Verschiedene Methoden und Varianten des Situationssamplings
+
+::::: columns
+::: {.column width="50%"}
+**Erhebungsmethoden**
+
+-   🖊️ Diary Studies
+-   🧠 Day Reconstruction Method (DRM)
+-   📱 Experience Sampling Method (ESM)
+:::
+
+::: {.column width="50%"}
+**Samplingvarianten nach @masur2019:**
+
+-   ⏰ Time-based Sampling (Daily, Interval or Intensive)
+-   🎲 Random Sampling
+-   💡 Event-based Sampling (Self-sampling & Automatic)
+-   Kombinationen der Sampling Methoden
+:::
+:::::
+
+# Any questions so far? {background-image="img/slide_bg-participation.png"}
+
+Fragen zur Kursidee bzw. dem Kursthema
+
+# Organisatorisches {#orga background-image="img/slide_bg-orga.png"}
+
+Kommunikation, Prüfungsleistungen, Ablauf
+
+## (Vorläufiger) Seminarplan
+
+```{r table-schedule}
+#| echo: false 
+
+schedule %>%
+    gt::gt() %>%
+    gt::fmt_markdown(columns = c(Datum, Topic)) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(
+        table.width = gt::pct(90), 
+        table.font.size = "20px"
+    ) %>%
+    gtExtras::gt_highlight_rows(
+        rows = 2,
+        fill = "#C50F3C", 
+        alpha = 0.2,
+        bold_target_only = TRUE,
+        target_col = Topic       
+    )
+```
+
+## StudOn & Github
+
+<!-- FIXME Add forum (link) -->
+
+#### Materialien und Kommunikation im Kurs
+
+-   Informationen zu **Kurs** ([*Semesterplan*](https://chrdrn.github.io/dbd_2025/)*,* [*Syllabus*](https://chrdrn.github.io/dbd_2025/course-syllabus.html)*, [Prüfungleistungen](https://chrdrn.github.io/dbd_2025/course-assignments.html) etc.*) & den einzelnen **Sitzungen** (*Slides, Literatur und ggf. Übungsmaterial*) finden sich auf der [Github-Kursseite](https://chrdrn.github.io/dbd_2025)
+-   Ausgewählte Literatur sowie Datensätze werden auf [StudOn](https://www.studon.fau.de/studon/go/crs/6572953) bereitgestellt
+-   Für die **Kommunikation gilt**
+    -   **Ankündigungen** werden über den [StudOn-Verteiler](https://www.studon.fau.de/studon/go/crs/6572953) versendet
+    -   für **Fragen** zum Kurs nutzten Sie bitte das [🚧 Forum](https://www.studon.fau.de/studon/go/crs/6572953)
+    -   Kontakt über [E-Mail](mailto:christoph.adrian@fau.de?subject=DBD) bitte nur bei **persönlichen Anliegen**, die nicht für die Gruppe relvevant sind.
+
+## What is expected
+
+#### Leistungsanforderungen
+
+-   **Regelmäßig aktive Teilnahme** an Sitzungen
+    -   **max. zwei unentschuldigte Fehltermine** bzw. *eine komplette Vormittags-/Nachmittagssession eines Blockseminars* (Kulanzregelung), bei Krankheit zählen die Fehltermine mit
+-   **Bearbeitung von [vier Assignments](https://chrdrn.github.io/dbd_2025/course-assignments.html) im Rahmen eines Portfolios**
+    -   Prüfungsleistungen **bauen aufeinander auf** bzw. decken verschiednene Aspekte des Forschungsprozesses ab
+    -   Verteilung der Prüfungsleistungen **über das Semester hinweg** statt Konzentration im Januar
+    -   Blockkurse mit hohem Praxisanteil erfordern Vorarbeit
+
+## Theorie ➞ Feedback ➞ Praxis ➞ Reflexion
+
+#### Die Prüfungsleistungen im Überblick
+
+-   **Idee hinter den Prüfungsleistungen:**
+    -   **Eigenständige Aneignung** von theoretischem und methodischen **Grundkenntnissen** bis zu den Blockterminen auf Basis zur zur Vergüng gestellter & selbst recherchierter **Literatur**
+    -   Fokus auf A**nwendung, Umsetzung & Refexion** der Projekte in den **Blockterminen**
+-   **Die vier Prüfungsleistungen sind:**
+    -   [👥 Written assignment: Research Project Sketch (30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch)
+    -   [👤 Peer Review: Research Project Sketch (20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
+    -   [👤 Participation: Pre-Test (20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-participation)
+    -   [👥 Written assignment: Implementation Report(40 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation)
+
+## Theoretisches & methodisches Fundament legen
+
+#### Informationen zum [Research Project Sketch (Gruppenarbeit - 30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch)
+
+-   **Arbeitsauftrag:**
+    -   Jede Gruppe (2-4 Personen) erstellt eine methodische Forschungsprojektskizze (1.000–1.500 Wörter), die in den Blockterminen als Ausgangspunkt für die Umsetzung eines Projektes dient (fokussiert auf kohärentes methodisches Design, nicht auf umfassende Theorie).
+    -   Elementarer Bestandteil: Erstellung eines Kurzfragebogenentwurfs (max. 6 Fragen, 1–2 Minuten)
+-   **Abgabefrist:** **15.12.2025, 23:59 Uhr** als PDF an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
+-   **Besonderheit:** Optionales Feedbackgespräch (max 30 min.) für jede Gruppe in den letzten beiden Novemberwochen
+
+## Feedback geben (lernen)
+
+#### Informationen zum [Peer Review (Einzelarbeit - 20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
+
+-   **Arbeitsauftrag:**
+    -   Jede Person erhält eine Forschungsprojektskizze einer anderen Gruppe zur **kritischen Begutachtung**.
+    -   Bewertung mit Hilfe eines **digitalen Peer-Review-Formular** (bestehend aus Skalen- und offenen Fragen).
+-   **Abgabefrist**: **Zwischen 20.12.2025 und 05.01.2026** Feedback-Formular ausfüllen
+-   **Ziel:** Alle Gruppen erhalten vor Blockterminen wertvolles Feedback zur Verbesserung ihrer Forschungsprojektskizze
+
+## You need your data!
+
+#### Informationen zur [Pre-Test Participation (20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
+
+-   **Arbeitsauftrag:**
+    -   Verpflichtende **aktive Teilnahme am Pre-Test** (z.B. Mindestanzahl an Kurzfragebögen)
+    -   Hintergrund: Test der Funktionalität, Verständlichkeit und Wirksamkeit sowie Generation von Test-Daten
+-   **Abgabefrist:** Teilnahme im Pre-Testzeitraum im **Januar 2026**
+-   **Wichtig:** Bewertet wird nur die aktive Teilnahme, nicht die inhaltlichen Antworten.
+
+## Reflexion der Ergebnisse
+
+#### Informationen zum [Implementation Report (30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation)
+
+-   **Arbeitsauftrag**:
+    -   Beschreibung, Interpretation und kritischer Reflexion der Vorgehensweise und/oder der ersten Ergebnisse (1.000–1.500 Wörter pro Gruppe)
+    -   Fokus liegt auf der praktischen Umsetzung des Forschungsprojekts und den Erfahrungen aus der Pretest-Phase - keine neue Theoriearbeit
+-   **Abgabefrist:** **28.02.2026, 23:59 Uhr** als (gerendertes) PDF (ggf. inklusive Syntax-Dateien)
+-   **Ziel:** Verknüpfung der Forschungsprojektskizze mit den Erfahrung & ggf. ersten Ergebnissen
+
+## Kurze Zusammenfassung
+
+<!-- TODO Zwei Spalten Layout -->
+
+#### Fahrplan für die Prüfungsleistungen
+
+::::: columns
+::: {.column width="50%" style="font-size:0.85em"}
+**Bis zur ersten Blocksitzung:**
+
+-   **Feedbackgespräch zum Research Project Sketch** in den letzten beiden Novemberwochen (optional)
+-   **Research Project Sketch (30 Pkt.)** bis 15.12.2025
+-   **Peer Review (20 Pkt.)** bis 05.01.2026
+-   Einarbeitung in die **R-Tutorials**
+:::
+
+::: {.column width="50%" style="font-size:0.85em"}
+**Mit Beginn der Blocksitzungen:**
+
+-   Fokus auf praktische Umsetzung des Forschungsprojekts (Fragebogen, Datenerhebung & -auswertung)
+-   Input zu praktischer Umsetzung der geplanten Analysen mit R & Python
+-   **Pre-Test Participation (20 Pkt.)** während der Blocksitzungen
+-   **Implementation Report (30 Pkt.)** bis 28.02.2026
+:::
+:::::
+
+## Kein Prüfungsleistung, aber Grundvoraussetzung
+
+#### Durcharbeiten von [{{< iconify devicon rstudio >}}-Tutorials](https://chrdrn.github.io/dbd_2024/computing/computing-instructions_R.html)
+
+-   Vermittlung des **notwendigen Basiswissens für die Arbeit mit R, RStudio und Quarto** mit Hilfe von zwei (Video-)Tutorials:
+    -   [Einführung in R, RStudio und Quarto von Andy Field](https://chrdrn.github.io/dbd_2024/computing/computing-instructions_R.html#introduction-to-r-rstudio-quarto) für die Vermittlung der Grundlagen & den allgemeinen Umgang mit den Programmen
+    -   [Praktisches Arbeiten mit R des CCS Amsterdam](https://chrdrn.github.io/dbd_2024/computing/computing-instructions_R.html#practical-work-with-r) legt Schwerpunkt auf das „inhaltliche“ Arbeiten mit R (Vorstellung von Verwendung von wichtigen Funktionen)
+-   Weitere nützliche Quellen finden Sie in dem Bereich ***Working with R*** auf der [Kursseite](https://faucommsci.github.io/dbd_2024)
+
+## Warum {{< iconify devicon rstudio >}}?
+
+#### Vorbereitung auf praktische Umsetzung
+
+-   **Kostenlose Software** mit vielen nützlichen und **beginner-friendly Tutorials**
+-   **Weit verbreitet in der Sozialwissenschaft** (v.a. R für Statistik & Datenvisualisierung, Python für Machine Learning & KI)
+-   Breites Spektrum an **Paketen für verschiedenste Datenanalyse & Visualisierung**
+-   {{< iconify devicon rstudio >}} or {{< iconify devicon python >}}? **Both!**
+
+**Im Kurs:** Keine Verpflichtung, die eigenen Analyse mit {{< iconify devicon rstudio >}} oder {{< iconify devicon python >}} durchzuführen
+
+-   [*Aber*]{.underline}*:* Praktische Inputs und Beispiele werden sich auf {{< iconify devicon rstudio >}} (und in wenigen Ausnahmen ggf. {{< iconify devicon python >}}) beziehen
+
+<!-- TODO Add information -->
+
+# Any questions? {background-image="img/slide_bg-participation.png"}
+
+Fragen zur Kursorganiation oder den Prüfungsleistungen
+
+# Where we go from here {background-image="img/slide_bg-section.png"}
+
+Die nächsten Schritte im Kurs
+
+## Sonderanmeldetermin für Prüfung
+
+#### Wichtige Informationen zur Prüfungsanmeldung
+
+-   Ärgerlicherweise gibt es immer wieder Studierende, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) “verschwinden”.
+-   **Deshalb: Nutzung des** [**WiSo-Sonderanmeldetermin für Prüfung am 27./28.10.**]{style="color: #C50F3C"}
+
+#### Bitte berücksichtigen Sie unbedingt:
+
+-   ⚠️ Nach Ablauf des Sonderanmeldetermins ist eine An- oder Abmeldung zur Prüfung **nicht mehr möglich**.
+-   ⚠️ Nehmen Sie **bitte kein Thema** an, wenn absehbar ist, dass **Sie nicht teilnehmen werden**.
+
+## Ein Startpunkt, aber kein Endpunkt
+
+#### Basisliteratur als Grundlage für die weitere Auseinandersetzung mit dem Seminarthema
+
+-   Literaturliste auf der Github-Kursseite ({{< bi book >}} zur heutigen Sitzung), Dateien später auf [🚧 StudOn](https://www.studon.fau.de/studon/go/crs/6572953))
+
+    -   **Einstieg in die Thematik** bzw. eine Grundlage für die weitere Auseinandersetzung
+    -   keine **umfassende Übersicht** über alle relevanten Theorien, Methoden und Konzepte
+    -   Inspiration für Themenfindung und eigene Literaturrecherche
+
+-  **Wichtig: Es gibt vermutlich keine Untersuchung die exakt Ihrem Forschungsinteresse entspricht**
+
+    -   Nutzen Sie die Literatur als Inspiration für **Abwandlungen und Erweiterungen**
+
+## Antworten auf offenen Fragen finden
+
+#### Was die Forschungsprojektskizze beinhalten sollte
+
+1.  **Was wollen wir untersuchen – und warum ist das Thema relevant?**\
+    [*→ kurze theoretische Begründung, Bezug zur bestehenden Forschung, gesellschaftliche oder mediale Bedeutung*]{style="font-size:0.75em"}
+
+2.  **Welche Forschungsfrage(n) oder Hypothese(n) leiten unser Projekt?**\
+    [*→ mindestens eine klar formuliert, potenziell empirisch überprüfbar Forschungsfrage (auch Methodenschwerpunkt ist ok)*]{style="font-size:0.75em"}
+
+3.  ‼️ **Wie wollen wir methodisch vorgehen?**\
+    [*→ Forschungsdesign, Datengrundlage, Ablauf von Datenerhebung bis Analyse inklusive technischer & methodischer Herausforderungen (z.B. Arbeit mit Logging-Daten; Datenschutz & ethische Überlegungen bei Bildern)*]{style="font-size:0.75em"}
+
+4.  ‼️ **Welche zentralen Variablen oder Konzepte wollen wir messen – und wie operationalisieren wir sie?**\
+    [→ *kurzer Fragebogensketch mit max. 6 Items, inklusive Wortlaut, Antwortoptionen und ggf. Quellen validierter Skalen*]{style="font-size:0.75em"}
+
+
+## Feedback dann, wenn es am meisten hilft
+
+#### Informationen zum Feedbackgespräch
+
+-   **Ziel:** Unterstützung bei der **Verfeinerung und Verbesserung** der Forschungsprojektskizze vor der Abgabe
+-   **30-minütiges Gespräch** pro Gruppe, in dem die **zentralen Aspekte** der Skizze besprochen werden
+-   Mail mit Terminvorschlägen wird Anfang November verschickt
+-   Optional: Gerne auch konkrete Fragen vorher per Mail schicken, das gibt mir die Möglichkeit, mich vorzubereiten
+
+## Datenschutz als Endgegner
+
+#### Aktueller Stand der technischen Umsetzung
+
+-  Sondierung und Evaluation möglicher Erhebungsinstrumente (z.B. Apps, Online-Tools etc.) läuft aktuell
+   -  Wunsch-Umsetzung: **App-basierte Erhebung** mit Möglichkeit zum Fotoupload und Log-Funktionalität (z.B. Geo-Daten)
+   -  Fallback-Umsetzung: **Online-Kurzfragebögen** zu verschiedenen Tageszeitpunkten mit Fragen zu wahrgenommener Außenwerbung (nur Beschreibung)
+
+-  Wichtig: Forschungsskizze ist **unabhängig von der finalen technischen Umsetzung** zu betrachten
+   -  D.h. Fokus auf methodische Überlegungen und Forschungsdesign, nicht auf technische Details der Umsetzung
+   -  ggf. Anpassungen an Erhebungsinstrument als Implementation Report 
+
+
+## Kurzer Disclaimer / Realitätscheck
+
+#### Sneak Preview auf die Herausforderungen der praktischen Umsetzung
+
+-  Die praktische Umsetzung des Forschungsprojekts **wird Herausforderungen mit sich bringen**, z.B.
+    -   Technische Hürden bei der Umsetzung des Erhebungsinstruments (z.B. App-Programmierung, Online-Tool-Einschränkungen)
+    -   Schwierigkeiten bei der Datenerhebung, -aufbereitung und -analyse (z.B. unvollständige Daten, Datenbereinigung, Umgang mit fehlenden Werten)
+
+-  Deshalb ist es wichtig, dass 
+   -  Sie **realistische Erwartungen** mitbringen und **flexibel** zu bleiben
+   -  Sie wissen, dass die Programmierung und technische Umsetzung **Teil meiner Verantwortung** ist
+   -  die Blocksitzungen **dazu da sind, um diese Herausforderungen gemeinsam zu bewältigen**
+
+## Little helpers
+
+#### Nützliche Ressourcen und Tools
+
+-   Bitte nicht nur ChatGPT & Co. nutzen, sondern auch klassische wissenschaftliche Quellen
+-   KI-gestütze Tools, die bei der Literaturrecherche unterstützen können
+    -   [ResearchRabbit](https://www.researchrabbit.ai/) ([Update für Ende Oktober angekündigt](https://www.researchrabbit.ai/announcement-researchrabbit-release-2025?utm_id=53))
+    -   [Inciteful](https://inciteful.xyz/)
+    -   [Litmaps](https://www.litmaps.com/)
+    -   [Connected Papers](https://www.connectedpapers.com/)
+-  Aber: Richtlinien zur Nutzung von KI-Tools beachten
+
+
+## Check you inbox
+
+#### Weitere Kommunikation
+
+-   Wichtige Ankündigungen und Informationen werden über den **StudOn-Verteiler** verschickt, z.B.
+    -   Buchungsoptionen für Feedback-Sprechstunden
+    -   Peer-Review-Zuweisungen
+    -   Peer-Reviews Ihrer Forschungsprojektskizzen.
+    -   ...
+
+# Final questions? {#questions background-image="img/slide_bg-question.png"}
+
+# Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
+
+## Literatur
+
+::: {#refs}
+:::
