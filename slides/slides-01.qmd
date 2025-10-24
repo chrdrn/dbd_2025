@@ -14,7 +14,7 @@ bibliography: references_slides.bib
 2.  [Warum eigentlich Digital Behavioral Data?](#dbd-introduction)
 3.  [Grundidee und Thema des Kurses](#dbd-course)
 4.  [Oragnisatorisches](#orga)
-5.  [Themenverteilung](#topics)
+5.  [Die nächsten Schritte](#next)
 6.  [Fragen](#questions)
 
 ```{r setup-slide-session}
@@ -32,7 +32,7 @@ source(here("slides/schedule.R"))
 
 # `print("Hello course!")` {#intro background-image="img/slide_bg-section.png"}
 
-**Christoph Adrian**
+**Dr. Christoph Adrian**
 
 -   B.A. & M.Sc. Sozialökonomik und Dr. \@ FAU ➞ now [statArts GmbH](https://www.statarts.de/)
 -   Text as Data & Social Media Usage (Effects)
@@ -120,7 +120,7 @@ Warum eigentlich **Digital Behavioral Data**?
 -   Fokus auf praktischer Anwendung (weniger Theoriearbeit)
 :::
 
-# Wirkung visueller Kommunikation {#dbd-course background-image="img/slide_bg-section.png"}
+# Öffentliche visuelle Kommunikation {#dbd-course background-image="img/slide_bg-section.png"}
 
 Projektarbeit zur Wahrnehmung und Wirkung von öffentlicher Außenwerbung mit DBD (und {{< iconify devicon rstudio >}} & {{< iconify devicon python >}})
 
@@ -204,7 +204,7 @@ schedule %>%
         table.font.size = "20px"
     ) %>%
     gtExtras::gt_highlight_rows(
-        rows = 2,
+        rows = 1,
         fill = "#C50F3C", 
         alpha = 0.2,
         bold_target_only = TRUE,
@@ -232,7 +232,7 @@ schedule %>%
 -   **Regelmäßig aktive Teilnahme** an Sitzungen
     -   **max. zwei unentschuldigte Fehltermine** bzw. *eine komplette Vormittags-/Nachmittagssession eines Blockseminars* (Kulanzregelung), bei Krankheit zählen die Fehltermine mit
 -   **Bearbeitung von [vier Assignments](https://chrdrn.github.io/dbd_2025/course-assignments.html) im Rahmen eines Portfolios**
-    -   Prüfungsleistungen **bauen aufeinander auf** bzw. decken verschiednene Aspekte des Forschungsprozesses ab
+    -   Prüfungsleistungen **bauen aufeinander auf** bzw. decken verschiedene Aspekte des Forschungsprozesses ab
     -   Verteilung der Prüfungsleistungen **über das Semester hinweg** statt Konzentration im Januar
     -   Blockkurse mit hohem Praxisanteil erfordern Vorarbeit
 
@@ -251,7 +251,7 @@ schedule %>%
 
 ## Theoretisches & methodisches Fundament legen
 
-#### Informationen zum [Research Project Sketch (Gruppenarbeit - 30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch)
+#### Informationen zum [Research Project Sketch (Gruppenleistung - 30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch)
 
 -   **Arbeitsauftrag:**
     -   Jede Gruppe (2-4 Personen) erstellt eine methodische Forschungsprojektskizze (1.000–1.500 Wörter), die in den Blockterminen als Ausgangspunkt für die Umsetzung eines Projektes dient (fokussiert auf kohärentes methodisches Design, nicht auf umfassende Theorie).
@@ -261,7 +261,7 @@ schedule %>%
 
 ## Feedback geben (lernen)
 
-#### Informationen zum [Peer Review (Einzelarbeit - 20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
+#### Informationen zum [Peer Review (Einzelleistung - 20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
 
 -   **Arbeitsauftrag:**
     -   Jede Person erhält eine Forschungsprojektskizze einer anderen Gruppe zur **kritischen Begutachtung**.
@@ -271,7 +271,7 @@ schedule %>%
 
 ## You need your data!
 
-#### Informationen zur [Pre-Test Participation (20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
+#### Informationen zur [Pre-Test Participation (Einzelleistung - 20 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review)
 
 -   **Arbeitsauftrag:**
     -   Verpflichtende **aktive Teilnahme am Pre-Test** (z.B. Mindestanzahl an Kurzfragebögen)
@@ -281,7 +281,7 @@ schedule %>%
 
 ## Reflexion der Ergebnisse
 
-#### Informationen zum [Implementation Report (30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation)
+#### Informationen zum [Implementation Report (Gruppenleistung - 30 Pkt.)](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation)
 
 -   **Arbeitsauftrag**:
     -   Beschreibung, Interpretation und kritischer Reflexion der Vorgehensweise und/oder der ersten Ergebnisse (1.000–1.500 Wörter pro Gruppe)
@@ -343,7 +343,7 @@ schedule %>%
 
 Fragen zur Kursorganiation oder den Prüfungsleistungen
 
-# Where we go from here {background-image="img/slide_bg-section.png"}
+# Where we go from here {#next background-image="img/slide_bg-section.png"}
 
 Die nächsten Schritte im Kurs
 
@@ -363,7 +363,7 @@ Die nächsten Schritte im Kurs
 
 #### Basisliteratur als Grundlage für die weitere Auseinandersetzung mit dem Seminarthema
 
--   Literaturliste auf der Github-Kursseite ({{< bi book >}} zur heutigen Sitzung), Dateien später auf [🚧 StudOn](https://www.studon.fau.de/studon/go/crs/6572953))
+-   Literaturliste auf der Github-Kursseite ({{< bi book >}} zur heutigen Sitzung), Dateien später auf [🚧 StudOn](https://www.studon.fau.de/studon/go/crs/6572953)
 
     -   **Einstieg in die Thematik** bzw. eine Grundlage für die weitere Auseinandersetzung
     -   keine **umfassende Übersicht** über alle relevanten Theorien, Methoden und Konzepte
@@ -408,7 +408,7 @@ Die nächsten Schritte im Kurs
    -  Fallback-Umsetzung: **Online-Kurzfragebögen** zu verschiedenen Tageszeitpunkten mit Fragen zu wahrgenommener Außenwerbung (nur Beschreibung)
 
 -  Wichtig: Forschungsskizze ist **unabhängig von der finalen technischen Umsetzung** zu betrachten
-   -  D.h. Fokus auf methodische Überlegungen und Forschungsdesign, nicht auf technische Details der Umsetzung
+   -  d.h. Fokus auf methodische Überlegungen und Forschungsdesign, nicht auf technische Details der Umsetzung
    -  ggf. Anpassungen an Erhebungsinstrument als Implementation Report 
 
 
@@ -447,6 +447,8 @@ Die nächsten Schritte im Kurs
     -   Peer-Review-Zuweisungen
     -   Peer-Reviews Ihrer Forschungsprojektskizzen.
     -   ...
+
+# Gruppeneinteilung {#questions background-image="img/slide_bg-group_activity.png"}
 
 # Final questions? {#questions background-image="img/slide_bg-question.png"}
 
