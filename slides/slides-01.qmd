@@ -448,7 +448,7 @@ Die nächsten Schritte im Kurs
     -   Peer-Reviews Ihrer Forschungsprojektskizzen.
     -   ...
 
-# Gruppeneinteilung {#questions background-image="img/slide_bg-group_activity.png"}
+# Gruppeneinteilung {#group background-image="img/slide_bg-group_activity.png"}
 
 # Final questions? {#questions background-image="img/slide_bg-question.png"}
 
