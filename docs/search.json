@@ -176,26 +176,242 @@
     ]
   },
   {
-    "objectID": "course-team.html",
-    "href": "course-team.html",
-    "title": "Teaching team",
+    "objectID": "sessions/session-01.html",
+    "href": "sessions/session-01.html",
+    "title": "Session 1",
     "section": "",
-    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
+    "text": "Important\n\n\n\nPlease make sure that you answered the survey send to you by (StudOn) mail."
   },
   {
-    "objectID": "course-team.html#instructor",
-    "href": "course-team.html#instructor",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
+    "objectID": "sessions/session-01.html#prepare",
+    "href": "sessions/session-01.html#prepare",
+    "title": "Session 1",
+    "section": "Prepare",
+    "text": "Prepare\n✍️ Fill out the short survey before the 22.10.2025 (see  StudOn for Link)\n📖 Read the syllabus"
+  },
+  {
+    "objectID": "sessions/session-01.html#participate",
+    "href": "sessions/session-01.html#participate",
+    "title": "Session 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Session 01"
+  },
+  {
+    "objectID": "sessions/session-01.html#literature",
+    "href": "sessions/session-01.html#literature",
+    "title": "Session 1",
+    "section": "Literature",
+    "text": "Literature\n\nwith focus on advertising\n\nFranke, G. R., & Taylor, C. R. (2017). Public Perceptions of Billboards: A Meta-Analysis. Journal of Advertising, 46(3), 395–410. https://doi.org/10.1080/00913367.2017.1334248\nNikulina, O., Van Riel, A. C. R., Lemmink, J. G. A. M., Grewal, D., & Wetzels, M. (2024). Narrate, Act, and Resonate to Tell a Visual Story: A Systematic Review of How Images Transport Viewers. Journal of Advertising, 53(4), 605–625. https://doi.org/10.1080/00913367.2024.2309921\nWilson, R. T. (2023). Out-of-Home Advertising: A Systematic Review and Research Agenda. Journal of Advertising, 52(2), 279–299. https://doi.org/10.1080/00913367.2022.2064378\n\n\n\nwith focus on analysis\n\nAraujo, T., Lock, I., & Van De Velde, B. (2020). Automated Visual Content Analysis (AVCA) in Communication Research: A Protocol for Large Scale Image Classification with Pre-Trained Computer Vision Models. Communication Methods and Measures, 14(4), 239–265. https://doi.org/10.1080/19312458.2020.1810648\nHoffmann, M., & Heft, A. (2020). “Here, There and Everywhere”: Classifying Location Information in Social Media Data - Possibilities and Limitations. Communication Methods and Measures, 14(3), 184–203. https://doi.org/10.1080/19312458.2019.1708282\nLokmanoglu, A. D., & Walter, D. (2025). Topic modeling of video and image data: a visual semantic unsupervised approach. Communication Methods and Measures, 19(3), 232–279. https://doi.org/10.1080/19312458.2025.2549707\nPeng, Y., Lock, I., & Ali Salah, A. (2024). Automated Visual Analysis for the Study of Social Media Effects: Opportunities, Approaches, and Challenges. Communication Methods and Measures, 18(2), 163–185. https://doi.org/10.1080/19312458.2023.2277956\n\n\n\nwith focus on digital behavioral data\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\nOlteanu, A., Castillo, C., Diaz, F., & Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2, 13. https://doi.org/10.3389/fdata.2019.00013\n\n\n\nwith focus on effects\n\nAlonso Dos Santos, M., Lobos, C., Muñoz, N., Romero, D., & Sanhueza, R. (2017). The Influence of Image Valence on the Attention Paid to Charity Advertising. Journal of Nonprofit & Public Sector Marketing, 29(3), 346–363. https://doi.org/10.1080/10495142.2017.1326355\nBarry, A. M. (2002). Perception and Visual Communication Theory. Journal of Visual Literacy, 22(1), 91–106. https://doi.org/10.1080/23796529.2002.11674583\nBast, J., & Oschatz, C. (2025). Which Visuals Really Matter? Effects of (Counter) Stereotypical Visual Information on Candidate Evaluations. Communication Research, 00936502241309957. https://doi.org/10.1177/00936502241309957\nBoomgaarden, H., Boukes, M., & Iorgoveanu, A. (2016). Image versus text: How newspaper reports affect evaluations of political candidates. INTERNATIONAL JOURNAL OF COMMUNICATION, 10, 2529–2555.\nCasas, A., & Williams, N. W. (2019). Images that Matter: Online Protests and the Mobilizing Role of Pictures. Political Research Quarterly, 72(2), 360–375. https://doi.org/10.1177/1065912918786805\nGeise, S., Panke, D., & Heck, A. (2021). Still ImagesMoving People? How Media Images of Protest Issues and Movements Influence Participatory Intentions. The International Journal of Press/Politics, 26(1), 92–118. https://doi.org/10.1177/1940161220968534\nKrause, A., & Bucy, E. P. (2018). Interpreting Images of Fracking: How Visual Frames and Standing Attitudes Shape Perceptions of Environmental Risk and Economic Benefit. Environmental Communication, 12(3), 322–343. https://doi.org/10.1080/17524032.2017.1412996\nPowell, T. E., Boomgaarden, H. G., De Swert, K., & De Vreese, C. H. (2015). A Clearer Picture: The Contribution of Visuals and Text to Framing Effects: Visual Framing Effects. Journal of Communication, 65(6), 997–1017. https://doi.org/10.1111/jcom.12184\n\n\n\nwith focus on images\n\nJoo, J., & Steinert-Threlkeld, Z. C. (2022). Image as Data: Automated Content Analysis for Visual Presentations of Political Actors and Events. Computational Communication Research, 4(1). https://doi.org/10.5117/CCR2022.1.001.JOO\nWebb Williams, N. (2022). What Type of Data Are Images? SSRN Electronic Journal. https://doi.org/10.2139/ssrn.4012789\nWebb Williams, N., Casas, A., & Wilkerson, J. D. (2020). Images as data for social science research: An introduction to convolutional neural nets for image classification (1st ed.). Cambridge University Press. https://www.cambridge.org/core/product/identifier/9781108860741/type/element\n\n\n\nwith focus on survey methods\n\nSchnauber-Stockmann, A., & Karnowski, V. (2020). Mobile Devices as Tools for Media and Communication Research: A Scoping Review on Collecting Self-report Data in Repeated Measurement Designs. Communication Methods and Measures, 14(3), 145–164. https://doi.org/10/gks6zf\n\nMasur, P. K. (2019). Capturing situational dynamics: Strength and pitfalls of the experience sampling method (P. Müller, S. Geiß, T. K. Naab, & C. Peter, Eds.; Vol. 15). Herbert von Halem Verlag. https://osf.io/vx5ha\n\n\n\nwith focus on visual communication\n\nGeise, S. (2017). Theoretical Perspectives on Visual Political Communication Through Election Posters (C. Holtz-Bacha & B. Johansson, Eds.; pp. 13–31). Springer International Publishing. http://link.springer.com/10.1007/978-3-319-32498-2_2\n\n\n\nwith focus on visibility\n\nStehle, H., Bock, A., Wilhelm, C., Springer, N., Mahrt, M., Lobinger, K., Linke, C., Engelmann, I., Detel, H., & Brantner, C. (2024). In/visibility in the digital age: A literature review from a communication studies perspective. International Journal of Communication, 18, 23.\n\n\n\nother interesting sources\n\nBodden, S., & Awcock, H. (2024). Stuck Up, Peeled Off, Covered Up, Shared and Scribbled Out: Doing Ordinary Politics with Political Stickers. GeoHumanities, 10(1), 131–149. https://doi.org/10.1080/2373566X.2024.2339848\nMcCosker, A., Kamstra, P., De Cotta, T., Farmer, J., Shaw, F., Teh, Z., & Soltani Panah, A. (2021). Social media for social good? A thematic, spatial and visual analysis of humanitarian action on Instagram. Information, Communication & Society, 24(13), 1870–1890. https://doi.org/10.1080/1369118X.2020.1748089\nMichel, S., & Pappert, S. (2018). Wahlplakat-busting. Formen und funktionen einer (neuen) textmustermischung. Zeitschrift Für Angewandte Linguistik, 2018(68), 333. https://doi.org/doi:10.1515/zfal-2018-0002\nReershemius, G. (2019). Lamppost networks: stickers as a genre in urban semiotic landscapes. Social Semiotics, 29(5), 622–644. https://doi.org/10.1080/10350330.2018.1504652\n\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "slides/slides-01.html#und-nun-zu-ihnen",
+    "href": "slides/slides-01.html#und-nun-zu-ihnen",
+    "title": "Kick-Off",
+    "section": "Und nun zu Ihnen!",
+    "text": "Und nun zu Ihnen!\nVorstellungsrunde\n\n\nWie heißen Sie?\nWas studieren Sie aktuell?\nErfahrungen mit Kommunikationswissenschaft?\nWas verstehen Sie unter digitalen Verhaltensdaten (DBD)?\nWas ist eine Außenwerbung, die Ihnen besonders im Gedächtnis geblieben ist?\n\n\n\nHintegrund und Vorwissen\nMediennutzung"
+  },
+  {
+    "objectID": "slides/slides-01.html#mehr-daten-durch-fortschreitende-digitalisierung",
+    "href": "slides/slides-01.html#mehr-daten-durch-fortschreitende-digitalisierung",
+    "title": "Kick-Off",
+    "section": "Mehr Daten durch fortschreitende Digitalisierung",
+    "text": "Mehr Daten durch fortschreitende Digitalisierung\nBeispiel: Wachsenden Anzahl eingebauter Smartphone-Sensoren\n\nGraphik aus Struminskaya et al. (2020)"
+  },
+  {
+    "objectID": "slides/slides-01.html#verknüpfung-mit-dem-digitalen-raum",
+    "href": "slides/slides-01.html#verknüpfung-mit-dem-digitalen-raum",
+    "title": "Kick-Off",
+    "section": "Verknüpfung mit dem digitalen Raum",
+    "text": "Verknüpfung mit dem digitalen Raum\nTrend der Digitalisierung von Verhaltensweisen und Aktivitäten\n\n\n\n\n\nQuelle: Engel et al. (2021)\n\n\n\n\nEinschränkungen\n\nSelektive Nutzung von bestimmten digitalen Geräten bzw. Funktionen\nKategorisierung ist Momentaufnahme und nicht überschneidungsfrei\n\n\n\n\nEinige inhärent digitale Verhalten (z.B. Web Searches) bei zunehmender Digitalisierung von analogen Verhalten (z.B. Collaborative Work)\nFehlen digitaler Spurendaten in all diesen Quadranten für bestimmte Personen und bestimmte Verhaltensweisen durch selektive Nutzung digitaler Geräte."
+  },
+  {
+    "objectID": "slides/slides-01.html#ein-definitionsversuch-von-dbd",
+    "href": "slides/slides-01.html#ein-definitionsversuch-von-dbd",
+    "title": "Kick-Off",
+    "section": "Ein Definitionsversuch von DBD",
+    "text": "Ein Definitionsversuch von DBD\nnach Weller (2021)\n\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+  },
+  {
+    "objectID": "slides/slides-01.html#die-lernziele-des-kurses",
+    "href": "slides/slides-01.html#die-lernziele-des-kurses",
+    "title": "Kick-Off",
+    "section": "Die Lernziele des Kurses",
+    "text": "Die Lernziele des Kurses\nDie Studierenden werden …\n\neinen Überblick über die zentralen Möglichkeiten von DBD und die damit verbundenen Herausforderungen bei der Datenerhebung und -aufbereitung bekommen\nlernen die Stärken und Schwächen verschiedener Methoden zur Erhebung von DBD bewerten\nzentrale Anforderungen an Datenschutz, Forschungsethik und Datenqualität kennen und verstehen lernen\nzentrale sozialwissenschaftliche Methoden zur Analyse von DBD kennenlernen\ndas Wissen über DBD, Statistik und Datenanalyse in eigenen kleinen Projekten zu üben und anzuwenden\n\n\n\nFokus auf praktischer Anwendung (weniger Theoriearbeit)"
+  },
+  {
+    "objectID": "slides/slides-01.html#außenwerbung---was-ist-das-eigentlich",
+    "href": "slides/slides-01.html#außenwerbung---was-ist-das-eigentlich",
+    "title": "Kick-Off",
+    "section": "Außenwerbung - was ist das eigentlich?",
+    "text": "Außenwerbung - was ist das eigentlich?\nVerschiedene Typen von Außenwerbung"
+  },
+  {
+    "objectID": "slides/slides-01.html#visuelle-kommunikation-trifft-dbd",
+    "href": "slides/slides-01.html#visuelle-kommunikation-trifft-dbd",
+    "title": "Kick-Off",
+    "section": "Visuelle Kommunikation trifft DBD",
+    "text": "Visuelle Kommunikation trifft DBD\nHintergrund zum Seminar\n\nAußenwerbung als visuelles Kommunikationsmedium:\n\nmacht sichtbar, wie Botschaften im öffentlichen Raum gestaltet und wahrgenommen werden\nvisuelle Daten (z. B. Fotos, Motive) sind zentral, um diese Formen empirisch zu erfassen und zu analysieren.\n\nVerknüpfung mit digitalen Verhaltensdaten:\n\nermöglicht die Analyse, wie visuelle Werbereize mit digitalen Spuren (z. B. Suchverhalten, Social-Media-Aktivität oder Standortdaten) zusammenhängen"
+  },
+  {
+    "objectID": "slides/slides-01.html#kartographierung-verschiedener-außenwerbung",
+    "href": "slides/slides-01.html#kartographierung-verschiedener-außenwerbung",
+    "title": "Kick-Off",
+    "section": "Kartographierung verschiedener Außenwerbung",
+    "text": "Kartographierung verschiedener Außenwerbung\nGrundidee des Seminars: Verknpüfung von empirische Dokumentation und Analyse\n\nTeilnehmende entwickeln eigene Forschungsdesigns zur Erfassung von Werbeformaten, Motiven und Wirkungen (z.B. Experience Sampling, Bild- und Textdokumentation oder Befragung)\nJe nach Forschungsfokus, Umsetzung und Datenverfügbarkeit können Teilnehmende quantitative oder qualitative Ansätze wählen (z.B. (automatisierte) visuelle Inhaltsanalyse, MLM-Analyse von Umfragedaten, Nutzung geospatialer Daten)\n\nEinschränkung: kein Schwerpunkt auf ikonographischen Analysen"
+  },
+  {
+    "objectID": "slides/slides-01.html#messwiederholung-in-kurzen-abständen",
+    "href": "slides/slides-01.html#messwiederholung-in-kurzen-abständen",
+    "title": "Kick-Off",
+    "section": "Messwiederholung in kurzen Abständen",
+    "text": "Messwiederholung in kurzen Abständen\nBeispiel für Forschungsdesign: Intensive Longitudinal Designs\n\n\n“an intensive longitudinal design involves sequential measurements on five or more occasions during which a change process is expected to unfold within each subject (e.g., person or other sampling (Bolger & Laurenceau, 2013)"
+  },
+  {
+    "objectID": "slides/slides-01.html#variationen-der-variationen",
+    "href": "slides/slides-01.html#variationen-der-variationen",
+    "title": "Kick-Off",
+    "section": "Variationen der Variationen",
+    "text": "Variationen der Variationen\nVerschiedene Methoden und Varianten des Situationssamplings\n\n\nErhebungsmethoden\n\n🖊️ Diary Studies\n🧠 Day Reconstruction Method (DRM)\n📱 Experience Sampling Method (ESM)\n\n\nSamplingvarianten nach Masur (2019):\n\n⏰ Time-based Sampling (Daily, Interval or Intensive)\n🎲 Random Sampling\n💡 Event-based Sampling (Self-sampling & Automatic)\nKombinationen der Sampling Methoden"
+  },
+  {
+    "objectID": "slides/slides-01.html#vorläufiger-seminarplan",
+    "href": "slides/slides-01.html#vorläufiger-seminarplan",
+    "title": "Kick-Off",
+    "section": "(Vorläufiger) Seminarplan",
+    "text": "(Vorläufiger) Seminarplan\n\n\n\n\n\n\n\n\nSession\nDatum\nTime\nTopic\n\n\n\n\n1\n24.10.2024\n09:45 - 11:15\n🚀 Kick-Off\n\n\n\n\n\n✏️ Independent study and assignments\n\n\n2\n09.01.2026\n09:00 - 16:00\n📚 From Theory to Questionaire\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 From Questionaire to Pretest\n\n\n4\n23.01.2026\n09:00 - 16:00\n📚 From Pretest to Analysis\n\n\n5\n30.01.2026\n09:00 - 16:00\n📚 Analysis & Evaluation"
+  },
+  {
+    "objectID": "slides/slides-01.html#studon-github",
+    "href": "slides/slides-01.html#studon-github",
+    "title": "Kick-Off",
+    "section": "StudOn & Github",
+    "text": "StudOn & Github\n\nMaterialien und Kommunikation im Kurs\n\nInformationen zu Kurs (Semesterplan, Syllabus, Prüfungleistungen etc.) & den einzelnen Sitzungen (Slides, Literatur und ggf. Übungsmaterial) finden sich auf der Github-Kursseite\nAusgewählte Literatur sowie Datensätze werden auf StudOn bereitgestellt\nFür die Kommunikation gilt\n\nAnkündigungen werden über den StudOn-Verteiler versendet\nfür Fragen zum Kurs nutzten Sie bitte das 🚧 Forum\nKontakt über E-Mail bitte nur bei persönlichen Anliegen, die nicht für die Gruppe relvevant sind."
+  },
+  {
+    "objectID": "slides/slides-01.html#what-is-expected",
+    "href": "slides/slides-01.html#what-is-expected",
+    "title": "Kick-Off",
+    "section": "What is expected",
+    "text": "What is expected\nLeistungsanforderungen\n\nRegelmäßig aktive Teilnahme an Sitzungen\n\nmax. zwei unentschuldigte Fehltermine bzw. eine komplette Vormittags-/Nachmittagssession eines Blockseminars (Kulanzregelung), bei Krankheit zählen die Fehltermine mit\n\nBearbeitung von vier Assignments im Rahmen eines Portfolios\n\nPrüfungsleistungen bauen aufeinander auf bzw. decken verschiedene Aspekte des Forschungsprozesses ab\nVerteilung der Prüfungsleistungen über das Semester hinweg statt Konzentration im Januar\nBlockkurse mit hohem Praxisanteil erfordern Vorarbeit"
+  },
+  {
+    "objectID": "slides/slides-01.html#theorie-feedback-praxis-reflexion",
+    "href": "slides/slides-01.html#theorie-feedback-praxis-reflexion",
+    "title": "Kick-Off",
+    "section": "Theorie ➞ Feedback ➞ Praxis ➞ Reflexion",
+    "text": "Theorie ➞ Feedback ➞ Praxis ➞ Reflexion\nDie Prüfungsleistungen im Überblick\n\nIdee hinter den Prüfungsleistungen:\n\nEigenständige Aneignung von theoretischem und methodischen Grundkenntnissen bis zu den Blockterminen auf Basis zur zur Vergüng gestellter & selbst recherchierter Literatur\nFokus auf Anwendung, Umsetzung & Refexion der Projekte in den Blockterminen\n\nDie vier Prüfungsleistungen sind:\n\n👥 Written assignment: Research Project Sketch (30 Pkt.)\n👤 Peer Review: Research Project Sketch (20 Pkt.)\n👤 Participation: Pre-Test (20 Pkt.)\n👥 Written assignment: Implementation Report(40 Pkt.)"
+  },
+  {
+    "objectID": "slides/slides-01.html#theoretisches-methodisches-fundament-legen",
+    "href": "slides/slides-01.html#theoretisches-methodisches-fundament-legen",
+    "title": "Kick-Off",
+    "section": "Theoretisches & methodisches Fundament legen",
+    "text": "Theoretisches & methodisches Fundament legen\nInformationen zum Research Project Sketch (Gruppenleistung - 30 Pkt.)\n\nArbeitsauftrag:\n\nJede Gruppe (2-4 Personen) erstellt eine methodische Forschungsprojektskizze (1.000–1.500 Wörter), die in den Blockterminen als Ausgangspunkt für die Umsetzung eines Projektes dient (fokussiert auf kohärentes methodisches Design, nicht auf umfassende Theorie).\nElementarer Bestandteil: Erstellung eines Kurzfragebogenentwurfs (max. 6 Fragen, 1–2 Minuten)\n\nAbgabefrist: 15.12.2025, 23:59 Uhr als PDF an christoph.adrian@fau.de\nBesonderheit: Optionales Feedbackgespräch (max 30 min.) für jede Gruppe in den letzten beiden Novemberwochen"
+  },
+  {
+    "objectID": "slides/slides-01.html#feedback-geben-lernen",
+    "href": "slides/slides-01.html#feedback-geben-lernen",
+    "title": "Kick-Off",
+    "section": "Feedback geben (lernen)",
+    "text": "Feedback geben (lernen)\nInformationen zum Peer Review (Einzelleistung - 20 Pkt.)\n\nArbeitsauftrag:\n\nJede Person erhält eine Forschungsprojektskizze einer anderen Gruppe zur kritischen Begutachtung.\nBewertung mit Hilfe eines digitalen Peer-Review-Formular (bestehend aus Skalen- und offenen Fragen).\n\nAbgabefrist: Zwischen 20.12.2025 und 05.01.2026 Feedback-Formular ausfüllen\nZiel: Alle Gruppen erhalten vor Blockterminen wertvolles Feedback zur Verbesserung ihrer Forschungsprojektskizze"
+  },
+  {
+    "objectID": "slides/slides-01.html#you-need-your-data",
+    "href": "slides/slides-01.html#you-need-your-data",
+    "title": "Kick-Off",
+    "section": "You need your data!",
+    "text": "You need your data!\nInformationen zur Pre-Test Participation (Einzelleistung - 20 Pkt.)\n\nArbeitsauftrag:\n\nVerpflichtende aktive Teilnahme am Pre-Test (z.B. Mindestanzahl an Kurzfragebögen)\nHintergrund: Test der Funktionalität, Verständlichkeit und Wirksamkeit sowie Generation von Test-Daten\n\nAbgabefrist: Teilnahme im Pre-Testzeitraum im Januar 2026\nWichtig: Bewertet wird nur die aktive Teilnahme, nicht die inhaltlichen Antworten."
+  },
+  {
+    "objectID": "slides/slides-01.html#reflexion-der-ergebnisse",
+    "href": "slides/slides-01.html#reflexion-der-ergebnisse",
+    "title": "Kick-Off",
+    "section": "Reflexion der Ergebnisse",
+    "text": "Reflexion der Ergebnisse\nInformationen zum Implementation Report (Gruppenleistung - 30 Pkt.)\n\nArbeitsauftrag:\n\nBeschreibung, Interpretation und kritischer Reflexion der Vorgehensweise und/oder der ersten Ergebnisse (1.000–1.500 Wörter pro Gruppe)\nFokus liegt auf der praktischen Umsetzung des Forschungsprojekts und den Erfahrungen aus der Pretest-Phase - keine neue Theoriearbeit\n\nAbgabefrist: 28.02.2026, 23:59 Uhr als (gerendertes) PDF (ggf. inklusive Syntax-Dateien)\nZiel: Verknüpfung der Forschungsprojektskizze mit den Erfahrung & ggf. ersten Ergebnissen"
+  },
+  {
+    "objectID": "slides/slides-01.html#kurze-zusammenfassung",
+    "href": "slides/slides-01.html#kurze-zusammenfassung",
+    "title": "Kick-Off",
+    "section": "Kurze Zusammenfassung",
+    "text": "Kurze Zusammenfassung\n\nFahrplan für die Prüfungsleistungen\n\n\nBis zur ersten Blocksitzung:\n\nFeedbackgespräch zum Research Project Sketch in den letzten beiden Novemberwochen (optional)\nResearch Project Sketch (30 Pkt.) bis 15.12.2025\nPeer Review (20 Pkt.) bis 05.01.2026\nEinarbeitung in die R-Tutorials\n\n\nMit Beginn der Blocksitzungen:\n\nFokus auf praktische Umsetzung des Forschungsprojekts (Fragebogen, Datenerhebung & -auswertung)\nInput zu praktischer Umsetzung der geplanten Analysen mit R & Python\nPre-Test Participation (20 Pkt.) während der Blocksitzungen\nImplementation Report (30 Pkt.) bis 28.02.2026"
+  },
+  {
+    "objectID": "slides/slides-01.html#kein-prüfungsleistung-aber-grundvoraussetzung",
+    "href": "slides/slides-01.html#kein-prüfungsleistung-aber-grundvoraussetzung",
+    "title": "Kick-Off",
+    "section": "Kein Prüfungsleistung, aber Grundvoraussetzung",
+    "text": "Kein Prüfungsleistung, aber Grundvoraussetzung\nDurcharbeiten von -Tutorials\n\nVermittlung des notwendigen Basiswissens für die Arbeit mit R, RStudio und Quarto mit Hilfe von zwei (Video-)Tutorials:\n\nEinführung in R, RStudio und Quarto von Andy Field für die Vermittlung der Grundlagen & den allgemeinen Umgang mit den Programmen\nPraktisches Arbeiten mit R des CCS Amsterdam legt Schwerpunkt auf das „inhaltliche“ Arbeiten mit R (Vorstellung von Verwendung von wichtigen Funktionen)\n\nWeitere nützliche Quellen finden Sie in dem Bereich Working with R auf der Kursseite"
+  },
+  {
+    "objectID": "slides/slides-01.html#warum",
+    "href": "slides/slides-01.html#warum",
+    "title": "Kick-Off",
+    "section": "Warum ?",
+    "text": "Warum ?\nVorbereitung auf praktische Umsetzung\n\nKostenlose Software mit vielen nützlichen und beginner-friendly Tutorials\nWeit verbreitet in der Sozialwissenschaft (v.a. R für Statistik & Datenvisualisierung, Python für Machine Learning & KI)\nBreites Spektrum an Paketen für verschiedenste Datenanalyse & Visualisierung\n or ? Both!\n\nIm Kurs: Keine Verpflichtung, die eigenen Analyse mit  oder  durchzuführen\n\nAber: Praktische Inputs und Beispiele werden sich auf  (und in wenigen Ausnahmen ggf. ) beziehen"
+  },
+  {
+    "objectID": "slides/slides-01.html#sonderanmeldetermin-für-prüfung",
+    "href": "slides/slides-01.html#sonderanmeldetermin-für-prüfung",
+    "title": "Kick-Off",
+    "section": "Sonderanmeldetermin für Prüfung",
+    "text": "Sonderanmeldetermin für Prüfung\nWichtige Informationen zur Prüfungsanmeldung\n\nÄrgerlicherweise gibt es immer wieder Studierende, die sich anmelden und betreuen lassen, aber dann einfach irgendwann (teilweise sehr kurzfristig) “verschwinden”.\nDeshalb: Nutzung des WiSo-Sonderanmeldetermin für Prüfung am 27./28.10.\n\nBitte berücksichtigen Sie unbedingt:\n\n⚠️ Nach Ablauf des Sonderanmeldetermins ist eine An- oder Abmeldung zur Prüfung nicht mehr möglich.\n⚠️ Nehmen Sie bitte kein Thema an, wenn absehbar ist, dass Sie nicht teilnehmen werden."
+  },
+  {
+    "objectID": "slides/slides-01.html#ein-startpunkt-aber-kein-endpunkt",
+    "href": "slides/slides-01.html#ein-startpunkt-aber-kein-endpunkt",
+    "title": "Kick-Off",
+    "section": "Ein Startpunkt, aber kein Endpunkt",
+    "text": "Ein Startpunkt, aber kein Endpunkt\nBasisliteratur als Grundlage für die weitere Auseinandersetzung mit dem Seminarthema\n\nLiteraturliste auf der Github-Kursseite ( zur heutigen Sitzung), Dateien später auf 🚧 StudOn\n\nEinstieg in die Thematik bzw. eine Grundlage für die weitere Auseinandersetzung\nkeine umfassende Übersicht über alle relevanten Theorien, Methoden und Konzepte\nInspiration für Themenfindung und eigene Literaturrecherche\n\nWichtig: Es gibt vermutlich keine Untersuchung die exakt Ihrem Forschungsinteresse entspricht\n\nNutzen Sie die Literatur als Inspiration für Abwandlungen und Erweiterungen"
+  },
+  {
+    "objectID": "slides/slides-01.html#antworten-auf-offenen-fragen-finden",
+    "href": "slides/slides-01.html#antworten-auf-offenen-fragen-finden",
+    "title": "Kick-Off",
+    "section": "Antworten auf offenen Fragen finden",
+    "text": "Antworten auf offenen Fragen finden\nWas die Forschungsprojektskizze beinhalten sollte\n\nWas wollen wir untersuchen – und warum ist das Thema relevant?\n→ kurze theoretische Begründung, Bezug zur bestehenden Forschung, gesellschaftliche oder mediale Bedeutung\nWelche Forschungsfrage(n) oder Hypothese(n) leiten unser Projekt?\n→ mindestens eine klar formuliert, potenziell empirisch überprüfbar Forschungsfrage (auch Methodenschwerpunkt ist ok)\n‼️ Wie wollen wir methodisch vorgehen?\n→ Forschungsdesign, Datengrundlage, Ablauf von Datenerhebung bis Analyse inklusive technischer & methodischer Herausforderungen (z.B. Arbeit mit Logging-Daten; Datenschutz & ethische Überlegungen bei Bildern)\n‼️ Welche zentralen Variablen oder Konzepte wollen wir messen – und wie operationalisieren wir sie?\n→ kurzer Fragebogensketch mit max. 6 Items, inklusive Wortlaut, Antwortoptionen und ggf. Quellen validierter Skalen"
+  },
+  {
+    "objectID": "slides/slides-01.html#feedback-dann-wenn-es-am-meisten-hilft",
+    "href": "slides/slides-01.html#feedback-dann-wenn-es-am-meisten-hilft",
+    "title": "Kick-Off",
+    "section": "Feedback dann, wenn es am meisten hilft",
+    "text": "Feedback dann, wenn es am meisten hilft\nInformationen zum Feedbackgespräch\n\nZiel: Unterstützung bei der Verfeinerung und Verbesserung der Forschungsprojektskizze vor der Abgabe\n30-minütiges Gespräch pro Gruppe, in dem die zentralen Aspekte der Skizze besprochen werden\nMail mit Terminvorschlägen wird Anfang November verschickt\nOptional: Gerne auch konkrete Fragen vorher per Mail schicken, das gibt mir die Möglichkeit, mich vorzubereiten"
+  },
+  {
+    "objectID": "slides/slides-01.html#datenschutz-als-endgegner",
+    "href": "slides/slides-01.html#datenschutz-als-endgegner",
+    "title": "Kick-Off",
+    "section": "Datenschutz als Endgegner",
+    "text": "Datenschutz als Endgegner\nAktueller Stand der technischen Umsetzung\n\nSondierung und Evaluation möglicher Erhebungsinstrumente (z.B. Apps, Online-Tools etc.) läuft aktuell\n\nWunsch-Umsetzung: App-basierte Erhebung mit Möglichkeit zum Fotoupload und Log-Funktionalität (z.B. Geo-Daten)\nFallback-Umsetzung: Online-Kurzfragebögen zu verschiedenen Tageszeitpunkten mit Fragen zu wahrgenommener Außenwerbung (nur Beschreibung)\n\nWichtig: Forschungsskizze ist unabhängig von der finalen technischen Umsetzung zu betrachten\n\nd.h. Fokus auf methodische Überlegungen und Forschungsdesign, nicht auf technische Details der Umsetzung\nggf. Anpassungen an Erhebungsinstrument als Implementation Report"
+  },
+  {
+    "objectID": "slides/slides-01.html#kurzer-disclaimer-realitätscheck",
+    "href": "slides/slides-01.html#kurzer-disclaimer-realitätscheck",
+    "title": "Kick-Off",
+    "section": "Kurzer Disclaimer / Realitätscheck",
+    "text": "Kurzer Disclaimer / Realitätscheck\nSneak Preview auf die Herausforderungen der praktischen Umsetzung\n\nDie praktische Umsetzung des Forschungsprojekts wird Herausforderungen mit sich bringen, z.B.\n\nTechnische Hürden bei der Umsetzung des Erhebungsinstruments (z.B. App-Programmierung, Online-Tool-Einschränkungen)\nSchwierigkeiten bei der Datenerhebung, -aufbereitung und -analyse (z.B. unvollständige Daten, Datenbereinigung, Umgang mit fehlenden Werten)\n\nDeshalb ist es wichtig, dass\n\nSie realistische Erwartungen mitbringen und flexibel zu bleiben\nSie wissen, dass die Programmierung und technische Umsetzung Teil meiner Verantwortung ist\ndie Blocksitzungen dazu da sind, um diese Herausforderungen gemeinsam zu bewältigen"
+  },
+  {
+    "objectID": "slides/slides-01.html#little-helpers",
+    "href": "slides/slides-01.html#little-helpers",
+    "title": "Kick-Off",
+    "section": "Little helpers",
+    "text": "Little helpers\nNützliche Ressourcen und Tools\n\nBitte nicht nur ChatGPT & Co. nutzen, sondern auch klassische wissenschaftliche Quellen\nKI-gestütze Tools, die bei der Literaturrecherche unterstützen können\n\nResearchRabbit (Update für Ende Oktober angekündigt)\nInciteful\nLitmaps\nConnected Papers\n\nAber: Richtlinien zur Nutzung von KI-Tools beachten"
+  },
+  {
+    "objectID": "slides/slides-01.html#check-you-inbox",
+    "href": "slides/slides-01.html#check-you-inbox",
+    "title": "Kick-Off",
+    "section": "Check you inbox",
+    "text": "Check you inbox\nWeitere Kommunikation\n\nWichtige Ankündigungen und Informationen werden über den StudOn-Verteiler verschickt, z.B.\n\nBuchungsoptionen für Feedback-Sprechstunden\nPeer-Review-Zuweisungen\nPeer-Reviews Ihrer Forschungsprojektskizzen.\n…"
+  },
+  {
+    "objectID": "slides/slides-01.html#literatur",
+    "href": "slides/slides-01.html#literatur",
+    "title": "Kick-Off",
+    "section": "Literatur",
+    "text": "Literatur\n\n\nBolger, N., & Laurenceau, J.-P. (2013). Intensive longitudinal methods: An introduction to diary and experience sampling research. Guilford Press.\n\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\n\n\nMasur, P. K. (2019). Capturing situational dynamics: Strength and pitfalls of the experience sampling method (P. Müller, S. Geiß, T. K. Naab, & C. Peter, Eds.; Vol. 15). Herbert von Halem Verlag. https://osf.io/vx5ha\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf"
   },
   {
     "objectID": "index.html",
@@ -218,6 +434,217 @@
       "Course information",
       "Schedule"
     ]
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "slides/slides-02.html#kurzes-update",
+    "href": "slides/slides-02.html#kurzes-update",
+    "title": "Überblick & Einführung",
+    "section": "Kurzes Update",
+    "text": "Kurzes Update\nAllgemeine Infos zum Kurs\n\nHaben alle sich für die Prüfung angemeldet? Gibt es noch Fragen zum Sonderanmeldetermin?\nHaben alle eine Benachrichtung für den Post im  StudOn-Forum bekommen?\nHaben alle die 📖 Basisliteratur gefunden? Gibt es Fragen?\nPräsentationsgruppe 1&2: Denkt bitte an die Zusendung des Entwurf der Präsentationsfolien (bis nächsten Dienstag bis 12:00) und das Feedbackgespräch nächste Woche!"
+  },
+  {
+    "objectID": "slides/slides-02.html#finale-themenvergabe",
+    "href": "slides/slides-02.html#finale-themenvergabe",
+    "title": "Überblick & Einführung",
+    "section": "Finale Themenvergabe",
+    "text": "Finale Themenvergabe\nÜberblick über die Gruppenverteilung\n\n\n\nTable has no assigned ID, using random ID 'mhearylqqx' to apply `gt::opt_css()`\nAvoid this message by assigning an ID: `gt(id = '')` or `gt_theme_538(quiet = TRUE)`\n\n\n\n\n\n\n\n\nGruppe\nThema\nStudierende\n\n\n\n\n1\nMotivation der Nutzung von Twitch\nAzat, Heimstädt\n\n\n2\nKommunikation und Interaktion auf Twitch\nBurmeister, Fischer, Erdogmus\n\n\n3\n(Wirkungs-)Effekte der Twitch-Nutzung/Interaktion\nDierking, Reineke\n\n\n4\n(Wirkungs-)Effekte von TV-Wahldebatten\nSpickenreuther, Wolf\n\n\n5\nWechselwirkung zwischen TV-Debatten und Twitter\nGierth, Landgraf\n\n\n6\nLive-Chat(-Kommentare) in politischen Debatten\nMach, Stadler, Weiß"
+  },
+  {
+    "objectID": "slides/slides-02.html#semsterplan",
+    "href": "slides/slides-02.html#semsterplan",
+    "title": "Überblick & Einführung",
+    "section": "Semsterplan",
+    "text": "Semsterplan\n\n\nTable has no assigned ID, using random ID 'wqzcvwpsij' to apply `gt::opt_css()`\nAvoid this message by assigning an ID: `gt(id = '')` or `gt_theme_538(quiet = TRUE)`\n\n\n\n\n\n\n\n\nSession\nDatum\nTime\nTopic\n\n\n\n\n1\n24.10.2024\n09:45 - 11:15\n🚀 Kick-Off\n\n\n\n\n\n✏️ Independent study and assignments\n\n\n2\n09.01.2026\n09:00 - 16:00\n📚 From Theory to Questionaire\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 From Questionaire to Pretest\n\n\n4\n23.01.2026\n09:00 - 16:00\n📚 From Pretest to Analysis\n\n\n5\n30.01.2026\n09:00 - 16:00\n📚 Analysis & Evaluation"
+  },
+  {
+    "objectID": "slides/slides-02.html#was-ist-das-eigentlich",
+    "href": "slides/slides-02.html#was-ist-das-eigentlich",
+    "title": "Überblick & Einführung",
+    "section": "Was ist das eigentlich?",
+    "text": "Was ist das eigentlich?\nRückblick auf einen Definitionversuch von Weller (2021)\n\n\n… fasst eine Vielzahl von möglichen Datenquellen zusammen, die verschiedene Arten von Aktivitäten aufzeichnen (häufig sogar “nur” als Nebenprodukt)\n… können dabei helfen, Meinungen, Verhalten und Merkmale der menschlichen Nutzung digitaler Technologien zu erkennen"
+  },
+  {
+    "objectID": "slides/slides-02.html#und-im-kontext-des-seminars",
+    "href": "slides/slides-02.html#und-im-kontext-des-seminars",
+    "title": "Überblick & Einführung",
+    "section": "Und im Kontext des Seminars?",
+    "text": "Und im Kontext des Seminars?\nArbeitsdefinition & Kernbereiche (GESIS) von DBD\n\n\n\nDBD umfasst digitale Beobachtungen menschlichen und algorithmischen Verhaltens,\nwie sie z.B. von Online-Plattformen (wie Google, Facebook oder dem World Wide Web) oder\nSensoren (wie Smartphones, RFID-Sensoren, Satelliten oder Street View-Kameras) erfasst werden."
+  },
+  {
+    "objectID": "slides/slides-02.html#die-power-von-social-sensing",
+    "href": "slides/slides-02.html#die-power-von-social-sensing",
+    "title": "Überblick & Einführung",
+    "section": "Die Power von Social Sensing",
+    "text": "Die Power von Social Sensing\nForschungsdesign zur Erhebung digitaler Verhaltensdaten (Flöck & Sen, 2022)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDie Zukunft: Linking"
+  },
+  {
+    "objectID": "slides/slides-02.html#mit-fokus-auf-die-platform",
+    "href": "slides/slides-02.html#mit-fokus-auf-die-platform",
+    "title": "Überblick & Einführung",
+    "section": "Mit Fokus auf die Platform",
+    "text": "Mit Fokus auf die Platform\nForschungsdesign zur Erhebung digitaler Verhaltensdaten (Flöck & Sen, 2022)"
+  },
+  {
+    "objectID": "slides/slides-02.html#online-plattformen-prägen-die-gesellschaft",
+    "href": "slides/slides-02.html#online-plattformen-prägen-die-gesellschaft",
+    "title": "Überblick & Einführung",
+    "section": "Online-Plattformen prägen die Gesellschaft",
+    "text": "Online-Plattformen prägen die Gesellschaft\nGründe für den Fokus auf Onlineplattformen (Ulloa, 2021)\n\n\nvermitteln & formen menschliche Kommunikation (z.B. Tweet mit 280 Zeichen)\npolitische (Miss-)Nutzung\nGatekeeper für Informationen (z.B. “Dr.Google”)\ntägliche algorithmische Empfehlungen und Werbung: Nachrichten, Produkte, Jobangebote, Bewerbungen, Versicherungen, Hotels, …\n\n\nABER: Berücksichtigung der Art und Weise, wie die Daten gesammelt werden!"
+  },
+  {
+    "objectID": "slides/slides-02.html#eine-kleine-lobeshymne-auf-dbd",
+    "href": "slides/slides-02.html#eine-kleine-lobeshymne-auf-dbd",
+    "title": "Überblick & Einführung",
+    "section": "Eine kleine Lobeshymne auf DBD",
+    "text": "Eine kleine Lobeshymne auf DBD\nZwischenfazit\n\nDigitale Geräte oder Sensoren können sich an bestimmte Fakten besser “erinnern” als das menschliche Gedächtnis.\nSensoren sind oft bereits in alltägliche Technologie eingebaut und produzieren digitale Verhaltensdaten als ein “Nebenprodukt”.\nUnaufdringliche Erfassung als potentieller Vorteil bzw. Entlastung für Teilnehmer*Innen\nKombination mit Umfragedaten möglich (und bereichernd!)\n\n\nAber: Berücksichtigung der Rahmenbedingungen!\nZur erfolgreichen Nutzung müssen Forschungsziele & verfügbare Daten in Einklang gebracht, mögliche Biases und methodische Probleme berücksichtigt sowie die Datenqualität evaluiert werden.\n\n\nBietet die Plattform Zugang zu den benötigten Daten? Wenn nicht, gibt es alternative Weg um an die Daten zu gelangen? Wenn ja, ist dies legal/ethisch?"
+  },
+  {
+    "objectID": "slides/slides-02.html#wenn-der-vorteil-zum-nachteil-wird",
+    "href": "slides/slides-02.html#wenn-der-vorteil-zum-nachteil-wird",
+    "title": "Überblick & Einführung",
+    "section": "Wenn der Vorteil zum Nachteil wird",
+    "text": "Wenn der Vorteil zum Nachteil wird\nAmbivalenz der Unaufdringlichkeit (Engel et al., 2021)\n\nUnterscheidung zwischen aufdringlichen (z.B. spezielle Research-App & Befragungen) & unaufdringlichen (z.B. Cookies, Browserplugins & APIs) erhobenen Daten\nBewertung und Erwartung an Datensammlung ist abhängig vom Kontext (z.B. Amazon vs. Researchgate)\n\n\nParadoxes Dilemma\nEinerseits bereitwillige (oft unwissende) Abgabe der Daten an Konzerne ohne Wissen um deren Weiterverarbeitung, andererseits häufig Bedenken bezüglich Datenschutz & Privatsphäre bei wissenschaftlichen Studien, die über Verwendung der Daten aufklären.\n\n\nWarum? Persönlicher Nutzen?"
+  },
+  {
+    "objectID": "slides/slides-02.html#eher-konzept-als-begriff",
+    "href": "slides/slides-02.html#eher-konzept-als-begriff",
+    "title": "Überblick & Einführung",
+    "section": "Eher Konzept als Begriff",
+    "text": "Eher Konzept als Begriff\nZur Ambigutität des Begriffes bias und dessen Bedeutung im Seminar\n\n\nProblem: keine klare Grenzen zwischen den eher normativen Konnotationen (z.B. confirmation bias) und der statistischen Bedeutung des Begriffs (z.B. selection bias)\nDeswegen: Bewusstsein für Ambiguität des Begriffes\n\nVerwendung in vielen Disziplinen wie der Sozialwissenschaft, der kognitiven Psychologie oder dem Recht\nUntersuchung von verschiedenen Phänomenen, wie kognitive Voreingenommenheiten (Croskerry, 2002) sowie systemische, diskriminierende Ergebnisse (Friedman & Nissenbaum, 1996) oder Schäden (Barocas & Selbst, 2016), aktuell z.B. bei der Verwendung von Machine Learning oder AI.\n\n\n\n\n\n\nVerwendung des Begriff hauptsächlich in seiner statistischen Bedeutung, um auf Verzerrungen in sozialen Daten und deren Analysen hinzuweisen."
+  },
+  {
+    "objectID": "slides/slides-02.html#know-your-bias",
+    "href": "slides/slides-02.html#know-your-bias",
+    "title": "Überblick & Einführung",
+    "section": "Know your bias!",
+    "text": "Know your bias!\nFramework zur Minimierung von Fehlern und Problemen (Olteanu et al., 2019)\n\n\nBeschreibung:\n\nDie Analyse sozialer Daten beginnt mit bestimmten Zielen (Abschnitt 2.1), wie dem Verständnis oder der Beeinflussung von Phänomenen, die für soziale Plattformen spezifisch sind (Typ I) und/oder von Phänomenen, die über soziale Plattformen hinausgehen (Typ II).\nDiese Ziele erfordern, dass die Forschung bestimmte Validitätskriterien erfüllt, die weiter oben beschrieben wurden (Abschnitt 2.2).\nDiese Kriterien können ihrerseits durch eine Reihe von allgemeinen Verzerrungen und Problemen beeinträchtigt werden (Abschnitt 3).\nDiese Herausforderungen können von den Merkmalen der einzelnen Datenplattformen (Abschnitt 4) abhängen - die oft nicht unter der Kontrolle der Forschenden stehen - und von den Entscheidungen des Forschungsdesigns entlang einer Datenverarbeitungspipeline (Abschnitte 5 bis 8) - die oft unter der Kontrolle des Forschers stehen.\nPfeile zeigen an, wie sich Komponenten in unserem Rahmenwerk direkt auf andere auswirken"
+  },
+  {
+    "objectID": "slides/slides-02.html#the-biggest-problem-of-them-all",
+    "href": "slides/slides-02.html#the-biggest-problem-of-them-all",
+    "title": "Überblick & Einführung",
+    "section": "The biggest problem of them all",
+    "text": "The biggest problem of them all\nPotentielle Probleme mit der Qualität der Daten\n\n\n\nDefinition Data bias (Olteanu et al., 2019)\nA systematic distortion in the sampled data that compromises its representativeness.\n\n\n\n\nSparsity: Häufig Heavy-Tail-Verteilung, was Analyse am “Kopf” (in Bezug auf häufige Elemente oder Phänomene) erleichtert, am “Schwanz” (wie seltene Elemente oder Phänomene) jedoch erschwert (Baeza-Yates, 2013)\nNoise: Unvollständige, beschädigte, unzuverlässige oder unglaubwürdige Inhalte (boyd & Crawford, 2012; Naveed et al., 2011)\n\nAber: Unterscheidung von “Noise” und “Signal” ist oft unklar und hängt von der Forschungsfrage ab (Salganik, 2018)\n\nOrganische vs gemessene Daten: Fragen zur Repräsentativität (vs. Stichprobenbeschreibung), Kausalität (vs. Korrelation) und Vorhersagegüte"
+  },
+  {
+    "objectID": "slides/slides-02.html#bias-at-the-source",
+    "href": "slides/slides-02.html#bias-at-the-source",
+    "title": "Überblick & Einführung",
+    "section": "Bias at the source",
+    "text": "Bias at the source\nPotentielle Probleme mit der Datenquelle oder -herkunft\n\nBiases, die auf das Design und die Möglichkeiten der Plattformen zurückzuführen sind (functional biases).\nVerhaltensnormen, die auf den einzelnen Plattformen bestehen oder sich herausbilden (normative biases).\nFaktoren, die außerhalb der sozialen Plattformen liegen, aber das Nutzerverhalten beeinflussen können (external biases)\nVorhandensein von nicht-individuellen Konten ein (non-individuals).\n\n\nfunctional biases:\n- Platform-specific design and features shape user behavior (z.B. Emojis) - Algorithms used for organizing and ranking content influence user behavior - Content presentation influences user behavior (z.B. UI)\nnormative biases:\n\nNorms are shaped by the attitudes and behaviors of online communities, which may be context-dependent (z.B. Partyfotos auf Instagram, aber nicht LinkedIn)\nThe awareness of being observed by others impacts user behavio (Anonymität vs Klarnamen)\nSocial conformity and “herding” happen in social platforms, and such behavioral traits shape user behavior (z.B. Ratings beinflussen eigenes Rating)\n\nexternal biase:\n\nCultural elements and social contexts are reflected in social datasets. (Zeichenlimit Japan vs. Deutschland)\nMisinformation and disinformation.\nContents on different topics are treated differently.\nHigh-impact events, whether anticipated or not, are reflected on social media (z.B. Feiertage)\n\nnon-individual-accounts: Organizational accounts, Bots"
+  },
+  {
+    "objectID": "slides/slides-02.html#gefangen-im-spannungsverhältnis",
+    "href": "slides/slides-02.html#gefangen-im-spannungsverhältnis",
+    "title": "Überblick & Einführung",
+    "section": "Gefangen im Spannungsverhältnis",
+    "text": "Gefangen im Spannungsverhältnis\nForschungethik bei digitalen Daten\nHintergrund: Die Herausforderung besteht in der Kombination von zwei extremen Sichtweisen, der Betrachtung der Forschung mit sozialen Daten als “klinische” Forschung oder als Computerforschung\n\nDie Sozialdatenforschung unterscheidet sich von klinischen Versuchen.\nEthische Entscheidungen in der Sozialdatenforschung müssen gut überlegt sein, da oft sind mehrere Werte betroffen, die miteinander in Konflikt stehen können\nDiskussion des Spannungsverhältnisses am Beispiel von drei spezifischer ethischer Kriterien: Autonomie, Wohltätigkeit und Gerechtigkeit\n\n\nHintergrund:\n\nDie Sozialdatenforschung ähnelt klinischen Versuchen und anderen Experimenten am Menschen in ihrer Fähigkeit, Menschen zu schaden, und sollte daher auch als solche reguliert werden\ndie Sozialdatenforschung ähnelt der sonstigen Computerforschung, die sich traditionell auf Methoden, Algorithmen und den Aufbau von Systemen konzentriert, mit minimalen direkten Auswirkungen auf Menschen.\n\nPunkt 2: Schäden, die die üblichen Arten der Sozialdatenforschung ( z. B. die Verletzung der Privatsphäre oder der Anblick verstörender Bilder)verursachen können, oft nicht mit Schäden von klinischen Versuchen gleichzusetzen\nPunkt 3: Datenanalyse beispielsweise erforderlich sein, um wichtige Dienste bereitzustellen, und es sollten Lösungen erwogen werden, die ein Gleichgewicht zwischen Datenschutz und Genauigkeit herstellen (Goroff, 2015)."
+  },
+  {
+    "objectID": "slides/slides-02.html#achtung-der-individuellen-autonomie",
+    "href": "slides/slides-02.html#achtung-der-individuellen-autonomie",
+    "title": "Überblick & Einführung",
+    "section": "Achtung der individuellen Autonomie",
+    "text": "Achtung der individuellen Autonomie\nDiskussion der Informierte Zustimmung als Indikator autonomer Entscheidung\n\n\n\n\n\n\nEinwilligung nach Aufklärung setzt voraus, dass\n\n\n\n\ndie Forscher*Innen den potenziellen Teilnehmenden alle relevanten Informationen offenlegen;\ndie potenziellen Teilnehmenden in der Lage sind, diese Informationen zu bewerten;\ndie potenziellen Teilnehmenden freiwillig entscheiden können, ob sie teilnehmen wollen oder nicht;\ndie Teilnehmenden den Forschernden ihre ausdrückliche Erlaubnis erteilen, häufig in schriftlicher Form; und\ndie Teilnehmende die Möglichkeit haben, ihre Einwilligung jederzeit zurückzuziehen.\n\n\n\n\n\nPotentielle Probleme mit Blick auf DBD\n\nDie Zustimmung von Millionen von Nutzern einzuholen ist nicht praktikabel.\nDie Nutzungsbedingungen sozialer Plattformen stellen möglicherweise keine informierte Zustimmung zur Forschung dar.\nDas öffentliche Teilen von Inhalten im Internet bedeutet nicht unbedingt eine Zustimmung zur Forschung."
+  },
+  {
+    "objectID": "slides/slides-02.html#no-no-yes",
+    "href": "slides/slides-02.html#no-no-yes",
+    "title": "Überblick & Einführung",
+    "section": "No “No” ≠ “Yes”!",
+    "text": "No “No” ≠ “Yes”!\nEthische Erwägungen bei DBD-Forschung\n\nAus öffentlicher Zugänglich- bzw. Verfügbarkeit von Daten leitet sich nicht automatisch ethische Verwertbarkeit ab (boyd & Crawford, 2012; Zimmer, 2010)\n\nVerletzung der Privatsphäre der Nutzer (Goroff, 2015)\nErmöglichung von rassischem, sozioökonomischem oder geschlechtsspezifischem Profiling (Barocas & Selbst, 2016)\n\nNegative Beispiele\n\nFacebook contagion experiment (2012-2014): Feeds von Nutzer*Innen so manipulierten, dass sie je nach den geäußerten Emotionen mehr oder weniger von bestimmten Inhalten enthielten (Kramer et al., 2014)\nEncore-Forschungsprojekt: Messung der Internetzensur auf der ganzen Welt, bei der Webbrowser angewiesen wurden, zu versuchen, sensible Webinhalte ohne das Wissen oder die Zustimmung der Nutzer herunterzuladen (Burnett & Feamster, 2014)\n\n\n\nHintergrund:\n\nEthische Fragen bisher epistemische Bedenken (Verwendung von nicht schlüssigen oder fehlgeleiteten Beweisen), jetzt normativ Bedenken (Folgen der Forschung)\nForschung grundsätzlich in vielen Ländern gesetztlich geregelt\n\nNegativbeispiele:\n\nFacebook contagion experiment: Das Experiment wurde als ein Eingriff kritisiert, der den emotionalen Zustand von ahnungslosen Nutzern beeinflusste, die keine Zustimmung zur Teilnahme an der Studie gegeben hatten (Hutton und Henderson, 2015a).\nEncore-Forschngsprojekt: Menschen in einigen Ländern durch diese Zugriffsversuche möglicherweise gefährdet wurden\n\nFolgende Abschnitte:\n\nzentrales Spannungsverhältnis in der Forschungsethik digitaler Daten dargestellt.\nAnschließend wird die Diskussion spezifischer ethischer Probleme in der Sozialdatenforschung im Hinblick auf drei grundlegende Kriterien gegliedert, die im Belmont-Bericht (Ryan et al., 1978), einem grundlegenden Werk zur Forschungsethik, vorgebracht wurden: Autonomie (Abschnitt 9.2), Wohltätigkeit (Abschnitt 9.3) und Gerechtigkeit (Abschnitt 9.4)."
+  },
+  {
+    "objectID": "slides/slides-02.html#wohltätigkeit-und-unschädlichkeit-als-ziel",
+    "href": "slides/slides-02.html#wohltätigkeit-und-unschädlichkeit-als-ziel",
+    "title": "Überblick & Einführung",
+    "section": "Wohltätigkeit und Unschädlichkeit als Ziel",
+    "text": "Wohltätigkeit und Unschädlichkeit als Ziel\nBewertung von Risken & Nutzen\nHintergrund: Nicht nur Fokus auf den Nutzen der Forschung, sondern auch auf die möglichen Arten von Schäden, die betroffenen Gruppen und die Art und Weise, wie nachteilige Auswirkungen getestet werden können . (Sweeney, 2013)\n\nPotentielle Probleme\n\nDaten über Einzelpersonen können ihnen schaden, wenn sie offengelegt werden.\nForschungsergebnisse können verwendet werden, um Schaden anzurichten.\n“Dual-Use”- und Sekundäranalysen sind in der Sozialdatenforschung immer häufiger anzutreffen.\n\n\nDie Forschung zu sozialen Daten wird mit bestimmten Arten von Schäden in Verbindung gebracht, von denen die Verletzung der Privatsphäre vielleicht die offensichtlichste ist (Zimmer, 2010; Crawford und Finn, 2014).\nBeispiel 1: Einige prominente Beispiele sind die Datenpanne bei Ashley Madison im Jahr 2015, bei der einer Website, die sich als Dating-Netzwerk für betrügerische Ehepartner anpreist, Kontoinformationen (einschließlich der vollständigen Namen der Nutzer) gestohlen und online gestellt wurden (Thomsen, 2015), sowie die jüngsten Datenpannen bei Facebook, bei denen Hunderte Millionen von Datensätzen mit Kommentaren, Likes, Reaktionen, Kontonamen, App-Passwörtern und mehr öffentlich gemacht wurden.\nzu 1: - Stalking, Diskriminierung, Erpressung oder Identitätsdiebstahl (Gross und Acquisti, 2005). - Zu lange Archivierung personenbezogener Daten oder die öffentliche Freigabe schlecht anonymisierter Datensätze kann zu Verletzungen der Privatsphäre führen, da diese Daten mit anderen Quellen kombiniert werden können, um Erkenntnisse über Personen ohne deren Wissen zu gewinnen (Crawford und Finn, 2014; Goroff, 2015; Horvitz und Mulligan, 2015)\nzu 2: Abgesehen von der Tatsache, dass aus sozialen Daten gezogene Rückschlüsse in vielerlei Hinsicht falsch sein können, wie in dieser Studie hervorgehoben wird, können zu präzise Rückschlüsse dazu führen, dass Menschen in immer kleinere Gruppen eingeteilt werden können (Barocas, 2014).\nzu 3: Daten, Instrumente und Schlussfolgerungen, die für einen bestimmten Zweck gewonnen wurden, für einen anderen Zweck verwendet werden (Hovy und Spruit, 2016; Benton et al., 2017)"
+  },
+  {
+    "objectID": "slides/slides-02.html#faire-verteilung-von-risiken-nutzen",
+    "href": "slides/slides-02.html#faire-verteilung-von-risiken-nutzen",
+    "title": "Überblick & Einführung",
+    "section": "Faire Verteilung von Risiken & Nutzen",
+    "text": "Faire Verteilung von Risiken & Nutzen\nRecht & Gerechtigkeit\nHintergrund: Häufig wird unterstellt bzw. angenommen, dass es von Anfang an bekannt, wer durch die Forschung belastet und wer von den Ergebnissen profitieren wird.\n\nPotentielle Probleme\n\nDie digitale Kluft kann das Forschungsdesign beeinflussen (z.B. WEIRD Samples)\nAlgorithmen und Forschungsergebnisse können zu Diskriminierung führen.\nForschungsergebnisse sind möglicherweise nicht allgemein zugänglich.\nNicht alle Interessengruppen werden über die Verwendung von Forschungsergebnissen konsultiert.\n\n\nzu 1: Data divide: mangelnde Verfügbarkeit von hochwertigen Daten über Entwicklungsländer und unterprivilegierte Gemeinschaften (Cinnamon und Schuurman, 2013). WEIRD = White, Educated, Industrialized, Rich, and Democratic\nzu 3: Idealerweise sollten die Menschen Zugang zu den Forschungsergebnissen und Artefakten haben, die aus der Untersuchung ihrer persönlichen Daten entstanden sind (Gross und Acquisti, 2005; Crawford und Finn, 2014).\nzu 4: In die Überlegungen darüber, wie, für wen und wann Forschungsergebnisse umgesetzt werden, sollten diejenigen einbezogen werden, die möglicherweise betroffen sind oder deren Daten verwendet werden (Costanza-Chock, 2018; Design Justice, 2018; Green, 2018)"
+  },
+  {
+    "objectID": "slides/slides-02.html#zwei-trends-drei-fragen-vier-empfehlungen",
+    "href": "slides/slides-02.html#zwei-trends-drei-fragen-vier-empfehlungen",
+    "title": "Überblick & Einführung",
+    "section": "Zwei Trends, Drei Fragen, Vier Empfehlungen",
+    "text": "Zwei Trends, Drei Fragen, Vier Empfehlungen\nZusammenfassung und Ausblick\nTrend 1: Skepsis gegenüber einfachen Antworten\n\n\nWie einstehen die Daten, was enthalten sie tatsächlich und wie sind die Arbeitsdatensätze zusammengestellt?\nWird deutlich, was ausgewertet wird?\nWird die Verwendung von vorhandenen Datensätzen und Modellen des maschinellen Lernens hinterfragt?\n\n\nTrend 2: Wechsel von der Thematisierung zur Adressieung von Bedenken\n\n\nDetaillierte Dokumentation und kritische Prüfung der Datensatz- und Modellerstellung\nDBD-Studien auf verschiedene Plattformen, Themen, Zeitpunkte und Teilpopulationen auszuweiten, um festzustellen, wie sich die Ergebnisse beispielsweise in verschiedenen kulturellen, demografischen und verhaltensbezogenen Kontexten unterscheiden\nTransparenzmechanismen zu schaffen, die es ermöglichen, Online-Plattformen zu überprüfen und Verzerrungen in Daten an der Quelle zu evaluieren\nForschung zu diesen Leitlinien, Standards, Methoden und Protokollen auszuweiten und ihre Übernahme zu fördern.\n\n\n\nSchließlich gibt es angesichts der Komplexität der inhärent kontextabhängigen, anwendungs- und bereichsabhängigen Verzerrungen und Probleme in sozialen Daten und Analysepipelines, die in diesem Papier behandelt werden, keine Einheitslösungen - bei der Bewertung und Bekämpfung von Verzerrungen ist Nuancierung entscheidend."
+  },
+  {
+    "objectID": "slides/slides-02.html#der-weg-bestimmt-das-ergebnis",
+    "href": "slides/slides-02.html#der-weg-bestimmt-das-ergebnis",
+    "title": "Überblick & Einführung",
+    "section": "Der Weg bestimmt das Ergebnis",
+    "text": "Der Weg bestimmt das Ergebnis\nEinfluss der Erhebung auf die Daten(-form) (Davidson et al., 2023)"
+  },
+  {
+    "objectID": "slides/slides-02.html#data-download-packages",
+    "href": "slides/slides-02.html#data-download-packages",
+    "title": "Überblick & Einführung",
+    "section": "Data Download Packages",
+    "text": "Data Download Packages\nBeispiel für Data Donations (Driel et al., 2022)\n\n\n\nGeneral Data Protection Regulation erlaubt die von einer Plattform gespeicherten personenbezogenen Daten in einem strukturierten, allgemein gebräuchlichen und maschienenlesbaren Format (Data Download Package) anzufordern.\nNutzer:innen können Forschenden diese Daten spenden, verbunden mit der Möglichkeit, bestimmte Daten (heraus) zu filtern."
+  },
+  {
+    "objectID": "slides/slides-02.html#screenomics-software",
+    "href": "slides/slides-02.html#screenomics-software",
+    "title": "Überblick & Einführung",
+    "section": "Screenomics software",
+    "text": "Screenomics software\nBeispiel für Tracking (Reeves et al., 2021)\n\n\n\nErfassung: Alle fünf Sekunden, in denen digitale Geräte aktiviert sind, werden Screenshots erstellt, verschlüssel, komprimiert & an einen Forschungsserver übertragen\nVerarbeitung: Screenomics (App) erkennt und segmentiert Text, Gesichter, Logos und Objekte auf den Screenshots"
+  },
+  {
+    "objectID": "slides/slides-02.html#zeeschuimer-plugin",
+    "href": "slides/slides-02.html#zeeschuimer-plugin",
+    "title": "Überblick & Einführung",
+    "section": "Zeeschuimer Plugin",
+    "text": "Zeeschuimer Plugin\nBeispiel für Scraping (Peeters, 2022)\n\n\n\nBrowsererweiterung, die während des Besuchs einer Social-Media-Website Daten über die Elemente sammelt, die in der Weboberfläche einer Plattform zu sehen sind\nDerzeit werden die unter anderem , ,  &  unterstützt\nErgänzung zu 4CAT (Peeters & Hagen, 2022), einem Tool zur Analyse und Verarbeitung von Daten aus Online-Plattformen"
+  },
+  {
+    "objectID": "slides/slides-02.html#and-now-you",
+    "href": "slides/slides-02.html#and-now-you",
+    "title": "Überblick & Einführung",
+    "section": "And now … you!",
+    "text": "And now … you!\nGruppenarbeit (ca. 15 Minuten) mit kurzer Ergebnisvorstellung (ca. 15 Min)\n\n\n\n\n\n\nArbeitsauftrag\n\n\nStellt euch vor, Ihr wollt eine der drei vorgestellten Methoden nutzen, um ein Forschungsprojekt durchzuführen.\n\nWas sind mögliche Biases an der Quelle der Daten, die ihr bei der Methode berücksichtigen müsst?\nWelche ethischen und rechtlichen Fragen ergeben sich aus der Nutzung der Methode?\n\n\n\n\n\n\n\n\n\n\nNächste Schritte\n\n\n\nEs gibt für jede Methode (Data Donation, Tracking & Scraping) eine Gruppe. Ihr könnt selber aussuchen, in welche Gruppe ihr möchtet.\nSchreibt eure Ergebnisse in die dafür bereitgestellet Folienvorlage (auf der nächsten Slide)."
+  },
+  {
+    "objectID": "slides/slides-02.html#please-discuss",
+    "href": "slides/slides-02.html#please-discuss",
+    "title": "Überblick & Einführung",
+    "section": "Please discuss!",
+    "text": "Please discuss!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation euerer Ergebnisse\n\n\n\n\n\n     Data Donations\n\n\n\n\n\n     Tracking\n\n\n\n\n\n     Scraping\n\n\n\n\n−+\n15:00"
+  },
+  {
+    "objectID": "slides/slides-02.html#literatur",
+    "href": "slides/slides-02.html#literatur",
+    "title": "Überblick & Einführung",
+    "section": "Literatur",
+    "text": "Literatur\n\n\nBaeza-Yates, R. A. (2013). Big data or right data.\n\n\nBarocas, S., & Selbst, A. D. (2016). Big Data’s Disparate Impact. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.2477899\n\n\nboyd, danah m., & Crawford, K. (2012). Critical questions for big data: Provocations for a cultural, technological, and scholarly phenomenon. Information, Communication & Society, 15(5), 662–679. https://doi.org/10.1080/1369118X.2012.678878\n\n\nBurnett, S., & Feamster, N. (2014). Encore: Lightweight measurement of web censorship with cross-origin requests. https://doi.org/10.48550/ARXIV.1410.1211\n\n\nCroskerry, P. (2002). Achieving Quality in Clinical Decision Making: Cognitive Strategies and Detection of Bias. Academic Emergency Medicine, 9(11), 1184–1204. https://doi.org/10.1197/aemj.9.11.1184\n\n\nDavidson, B. I., Wischerath, D., Racek, D., Parry, D. A., Godwin, E., Hinds, J., Van Der Linden, D., Roscoe, J. F., Ayravainen, L. E. M., & Cork, A. (2023). Platform-controlled social media APIs threaten open science. https://osf.io/ps32z\n\n\nDriel, I. I. van, Giachanou, A., Pouwels, J. L., Boeschoten, L., Beyens, I., & Valkenburg, P. M. (2022). Promises and Pitfalls of Social Media Data Donations. Communication Methods and Measures, 1–17. https://doi.org/10.1080/19312458.2022.2109608\n\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\n\n\nFlöck, F., & Sen, I. (2022). Digital traces of human behaviour in online platforms  research design and error sources. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meet_the_experts_Digitaltraces_humanbehaviour.pdf\n\n\nFriedman, B., & Nissenbaum, H. (1996). Bias in computer systems. ACM Transactions on Information Systems, 14(3), 330–347. https://doi.org/10.1145/230538.230561\n\n\nGoroff, D. L. (2015). Balancing privacy versus accuracy in research protocols. Science, 347(6221), 479–480. https://doi.org/10.1126/science.aaa3483\n\n\nKramer, A. D. I., Guillory, J. E., & Hancock, J. T. (2014). Experimental evidence of massive-scale emotional contagion through social networks. Proceedings of the National Academy of Sciences, 111(24), 8788–8790. https://doi.org/10.1073/pnas.1320040111\n\n\nNaveed, N., Gottron, T., Kunegis, J., & Alhadi, A. C. (2011). the 20th ACM international conference. 183. https://doi.org/10.1145/2063576.2063607\n\n\nOlteanu, A., Castillo, C., Diaz, F., & Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2, 13. https://doi.org/10.3389/fdata.2019.00013\n\n\nPeeters, S. (2022). Zeeschuimer. Zenodo. https://zenodo.org/record/6826877\n\n\nPeeters, S., & Hagen, S. (2022). The 4CAT Capture and Analysis Toolkit: A Modular Tool for Transparent and Traceable Social Media Research. Computational Communication Research, 4(2), 571–589. https://doi.org/10.5117/ccr2022.2.007.hage\n\n\nReeves, B., Ram, N., Robinson, T. N., Cummings, J. J., Giles, C. L., Pan, J., Chiatti, A., Cho, M., Roehrick, K., Yang, X., Gagneja, A., Brinberg, M., Muise, D., Lu, Y., Luo, M., Fitzgerald, A., & Yeykelis, L. (2021). Screenomics : A Framework to Capture and Analyze Personal Life Experiences and the Ways that Technology Shapes Them. HumanComputer Interaction, 36(2), 150–201. https://doi.org/10.1080/07370024.2019.1578652\n\n\nSalganik, M. J. (2018). Bit by bit: Social research in the digital age. Princeton University Press.\n\n\nSweeney, L. (2013). Discrimination in Online Ad Delivery: Google ads, black names and white names, racial discrimination, and click advertising. Queue, 11(3), 10–29. https://doi.org/10.1145/2460276.2460278\n\n\nUlloa, R. (2021). Introduction to online data acquisition. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf\n\n\nZimmer, M. (2010). “But the data is already public”: on the ethics of research in Facebook. Ethics and Information Technology, 12(4), 313–325. https://doi.org/10.1007/s10676-010-9227-5"
   },
   {
     "objectID": "computing/computing-useful_links.html",
@@ -246,7 +673,7 @@
     "href": "course-assignments.html",
     "title": "Assignments",
     "section": "",
-    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Research Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
+    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Implementation Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
     "crumbs": [
       "Course information",
       "Assignments"
@@ -257,7 +684,7 @@
     "href": "course-assignments.html#sec-portfolio",
     "title": "Assignments",
     "section": "",
-    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Research Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
+    "text": "In order to be able to adapt the assignments flexibly to the requirements of the course (e.g. different number of students, projects changing from semester to semester, or multiple projects in one semester running in parallel), this seminar uses a portfolio assessment. Even though the seminar aims at testing new forms of assignments due to its practical and empirical orientation, traditional assignments such as presentations or written reports will still be an integral part but will be expanded and adapted to reflect the specific challenges of working with digital behavioral data.\nAssignments can be group (👥) or individual (👤) work and are marked as such. The expected group size is 2-4 persons.\nThe following list contains an overview of the assignments to be completed in the course:\n\n\nBreakdown of the final grade\n\n\nAssignment\n100 Pts.\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n\n\n👤 Participation: Pre-Test\n20 Pts.\n\n\n👥 Written assignment: Implementation Report\n30 Pts.\n\n\n\n\n\n\n\n\n\nCautionImportant Disclaimer\n\n\n\n\nThe final structure of the course (e.g. which and how many small projects) will be discussed and determined together with the students in the first session. Accordingly, it is possible that the portfolio or the assignments it contains may be adjusted accordingly (e.g., the scope, content, or deadlines could change, or entire assignments might be omitted).",
     "crumbs": [
       "Course information",
       "Assignments"
@@ -267,8 +694,8 @@
     "objectID": "course-assignments.html#sec-project-sketch",
     "href": "course-assignments.html#sec-project-sketch",
     "title": "Assignments",
-    "section": "👥 Write Research Project Sketch (40 Pts.)",
-    "text": "👥 Write Research Project Sketch (40 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Write a Research Project Sketch (including short Questionaire Sketch) as a group.\n📂 Submission format: PDF document (1,000 to 1,500 words, not including Abstract & Appendix with questionaire sketch)\n💡 Evaluation: Based on theoretical grounding, methodological clarity, and survey design quality.\n👥 Group size: 2-3 persons\n📅 Deadline: 18.12.2025, 23:59\n💬 Feedback option: You can book one individual feedback session (max. 30 minutes) in the last two weeks of November.\n\n\n\nThe goal of the Research Project Sketch is, for each group, to establish a solid foundation for a (potential) future implementation of the research project and to prepare for the block sessions in January. Based on the provided literature, each group is expected to design a research project that could be conducted as a (pretest) survey within the seminar.\nPlease choose the method, survey design, and topic according to your group’s interests and experience. Be selective about what you include: the aim is to write a cohesive and well-structured narrative that demonstrates a comprehensive and coherent (methodological) project plan, rather than a fundamental theoretical elaboration of the topic. The overall length of the written report should be between 1,000 and 1,500 words per group (excluding abstract & appendix).\nEach group may book one individual feedback session (max. 30 minutes) during the last two weeks of November. In the session, you can discuss your ideas, ask questions about the assignment, and receive feedback on your draft. Not all group members need to attend, but at least one representative should be present. The feedback session can be held in person or via Zoom.\n\n\n\nIntegration of a (Short) Questionaire Sketch\nAs an important part of your project sketch, please include a Questionnaire Sketch that specifies and operationalizes the central aspects of your research project. The questionnaire should take the form of a short survey consisting of no more than six questions or queries (e.g., image upload), designed to be completed within 1-2 minutes. You do not need to implement the survey technically; a written description is sufficient. Focus on using existing validated scales or items from the literature where possible.\nThe purpose of the questionnaire is to collect the key data required to answer your research question. Focus exclusively on the essential aspects of your study (e.g., exclude demographic questions). Attach the complete questionnaire as an appendix to your written report. It does not count toward the 1,500-word limit of the project sketch.\nPlease provide complete details of your survey design, including: - the exact wording of all questions, - the response options, - any relevant scales or measurements, and - appropriate citations for established items or scales, if applicable.\n\n\nRecommended structure and components\n\nTitle and Abstract\n\nWorking title of the project\nShort summary (about 100 to 200 words):\n\nWhat is the project about?\nWhat is its goal?\nWhat methods will be used?\nWhy is it relevant?\n\n\n\n\nTheoretical Background and Problem Statement:\n\nOverview of the research field, current debates, and why the topic matters\nKey theoretical concept(s) and/or model(s), and their relation to existing literature\nTheoretical and empirical background motivating the study\nClear research questions anchored in theory, with expected implications (and, if possible, explicit testable assumptions or hypotheses)\n\n\n\nMethodological Approach\n\nResearch design (qualitative, quantitative, or mixed methods)\nData basis (e.g., text corpus, interviews, surveys, experiments)\nAnalytical methods (e.g., content analysis, multilevel analysis, (visual) topic modeling, etc.)\nBrief outline of the workflow (data collection, processing, analysis, interpretation)\n\n\n\nQuestionaire Sketch\n\nDesign a short survey (max. 6 questions/items and 1-2 minutes) to collect key data for your project.\nFocus on the core aspects needed to answer your research question (exclude demographics).\nProvide complete details on question wording, response options, and any relevant scales or measures.\n\n\n\n\nEvaluation Criteria\nThe quality of the Research Project Sketch will be evaluated based on the following criteria:\n\n\n\nTotal\n30 Pts.\n\n\n\n\nTheoretic Background and Problem Statement\n5 Pts.\n\n\nMethodological Approach\n10 Pts.\n\n\nShort-Survey Design\n10 Pts.\n\n\nOrganization + formatting\n5 Pts.",
+    "section": "👥 Write Research Project Sketch (30 Pts.)",
+    "text": "👥 Write Research Project Sketch (30 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Write a Research Project Sketch (including short Questionaire Sketch) as a group.\n📂 Submission format: PDF document (1,000 to 1,500 words, not including Abstract & Appendix with questionaire sketch)\n💡 Evaluation: Based on theoretical grounding, methodological clarity, and survey design quality.\n👥 Group size: 2-3 persons\n📅 Deadline: 18.12.2025, 23:59\n💬 Feedback option: You can book one individual feedback session (max. 30 minutes) in the last two weeks of November.\n\n\n\nThe goal of the Research Project Sketch is, for each group, to establish a solid foundation for a (potential) future implementation of the research project and to prepare for the block sessions in January. Based on the provided literature, each group is expected to design a research project that could be conducted as a (pretest) survey within the seminar.\nPlease choose the method, survey design, and topic according to your group’s interests and experience. Be selective about what you include: the aim is to write a cohesive and well-structured narrative that demonstrates a comprehensive and coherent (methodological) project plan, rather than a fundamental theoretical elaboration of the topic. The overall length of the written report should be between 1,000 and 1,500 words per group (excluding abstract & appendix).\nEach group may book one individual feedback session (max. 30 minutes) during the last two weeks of November. In the session, you can discuss your ideas, ask questions about the assignment, and receive feedback on your draft. Not all group members need to attend, but at least one representative should be present. The feedback session can be held in person or via Zoom.\n\n\n\nIntegration of a (Short) Questionaire Sketch\nAs an important part of your project sketch, please include a Questionnaire Sketch that specifies and operationalizes the central aspects of your research project. The questionnaire should take the form of a short survey consisting of no more than six questions or queries (e.g., image upload), designed to be completed within 1-2 minutes. You do not need to implement the survey technically; a written description is sufficient. Focus on using existing validated scales or items from the literature where possible.\nThe purpose of the questionnaire is to collect the key data required to answer your research question. Focus exclusively on the essential aspects of your study (e.g., exclude demographic questions). Attach the complete questionnaire as an appendix to your written report. It does not count toward the 1,500-word limit of the project sketch.\nPlease provide complete details of your survey design, including: - the exact wording of all questions, - the response options, - any relevant scales or measurements, and - appropriate citations for established items or scales, if applicable.\n\n\nRecommended structure and components\n\nTitle and Abstract\n\nWorking title of the project\nShort summary (about 100 to 200 words):\n\nWhat is the project about?\nWhat is its goal?\nWhat methods will be used?\nWhy is it relevant?\n\n\n\n\nTheoretical Background and Problem Statement:\n\nOverview of the research field, current debates, and why the topic matters\nKey theoretical concept(s) and/or model(s), and their relation to existing literature\nTheoretical and empirical background motivating the study\nClear research questions anchored in theory, with expected implications (and, if possible, explicit testable assumptions or hypotheses)\n\n\n\nMethodological Approach\n\nResearch design (qualitative, quantitative, or mixed methods)\nData basis (e.g., text corpus, interviews, surveys, experiments)\nAnalytical methods (e.g., content analysis, multilevel analysis, (visual) topic modeling, etc.)\nBrief outline of the workflow (data collection, processing, analysis, interpretation)\n\n\n\nQuestionaire Sketch\n\nDesign a short survey (max. 6 questions/items and 1-2 minutes) to collect key data for your project.\nFocus on the core aspects needed to answer your research question (exclude demographics).\nProvide complete details on question wording, response options, and any relevant scales or measures.\n\n\n\n\nEvaluation Criteria\nThe quality of the Research Project Sketch will be evaluated based on the following criteria:\n\n\n\nTotal\n30 Pts.\n\n\n\n\nTheoretic Background and Problem Statement\n5 Pts.\n\n\nMethodological Approach\n10 Pts.\n\n\nShort-Survey Design\n10 Pts.\n\n\nOrganization + formatting\n5 Pts.",
     "crumbs": [
       "Course information",
       "Assignments"
@@ -289,8 +716,8 @@
     "objectID": "course-assignments.html#sec-participation",
     "href": "course-assignments.html#sec-participation",
     "title": "Assignments",
-    "section": "👤 Participation (20 Pts..)",
-    "text": "👤 Participation (20 Pts..)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Participate in the pretest phase of the joint short survey.\n📂 Submission format: Active participation in the survey pretest\n💡 Evaluation: “Pass”, based on minimum participation frequency.\n\n\n\nIn this seminar, the research projects and questionnaires developed by the groups will be tested in practice through a pretest (or possibly a short pilot study). The goal is to create a “master” short survey that integrates elements from all group questionnaires. Several test runs may be necessary to ensure quality and functionality.\nThe pretest serves two main purposes: 1. Testing functionality, clarity, and effectiveness: The pretest allows students to test their developed questionnaire in a realistic environment, identify potential problems, and make improvements. 2. Generating preliminary data: Initial data can be used for exploratory analysis, helping students assess the feasibility of their research and analytical design and draw first conclusions.\nParticipation in the pretest is mandatory for all students. Further details—such as the exact procedure, schedule, and mode of participation—will be communicated in due time before the pretest.",
+    "section": "👤 Participation (20 Pts.)",
+    "text": "👤 Participation (20 Pts.)\n\n\n\n\n\n\nImportantTL;DR\n\n\n\n\n✍️ Task: Participate in the pretest phase of the joint short survey.\n📂 Submission format: Active participation in the survey pretest\n💡 Evaluation: “Pass”, based on minimum participation frequency.\n\n\n\nIn this seminar, the research projects and questionnaires developed by the groups will be tested in practice through a pretest (or possibly a short pilot study). The goal is to create a “master” short survey that integrates elements from all group questionnaires. Several test runs may be necessary to ensure quality and functionality.\nThe pretest serves two main purposes:\n1. **Testing functionality, clarity, and effectiveness**: The pretest allows students to test their developed questionnaire in a realistic environment, identify potential problems, and make improvements. \n2. **Generating preliminary data:** Initial data can be used for exploratory analysis, helping students assess the feasibility of their research and analytical design and draw first conclusions.\nParticipation in the pretest is mandatory for all students. Further details—such as the exact procedure, schedule, and mode of participation—will be communicated in due time before the pretest.",
     "crumbs": [
       "Course information",
       "Assignments"
