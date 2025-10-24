@@ -32,7 +32,7 @@ schedule_json <- '[
     },
     {
         "Session": "4",
-        "Datum": 30.01.2026",
+        "Datum": "30.01.2026",
         "Time": "09:00 - 16:00",
         "Topic": "📚 From Pretest to Analysis"
     },
