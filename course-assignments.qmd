@@ -140,7 +140,7 @@ The peer review will be graded on the extent to which it comprehensively and con
     -   *(Optional) Any further comments or feedback?* -->
 ```
 
-## 👤 Participation (20 Pts..) {#sec-participation}
+## 👤 Participation (20 Pts.) {#sec-participation}
 
 ::: callout-important
 ### TL;DR
