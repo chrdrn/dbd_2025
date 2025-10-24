@@ -196,7 +196,7 @@ Kommunikation, Prüfungsleistungen, Ablauf
 #| echo: false 
 
 schedule %>%
-    gt::gt() %>%
+    gt::gt(id = "schedule") %>%
     gt::fmt_markdown(columns = c(Datum, Topic)) %>% 
     gtExtras::gt_theme_538() %>% 
     gt::tab_options(
