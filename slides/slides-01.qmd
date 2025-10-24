@@ -214,15 +214,13 @@ schedule %>%
 
 ## StudOn & Github
 
-<!-- FIXME Add forum (link) -->
-
 #### Materialien und Kommunikation im Kurs
 
 -   Informationen zu **Kurs** ([*Semesterplan*](https://chrdrn.github.io/dbd_2025/)*,* [*Syllabus*](https://chrdrn.github.io/dbd_2025/course-syllabus.html)*, [Prüfungleistungen](https://chrdrn.github.io/dbd_2025/course-assignments.html) etc.*) & den einzelnen **Sitzungen** (*Slides, Literatur und ggf. Übungsmaterial*) finden sich auf der [Github-Kursseite](https://chrdrn.github.io/dbd_2025)
 -   Ausgewählte Literatur sowie Datensätze werden auf [StudOn](https://www.studon.fau.de/studon/go/crs/6572953) bereitgestellt
 -   Für die **Kommunikation gilt**
     -   **Ankündigungen** werden über den [StudOn-Verteiler](https://www.studon.fau.de/studon/go/crs/6572953) versendet
-    -   für **Fragen** zum Kurs nutzten Sie bitte das [🚧 Forum](https://www.studon.fau.de/studon/go/crs/6572953)
+    -   für **Fragen** zum Kurs nutzten Sie bitte das [Forum](https://www.studon.fau.de/studon/go/frm/6678281)
     -   Kontakt über [E-Mail](mailto:christoph.adrian@fau.de?subject=DBD) bitte nur bei **persönlichen Anliegen**, die nicht für die Gruppe relvevant sind.
 
 ## What is expected
