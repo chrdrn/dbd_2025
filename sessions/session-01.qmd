@@ -1,0 +1,107 @@
+---
+title: "Session 1"
+subtitle: "Kick-Off"
+bibliography: references_sessions.bib
+csl: ../apa-cv.csl 
+suppress-bibliography: true
+link-citations: false
+citations-hover: false
+---
+
+::: callout-important
+Please make sure that you answered the survey send to you by (StudOn) mail.
+:::
+
+## Prepare
+
+✍️ Fill out the short survey before the 22.10.2025 (see ![](https://www.studon.fau.de/favicon.ico){width="16"} [StudOn](https://www.studon.fau.de/studon/go/crs/6572953) for Link)
+
+📖 Read the [syllabus](/course-syllabus.html)
+
+## Participate
+
+🖥️ [Session 01](/slides/slides-01.html)
+
+## Literature
+
+##### with focus on advertising
+
+-   [@franke2017]
+
+-   [@nikulina2024]
+
+-   [@wilson2023]
+
+##### with focus on analysis
+
+-   [@araujo2020]
+
+-   [@hoffmann2020]
+
+-   [@lokmanoglu2025]
+
+-   [@peng2024]
+
+##### with focus on digital behavioral data
+
+-   [@keusch2021]
+
+-   [@olteanu2019]
+
+##### with focus on effects
+
+-   [@alonsodossantos2017]
+
+-   [@barry2002]
+
+-   [@bast2025]
+
+-   [@boomgaarden2016]
+
+-   [@casas2019]
+
+-   [@geise2021]
+
+-   [@krause2018]
+
+-   [@powell2015]
+
+##### with focus on images
+
+-   [@joo2022]
+
+-   [@webbwilliams2022]
+
+-   [@webbwilliams2020]
+
+##### with focus on survey methods
+
+-   [@schnauber-stockmann2020]
+
+-   
+
+-   [@masur2019]
+
+##### with focus on visual communication
+
+-   [@geise2017]
+
+##### with focus on visibility
+
+-   [@stehle2024]
+
+##### other interesting sources
+
+-   [@bodden2024]
+
+-   [@mccosker2021]
+
+-   [@michel2018]
+
+-   [@reershemius2019]
+
+<br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/index.html "Course schedule") ⏎
+:::
