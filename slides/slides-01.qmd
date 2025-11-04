@@ -254,7 +254,7 @@ schedule %>%
 -   **Arbeitsauftrag:**
     -   Jede Gruppe (2-4 Personen) erstellt eine methodische Forschungsprojektskizze (1.000–1.500 Wörter), die in den Blockterminen als Ausgangspunkt für die Umsetzung eines Projektes dient (fokussiert auf kohärentes methodisches Design, nicht auf umfassende Theorie).
     -   Elementarer Bestandteil: Erstellung eines Kurzfragebogenentwurfs (max. 6 Fragen, 1–2 Minuten)
--   **Abgabefrist:** **15.12.2025, 23:59 Uhr** als PDF an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
+-   **Abgabefrist:** **18.12.2025, 23:59 Uhr** als PDF an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
 -   **Besonderheit:** Optionales Feedbackgespräch (max 30 min.) für jede Gruppe in den letzten beiden Novemberwochen
 
 ## Feedback geben (lernen)
@@ -298,7 +298,7 @@ schedule %>%
 **Bis zur ersten Blocksitzung:**
 
 -   **Feedbackgespräch zum Research Project Sketch** in den letzten beiden Novemberwochen (optional)
--   **Research Project Sketch (30 Pkt.)** bis 15.12.2025
+-   **Research Project Sketch (30 Pkt.)** bis 18.12.2025
 -   **Peer Review (20 Pkt.)** bis 05.01.2026
 -   Einarbeitung in die **R-Tutorials**
 :::
