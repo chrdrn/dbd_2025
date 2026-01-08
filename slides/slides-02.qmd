@@ -42,7 +42,7 @@ source(here("slides/schedule.R"))
 
 ## Semesterplan
 
-```{r table-schedule}
+```{r}
 #| label: table-schedule-semester
 #| echo: false 
 
@@ -63,24 +63,69 @@ schedule %>%
     )
 ```
 
-## Status der Assignments
+## Half way there!
 
-#### Überblick über die Bewertungskriterien
+#### Überblick über eure bisherigen Assigments
 
-| Assignment | Punkte | Deadline | Status |
-|-------------------|------------------|------------------|------------------|
-| [👥 Written assignment: Research Project Sketch](chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch) | 30 Pts. | 18.12.2026 | ✅ |
-| [👤 Peer Review: Research Project Sketch](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review) | 20 Pts. | 05.01.2026 | ✅ |
-| [👤 Participation: Pre-Test](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review) | 20 Pts. | 01.2026 | 🏗️ |
-| [👥 Written assignment: Implementation Report](https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation) | 30 Pts. | 28.02.2026 | ❓ |
+```{r}
+#| label: table-assignments
+#| echo: false
+
+assignments_json <- '[
+    {
+        "Assignment":"👥 Written assignment: Research Project Sketch",
+        "Punkte":"30 Pts.",
+        "Deadline":"18.12.2026",
+        "Status":"✅",
+        "Link":"https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch"
+    },
+    {
+        "Assignment":"👤 Peer Review: Research Project Sketch",
+        "Punkte":"20 Pts.",
+        "Deadline":"05.01.2026",
+        "Status":"✅",
+        "Link":"https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review"
+    },
+    {
+        "Assignment":"👤 Participation: Pre-Test",
+        "Punkte":"20 Pts.",
+        "Deadline":"01.2026",
+        "Status":"🏗️",
+        "Link":"https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review"
+    },
+    {
+        "Assignment":"👥 Written assignment: Implementation Report",
+        "Punkte":"30 Pts.",
+        "Deadline":"28.02.2026",
+        "Status":"❓",
+        "Link":"https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation"
+    }
+]'
+
+assignments <- jsonlite::fromJSON(assignments_json) %>% tibble::as_tibble()
+
+assignments %>% 
+    dplyr::mutate(
+        Assignment = paste0("[", Assignment, "](", Link, ")")
+    ) %>% 
+    dplyr::select(-Link) %>% 
+    gt::gt(id = "assignments") %>% 
+    gt::fmt_markdown(columns = Assignment) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(table.width = gt::pct(90), table.font.size = "20px")
+```
 
 ## Kurze Rückfragen
 
 #### Fragen zu euren Erfahrungen bei zu den bisherigen Assignments
 
--   Wie waren eure Erfahrungen bei der Erstellung des Research Project Sketch?
--   Wie war der Prozess des Peer Reviews (Feedback geben & erhalten)?
--   Wie ist der akutuelle Stand der R-Kenntnisse?
+-   Wie waren eure **Erfahrungen bei der Erstellung des Research Project Sketch**?
+
+-   Wie war der **Prozess des Peer Reviews** (Feedback geben & erhalten)?
+
+-   Wie ist der akutuelle **Stand der R-Kenntnisse**?
+
+-   Gibt es Wünsche zu **Input** über **bestimmten Analyseverfahren**?
 
 ## Heutige Agenda
 
@@ -118,18 +163,13 @@ block_schedule_json <- '[
     },
     {
         "Slot": "3",
-        "Zeit": "13:45 - 15:15",
-        "Programmpunkt": "Hands-On: Fragebogen"
-    },
-    {
-        "Slot": "",
-        "Zeit": "15:15 - 15:30",
-        "Programmpunkt": "Pause"
+        "Zeit": "13:45 - 15:45",
+        "Programmpunkt": "[Hands-On: Fragebogen](#slot3)"
     },
     {
         "Slot": "4",
-        "Zeit": "15:30 - 16:00",
-        "Programmpunkt": "Abschluss & Ausblick"
+        "Zeit": "15:45 - 16:00",
+        "Programmpunkt": "[Abschluss & Ausblick](#slot4)"
     }
 ]'
 
@@ -151,16 +191,6 @@ block_schedule %>%
     #     target_col = Topic       
     # )
 ```
-
-<!-- TODO Tabelle überarbeiten -->
-
-# Agenda {background-image="img/slide_bg-agenda.png"}
-
-1.  [Begrüßung & Koordination](#intro)
-2.  [Organisation & Koordination](#organisation-koordination)
-3.  [Die Stärken von DBD](#dbd-strengths)
-4.  [Herausforderungen von DBD](#dbd-challenges)
-5.  [👥 Group activity: Wie kommen wir an DBD?](group-activity)
 
 # Research Sketches im Fokus {#slot1 background-image="img/slide_bg-section.png"}
 
@@ -184,59 +214,59 @@ Vorstellung, Fragen & Diskussion
 
 #### Arbeitsauftrag (20 Minuten): Erstellt einen Elevator Pitch für euer Projekt
 
+<br>
+
 ::: callout-caution
-#### Arbeitsauftrag
+##### Arbeitsauftrag
 
 In euren Gruppen ...
 
--   erstellt einen Kurzpräsentation (max. 4 Folien, 5–8 Minuten), die folgende Fragen beantwortet:
-    -   Was untersucht ihr und warum ist das relevant? (1 Folie)
-    -   Wie wollt ihr das untersuchen? (1–2 Folien)
-    -   Welche Herausforderungen seht ihr und wo braucht ihr Feedback? (1 Folie)
--   Bitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie
+-   erstellt einen **Kurzpräsentation (max. 4 Folien, 5–8 Minuten)**, die folgende Fragen beantwortet:
+    -   **Was untersucht** ihr und warum ist das relevant? (1 Folie)
+    -   **Wie** wollt ihr das **untersuchen**? (1–2 Folien)
+    -   Welche **Herausforderungen** seht ihr und wo braucht ihr **Feedback**? (1 Folie)
+-   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
 :::
 
-Für Folien: - Skizziert kurze eure zentrale Forschungsfrage und begründet die Relevanz (1 Folie) - Beschreibt kurz euer Forschungsdesign (Hauptvarialben, Zielpopulation) und zentrale methodische Aspekte (Methode, Desgin) (1–2 Folien) - Identifiziert zentrale Herausforderungen und formuliert 1–3 konkrete Diskussionspunkte, zu denen ihr Feedback möchtet (1 Folie)
+::: callout-note
+##### Folienvorlage verwenden
+
+-   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
+-   Einfacher Zugriff durch "Integration" in Slides
+:::
 
 ## Get started!
 
 #### Bitte nutzt die jeweilige Folienvorlage für die Dokumentation euerer Ergebnisse
 
-<!-- TODO Überarbeiten -->
-
-<!-- TODO: Google Slides Vorlage verlinken -->
-
-<!-- TODO: Timer einfügen -->
-
 <br>
 
 :::::::::: columns
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/qvgky qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe A](https://t1p.de/qvgky) <!-- Deaktivierungslink: https://t1p.de/del.3umyalzazeptxikag1g6 -->
+{{< qrcode https://t1p.de/k5dvf qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe 'Ansprachformen im Alltag'](https://t1p.de/k5dvf)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/690up qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe B](https://t1p.de/690up) <!-- Deaktivierungslink: https://t1p.de/del.46q8cp8lhqkoiv7pyo4n -->
+{{< qrcode https://t1p.de/to06f qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe 'Out-of-home recall'](https://t1p.de/to06f)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/4wpub qr1 width=150 height=150 colorDark='#007de5' >}} [Gruppe C](https://t1p.de/4wpub) <!-- Deaktivierungslink: https://t1p.de/del.g0xurmyju4hz2vrdawy1 -->
+{{< qrcode https://t1p.de/0qo3m qr1 width=150 height=150 colorDark='#007de5' >}} [Gruppe "Informelle visuelle Kommunikation"](https://t1p.de/0qo3m)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/ugv4u qr2 width=150 height=150 colorDark='#0094de' >}} [Gruppe D](https://t1p.de/ugv4u) <!-- Deaktivierungslink: https://t1p.de/del.dptlfmqtpeg1a73oajbn -->
+{{< qrcode https://t1p.de/b68k4 qr2 width=150 height=150 colorDark='#0094de' >}} [Gruppe D "Sticky Politics"](https://t1p.de/b68k4)
 :::
 ::::::::::
-
 
 ```{r}
 #| label: countdown-pitch
@@ -264,7 +294,6 @@ countdown(
     bottom = 0)
 ```
 
-
 # Fragebogen im Fokus {#slot2 background-image="img/slide_bg-section.png"}
 
 Statusupdate zu den Tools
@@ -273,10 +302,10 @@ Statusupdate zu den Tools
 
 #### Update zu den Herausforderungen der praktischen Umsetzung
 
--   Datenschutz (DSGVO) als Endgegner
-    -   Besondere Herausforderung bei der Nutzung von Bildern durch Berücksichtigung von Persönlichkeitsrechten dritter Personen
-    -   Konsequenz: Umfragen im Seminar nur als Pre-Test/Proof of Concept, aber keine koordinierten Umfrage
--   Einsatz von klassischen Umfragesoftware, keine Nutzung von Apps
+-   **Datenschutz (DSGVO) als Endgegner**
+    -   Besondere Herausforderung bei der Nutzung von Bildern durch Berücksichtigung von **Persönlichkeitsrechten dritter Personen**
+    -   Konsequenz: Umfragen im Seminar nur als **Pre-Test/Proof of Concept**, aber keine koordinierten Umfrage
+-   Einsatz von **klassischen Umfragesoftware, keine** Nutzung von **Apps** (für Befragung)
     -   Apps mit zu eingeschränkten Funktionen oder zu "teuer" (weil eigene Entwicklung/Programmierung notwendig)
 
 ## Toolbox statt nur eines Tools?
@@ -287,54 +316,120 @@ Statusupdate zu den Tools
 
 -   **SoSci Survey (kostenlos für akademische Zwecke):** flexible, DSGVO-konforme Online-Umfragesoftware aus Deutschland, mit der sich anspruchsvolle wissenschaftliche und kommerzielle Befragungen erstellen, durchführen und auswerten lassen.
 
+-   **ntfy.sh (kostenlos/open-source):** einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien
+
 ## SoSci Suvery als Basis
 
 #### Nutzung von SoSci Survey als Grundlage für die Umfrage(n)
 
--   Bei der Verwendung von SoSci Survey überwiegen die Vorteile, speziell mit Blick auf die potentielle Weiterverwendung für die Masterarbeit:
+-   Bei der Verwendung von **SoSci Survey überwiegen die Vorteile**, speziell mit Blick auf die potentielle Weiterverwendung für die Masterarbeit:
     -   Einfacher Zugang (kostenlos für akademische Zwecke)
     -   Umfangreiche Dokumentation & Tutorials
     -   Große Community (Austausch & Support)
     -   Integration mit R (Datenexport & -analyse)
--   Aber: Komplizierte ESM-Feldsteuerung (dort ggf. eines der anderen Tools nutzen)
+-   Aber: Komplizierte Feldsteuerung (dort ggf. eines der anderen Tools nutzen)
+
+## ntfy me!
+
+#### ntfy.sh als Workaround
+
+-   Nutzung von **ntfy.sh** als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien
+-   Open-Source, einfach zu bedienen und flexibel anpassbar
+-   Skriptbasiertes Scheduling (via Server)
 
 ## Sneak Preview
 
 #### Vorstellung des aktuellen Standes der Umfrage
 
--   DBD-Template für Umfrage, bestehend aus zwei Items
+<!-- TODO: Add Screenshot here -->
 
+<!-- TODO: Add Link to Pretest here -->
+
+-   DBD-Template für Umfrage, bestehend aus zwei Items
     -   Fotoaufnahme
     -   GPS-Location
 
--   Link zum Pretest
+## Kurze Vorstellung des Backends
+
+#### Vorstellung des SoSci Survey Backends
+
+<!-- TODO: Screenshot & Link zum Backend -->
 
 ## 💬 Let's discuss
 
-#### Diskussion des weiteren Vorgehens 
+#### Vorschlag zum weiteren Vorgehen
 
--   Nutzung des SoSci Survey Templates für die Erstellung eigener Kurzfragebögen
--   Gemeinsame Anpassung des Templates an die jeweiligen Forschungsfragen und -designs
--   Erstellung und Testen der Fragebögen in Kleingruppen
--   Vorstellung und Finalisierung in der nächsten Sitzung
+-   **Jede Gruppe** erstellt ihre **eigene Umfrage** auf Basis Ihres Fragebogens
+    -   Nutzung des **SoSci Survey Templates** als Grundlage und Erweiterung um eigene Fragen
+    -   **Überarbeitung, Testing & Feedback** im nächsten **Zeitslot**
+    -   **Erfahrungsbericht und Finalisierung** in nächster Blocksitzung
+-   Frage zum **Studien-Monitoring**:
+    -   Serienmail vs. notify.sh?
+    -   Eigenständig oder "zentral"?g
 
 # Lunch Break {#break2 background-image="img/slide_bg-break_lunch.png"}
 
 60 Minuten Mittagspause
 
-
 # Hands-on: Arbeit am Fragebogen {#slot3 background-image="img/slide_bg-section.png"}
 
-Tools & Templates
+Arbeiten mit SoSci Survey
 
-## 💻 Arbeitsauftrag
-#### Arbeitsauftrag (60 Minuten): Erstellt euren Fragebogen
+## 💻 Hands-on Zeit!
 
-## Feedback
-#### Feedback & Diskussion (30 Minuten): Vorstellung eurer Fragebögen
+#### Arbeitsauftrag (90 Minuten): Arbeitet an eurem Fragebogen
+
+::: callout-caution
+##### Arbeitsauftrag
+
+In euren Gruppen ...
+
+-   arbeitet die [Checkliste für die Erstellung] ab
+-   passt den **Fragebogen** **an euer (überarbeitetes) Forschungsdesign** an
+-   denkt über den **Schedule für die Versendung der Kurzfragebögen** nach
+-   **testet** euren Fragebogen (Pretest-Link)
+:::
+
+::: callout-note
+##### Währenddessen: Feedback
+
+-   Sucht das Gespräch zu anderen Gruppen und **gebt euch gegenseitig Hilfe und Feedback**
+-   Ich bin während der gesamten Zeit für **Fragen und Unterstützung** verfügbar
+-   Ich wandere von Gruppe zu Gruppe, um **Feedback zu geben** und **Fragen zu beantworten**
+:::
 
 
-# Time for questions {background-image="img/slide_bg-question.png"}
+## Erstellung einer eigenen Befragung
+
+#### Checkliste für die Erstellung
+
+-   [ ] Erstellung eines Accounts
+-   [ ] Download des DBD-Templates von StudOn
+-   [ ] Neues (kostenloses) Befragungsprojekt
+-   [ ] *Befragungsprojekt hochladen (XML-Datei)*
+-   [ ] *Projektverzeichnis/-informationen* anpassen/individualisieren
+-   [ ] *Fragebogen* anpassen/individualisieren
+
+::: notes
+-   "Ich forsche im Rahmen eines Studiums oder einer Tätigkeit an einer Schule oder Hochschule."
+-   "Nein, die individuelle Zuordnung ist ausgeschlossen."
+-   "Ein Unternehmen unterstützt die Studie, erhält dafür aber keine Gegenleistung."
+-   "Die Ergebnisse werden als Seminararbeit oder Semesterarbeit abgegeben."
+-   "Nein"
+:::
+
+
+# Time for questions {#slot4 background-image="img/slide_bg-question.png"}
+
+## Until we see us again
+
+#### Arbeitsaufträge für die nächste Sitzung
+
+-   **Finalisiert euren Fragebogen** basierend auf dem heutigen Feedback
+-   **Finalisiert euer Forschungsdesign** (insb. Schedule für Kurzfragebögen)
+-   Optional, aber sehr empfohlen: **Testet euren Fragebogen**!
+    -   Nutzt den Pretest-Link, um euren Fragebogen zu testen
+    -   Sammelt eigene Erfahrung in der Anwendung!
 
 # Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
 
@@ -342,7 +437,3 @@ Tools & Templates
 
 ::: {#refs}
 :::
-
-
-# Ergänzungen
-- Arbeitsauftrag für nächste Sitzung klar definieren
