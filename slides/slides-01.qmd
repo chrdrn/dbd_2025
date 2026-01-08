@@ -1,7 +1,7 @@
 ---
 title: "Kick-Off"
 subtitle: "Session 01"
-date: 23 10 2024
+date: 24 10 2025
 date-format: "DD.MM.YYYY"
 bibliography: references_slides.bib
 ---
