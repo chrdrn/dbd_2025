@@ -1,0 +1,33 @@
+---
+title: "Session 2"
+subtitle: "📚 From Theory to Questionaire"
+bibliography: references_sessions.bib
+csl: ../apa-cv.csl 
+suppress-bibliography: true
+link-citations: false
+citations-hover: false
+---
+
+## Prepare
+
+- {{< fa user >}} Register an account on [SoSci Survey](https://www.soscisurvey.de/)
+
+- {{< fa download >}} Download the ntfy.sh app for your smartphone
+
+## Participate
+
+🖥️ [Session 02](/slides/slides-02.html)
+
+## Useful tools & resources
+
+-   [SoSci Survey](https://www.soscisurvey.de/) – Platform for creating and conducting online surveys
+
+-   [SoSci Survey Manual](https://www.soscisurvey.de/help/doku.php/de:start) – SoSci Survey documentation
+
+-   [SoSci Survey Support](https://support.soscisurvey.de/) – SoSci Survey support forum
+
+-   [ntfy.sh](https://ntfy.sh/) – Simple notification service
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/index.html "Course schedule") ⏎
+:::
