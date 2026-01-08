@@ -142,8 +142,13 @@ block_schedule_json <- '[
         "Programmpunkt": "[Begrüßung & Koordination](#intro)"
     },
     {
+        "Slot": "",
+        "Zeit": "09:30 - 09:45",
+        "Programmpunkt": "Kurze Pause"
+    },
+    {
         "Slot": "1",
-        "Zeit": "09:30 - 11:00",
+        "Zeit": "09:45 - 11:15",
         "Programmpunkt": "[Research Sketches im Fokus](#slot1)"
     },
     {
@@ -192,6 +197,21 @@ block_schedule %>%
     # )
 ```
 
+# Short Break {#break1 background-image="img/slide_bg-break_short.png"}
+
+15 Minuten Pause
+
+```{r}
+#| label: countdown-break1
+#| echo: false
+
+countdown(
+    minutes = 15,
+    warn_when = 120,
+    update_every = 30,
+    bottom = 0)
+```
+
 # Research Sketches im Fokus {#slot1 background-image="img/slide_bg-section.png"}
 
 Vorstellung, Fragen & Diskussion
@@ -232,7 +252,6 @@ In euren Gruppen ...
 ##### Folienvorlage verwenden
 
 -   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
--   Einfacher Zugriff durch "Integration" in Slides
 :::
 
 ## Get started!
@@ -279,12 +298,12 @@ countdown(
     bottom = 0)
 ```
 
-# Short Break {#break1 background-image="img/slide_bg-break_short.png"}
+# Short Break {#break2 background-image="img/slide_bg-break_short.png"}
 
 15 Minuten Pause
 
 ```{r}
-#| label: countdown-break1
+#| label: countdown-break2
 #| echo: false
 
 countdown(
@@ -308,7 +327,7 @@ Statusupdate zu den Tools
 -   Einsatz von **klassischen Umfragesoftware, keine** Nutzung von **Apps** (für Befragung)
     -   Apps mit zu eingeschränkten Funktionen oder zu "teuer" (weil eigene Entwicklung/Programmierung notwendig)
 
-## Toolbox statt nur eines Tools?
+## Toolbox statt nur eines Tools
 
 #### Die zur Verfügung stehenden Tools
 
@@ -333,9 +352,20 @@ Statusupdate zu den Tools
 
 #### ntfy.sh als Workaround
 
+:::::: columns
+::: {.column width="45%"}
 -   Nutzung von **ntfy.sh** als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien
 -   Open-Source, einfach zu bedienen und flexibel anpassbar
 -   Skriptbasiertes Scheduling (via Server)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](img/session-02/ntfy.png){width="400"}
+:::
+::::::
 
 ## Sneak Preview
 
@@ -345,15 +375,27 @@ Statusupdate zu den Tools
 
 <!-- TODO: Add Link to Pretest here -->
 
--   DBD-Template für Umfrage, bestehend aus zwei Items
-    -   Fotoaufnahme
-    -   GPS-Location
+:::::: columns
+::: {.column width="60%"}
+-   **Template** erstellt, das folgende Fragen beinhaltete
+    -   **Fotoaufnahme** (benötigt Erlaubnis zur Nutzung der Kamera)
+    -   **GPS-Location** (benötigt Erlaubnis zur Nutzung der Standortdaten)
+-   Schaut euch gerne die **Debug-Vorschau** an und testet den Fragebogen selbst (Daten/Antworten werden nicht gespeichert)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+{{< qrcode https://www.soscisurvey.de/dbd25-template/?act=o5lmAAcIUCs3qHHf2NCzB6KM qr5 width=250 height=250 colorDark='#C50F3C' >}} [Debug-Vorschau](https://www.soscisurvey.de/dbd25-template/?act=o5lmAAcIUCs3qHHf2NCzB6KM)
+:::
+::::::
 
 ## Kurze Vorstellung des Backends
 
 #### Vorstellung des SoSci Survey Backends
 
-<!-- TODO: Screenshot & Link zum Backend -->
+![](img/session-02/sosci-backend.png){fig-align="center"}
 
 ## 💬 Let's discuss
 
@@ -365,9 +407,9 @@ Statusupdate zu den Tools
     -   **Erfahrungsbericht und Finalisierung** in nächster Blocksitzung
 -   Frage zum **Studien-Monitoring**:
     -   Serienmail vs. notify.sh?
-    -   Eigenständig oder "zentral"?g
+    -   Eigenständig oder "zentral"?
 
-# Lunch Break {#break2 background-image="img/slide_bg-break_lunch.png"}
+# Lunch Break {background-image="img/slide_bg-break_lunch.png"}
 
 60 Minuten Mittagspause
 
@@ -387,7 +429,7 @@ In euren Gruppen ...
 -   arbeitet die [Checkliste für die Erstellung] ab
 -   passt den **Fragebogen** **an euer (überarbeitetes) Forschungsdesign** an
 -   denkt über den **Schedule für die Versendung der Kurzfragebögen** nach
--   **testet** euren Fragebogen (Pretest-Link)
+-   **testet** euren Fragebogen (Pretest-Link), auch **auf unterschiedlichen Geräten!**
 :::
 
 ::: callout-note
@@ -397,7 +439,6 @@ In euren Gruppen ...
 -   Ich bin während der gesamten Zeit für **Fragen und Unterstützung** verfügbar
 -   Ich wandere von Gruppe zu Gruppe, um **Feedback zu geben** und **Fragen zu beantworten**
 :::
-
 
 ## Erstellung einer eigenen Befragung
 
@@ -417,7 +458,6 @@ In euren Gruppen ...
 -   "Die Ergebnisse werden als Seminararbeit oder Semesterarbeit abgegeben."
 -   "Nein"
 :::
-
 
 # Time for questions {#slot4 background-image="img/slide_bg-question.png"}
 
