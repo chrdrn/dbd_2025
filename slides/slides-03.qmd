@@ -358,7 +358,7 @@ document.getElementById("send-ntfy").onclick = async () => {
 -   Eigenständiges Repo: <https://github.com/chrdrn/dbd25-nfty_scheduler>
 -   Plattformunabhängig (Windows/macOS/Linux), kein Makefile nötig
 -   Optional: systemd-Units nur für Linux-Server (Lehrenden-Setup)
--   Ablauf: `plan` -> `out/schedule.json` -> `send` (ID) / `send-all`
+-   Ablauf: `plan` -\> `out/schedule.json` -\> `send` (ID) / `send-all`
 
 ## Config im Fokus
 
