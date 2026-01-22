@@ -20,11 +20,19 @@ pacman::p_load(
     here, 
     tidyverse,
     gt, gtExtras,
+    reticulate,
     countdown
 )
 
 # Load schedule
 source(here("slides/schedule.R"))
+```
+
+```{r}
+#| eval: false
+
+# Run on python setup
+reticulate::py_install("requests", pip = TRUE)
 ```
 
 ## Semesterplan
@@ -149,6 +157,13 @@ block_schedule %>%
 
     -   Mo. (26.01) bis Do. (29.01.) &
     -   Sa. (31.01) bis Mo. (02.02) / Do. (05.02)
+
+-   **Ablauf der Befraung**: 
+
+    -   spätestens Sonntagabend erhaltet Ihr eine Mail mit Link zum Topic, dass Ihr abonnieren müsst & Ausfüllhinweisen
+    -   ab Montag startet die Erhebung
+    -   bei Problemen: Umgehend Nachricht ins StudOn-Forum
+
 
 # Short Break {#break1 background-image="img/slide_bg-break_short.png"}
 
@@ -313,7 +328,7 @@ Vorstellung von Tools für die Umsetzung von Befragungen
 ```{python}
 import requests
 
-topic = "dbd25-20260123-block2-live-test-in-course"
+topic = "dbd25-YIP2tX54JZ-live-test-in-course"
 url = f"https://ntfy.sh/{topic}"
 
 r = requests.post(url, data="Zeit für deine ESM-Abfrage ✅".encode("utf-8"))
@@ -415,9 +430,16 @@ In euren Gruppen ...
 
 ## Bis zum Ende der Sitzung
 
-#### Checkliste für die Erstellung
+#### Checkliste 
 
-Bis zum Ende der Sitzung benötige ich: - den finalen Schedule eurer Gruppe - die .env eurer Gruppe - die Ausfühllhinweise eurer Gruppe
+Bis zum Ende der Sitzung benötige ich von euch ...
+
+- [ ] den finalen **Fragebogenlink**
+- [ ] den finalen **Schedule** eurer Gruppe (exportiert aus dem Google Colab)
+- [ ] die finale **`.env`-Datei **(exportiert aus dem Google Colab)
+- [ ] die **Ausfüllhinweise** für die Umfrage eurer Gruppe 
+
+via Mail an christoph.adrian@fau.de 
 
 # Time for questions {#slot4 background-image="img/slide_bg-question.png"}
 
