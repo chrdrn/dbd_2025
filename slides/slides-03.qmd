@@ -30,6 +30,7 @@ source(here("slides/schedule.R"))
 
 ```{r}
 #| eval: false
+#| echo: false
 
 # Run on python setup
 reticulate::py_install("requests", pip = TRUE)
@@ -80,7 +81,7 @@ block_schedule_json <- '[
     {
         "Slot": "1",
         "Zeit": "09:30 - 11:15",
-        "Programmpunkt": "[Fragenbogen: Update & Herausforderungen](#slot1)"
+        "Programmpunkt": "[Feldvorbereitung im Fokus](#slot1)"
     },
     {
         "Slot": "",
@@ -148,22 +149,17 @@ block_schedule %>%
 
 #### Organisatorische Hinweise
 
--   **Handhabung von IDs** (für Teilnehmer:In und Kurzfragebogen)
-
-    -   Option A: TeilnehmerID via Eingabe, KurzfragebogenID via Umfrageparameter (mit Support)
-    -   Option B: TeilnehmerID und KurzfragebogenID via Umfrageparameter (eingenständig)
-
--   **Zeitraum für Umfrage:** Zweiteilung
-
-    -   Mo. (26.01) bis Do. (29.01.) &
-    -   Sa. (31.01) bis Mo. (02.02) / Do. (05.02)
-
--   **Ablauf der Befraung**: 
-
+-   **Handhabung von IDs** (für Teilnehmer:In und Kurzfragebogen):
+    -   Manuelle Eingabe der `"Teilnehmer_in ID"`, ID des Kurzfragebogens via Default-Umfrageparameter von SoSci-Survey
+-   **Zweiteilung des Befragungszeitraums:**
+    -   *Phase 1:* Mo. (26.01) bis Do. (29.01.) &
+    -   *Phase 2*: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)
+-   **Ablauf der Befraung**:
     -   spätestens Sonntagabend erhaltet Ihr eine Mail mit Link zum Topic, dass Ihr abonnieren müsst & Ausfüllhinweisen
-    -   ab Montag startet die Erhebung
-    -   bei Problemen: Umgehend Nachricht ins StudOn-Forum
 
+    -   ab Montag startet die Erhebung
+
+    -   bei Problemen: Umgehend Nachricht ins StudOn-Forum
 
 # Short Break {#break1 background-image="img/slide_bg-break_short.png"}
 
@@ -180,21 +176,9 @@ countdown(
     bottom = 0)
 ```
 
-# Fragenbogen: Update & Challenges {#slot1 background-image="img/slide_bg-section.png"}
+# Feldvorbereitung im Fokus {#slot1 background-image="img/slide_bg-section.png"}
 
-Kurze Präsentation des aktuellen Stands, Problemen & Herausforderungen
-
-## Vorbereitung der Feldphase
-
-#### Gemeinsame Basis schaffen um Synergien zu finden
-
--   Kurzes **Update** zu **eurem Forschungsprojekt,** um ...
-
-    -   (konzeptionelle) **Pre-Test Vorbereitung** zu **finalisieren**
-
-    -   (potentielle) **Arbeitsaufträge** für die **Hands-On Session** zu generieren
-
-    -   **Herausforderungen** und **offene Fragen zu diskutieren**
+Kurze Präsentation des aktuellen Stands der Umfrage, Problemen & Herausforderungen
 
 ## 💻 And now … you!
 
@@ -229,28 +213,28 @@ In euren Gruppen ...
 
 :::::::::: columns
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/gukhu qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe 'Ansprachformen im Alltag'](https://t1p.de/gukhu)
+{{< qrcode https://t1p.de/gukhu qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe A *('Ansprachformen im Alltag')*](https://t1p.de/gukhu)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/muy33 qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe 'Out-of-home recall'](https://t1p.de/muy33)
+{{< qrcode https://t1p.de/muy33 qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe B *('Out-of-home recall')*](https://t1p.de/muy33)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/ayudy qr3 width=150 height=150 colorDark='#007de5' >}} [Gruppe "Informelle visuelle Kommunikation"](https://t1p.de/ayudy)
+{{< qrcode https://t1p.de/ayudy qr3 width=150 height=150 colorDark='#007de5' >}} [Gruppe C *("Informelle visuelle Kommunikation")*](https://t1p.de/ayudy)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="20%"}
-{{< qrcode https://t1p.de/t9pbd qr4 width=150 height=150 colorDark='#0094de' >}} [Gruppe D "Sticky Politics"](https://t1p.de/t9pbd)
+{{< qrcode https://t1p.de/t9pbd qr4 width=150 height=150 colorDark='#0094de' >}} [Gruppe D *("Sticky Politics"*)](https://t1p.de/t9pbd)
 :::
 ::::::::::
 
@@ -280,13 +264,13 @@ countdown(
     bottom = 0)
 ```
 
-# `ntfy` im Fokus {#slot2 background-image="img/slide_bg-section.png"}
+# {{< iconify simple-icons:ntfy >}} `ntfy` im Fokus {#slot2 background-image="img/slide_bg-section.png"}
 
-Vorstellung von Tools für die Umsetzung von Befragungen
+Vorstellung der Tools für die Feldsteuerung: Planung & Durchführung
 
-## `ntfy` me!
+## {{< iconify simple-icons:ntfy >}} `ntfy` me!
 
-#### ntfy.sh als Workaround
+#### ntfy.sh als Tool für die Feldsteuerung
 
 :::::: columns
 ::: {.column width="45%"}
@@ -307,7 +291,7 @@ Vorstellung von Tools für die Umsetzung von Befragungen
 
 #### Kurze Erklärung der Funktionsweise
 
--   **Publish/Subscribe-Prinzip**: Clients abonnieren ein Topic und erhalten sofort Updates
+-   **Publish/Subscribe-Prinzip**: Clients abonnieren ein `Topic` (bzw. einen Link) und erhalten sofort Updates
 -   Nachrichten lassen sich per **HTTP-Request** (z. B. `curl` oder `python`) senden
 -   Funktioniert auf Smartphone & Desktop via **Web-App oder native App**
 -   **Kostenlos**, aber mit **Einschränkungen**
@@ -317,7 +301,7 @@ Vorstellung von Tools für die Umsetzung von Befragungen
 
 ## Topic als Gatekeeper
 
-#### Beispielhafte Vorstellung eines typischen Workflows
+#### Vorstellung eines typischen Workflows
 
 -   Topic festlegen (z. B. `dbd25-20260123-block2-live-test-in-course`)
 -   Teilnehmende **abonnieren** das Topic in der ntfy App
@@ -365,33 +349,49 @@ document.getElementById("send-ntfy").onclick = async () => {
 </script> -->
 ```
 
-## Seminar-Tool im Überblick
+## `nfty_scheduler` als little helper
 
-#### Umsetzung im Seminar
+#### Eigenes [{{< bi github >}}-Projekt](https://github.com/chrdrn/dbd25-nfty_scheduler) zur Steuerung der Fragebögen
 
 -   Python-CLI als leichtes Paket (`run.py` + `ntfy_reminder/`)
--   Eigenständiges Repo: <https://github.com/chrdrn/dbd25-nfty_scheduler>
--   Plattformunabhängig (Windows/macOS/Linux), kein Makefile nötig
--   Optional: systemd-Units nur für Linux-Server (Lehrenden-Setup)
--   Ablauf: `plan` -\> `out/schedule.json` -\> `send` (ID) / `send-all`
+-   Helper besteht aus drei Teilen bzw. trennt **Konfiguration, Planung** und **Versand**:
+    -   `.env` definiert die globalen Parameter,
 
-## Config im Fokus
+    -   `plan` erzeugt `out/schedule.json`,
 
-#### Definition der Basisparameter
+    -   `send` verschickt
 
--   `config/ntfy.env` aus `config/ntfy.env.example` kopieren
--   Pflichtwerte: `NTFY_TOPIC`, `NTFY_TITLE`, `NTFY_MESSAGE`
--   Platzhalter: `{k}`, `{per_day}`, `{id}`, `{url}` (u.a.)
--   Optional: `SURVEY_URL_TEMPLATE` (z. B. `...?r={id}`), `NTFY_SERVER`
+## Was der Helper steuer kann
 
-## Schedule planen
+#### Folgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden
 
-#### Erstellung des Schedules
+-   Zeitlogik: `--mode interval|windows`, `--start`, `--end`, `--min-gap`
 
--   `python run.py plan --dry-run --explain` (Seminar-Modus)
--   Defaults: 21.-22.01.2026, 5 Reminder/Tag, `min_gap=60`
--   Modi: `interval` (08:00–20:00) oder `windows` (Zeitfenster)
--   Reproduzierbar mit `--seed` oder personalisiert via `--participant-id`
+-   Dichte: `--per-day`, `--days`, `--seed` (reproduzierbar)
+
+-   Zielgruppe: `--participant-id` (personalisierte Pläne)
+
+-   Ausgabe: `--dry-run`, `--explain`, `--out`
+
+## Arbeiten im {{< iconify simple-icons googlecolab >}} Google Colab
+
+#### Demo-Notebook aus dem Helper-Repo
+
+:::::: columns
+::: {.column width="70%"}
+-   Colab ist eine **cloudbasierte Jupyter-Umgebung**, die **direkt im Browser** läuft.
+-   Notebooks werden auf Googles Servern ausgeführt und **vereinen Code, Text und Output.**
+-   Im Kurs nutzen wir Colab, um die **notwendigen Dateien** (z. B. `.env`, Schedule) aus dem Notebook zu **exportieren**.
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+{{< iconify devicon:googlecolab width=180px height=180px >}}\
+[Demo-Notebook im Repo](https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb)
+:::
+::::::
 
 # Lunch Break {background-image="img/slide_bg-break_lunch.png"}
 
@@ -401,9 +401,39 @@ document.getElementById("send-ntfy").onclick = async () => {
 
 Nutzung des Google Collabs Notebooks zur Überprüfung
 
-## TODO Add title here
+## Download {{< iconify simple-icons:ntfy >}} now!
 
-#### Sosci Anpassung für ID
+#### Reminder: Bitte downloaded die App um die Notifications zu testen
+
+<br>
+
+::::::: columns
+:::: {.column width="50%" style="text-align: center;"}
+::: {style="display: flex; justify-content: center;"}
+{{< qrcode https://apps.apple.com/us/app/ntfy/id1625396347 qr_ntfy_ios width=220 height=220 colorDark='#388D7B' >}}
+:::
+
+[{{< fa brands apple >}} iOS](https://apps.apple.com/us/app/ntfy/id1625396347)
+::::
+
+:::: {.column width="50%" style="text-align: center;"}
+::: {style="display: flex; justify-content: center;"}
+{{< qrcode https://play.google.com/store/apps/details?id=io.heckel.ntfy qr_ntfy_android width=220 height=220 colorDark='#52B7A2' >}}
+:::
+
+[{{< fa brands google-play >}} Android](https://play.google.com/store/apps/details?id=io.heckel.ntfy)
+::::
+:::::::
+
+## {{< iconify material-symbols:notification-important >}} `ID` Variable hinzufügen!
+
+#### Reminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzbauen
+
+-   Frage sollte auf der **ersten Seite des Fragebogens** stehen
+-   **Template-Frage** ist auf **StudOn** verfügbar
+-   Preview:
+
+![](img/session-03/question-student_id.png){fig-align="center" width="500"}
 
 ## 💻 Hands-on Zeit!
 
@@ -414,14 +444,14 @@ Nutzung des Google Collabs Notebooks zur Überprüfung
 
 In euren Gruppen ...
 
--   öffnet das Google Collab
--   geht die einzelnen Schritte mit den Default Values durch
--   Ersetzt die Werte mit den Informationen über euren Fragebogen (TODO: Add chunk here)
--   Testet den Versand und eure Umfrage
+-   öffnet das [Google Collab](https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb)
+-   geht die **Dry-Runs des Beispiels** durch
+-   nehmt die notwendigen Anpassung im Abschnitt **Individualisierung** vor
+-   Erstellt die notwendigen Dateien (`schedule.json` & `.env`)
 :::
 
 ::: callout-note
-##### Währenddessen: Feedback
+##### Währenddessen: Feedback & Fragen
 
 -   Sucht das Gespräch zu anderen Gruppen und **gebt euch gegenseitig Hilfe und Feedback**
 -   Ich bin während der gesamten Zeit für **Fragen und Unterstützung** verfügbar
@@ -430,16 +460,16 @@ In euren Gruppen ...
 
 ## Bis zum Ende der Sitzung
 
-#### Checkliste 
+#### Checkliste
 
 Bis zum Ende der Sitzung benötige ich von euch ...
 
-- [ ] den finalen **Fragebogenlink**
-- [ ] den finalen **Schedule** eurer Gruppe (exportiert aus dem Google Colab)
-- [ ] die finale **`.env`-Datei **(exportiert aus dem Google Colab)
-- [ ] die **Ausfüllhinweise** für die Umfrage eurer Gruppe 
+-   [ ] den finalen **Fragebogenlink**
+-   [ ] den finalen **Schedule** eurer Gruppe (exportiert aus dem Google Colab)
+-   [ ] die finale **`.env`-Datei** (exportiert aus dem Google Colab)
+-   [ ] die **Ausfüllhinweise** für die Umfrage eurer Gruppe
 
-via Mail an christoph.adrian@fau.de 
+per Mail an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
 
 # Time for questions {#slot4 background-image="img/slide_bg-question.png"}
 
@@ -447,14 +477,9 @@ via Mail an christoph.adrian@fau.de
 
 #### Die nächsten Schritte
 
--   spätestens Sonntagabend erhaltet Ihr eine Mail mit den Link zum Topic, dass ihr abonnieren müsst
--   ab Montag startet die Erhebung (vier Tage)
--   schaut in die Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet
+-   spätestens **Sonntagabend** erhaltet Ihr eine **Mail mit den Link zum Topic,** dass ihr abonnieren müsst
+-   ab **Montag** startet die **Erhebung** (vier Tage)
+-   schaut in die **Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet**
     -   (mindetens Entwurf für) Auswertungsstrategie zur nächsten Sitzung
 
 # Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
-
-## Literatur
-
-::: {#refs}
-:::
