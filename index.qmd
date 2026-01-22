@@ -29,8 +29,8 @@ The seminar in the winter term 2025/26 focuses on the empirical study of **outdo
 |---------------|---------------|---------------|---------------|---------------|
 | 1 | 24.10.2025 | 09:45 - 11:15 | 🚀 Kick-Off | [{{< bi book >}}](/sessions/session-01.html "Session 01"){aria-label="Session 01"} \| [{{< bi file-earmark-slides >}}](/slides/slides-01.html "Slides: Session 01"){aria-label="Slides Session 01"} |
 | \- | \- |  | *✏️ Independent study and assignments* |  |
-| 2 | 09.01.2026 | 09:00 - 16:00 | 📚 From Theory to Questionaire | [{{< bi book >}}](/sessions/session-02.html "Session 02"){aria-label="Session 01"} \| [{{< bi file-earmark-slides >}}](/slides/slides-02.html "Slides: Session 02"){aria-label="Slides Session 02"} |
-| 3 | 23.01.2026 | 09:00 - 16:00 | 📚 From Questionaire to Pretest |  |
+| 2 | 09.01.2026 | 09:00 - 16:00 | 📚 From Theory to Questionaire | [{{< bi book >}}](/sessions/session-02.html "Session 02"){aria-label="Session 02"} \| [{{< bi file-earmark-slides >}}](/slides/slides-02.html "Slides: Session 02"){aria-label="Slides Session 02"} |
+| 3 | 23.01.2026 | 09:00 - 16:00 | 📚 From Questionaire to Pretest | [{{< bi book >}}](/sessions/session-03.html "Session 03"){aria-label="Session 03"} \| [{{< bi file-earmark-slides >}}](/slides/slides-03.html "Slides: Session 03"){aria-label="Slides Session 03"} |
 | 4 | 30.01.2026 | 09:00 - 16:00 | 📚 From Pretest to Analysis |  |
 | 5 | 06.02.2026 | 09:00 - 16:00 | 📚 Analysis and Evaluation |  |
 
