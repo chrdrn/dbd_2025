@@ -8,11 +8,15 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2a367172f4fe7d9182ebf8e09f85cb4e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
+<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Christoph Adrian">
-  <title>Digital behavioral data – From Theory to Questionaire</title>
+  <title>Digital behavioral data – From Questionnaire to Pretest</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,26 +34,73 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
     }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #383a42;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+    code span { color: #383a42; } /* Normal */
+    code span.al { color: #95da4c; background-color: #4d1f24; font-weight: bold; } /* Alert */
+    code span.an { color: #50a14f; } /* Annotation */
+    code span.at { color: #a626a4; } /* Attribute */
+    code span.bn { color: #986801; } /* BaseN */
+    code span.bu { color: #a626a4; } /* BuiltIn */
+    code span.cf { color: #a626a4; } /* ControlFlow */
+    code span.ch { color: #50a14f; } /* Char */
+    code span.cn { color: #986801; } /* Constant */
+    code span.co { color: #a0a1a7; font-style: italic; } /* Comment */
+    code span.cv { color: #e45649; font-style: italic; } /* CommentVar */
+    code span.do { color: #e45649; } /* Documentation */
+    code span.dt { color: #a626a4; } /* DataType */
+    code span.dv { color: #986801; } /* DecVal */
+    code span.er { color: #f44747; text-decoration: underline; } /* Error */
+    code span.ex { color: #4078f2; font-weight: bold; } /* Extension */
+    code span.fl { color: #986801; } /* Float */
+    code span.fu { color: #4078f2; } /* Function */
+    code span.im { color: #50a14f; } /* Import */
+    code span.in { color: #c45b00; } /* Information */
+    code span.kw { color: #a626a4; } /* Keyword */
+    code span.op { color: #a626a4; } /* Operator */
+    code span.ot { color: #27ae60; } /* Other */
+    code span.pp { color: #a626a4; } /* Preprocessor */
+    code span.re { color: #2980b9; background-color: #153042; } /* RegionMarker */
+    code span.sc { color: #0184bc; } /* SpecialChar */
+    code span.ss { color: #da4453; } /* SpecialString */
+    code span.st { color: #50a14f; } /* String */
+    code span.va { color: #e45649; } /* Variable */
+    code span.vs { color: #da4453; } /* VerbatimString */
+    code span.wa { color: #da4453; } /* Warning */
+  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-66dbeddfd40014fd93eea0b058e620ea.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -146,8 +197,8 @@
   </style>
   <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
-<meta property="og:title" content="From Theory to Questionaire – Digital behavioral data">
-<meta property="og:description" content="Block 1">
+<meta property="og:title" content="From Questionnaire to Pretest – Digital behavioral data">
+<meta property="og:description" content="Block 2">
 <meta property="og:site_name" content="Digital behavioral data">
 </head>
 <body class="quarto-light">
@@ -155,8 +206,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#04316a" data-background-image="img/slide_bg-title.png" slide-logo="false" class="quarto-title-block center">
-  <h1 class="title">From Theory to Questionaire</h1>
-  <p class="subtitle">Block 1</p>
+  <h1 class="title">From Questionnaire to Pretest</h1>
+  <p class="subtitle">Block 2</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -171,27 +222,12 @@
     </div>
 </div>
 
-  <p class="date">09.01.2026</p>
+  <p class="date">23.01.2026</p>
 </section>
 <section>
 <section id="intro" class="title-slide slide level1 center" data-background-image="img/slide_bg-agenda.png">
 <h1>Begrüßung &amp; Koordination</h1>
 <p>Kurzer Rückblick &amp; Organisatorisches zum Anfang</p>
-</section>
-<section id="visuelle-kommunikation-trifft-dbd" class="slide level2">
-<h2>Visuelle Kommunikation trifft DBD</h2>
-<h4 id="hintergrund-zum-seminar">Hintergrund zum Seminar</h4>
-<ul>
-<li><p><strong>Außenwerbung als visuelles Kommunikationsmedium:</strong></p>
-<ul>
-<li>macht sichtbar, wie Botschaften im öffentlichen Raum gestaltet und wahrgenommen werden</li>
-<li>visuelle Daten (z. B. Fotos, Motive) sind zentral, um diese Formen empirisch zu erfassen und zu analysieren.</li>
-</ul></li>
-<li><p><strong>Verknüpfung mit digitalen Verhaltensdaten:</strong></p>
-<ul>
-<li>ermöglicht die Analyse, wie visuelle Werbereize mit digitalen Spuren (z. B. Suchverhalten, Social-Media-Aktivität oder <em>Standortdaten</em>) zusammenhängen</li>
-</ul></li>
-</ul>
 </section>
 <section id="semesterplan" class="slide level2">
 <h2>Semesterplan</h2>
@@ -678,16 +714,16 @@
 <td class="gt_row gt_left" headers="Topic">✏️ Independent study and assignments</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_right" headers="Session" style="background-color: rgba(197,15,60,0.2)">2</td>
-<td class="gt_row gt_right" headers="Datum" style="background-color: rgba(197,15,60,0.2)">09.01.2026</td>
-<td class="gt_row gt_right" headers="Time" style="background-color: rgba(197,15,60,0.2)">09:00 - 16:00</td>
-<td class="gt_row gt_left" headers="Topic" style="background-color: rgba(197,15,60,0.2); color: #000000; font-weight: bold">📚 From Theory to Questionaire</td>
+<td class="gt_row gt_right" headers="Session">2</td>
+<td class="gt_row gt_right" headers="Datum">09.01.2026</td>
+<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic">📚 From Theory to Questionaire</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_right" headers="Session">3</td>
-<td class="gt_row gt_right" headers="Datum">23.01.2026</td>
-<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
-<td class="gt_row gt_left" headers="Topic">📚 From Questionaire to Pretest</td>
+<td class="gt_row gt_right" headers="Session" style="background-color: rgba(197,15,60,0.2)">3</td>
+<td class="gt_row gt_right" headers="Datum" style="background-color: rgba(197,15,60,0.2)">23.01.2026</td>
+<td class="gt_row gt_right" headers="Time" style="background-color: rgba(197,15,60,0.2)">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic" style="background-color: rgba(197,15,60,0.2); color: #000000; font-weight: bold">📚 From Questionaire to Pretest</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="Session">4</td>
@@ -707,520 +743,6 @@
 </div>
 </div>
 </div>
-</section>
-<section id="half-way-there" class="slide level2">
-<h2>Half way there!</h2>
-<h4 id="überblick-über-eure-bisherigen-assigments">Überblick über eure bisherigen Assigments</h4>
-<div class="cell">
-<div class="cell-output-display">
-<div id="assignments" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#assignments table {
-  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#assignments thead, #assignments tbody, #assignments tfoot, #assignments tr, #assignments td, #assignments th {
-  border-style: none;
-}
-
-#assignments p {
-  margin: 0;
-  padding: 0;
-}
-
-#assignments .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: 90%;
-  border-top-style: none;
-  border-top-width: 3px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#assignments .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#assignments .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#assignments .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#assignments .gt_heading {
-  background-color: #FFFFFF;
-  text-align: left;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#assignments .gt_bottom_border {
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#assignments .gt_col_headings {
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #000000;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#assignments .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#assignments .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#assignments .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#assignments .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#assignments .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #000000;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#assignments .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#assignments .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#assignments .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #000000;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #FFFFFF;
-  vertical-align: middle;
-}
-
-#assignments .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#assignments .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#assignments .gt_row {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#assignments .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-right-color: #FFFFFF;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#assignments .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#assignments .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#assignments .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#assignments .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#assignments .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#assignments .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#assignments .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#assignments .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#assignments .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#assignments .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#assignments .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#assignments .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#assignments .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#assignments .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#assignments .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#assignments .gt_sourcenote {
-  font-size: 12px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#assignments .gt_left {
-  text-align: left;
-}
-
-#assignments .gt_center {
-  text-align: center;
-}
-
-#assignments .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#assignments .gt_font_normal {
-  font-weight: normal;
-}
-
-#assignments .gt_font_bold {
-  font-weight: bold;
-}
-
-#assignments .gt_font_italic {
-  font-style: italic;
-}
-
-#assignments .gt_super {
-  font-size: 65%;
-}
-
-#assignments .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#assignments .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#assignments .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#assignments .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#assignments .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#assignments .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#assignments .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#assignments .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#assignments div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-
-#assignments tbody tr:last-child {
-  border-bottom: 2px solid #ffffff00;
-}
-</style>
-
-<table class="gt_table caption-top" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_col_headings header">
-<th id="Assignment" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Assignment</th>
-<th id="Punkte" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Punkte</th>
-<th id="Deadline" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Deadline</th>
-<th id="Status" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Status</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch">👥 Written assignment: Research Project Sketch</a></td>
-<td class="gt_row gt_left" headers="Punkte">30 Pts.</td>
-<td class="gt_row gt_right" headers="Deadline">18.12.2026</td>
-<td class="gt_row gt_left" headers="Status">✅</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review">👤 Peer Review: Research Project Sketch</a></td>
-<td class="gt_row gt_left" headers="Punkte">20 Pts.</td>
-<td class="gt_row gt_right" headers="Deadline">05.01.2026</td>
-<td class="gt_row gt_left" headers="Status">✅</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review">👤 Participation: Pre-Test</a></td>
-<td class="gt_row gt_left" headers="Punkte">20 Pts.</td>
-<td class="gt_row gt_right" headers="Deadline">01.2026</td>
-<td class="gt_row gt_left" headers="Status">🏗️</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation">👥 Written assignment: Implementation Report</a></td>
-<td class="gt_row gt_left" headers="Punkte">30 Pts.</td>
-<td class="gt_row gt_right" headers="Deadline">28.02.2026</td>
-<td class="gt_row gt_left" headers="Status">❓</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="kurze-rückfragen" class="slide level2">
-<h2>Kurze Rückfragen</h2>
-<h4 id="fragen-zu-euren-erfahrungen-bei-zu-den-bisherigen-assignments">Fragen zu euren Erfahrungen bei zu den bisherigen Assignments</h4>
-<ul>
-<li><p>Wie waren eure <strong>Erfahrungen bei der Erstellung des Research Project Sketch</strong>?</p></li>
-<li><p>Wie war der <strong>Prozess des Peer Reviews</strong> (Feedback geben &amp; erhalten)?</p></li>
-<li><p>Wie ist der akutuelle <strong>Stand der R-Kenntnisse</strong>?</p></li>
-<li><p>Gibt es Wünsche zu <strong>Input</strong> über <strong>bestimmten Analyseverfahren</strong>?</p></li>
-</ul>
 </section>
 <section id="heutige-agenda" class="slide level2">
 <h2>Heutige Agenda</h2>
@@ -1696,18 +1218,18 @@
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot"></td>
-<td class="gt_row gt_right" headers="Zeit">09:00 - 09:30</td>
+<td class="gt_row gt_right" headers="Zeit">09:00 - 09:15</td>
 <td class="gt_row gt_left" headers="Programmpunkt"><a href="#/intro">Begrüßung &amp; Koordination</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot"></td>
-<td class="gt_row gt_right" headers="Zeit">09:30 - 09:45</td>
+<td class="gt_row gt_right" headers="Zeit">09:15 - 09:30</td>
 <td class="gt_row gt_left" headers="Programmpunkt">Kurze Pause</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">1</td>
-<td class="gt_row gt_right" headers="Zeit">09:45 - 11:15</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot1">Research Sketches im Fokus</a></td>
+<td class="gt_row gt_right" headers="Zeit">09:30 - 11:15</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot1">Feldvorbereitung im Fokus</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot"></td>
@@ -1716,18 +1238,18 @@
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">2</td>
-<td class="gt_row gt_right" headers="Zeit">11:30 - 12:45</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot2">Fragebogen im Fokus</a></td>
+<td class="gt_row gt_right" headers="Zeit">11:30 - 13:00</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot2">ntfy im Fokus</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot"></td>
-<td class="gt_row gt_right" headers="Zeit">12:45 - 13:45</td>
+<td class="gt_row gt_right" headers="Zeit">13:00 - 14:00</td>
 <td class="gt_row gt_left" headers="Programmpunkt">Mittagspause</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">3</td>
-<td class="gt_row gt_right" headers="Zeit">13:45 - 15:45</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot3">Hands-On: Fragebogen</a></td>
+<td class="gt_row gt_right" headers="Zeit">14:00 - 15:45</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot3">Hands-On: Fragebogentest</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot">4</td>
@@ -1740,13 +1262,49 @@
 </div>
 </div>
 </div>
+</section>
+<section id="kurze-bestandsaufnahme" class="slide level2">
+<h2>Kurze Bestandsaufnahme</h2>
+<h4 id="arbeitsaufträge-zur-heutigen-sitzung">Arbeitsaufträge zur heutigen Sitzung</h4>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Finalisiert euren Fragebogen</strong> basierend auf dem Feedback</label></li>
+<li><label><input type="checkbox"><strong>Finalisiert euer Forschungsdesign</strong> (insb. Schedule für Kurzfragebögen)</label></li>
+<li><label><input type="checkbox"><strong>Testet euren Fragebogen</strong>!</label></li>
+</ul>
+<h5 id="gentle-reminder">Gentle Reminder:</h5>
+<ul>
+<li><p>Wie ist der aktuelle Stand eurer R-Kenntnisse?</p></li>
+<li><p>GitHub Copilot beantragt?</p></li>
+<li><p>Gibt es Analyseverfahren, zu denen Ihr Input benötigt?</p></li>
+</ul>
+</section>
+<section id="lets-discuss" class="slide level2">
+<h2>💬 Let’s discuss</h2>
+<h4 id="organisatorische-hinweise">Organisatorische Hinweise</h4>
+<ul>
+<li><strong>Handhabung von IDs</strong> (für Teilnehmer:In und Kurzfragebogen):
+<ul>
+<li>Manuelle Eingabe der <code>"Teilnehmer_in ID"</code>, ID des Kurzfragebogens via Default-Umfrageparameter von SoSci-Survey</li>
+</ul></li>
+<li><strong>Zweiteilung des Befragungszeitraums:</strong>
+<ul>
+<li><em>Phase 1:</em> Mo. (26.01) bis Do. (29.01.) &amp;</li>
+<li><em>Phase 2</em>: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)</li>
+</ul></li>
+<li><strong>Ablauf der Befraung</strong>:
+<ul>
+<li><p>spätestens Sonntagabend erhaltet Ihr eine Mail mit Link zum Topic, dass Ihr abonnieren müsst &amp; Ausfüllhinweisen</p></li>
+<li><p>ab Montag startet die Erhebung</p></li>
+<li><p>bei Problemen: Umgehend Nachricht ins StudOn-Forum</p></li>
+</ul></li>
+</ul>
 </section></section>
 <section id="break1" class="title-slide slide level1 center" data-background-image="img/slide_bg-break_short.png">
 <h1>Short Break</h1>
 <p>15 Minuten Pause</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_dc9f80b1" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_58c083ff" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1756,25 +1314,12 @@
 
 <section>
 <section id="slot1" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1>Research Sketches im Fokus</h1>
-<p>Vorstellung, Fragen &amp; Diskussion</p>
-</section>
-<section id="pitch-your-project" class="slide level2">
-<h2>Pitch your project!</h2>
-<h4 id="gemeinsame-basis-schaffen-um-synergien-zu-finden">Gemeinsame Basis schaffen um Synergien zu finden</h4>
-<ul>
-<li><p>Kurze <strong>Vorstellung</strong> <strong>eurer Forschungsprojekte,</strong> um …</p>
-<ul>
-<li><p>gemeinsames <strong>Verständnis der verschiedenen Forschungsprojekte</strong> schaffen (z.B. theoretische Definitionen, methodische Operationalisierung &amp; Forschungsdesigns)</p></li>
-<li><p><strong>Synergien und Gemeinsamkeiten</strong> zu identifizieren</p></li>
-<li><p><strong>Herausforderungen</strong> und <strong>offene Fragen zu diskutieren</strong></p></li>
-<li><p>Möglichkeiten zur <strong>Zusammenarbeit und gegenseitigen Unterstützung</strong> zu erkunden</p></li>
-</ul></li>
-</ul>
+<h1>Feldvorbereitung im Fokus</h1>
+<p>Kurze Präsentation des aktuellen Stands der Umfrage, Problemen &amp; Herausforderungen</p>
 </section>
 <section id="and-now-you" class="slide level2">
 <h2>💻 And now … you!</h2>
-<h4 id="arbeitsauftrag-20-minuten-erstellt-einen-elevator-pitch-für-euer-projekt">Arbeitsauftrag (20 Minuten): Erstellt einen Elevator Pitch für euer Projekt</h4>
+<h4 id="arbeitsauftrag-30-minuten-feldvorbereitung">Arbeitsauftrag (30 Minuten): Feldvorbereitung</h4>
 <p><br></p>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
@@ -1787,11 +1332,12 @@
 <div class="callout-content">
 <p>In euren Gruppen …</p>
 <ul>
-<li>erstellt einen <strong>Kurzpräsentation (max. 4 Folien, 5–8 Minuten)</strong>, die folgende Fragen beantwortet:
+<li>erstellt eine <strong>Kurzpräsentation (max. 4 Folien, 5–10 Minuten)</strong>, die auf folgende Punkte eingeht:
 <ul>
-<li><strong>Was untersucht</strong> ihr und warum ist das relevant? (1 Folie)</li>
-<li><strong>Wie</strong> wollt ihr das <strong>untersuchen</strong>? (1–2 Folien)</li>
-<li>Welche <strong>Herausforderungen</strong> seht ihr und wo braucht ihr <strong>Feedback</strong>? (1 Folie)</li>
+<li>Wie sieht euer <strong>aktueller Kurzfragebogen</strong> aus? (1 Folie)</li>
+<li>Darstellung des (geplanten) <strong>Schedules für die Umfrage</strong> (1 Folie)</li>
+<li>Vorstellung der <strong>Ausfüllhinweise</strong> (1 Folie)</li>
+<li>Gibt es Herausforderungen oder Probleme, die Ihr diskutieren möchtet? (1 Folie)</li>
 </ul></li>
 <li>Bitte nutzt die <strong>bereitgestellte Folienvorlage (Google Slides)</strong> auf der nächsten Folie</li>
 </ul>
@@ -1816,7 +1362,7 @@
 </section>
 <section id="get-started" class="slide level2">
 <h2>Get started!</h2>
-<h4 id="bitte-nutzt-die-jeweilige-folienvorlage-für-die-dokumentation-euerer-ergebnisse">Bitte nutzt die jeweilige Folienvorlage für die Dokumentation euerer Ergebnisse</h4>
+<h4 id="bitte-nutzt-die-jeweilige-folienvorlage-für-die-dokumentation-eurer-ergebnisse">Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse</h4>
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:20%;">
@@ -1825,11 +1371,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"150","text":"https://t1p.de/k5dvf","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"150","text":"https://t1p.de/gukhu","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/k5dvf">Gruppe ‘Ansprachformen im Alltag’</a><p></p>
+     <a href="https://t1p.de/gukhu">Gruppe A <em>(‘Ansprachformen im Alltag’)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1838,11 +1384,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"150","text":"https://t1p.de/to06f","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"150","text":"https://t1p.de/muy33","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/to06f">Gruppe ‘Out-of-home recall’</a><p></p>
+     <a href="https://t1p.de/muy33">Gruppe B <em>(‘Out-of-home recall’)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1851,11 +1397,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"150","text":"https://t1p.de/0qo3m","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"150","text":"https://t1p.de/ayudy","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/0qo3m">Gruppe “Informelle visuelle Kommunikation”</a><p></p>
+     <a href="https://t1p.de/ayudy">Gruppe C <em>(“Informelle visuelle Kommunikation”)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1864,17 +1410,17 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"150","text":"https://t1p.de/b68k4","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"150","text":"https://t1p.de/t9pbd","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/b68k4">Gruppe D “Sticky Politics”</a><p></p>
+     <a href="https://t1p.de/t9pbd">Gruppe D <em>(“Sticky Politics”</em>)</a><p></p>
 </div></div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_435a5f99" data-warn-when="300" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_39878b47" data-warn-when="300" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
@@ -1884,7 +1430,7 @@
 <p>15 Minuten Pause</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_3da9d725" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_fc81631e" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1894,50 +1440,12 @@
 
 <section>
 <section id="slot2" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1>Fragebogen im Fokus</h1>
-<p>Statusupdate zu den Tools</p>
-</section>
-<section id="statusupdate" class="slide level2">
-<h2>Statusupdate</h2>
-<h4 id="update-zu-den-herausforderungen-der-praktischen-umsetzung">Update zu den Herausforderungen der praktischen Umsetzung</h4>
-<ul>
-<li><strong>Datenschutz (DSGVO) als Endgegner</strong>
-<ul>
-<li>Besondere Herausforderung bei der Nutzung von Bildern durch Berücksichtigung von <strong>Persönlichkeitsrechten dritter Personen</strong></li>
-<li>Konsequenz: Umfragen im Seminar nur als <strong>Pre-Test/Proof of Concept</strong>, aber keine koordinierten Umfrage</li>
-</ul></li>
-<li>Einsatz von <strong>klassischen Umfragesoftware, keine</strong> Nutzung von <strong>Apps</strong> (für Befragung)
-<ul>
-<li>Apps mit zu eingeschränkten Funktionen oder zu “teuer” (weil eigene Entwicklung/Programmierung notwendig)</li>
-</ul></li>
-</ul>
-</section>
-<section id="toolbox-statt-nur-eines-tools" class="slide level2">
-<h2>Toolbox statt nur eines Tools</h2>
-<h4 id="die-zur-verfügung-stehenden-tools">Die zur Verfügung stehenden Tools</h4>
-<ul>
-<li><p><strong>Keyingress (kostenpflichtig)</strong>: eine Multichannel-Toolbox zur Erstellung, Durchführung und Auswertung von Befragungen über Online-, Offline-, Telefon- (CATI) und Panel-Kanäle, mit integriertem Reporting-Dashboard, flexiblen Automatisierungs- und Schnittstellenfunktionen&nbsp;</p></li>
-<li><p><strong>SoSci Survey (kostenlos für akademische Zwecke):</strong> flexible, DSGVO-konforme Online-Umfragesoftware aus Deutschland, mit der sich anspruchsvolle wissenschaftliche und kommerzielle Befragungen erstellen, durchführen und auswerten lassen.</p></li>
-<li><p><strong>ntfy.sh (kostenlos/open-source):</strong> einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien</p></li>
-</ul>
-</section>
-<section id="sosci-suvery-als-basis" class="slide level2">
-<h2>SoSci Suvery als Basis</h2>
-<h4 id="nutzung-von-sosci-survey-als-grundlage-für-die-umfragen">Nutzung von SoSci Survey als Grundlage für die Umfrage(n)</h4>
-<ul>
-<li>Bei der Verwendung von <strong>SoSci Survey überwiegen die Vorteile</strong>, speziell mit Blick auf die potentielle Weiterverwendung für die Masterarbeit:
-<ul>
-<li>Einfacher Zugang (kostenlos für akademische Zwecke)</li>
-<li>Umfangreiche Dokumentation &amp; Tutorials</li>
-<li>Große Community (Austausch &amp; Support)</li>
-<li>Integration mit R (Datenexport &amp; -analyse)</li>
-</ul></li>
-<li>Aber: Komplizierte Feldsteuerung (dort ggf. eines der anderen Tools nutzen)</li>
-</ul>
+<h1><iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> <code>ntfy</code> im Fokus</h1>
+<p>Vorstellung der Tools für die Feldsteuerung: Planung &amp; Durchführung</p>
 </section>
 <section id="ntfy-me" class="slide level2">
-<h2>ntfy me!</h2>
-<h4 id="ntfy.sh-als-workaround">ntfy.sh als Workaround</h4>
+<h2><iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> <code>ntfy</code> me!</h2>
+<h4 id="ntfy.sh-als-tool-für-die-feldsteuerung">ntfy.sh als Tool für die Feldsteuerung</h4>
 <div class="columns">
 <div class="column" style="width:45%;">
 <ul>
@@ -1951,57 +1459,108 @@
 <p><img data-src="img/session-02/ntfy.png" width="400"></p>
 </div></div>
 </section>
-<section id="sneak-preview" class="slide level2">
-<h2>Sneak Preview</h2>
-<h4 id="vorstellung-des-aktuellen-standes-der-umfrage">Vorstellung des aktuellen Standes der Umfrage</h4>
-<!-- TODO: Add Screenshot here -->
-<!-- TODO: Add Link to Pretest here -->
-<div class="columns">
-<div class="column" style="width:60%;">
+<section id="was-ist-ntfy.sh" class="slide level2">
+<h2>Was ist ntfy.sh?</h2>
+<h4 id="kurze-erklärung-der-funktionsweise">Kurze Erklärung der Funktionsweise</h4>
 <ul>
-<li><strong>Template</strong> erstellt, das folgende Fragen beinhaltete
+<li><strong>Publish/Subscribe-Prinzip</strong>: Clients abonnieren ein <code>Topic</code> (bzw. einen Link) und erhalten sofort Updates</li>
+<li>Nachrichten lassen sich per <strong>HTTP-Request</strong> (z. B. <code>curl</code> oder <code>python</code>) senden</li>
+<li>Funktioniert auf Smartphone &amp; Desktop via <strong>Web-App oder native App</strong></li>
+<li><strong>Kostenlos</strong>, aber mit <strong>Einschränkungen</strong>
 <ul>
-<li><strong>Fotoaufnahme</strong> (benötigt Erlaubnis zur Nutzung der Kamera)</li>
-<li><strong>GPS-Location</strong> (benötigt Erlaubnis zur Nutzung der Standortdaten)</li>
+<li>“Private” Topics nur mit Pro-Account</li>
+<li>Workaround mit <strong>hochindividualisierten Themen</strong></li>
+<li>Aber es bleibt ein <strong>“Restrisiko”</strong></li>
 </ul></li>
-<li>Schaut euch gerne die <strong>Debug-Vorschau</strong> an und testet den Fragebogen selbst (Daten/Antworten werden nicht gespeichert)</li>
+</ul>
+</section>
+<section id="topic-als-gatekeeper" class="slide level2">
+<h2>Topic als Gatekeeper</h2>
+<h4 id="vorstellung-eines-typischen-workflows">Vorstellung eines typischen Workflows</h4>
+<ul>
+<li>Topic festlegen (z. B. <code>dbd25-20260123-block2-live-test-in-course</code>)</li>
+<li>Teilnehmende <strong>abonnieren</strong> das Topic in der ntfy App</li>
+<li><em>Server sendet automatisierte &amp; randomisierte Reminder (via systemd)</em></li>
+</ul>
+<h5 id="beispiel-reminder-mit-titel">Beispiel: Reminder mit Titel</h5>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> requests</span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a>topic <span class="op">=</span> <span class="st">"dbd25-YIP2tX54JZ-live-test-in-course"</span></span>
+<span id="cb1-4"><a></a>url <span class="op">=</span> <span class="ss">f"https://ntfy.sh/</span><span class="sc">{</span>topic<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb1-5"><a></a></span>
+<span id="cb1-6"><a></a>r <span class="op">=</span> requests.post(url, data<span class="op">=</span><span class="st">"Zeit für deine ESM-Abfrage ✅"</span>.encode(<span class="st">"utf-8"</span>))</span>
+<span id="cb1-7"><a></a>r.raise_for_status()</span>
+<span id="cb1-8"><a></a><span class="bu">print</span>(<span class="st">"Message Status:"</span>, r.status_code)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Message Status: 200</code></pre>
+</div>
+</div>
+<!-- ✅ Live-Button (läuft auf GitHub Pages) -->
+<!-- <div style="margin-top: 0.8rem;">
+  <button id="send-ntfy" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">
+    🔔 Live senden (ntfy)
+  </button>
+  <span id="ntfy-result" style="margin-left: 0.6rem; font-family: monospace;"></span>
+</div>
+
+<script>
+document.getElementById("send-ntfy").onclick = async () => {
+  const topic = "dbd25-20260123-block2-live-test-in-course";
+  const url = `https://ntfy.sh/${topic}`;
+  const msg = "Zeit für deine ESM-Abfrage ✅ (von GitHub Pages)";
+
+  const out = document.getElementById("ntfy-result");
+  out.textContent = "sending...";
+
+  try {
+    const res = await fetch(url, { method: "POST", body: msg });
+    out.textContent = `HTTP ${res.status}`;
+  } catch (e) {
+    out.textContent = `Error`;
+  }
+};
+</script> -->
+</section>
+<section id="nfty_scheduler-als-little-helper" class="slide level2">
+<h2><code>nfty_scheduler</code> als little helper</h2>
+<h4 id="eigenes--projekt-zur-steuerung-der-fragebögen">Eigenes <a href="https://github.com/chrdrn/dbd25-nfty_scheduler"><i class="bi-github " style="" role="img" aria-hidden="true"></i>-Projekt</a> zur Steuerung der Fragebögen</h4>
+<ul>
+<li>Python-CLI als leichtes Paket (<code>run.py</code> + <code>ntfy_reminder/</code>)</li>
+<li>Helper besteht aus drei Teilen bzw. trennt <strong>Konfiguration, Planung</strong> und <strong>Versand</strong>:
+<ul>
+<li><p><code>.env</code> definiert die globalen Parameter,</p></li>
+<li><p><code>plan</code> erzeugt <code>out/schedule.json</code>,</p></li>
+<li><p><code>send</code> verschickt</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="was-der-helper-steuer-kann" class="slide level2">
+<h2>Was der Helper steuer kann</h2>
+<h4 id="folgende-argumente-werden-mit-dem-helper-abgebildet-bzw.-können-definiert-werden">Folgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden</h4>
+<ul>
+<li><p>Zeitlogik: <code>--mode interval|windows</code>, <code>--start</code>, <code>--end</code>, <code>--min-gap</code></p></li>
+<li><p>Dichte: <code>--per-day</code>, <code>--days</code>, <code>--seed</code> (reproduzierbar)</p></li>
+<li><p>Zielgruppe: <code>--participant-id</code> (personalisierte Pläne)</p></li>
+<li><p>Ausgabe: <code>--dry-run</code>, <code>--explain</code>, <code>--out</code></p></li>
+</ul>
+</section>
+<section id="arbeiten-im-google-colab" class="slide level2">
+<h2>Arbeiten im <iconify-icon role="img" inline="" icon="simple-icons:googlecolab" aria-label="Icon googlecolab from simple-icons Iconify.design set." title="Icon googlecolab from simple-icons Iconify.design set."></iconify-icon> Google Colab</h2>
+<h4 id="demo-notebook-aus-dem-helper-repo">Demo-Notebook aus dem Helper-Repo</h4>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>Colab ist eine <strong>cloudbasierte Jupyter-Umgebung</strong>, die <strong>direkt im Browser</strong> läuft.</li>
+<li>Notebooks werden auf Googles Servern ausgeführt und <strong>vereinen Code, Text und Output.</strong></li>
+<li>Im Kurs nutzen wir Colab, um die <strong>notwendigen Dateien</strong> (z. B. <code>.env</code>, Schedule) aus dem Notebook zu <strong>exportieren</strong>.</li>
 </ul>
 </div><div class="column" style="width:5%;">
 
-</div><div class="column" style="width:35%;">
-<p></p><div id="id=" "="" class="qrcode"></div>
-<script type="text/javascript">
-(function() {
-  var script = document.currentScript;
-  var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"250","text":"https://www.soscisurvey.de/dbd25-template/?act=o5lmAAcIUCs3qHHf2NCzB6KM","width":"250"});
-  script.remove();
-})();
-</script>
-     <a href="https://www.soscisurvey.de/dbd25-template/?act=o5lmAAcIUCs3qHHf2NCzB6KM">Debug-Vorschau</a><p></p>
+</div><div class="column" style="width:25%;">
+<p><iconify-icon role="img" inline="" icon="devicon:googlecolab" aria-label="Icon googlecolab from devicon Iconify.design set." title="Icon googlecolab from devicon Iconify.design set." width="180px" height="180px"></iconify-icon><br>
+<a href="https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb">Demo-Notebook im Repo</a></p>
 </div></div>
-</section>
-<section id="kurze-vorstellung-des-backends" class="slide level2">
-<h2>Kurze Vorstellung des Backends</h2>
-<h4 id="vorstellung-des-sosci-survey-backends">Vorstellung des SoSci Survey Backends</h4>
-
-<img data-src="img/session-02/sosci-backend.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="lets-discuss" class="slide level2">
-<h2>💬 Let’s discuss</h2>
-<h4 id="vorschlag-zum-weiteren-vorgehen">Vorschlag zum weiteren Vorgehen</h4>
-<ul>
-<li><strong>Jede Gruppe</strong> erstellt ihre <strong>eigene Umfrage</strong> auf Basis Ihres Fragebogens
-<ul>
-<li>Nutzung des <strong>SoSci Survey Templates</strong> als Grundlage und Erweiterung um eigene Fragen</li>
-<li><strong>Überarbeitung, Testing &amp; Feedback</strong> im nächsten <strong>Zeitslot</strong></li>
-<li><strong>Erfahrungsbericht und Finalisierung</strong> in nächster Blocksitzung</li>
-</ul></li>
-<li>Frage zum <strong>Studien-Monitoring</strong>:
-<ul>
-<li>Serienmail vs.&nbsp;notify.sh?</li>
-<li>Eigenständig oder “zentral”?</li>
-</ul></li>
-</ul>
 </section></section>
 <section id="lunch-break" class="title-slide slide level1 center" data-background-image="img/slide_bg-break_lunch.png">
 <h1>Lunch Break</h1>
@@ -2010,12 +1569,57 @@
 
 <section>
 <section id="slot3" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1>Hands-on: Arbeit am Fragebogen</h1>
-<p>Arbeiten mit SoSci Survey</p>
+<h1>Hands-on: Testet euren Fragebogen</h1>
+<p>Nutzung des Google Collabs Notebooks zur Überprüfung</p>
 </section>
+<section id="download-now" class="slide level2">
+<h2>Download <iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> now!</h2>
+<h4 id="reminder-bitte-downloaded-die-app-um-die-notifications-zu-testen">Reminder: Bitte downloaded die App um die Notifications zu testen</h4>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center;">
+<div style="display: flex; justify-content: center;">
+<div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#388D7B","colorLight":"#ffffff","height":"220","text":"https://apps.apple.com/us/app/ntfy/id1625396347","width":"220"});
+  script.remove();
+})();
+</script>
+    
+</div>
+<p><a href="https://apps.apple.com/us/app/ntfy/id1625396347"><i class="fa-brands fa-apple" aria-label="apple"></i> iOS</a></p>
+</div><div class="column" style="text-align: center;">
+<div style="display: flex; justify-content: center;">
+<div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#52B7A2","colorLight":"#ffffff","height":"220","text":"https://play.google.com/store/apps/details?id=io.heckel.ntfy","width":"220"});
+  script.remove();
+})();
+</script>
+    
+</div>
+<p><a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy"><i class="fa-brands fa-google-play" aria-label="google-play"></i> Android</a></p>
+</div></div>
+</section>
+<section id="id-variable-hinzufügen" class="slide level2">
+<h2><iconify-icon role="img" inline="" icon="material-symbols:notification-important" aria-label="Icon notification-important from material-symbols Iconify.design set." title="Icon notification-important from material-symbols Iconify.design set."></iconify-icon> <code>ID</code> Variable hinzufügen!</h2>
+<h4 id="reminder-bitte-denkt-daran-die-frage-nach-der-teilnehmerin-id-einzbauen">Reminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzbauen</h4>
+<ul>
+<li>Frage sollte auf der <strong>ersten Seite des Fragebogens</strong> stehen</li>
+<li><strong>Template-Frage</strong> ist auf <strong>StudOn</strong> verfügbar</li>
+<li>Preview:</li>
+</ul>
+
+<img data-src="img/session-03/question-student_id.png" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
 <section id="hands-on-zeit" class="slide level2">
 <h2>💻 Hands-on Zeit!</h2>
-<h4 id="arbeitsauftrag-90-minuten-arbeitet-an-eurem-fragebogen">Arbeitsauftrag (90 Minuten): Arbeitet an eurem Fragebogen</h4>
+<h4 id="arbeitsauftrag-90-minuten-testet-euren-fragebogen">Arbeitsauftrag (90 Minuten): Testet euren Fragebogen</h4>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -2027,10 +1631,10 @@
 <div class="callout-content">
 <p>In euren Gruppen …</p>
 <ul>
-<li>arbeitet die <a href="#/checkliste-für-die-erstellung">Checkliste für die Erstellung</a> ab</li>
-<li>passt den <strong>Fragebogen</strong> <strong>an euer (überarbeitetes) Forschungsdesign</strong> an</li>
-<li>denkt über den <strong>Schedule für die Versendung der Kurzfragebögen</strong> nach</li>
-<li><strong>testet</strong> euren Fragebogen (Pretest-Link), auch <strong>auf unterschiedlichen Geräten!</strong></li>
+<li>öffnet das <a href="https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb">Google Collab</a></li>
+<li>geht die <strong>Dry-Runs des Beispiels</strong> durch</li>
+<li>nehmt die notwendigen Anpassung im Abschnitt <strong>Individualisierung</strong> vor</li>
+<li>Erstellt die notwendigen Dateien (<code>schedule.json</code> &amp; <code>.env</code>)</li>
 </ul>
 </div>
 </div>
@@ -2041,7 +1645,7 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Währenddessen: Feedback</strong></p>
+<p><strong>Währenddessen: Feedback &amp; Fragen</strong></p>
 </div>
 <div class="callout-content">
 <ul>
@@ -2053,68 +1657,40 @@
 </div>
 </div>
 </section>
-<section id="erstellung-einer-eigenen-befragung" class="slide level2">
-<h2>Erstellung einer eigenen Befragung</h2>
-<h4 id="checkliste-für-die-erstellung">Checkliste für die Erstellung</h4>
+<section id="bis-zum-ende-der-sitzung" class="slide level2">
+<h2>Bis zum Ende der Sitzung</h2>
+<h4 id="checkliste">Checkliste</h4>
+<p>Bis zum Ende der Sitzung benötige ich von euch …</p>
 <ul class="task-list">
-<li><label><input type="checkbox">Erstellung eines Accounts</label></li>
-<li><label><input type="checkbox">Download des DBD-Templates von StudOn</label></li>
-<li><label><input type="checkbox">Neues (kostenloses) Befragungsprojekt</label></li>
-<li><label><input type="checkbox"><em>Befragungsprojekt hochladen (XML-Datei)</em></label></li>
-<li><label><input type="checkbox"><em>Projektverzeichnis/-informationen</em> anpassen/individualisieren</label></li>
-<li><label><input type="checkbox"><em>Fragebogen</em> anpassen/individualisieren</label></li>
+<li><label><input type="checkbox">den finalen <strong>Fragebogenlink</strong></label></li>
+<li><label><input type="checkbox">den finalen <strong>Schedule</strong> eurer Gruppe (exportiert aus dem Google Colab)</label></li>
+<li><label><input type="checkbox">die finale <strong><code>.env</code>-Datei</strong> (exportiert aus dem Google Colab)</label></li>
+<li><label><input type="checkbox">die <strong>Ausfüllhinweise</strong> für die Umfrage eurer Gruppe</label></li>
 </ul>
-<aside class="notes">
-<ul>
-<li>“Ich forsche im Rahmen eines Studiums oder einer Tätigkeit an einer Schule oder Hochschule.”</li>
-<li>“Nein, die individuelle Zuordnung ist ausgeschlossen.”</li>
-<li>“Ein Unternehmen unterstützt die Studie, erhält dafür aber keine Gegenleistung.”</li>
-<li>“Die Ergebnisse werden als Seminararbeit oder Semesterarbeit abgegeben.”</li>
-<li>“Nein”</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<p>per Mail an <a href="mailto:christoph.adrian@fau.de">christoph.adrian@fau.de</a></p>
 </section></section>
 <section>
 <section id="slot4" class="title-slide slide level1 center" data-background-image="img/slide_bg-question.png">
 <h1>Time for questions</h1>
 
 </section>
-<section id="until-we-see-us-again" class="slide level2">
-<h2>Until we see us again</h2>
-<h4 id="arbeitsaufträge-für-die-nächste-sitzung">Arbeitsaufträge für die nächste Sitzung</h4>
+<section id="until-we-see-each-other-again" class="slide level2">
+<h2>Until we see each other again</h2>
+<h4 id="die-nächsten-schritte">Die nächsten Schritte</h4>
 <ul>
-<li><strong>Finalisiert euren Fragebogen</strong> basierend auf dem heutigen Feedback</li>
-<li><strong>Finalisiert euer Forschungsdesign</strong> (insb. Schedule für Kurzfragebögen)</li>
-<li>Optional, aber sehr empfohlen: <strong>Testet euren Fragebogen</strong>!
+<li>spätestens <strong>Sonntagabend</strong> erhaltet Ihr eine <strong>Mail mit den Link zum Topic,</strong> dass ihr abonnieren müsst</li>
+<li>ab <strong>Montag</strong> startet die <strong>Erhebung</strong> (vier Tage)</li>
+<li>schaut in die <strong>Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet</strong>
 <ul>
-<li>Nutzt den Pretest-Link, um euren Fragebogen zu testen</li>
-<li>Sammelt eigene Erfahrung in der Anwendung!</li>
+<li>(mindetens Entwurf für) Auswertungsstrategie zur nächsten Sitzung</li>
 </ul></li>
 </ul>
 </section></section>
-<section>
 <section id="bis-zur-nächsten-sitzung" class="title-slide slide level1 center" data-background-image="img/slide_bg-end_session.png">
 <h1>Bis zur nächsten Sitzung!</h1>
 
+
 </section>
-<section id="literatur" class="slide level2 smaller scrollable">
-<h2>Literatur</h2>
-<div id="refs" role="list">
-
-</div>
-
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../img/dbd_hex.png" class="slide-logo"></p>
