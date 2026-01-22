@@ -1,0 +1,438 @@
+---
+title: "From Questionnaire to Pretest"
+subtitle: "Block 2"
+date: 23 01 2026
+date-format: "DD.MM.YYYY"
+bibliography: references_slides.bib
+---
+
+# Begrüßung & Koordination {#intro background-image="img/slide_bg-agenda.png"}
+
+Kurzer Rückblick & Organisatorisches zum Anfang
+
+```{r}
+#| label: setup-slide-session
+#| echo: false
+
+# Load packages
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(
+    here, 
+    tidyverse,
+    gt, gtExtras,
+    countdown
+)
+
+# Load schedule
+source(here("slides/schedule.R"))
+```
+
+## Semesterplan
+
+```{r}
+#| label: table-schedule-semester
+#| echo: false 
+
+schedule %>%
+    gt::gt(id = "schedule") %>%
+    gt::fmt_markdown(columns = c(Datum, Topic)) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(
+        table.width = gt::pct(90), 
+        table.font.size = "20px"
+    ) %>%
+    gtExtras::gt_highlight_rows(
+        rows = 4,
+        fill = "#C50F3C", 
+        alpha = 0.2,
+        bold_target_only = TRUE,
+        target_col = Topic       
+    )
+```
+
+## Heutige Agenda
+
+#### Überblick über den Ablauf des heutigen Tages
+
+```{r}
+#| label: table-schedule-block
+#| echo: false
+
+block_schedule_json <- '[
+    {
+        "Slot": "",
+        "Zeit": "09:00 - 09:15",
+        "Programmpunkt": "[Begrüßung & Koordination](#intro)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "09:15 - 09:30",
+        "Programmpunkt": "Kurze Pause"
+    },
+    {
+        "Slot": "1",
+        "Zeit": "09:30 - 11:15",
+        "Programmpunkt": "[Fragenbogen: Update & Herausforderungen](#slot1)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "11:15 - 11:30",
+        "Programmpunkt": "Kurze Pause"
+    },
+    {
+        "Slot": "2",
+        "Zeit": "11:30 - 13:00",
+        "Programmpunkt": "[ntfy im Fokus](#slot2)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "13:00 - 14:00",
+        "Programmpunkt": "Mittagspause"
+    },
+    {
+        "Slot": "3",
+        "Zeit": "14:00 - 15:45",
+        "Programmpunkt": "[Hands-On: Fragebogentest](#slot3)"
+    },
+    {
+        "Slot": "4",
+        "Zeit": "15:45 - 16:00",
+        "Programmpunkt": "[Abschluss & Ausblick](#slot4)"
+    }
+]'
+
+## Load schedule to environment
+block_schedule <- fromJSON(block_schedule_json) %>% tibble()
+block_schedule %>% 
+    gt::gt(id = "block_schedule") %>%
+    gt::fmt_markdown(columns = c(Zeit, Programmpunkt)) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(
+        table.width = gt::pct(90), 
+        table.font.size = "20px"
+    ) 
+    # gtExtras::gt_highlight_rows(
+    #     rows = 1,
+    #     fill = "#C50F3C", 
+    #     alpha = 0.2,
+    #     bold_target_only = TRUE,
+    #     target_col = Topic       
+    # )
+```
+
+## Kurze Bestandsaufnahme
+
+#### Arbeitsaufträge zur heutigen Sitzung
+
+-   [ ] **Finalisiert euren Fragebogen** basierend auf dem Feedback
+-   [ ] **Finalisiert euer Forschungsdesign** (insb. Schedule für Kurzfragebögen)
+-   [ ] **Testet euren Fragebogen**!
+
+##### Gentle Reminder:
+
+-   Wie ist der aktuelle Stand eurer R-Kenntnisse?
+
+-   GitHub Copilot beantragt?
+
+-   Gibt es Analyseverfahren, zu denen Ihr Input benötigt?
+
+## 💬 Let's discuss
+
+#### Organisatorische Hinweise
+
+-   **Handhabung von IDs** (für Teilnehmer:In und Kurzfragebogen)
+
+    -   Option A: TeilnehmerID via Eingabe, KurzfragebogenID via Umfrageparameter (mit Support)
+    -   Option B: TeilnehmerID und KurzfragebogenID via Umfrageparameter (eingenständig)
+
+-   **Zeitraum für Umfrage:** Zweiteilung
+
+    -   Mo. (26.01) bis Do. (29.01.) &
+    -   Sa. (31.01) bis Mo. (02.02) / Do. (05.02)
+
+# Short Break {#break1 background-image="img/slide_bg-break_short.png"}
+
+15 Minuten Pause
+
+```{r}
+#| label: countdown-break1
+#| echo: false
+
+countdown(
+    minutes = 15,
+    warn_when = 120,
+    update_every = 30,
+    bottom = 0)
+```
+
+# Fragenbogen: Update & Challenges {#slot1 background-image="img/slide_bg-section.png"}
+
+Kurze Präsentation des aktuellen Stands, Problemen & Herausforderungen
+
+## Vorbereitung der Feldphase
+
+#### Gemeinsame Basis schaffen um Synergien zu finden
+
+-   Kurzes **Update** zu **eurem Forschungsprojekt,** um ...
+
+    -   (konzeptionelle) **Pre-Test Vorbereitung** zu **finalisieren**
+
+    -   (potentielle) **Arbeitsaufträge** für die **Hands-On Session** zu generieren
+
+    -   **Herausforderungen** und **offene Fragen zu diskutieren**
+
+## 💻 And now … you!
+
+#### Arbeitsauftrag (30 Minuten): Feldvorbereitung
+
+<br>
+
+::: callout-caution
+##### Arbeitsauftrag
+
+In euren Gruppen ...
+
+-   erstellt eine **Kurzpräsentation (max. 4 Folien, 5–10 Minuten)**, die auf folgende Punkte eingeht:
+    -   Wie sieht euer **aktueller Kurzfragebogen** aus? (1 Folie)
+    -   Darstellung des (geplanten) **Schedules für die Umfrage** (1 Folie)
+    -   Vorstellung der **Ausfüllhinweise** (1 Folie)
+    -   Gibt es Herausforderungen oder Probleme, die Ihr diskutieren möchtet? (1 Folie)
+-   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
+:::
+
+::: callout-note
+##### Folienvorlage verwenden
+
+-   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
+:::
+
+## Get started!
+
+#### Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse
+
+<br>
+
+:::::::::: columns
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/gukhu qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe 'Ansprachformen im Alltag'](https://t1p.de/gukhu)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/muy33 qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe 'Out-of-home recall'](https://t1p.de/muy33)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/ayudy qr3 width=150 height=150 colorDark='#007de5' >}} [Gruppe "Informelle visuelle Kommunikation"](https://t1p.de/ayudy)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/t9pbd qr4 width=150 height=150 colorDark='#0094de' >}} [Gruppe D "Sticky Politics"](https://t1p.de/t9pbd)
+:::
+::::::::::
+
+```{r}
+#| label: countdown-pitch
+#| echo: false
+
+countdown(
+    minutes = 30,
+    warn_when = 300,
+    update_every = 30,
+    bottom = 0)
+```
+
+# Short Break {#break2 background-image="img/slide_bg-break_short.png"}
+
+15 Minuten Pause
+
+```{r}
+#| label: countdown-break2
+#| echo: false
+
+countdown(
+    minutes = 15,
+    warn_when = 120,
+    update_every = 30,
+    bottom = 0)
+```
+
+# `ntfy` im Fokus {#slot2 background-image="img/slide_bg-section.png"}
+
+Vorstellung von Tools für die Umsetzung von Befragungen
+
+## `ntfy` me!
+
+#### ntfy.sh als Workaround
+
+:::::: columns
+::: {.column width="45%"}
+-   Nutzung von **ntfy.sh** als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien
+-   Open-Source, einfach zu bedienen und flexibel anpassbar
+-   Skriptbasiertes Scheduling (via Server)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](img/session-02/ntfy.png){width="400"}
+:::
+::::::
+
+## Was ist ntfy.sh?
+
+#### Kurze Erklärung der Funktionsweise
+
+-   **Publish/Subscribe-Prinzip**: Clients abonnieren ein Topic und erhalten sofort Updates
+-   Nachrichten lassen sich per **HTTP-Request** (z. B. `curl` oder `python`) senden
+-   Funktioniert auf Smartphone & Desktop via **Web-App oder native App**
+-   **Kostenlos**, aber mit **Einschränkungen**
+    -   "Private" Topics nur mit Pro-Account
+    -   Workaround mit **hochindividualisierten Themen**
+    -   Aber es bleibt ein **"Restrisiko"**
+
+## Topic als Gatekeeper
+
+#### Beispielhafte Vorstellung eines typischen Workflows
+
+-   Topic festlegen (z. B. `dbd25-20260123-block2-live-test-in-course`)
+-   Teilnehmende **abonnieren** das Topic in der ntfy App
+-   *Server sendet automatisierte & randomisierte Reminder (via systemd)*
+
+##### Beispiel: Reminder mit Titel
+
+```{python}
+import requests
+
+topic = "dbd25-20260123-block2-live-test-in-course"
+url = f"https://ntfy.sh/{topic}"
+
+r = requests.post(url, data="Zeit für deine ESM-Abfrage ✅".encode("utf-8"))
+r.raise_for_status()
+print("Message Status:", r.status_code)
+```
+
+<!-- ✅ Live-Button (läuft auf GitHub Pages) -->
+
+```{=html}
+<!-- <div style="margin-top: 0.8rem;">
+  <button id="send-ntfy" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">
+    🔔 Live senden (ntfy)
+  </button>
+  <span id="ntfy-result" style="margin-left: 0.6rem; font-family: monospace;"></span>
+</div>
+
+<script>
+document.getElementById("send-ntfy").onclick = async () => {
+  const topic = "dbd25-20260123-block2-live-test-in-course";
+  const url = `https://ntfy.sh/${topic}`;
+  const msg = "Zeit für deine ESM-Abfrage ✅ (von GitHub Pages)";
+
+  const out = document.getElementById("ntfy-result");
+  out.textContent = "sending...";
+
+  try {
+    const res = await fetch(url, { method: "POST", body: msg });
+    out.textContent = `HTTP ${res.status}`;
+  } catch (e) {
+    out.textContent = `Error`;
+  }
+};
+</script> -->
+```
+
+## Seminar-Tool im Überblick
+
+#### Umsetzung im Seminar
+
+-   Python-CLI als leichtes Paket (`run.py` + `ntfy_reminder/`)
+-   Eigenständiges Repo: <https://github.com/chrdrn/dbd25-nfty_scheduler>
+-   Plattformunabhängig (Windows/macOS/Linux), kein Makefile nötig
+-   Optional: systemd-Units nur für Linux-Server (Lehrenden-Setup)
+-   Ablauf: `plan` -> `out/schedule.json` -> `send` (ID) / `send-all`
+
+## Config im Fokus
+
+#### Definition der Basisparameter
+
+-   `config/ntfy.env` aus `config/ntfy.env.example` kopieren
+-   Pflichtwerte: `NTFY_TOPIC`, `NTFY_TITLE`, `NTFY_MESSAGE`
+-   Platzhalter: `{k}`, `{per_day}`, `{id}`, `{url}` (u.a.)
+-   Optional: `SURVEY_URL_TEMPLATE` (z. B. `...?r={id}`), `NTFY_SERVER`
+
+## Schedule planen
+
+#### Erstellung des Schedules
+
+-   `python run.py plan --dry-run --explain` (Seminar-Modus)
+-   Defaults: 21.-22.01.2026, 5 Reminder/Tag, `min_gap=60`
+-   Modi: `interval` (08:00–20:00) oder `windows` (Zeitfenster)
+-   Reproduzierbar mit `--seed` oder personalisiert via `--participant-id`
+
+# Lunch Break {background-image="img/slide_bg-break_lunch.png"}
+
+60 Minuten Mittagspause
+
+# Hands-on: Testet euren Fragebogen {#slot3 background-image="img/slide_bg-section.png"}
+
+Nutzung des Google Collabs Notebooks zur Überprüfung
+
+## TODO Add title here
+
+#### Sosci Anpassung für ID
+
+## 💻 Hands-on Zeit!
+
+#### Arbeitsauftrag (90 Minuten): Testet euren Fragebogen
+
+::: callout-caution
+##### Arbeitsauftrag
+
+In euren Gruppen ...
+
+-   öffnet das Google Collab
+-   geht die einzelnen Schritte mit den Default Values durch
+-   Ersetzt die Werte mit den Informationen über euren Fragebogen (TODO: Add chunk here)
+-   Testet den Versand und eure Umfrage
+:::
+
+::: callout-note
+##### Währenddessen: Feedback
+
+-   Sucht das Gespräch zu anderen Gruppen und **gebt euch gegenseitig Hilfe und Feedback**
+-   Ich bin während der gesamten Zeit für **Fragen und Unterstützung** verfügbar
+-   Ich wandere von Gruppe zu Gruppe, um **Feedback zu geben** und **Fragen zu beantworten**
+:::
+
+## Bis zum Ende der Sitzung
+
+#### Checkliste für die Erstellung
+
+Bis zum Ende der Sitzung benötige ich: - den finalen Schedule eurer Gruppe - die .env eurer Gruppe - die Ausfühllhinweise eurer Gruppe
+
+# Time for questions {#slot4 background-image="img/slide_bg-question.png"}
+
+## Until we see each other again
+
+#### Die nächsten Schritte
+
+-   spätestens Sonntagabend erhaltet Ihr eine Mail mit den Link zum Topic, dass ihr abonnieren müsst
+-   ab Montag startet die Erhebung (vier Tage)
+-   schaut in die Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet
+    -   (mindetens Entwurf für) Auswertungsstrategie zur nächsten Sitzung
+
+# Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
+
+## Literatur
+
+::: {#refs}
+:::
