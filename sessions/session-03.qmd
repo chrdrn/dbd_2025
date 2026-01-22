@@ -24,9 +24,9 @@ citations-hover: false
 
 -   [SoSci Survey Support](https://support.soscisurvey.de/) – SoSci Survey support forum
 
--   [ntfy.sh](https://ntfy.sh/) – Simple notification service
+-   [{{< iconify simple-icons:ntfy >}} ntfy.sh](https://ntfy.sh/) – Simple notification service
 
--   [Google Colaboratory](https://colab.research.google.com/) – Free Jupyter notebook environment that runs in the cloud
+-   [{{< iconify simple-icons googlecolab >}} Google Colaboratory](https://colab.research.google.com/) – Free Jupyter notebook environment that runs in the cloud
 
 ::: {style="font-size: 0.875em;"}
 Back to [course schedule](/index.html "Course schedule") ⏎
