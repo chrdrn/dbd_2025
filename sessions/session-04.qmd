@@ -1,0 +1,93 @@
+---
+title: "Session 4"
+subtitle: "📚 From Pretest to Analysis"
+bibliography: references_sessions.bib
+csl: ../apa-cv.csl 
+suppress-bibliography: true
+link-citations: false
+citations-hover: false
+---
+
+## Overview
+
+In this session we move from **fieldwork / pretest** to **analysis planning** with a focus on *digital behavioral data* and *text/image/geo* data as extensions of classic survey data.
+
+## Participate
+
+🖥️ [Session 04](/slides/slides-04.html)
+
+## Useful resources
+
+### about content analysis in general
+
+-   [@krippendorff2019]
+
+-   [@neuendorf2017]
+
+-   [@rössler2017]
+
+### about text as data & automated text analysis (with relation to surveys)
+
+-   [@grimmer2022]
+
+-   [@maier2018]
+
+-   [@roberts2014]
+
+### about embeddings
+
+-   [@devlin2019]
+
+-   [@mikolov2013]
+
+### about LLMs as coders (assistance)
+
+-   [@ashwin2025]
+
+-   [@gilardi2023]
+
+### about image analysis (OCR, object detection, multimodal)
+
+-   [@smith2007]
+
+-   [@redmon2015]
+
+-   [@radford2021]
+
+### about geospatial data & ESM (geofencing & GEMA)
+
+-   [@haas2020]
+
+-   [@kingsbury2024]
+
+-   [@zhang2024]
+
+## Useful tools
+
+### R packages
+
+-   `tidyverse`, `stringr`, `tidyr` – cleaning, reshaping, string ops
+-   `quanteda`, `quanteda.textstats`, `quanteda.textmodels` – text as data workflows (DFM, dictionaries, stats)
+-   `tidytext` – tidy text mining, lexicons, token workflows
+-   `stm` – structural topic models (STM), incl. open-ended responses
+-   `udpipe`, `spacyr` – tokenization, POS-tagging, lemmatization
+-   `text2vec` – embeddings + similarity/clustering pipelines
+-   `sf`, `lwgeom`, `geosphere` – spatial data + distances/geometry
+-   `tmap`, `leaflet` – interactive/static maps for exploration
+
+### Python packages
+
+-   `pandas`, `numpy` – data wrangling
+-   `scikit-learn` – vectorization, clustering, evaluation
+-   `spacy`, `nltk` – NLP preprocessing
+-   `gensim` – topic models + word embeddings
+-   `sentence-transformers`, `transformers` – embeddings + LLM/Transformer tooling
+-   `bertopic` – topic modeling on embeddings
+-   `pytesseract` + `opencv-python` – OCR pipelines + image preprocessing
+-   `torch`, `torchvision` – deep learning base stack (if needed)
+-   `ultralytics` (YOLO) – object detection workflows
+-   `geopandas`, `shapely`, `pyproj` – geodata + projections
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/index.html "Course schedule") ⏎
+:::
