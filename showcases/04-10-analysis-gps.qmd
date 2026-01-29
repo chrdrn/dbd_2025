@@ -1,0 +1,175 @@
+---
+title: "Analyse: GPS"
+subtitle: "Werbeträger in Nürnberg – Visualisierung mit leaflet"
+format: html
+---
+
+::: callout-note
+## Zusammenfassung
+
+-   Diese Datei lädt die vorbereiteten GPS-Daten der Werbeträger in Nürnberg und visualisiert sie interaktiv.
+-   Im Fokus steht eine einfache Kategorienbildung, damit die Karte übersichtlich bleibt.
+-   Die Karte wird mit dem Paket `leaflet` erstellt, inklusive Farbskala und Popups.
+:::
+
+## Setup
+```{r}
+#| label: setup-session
+library(sf)
+library(dplyr)
+library(readr)
+library(here)
+library(leaflet)
+library(dbscan)
+library(leaflet.extras)
+```
+
+::: callout-note
+## Hintergrund: `leaflet`
+
+- `leaflet` ist ein R-Interface zur JavaScript-Bibliothek Leaflet und ermöglicht interaktive Webkarten.
+- Die Karten bestehen aus Kacheln (Tiles) als Hintergrund, auf die Marker oder Punkte gelegt werden.
+- In R wird die Karte über eine „Pipeline“ aufgebaut: erst Grundkarte, dann Ebenen wie Marker, Legenden und Popups.
+- Der Vorteil: Karten sind zoom- und verschiebbar, und lassen sich direkt im HTML-Output erkunden.
+:::
+
+## Import data
+
+```{r}
+#| label: data-gps-import
+df <- read_csv(
+    here("data/gps-advertings_in_nbg.csv")
+)
+```
+
+## Create map
+```{r}
+#| label: map-gps-leaflet
+
+# 1) Daten in ein sf-Objekt überführen (Punktgeometrie aus lon/lat)
+adv_sf <- st_as_sf(df, coords = c("lon", "lat"), crs = 4326, remove = FALSE) %>%
+  # fehlende/leer Kategorien konsistent füllen
+  mutate(advertising = if_else(is.na(advertising) | advertising == "", "unknown", advertising))
+
+# 2) (Optional) seltene Kategorien zusammenfassen, damit die Karte nicht überfrachtet
+top_types <- adv_sf %>% count(advertising, sort = TRUE) %>% slice_head(n = 8) %>% pull(advertising)
+adv_sf <- adv_sf %>%
+  # alle anderen Kategorien auf "other" bündeln
+  mutate(advertising2 = if_else(advertising %in% top_types, advertising, "other"))
+
+# 3) Farbpalette: Set2 erlaubt max. 8 Farben -> Palette dynamisch erweitern
+n_cats <- length(unique(adv_sf$advertising2))
+pal_cols <- colorRampPalette(RColorBrewer::brewer.pal(8, "Set2"))(n_cats)
+pal <- colorFactor(pal_cols, domain = adv_sf$advertising2)
+
+# 4) Karte aufbauen: Tiles -> Marker -> Legende
+leaflet(adv_sf) %>%
+  # Hintergrundkarte (hell, gut für Punkte)
+  addProviderTiles("CartoDB.Positron") %>%
+  # Punktmarker je Standort
+  addCircleMarkers(
+    lng = ~lon, lat = ~lat,
+    radius = 5,
+    color = ~pal(advertising2),
+    stroke = FALSE, fillOpacity = 0.8,
+    # Popup zeigt Originalkategorie + Name
+    popup = ~paste0("<b>", advertising, "</b><br>", name)
+  ) %>%
+  # Legende erklärt die Farben
+  addLegend("bottomright", pal = pal, values = ~advertising2, title = "advertising")
+```
+
+## Clusteranalyse (DBSCAN)
+
+```{r}
+#| label: map-gps-dbscan
+
+# 1) Koordinaten in metrisches CRS transformieren (für Distanz in Metern)
+adv_sf_m <- st_transform(adv_sf, 3857)
+coords_m <- st_coordinates(adv_sf_m)
+
+# 2) DBSCAN: eps = Radius in Metern, minPts = Mindestpunkte pro Cluster
+db <- dbscan(coords_m, eps = 150, minPts = 6)
+
+# 3) Clusterlabels an die Daten hängen (0 = "noise")
+adv_sf <- adv_sf %>%
+  mutate(cluster = if_else(db$cluster == 0L, "noise", paste0("C", db$cluster)))
+
+# 4) Karte: Clusterfarben + Legende
+pal_cl <- colorFactor("Set3", domain = adv_sf$cluster)
+
+leaflet(adv_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addCircleMarkers(
+    lng = ~lon, lat = ~lat,
+    radius = 5,
+    color = ~pal_cl(cluster),
+    stroke = FALSE, fillOpacity = 0.8,
+    popup = ~paste0("<b>Cluster:</b> ", cluster, "<br>", name)
+  ) %>%
+  addLegend("bottomright", pal = pal_cl, values = ~cluster, title = "DBSCAN-Cluster")
+```
+
+## Dichteanalyse (Heatmap)
+
+```{r}
+#| label: map-gps-heatmap
+# Heatmap: Dichteflächen statt Einzelpunkte
+leaflet(adv_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addHeatmap(
+    lng = ~lon, lat = ~lat,
+    blur = 20, radius = 12, max = 0.8
+  )
+```
+
+## Vergleich nach Kategorien
+
+```{r}
+#| label: map-gps-by-category
+# Pro Kategorie eine eigene Karte (Top-Kategorien + other)
+cats <- sort(unique(adv_sf$advertising2))
+
+for (cat in cats) {
+  cat_sf <- adv_sf %>% filter(advertising2 == cat)
+  print(
+    leaflet(cat_sf) %>%
+      addProviderTiles("CartoDB.Positron") %>%
+      addCircleMarkers(
+        lng = ~lon, lat = ~lat,
+        radius = 5, color = "#2c7fb8",
+        stroke = FALSE, fillOpacity = 0.8,
+        popup = ~paste0("<b>", advertising, "</b><br>", name)
+      ) %>%
+      addLegend("bottomright", colors = "#2c7fb8", labels = cat, title = "Kategorie")
+  )
+}
+```
+
+## Nearest-Neighbor-Distanz
+
+```{r}
+#| label: nn-distance
+# Distanz in Metern berechnen (metrisches CRS)
+adv_sf_m <- st_transform(adv_sf, 3857)
+
+# Nächster Nachbar für jeden Punkt
+nn_idx <- st_nearest_feature(adv_sf_m)
+nn_dist <- st_distance(adv_sf_m, adv_sf_m[nn_idx, ], by_element = TRUE)
+
+# Ergebnis als numerische Meterwerte
+adv_sf_m$nn_dist_m <- as.numeric(nn_dist)
+
+# Durchschnittliche NN-Distanz je Kategorie
+nn_summary <- adv_sf_m %>%
+  st_drop_geometry() %>%
+  group_by(advertising2) %>%
+  summarize(
+    n = n(),
+    nn_mean_m = mean(nn_dist_m, na.rm = TRUE),
+    nn_median_m = median(nn_dist_m, na.rm = TRUE)
+  ) %>%
+  arrange(nn_mean_m)
+
+nn_summary
+```

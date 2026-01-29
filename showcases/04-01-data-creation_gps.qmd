@@ -1,0 +1,132 @@
+---
+title: "Create data: GPS"
+subtitle: "Advertising spots in Nürnberg based on OSM"
+format: html
+---
+
+::: callout-note
+## Information
+
+-   Diese Datei zeigt, wie OpenStreetMap-Daten (OSM) für Werbeträger in Nürnberg abgerufen, vereinheitlicht und als CSV gespeichert werden.
+-   Die Datenquelle ist die Overpass-API (OSM), die über das Paket `osmdata` angesprochen wird.
+-   Die Überarbeitung umfasst:
+    -   Vereinheitlichung verschiedener Geometrietypen (Punkt, Linie, Polygon) auf einen gemeinsamen Punkt (Koordinaten)
+    -   Entfernen doppelter OSM-Objekte und eine einfache Bereinigung fehlender Namen.
+:::
+
+## Setup
+
+```{r}
+#| label: setup-session
+library(osmdata)
+library(sf)
+library(dplyr)
+library(readr)
+library(here)
+library(tidyverse)
+```
+
+## OSM API Call
+
+::: callout-note
+## Hintergrund: OpenStreetMap
+- OpenStreetMap (OSM) ist eine frei zugängliche, kollaborativ gepflegte Weltkarte,   ähnlich zu Wikipedia für Geodaten.
+- Die Plattform stellt verschiedene Geometrietypen bereit (Punkte, Linien,   Flächen) und speichert Attribute (Tags) wie `amenity`, `shop` oder
+  `advertising`.
+- Die Daten sind offen lizenziert (ODbL) und können für Analysen, Karten oder
+  Forschung genutzt werden.
+- Eingepflegt werden die Daten durch eine weltweite Community, z.B. über
+  Vor-Ort-Erhebungen, GPS-Tracks, Luft- und Satellitenbilder sowie
+  öffentlich verfügbare Datensätze mit kompatibler Lizenz.
+- Datenabdeckung und Detailgrad unterscheiden sich je nach Region.
+- Mit Hilfe der Overpass-API können gezielte Suchanfragen an die OSM-Daten gestellt werden (z.B. „alle Objekte mit advertising=* in Nürnberg“). 
+:::
+
+::: callout-note
+## Hintergrund: `osmdata`
+- `osmdata` übernimmt diese Overpass-API Abfragen in R: Es formuliert die Overpass-Query, sendet sie an die API und gibt die Antworten als `sf`-Objekte zurück.
+- Statt eine Karte „als Bild“ zu laden, holt `osmdata` die Daten als Tabellen. Jede Zeile steht für ein Objekt (z.B. ein Werbeträger) und hat Koordinaten
+  plus zusätzliche Merkmale (Tags).
+- Geodaten haben unterschiedliche Formen: Punkt (ein Standort), Linie (z.B. Straße) oder Fläche (z.B. Gebäude). `osmdata` liefert diese Formen als `sf`-Objekte, damit sie in R wie normale Datensätze bearbeitet, gefiltert und visualisiert werden können.
+- Ein `sf`-Objekt („simple features“) ist ein spezieller Datensatz in R, der Tabellen-Spalten mit einer Geometrie-Spalte kombiniert. So bleiben räumliche
+  Lage (Punkt/Linie/Fläche) und Attribute zusammen und können mit vielen Geodaten-Funktionen verarbeitet werden.
+:::
+
+```{r}
+#| label: data-osm-api_call
+
+# 1) Räumliche Ausdehnung bestimmen: Bounding Box für Nürnberg
+#    (einsteigerfreundlich, da nur Ortsname nötig ist)
+bb <- getbb("Nürnberg, Germany")
+
+# 2) Overpass-Abfrage: alle OSM-Objekte mit Tag advertising=*
+#    (OSM-Schlüssel "advertising" umfasst z.B. billboard, column, etc.)
+q <- opq(bbox = bb) %>%
+  add_osm_feature(key = "advertising")
+
+# 3) Abfrage ausführen und als sf-Objekte (Punkte/Linien/Polygone) laden
+dat <- osmdata_sf(q)
+
+# 4) Punkte: direkt nutzbar, Koordinaten extrahieren
+pts <- dat$osm_points %>%
+  st_transform(4326) %>%
+  mutate(
+    lon = st_coordinates(.)[,1],
+    lat = st_coordinates(.)[,2],
+    geom_source = "point"
+  ) %>%
+  st_drop_geometry()
+
+# 5) Polygone: Flächen werden auf ihre Zentroiden reduziert
+#    (damit alle Geometrien später einheitlich als Punkt vorliegen)
+polys_cent <- dat$osm_polygons %>%
+  st_transform(4326) %>%
+  st_centroid() %>%
+  mutate(
+    lon = st_coordinates(.)[,1],
+    lat = st_coordinates(.)[,2],
+    geom_source = "polygon_centroid"
+  ) %>%
+  st_drop_geometry()
+
+# 6) Linien: selten, aber möglich -> ebenfalls auf Zentroiden reduzieren
+lines_cent <- dat$osm_lines %>%
+  st_transform(4326) %>%
+  st_centroid() %>%
+  mutate(
+    lon = st_coordinates(.)[,1],
+    lat = st_coordinates(.)[,2],
+    geom_source = "line_centroid"
+  ) %>%
+  st_drop_geometry()
+
+# 7) Zusammenführen, Duplikate entfernen und Variablen vereinheitlichen
+advertising_nb <- bind_rows(pts, polys_cent, lines_cent) %>%
+  distinct(osm_id, .keep_all = TRUE) %>%
+  transmute(
+    osm_id,
+    # Fehlende Namen werden für konsistente Auswertung ersetzt
+    name = if_else(is.na(name) | name == "", "(ohne Name)", name),
+    # advertising enthält die OSM-Klassifikation (z.B. billboard, column)
+    advertising = advertising,
+    lat, lon,
+    geom_source
+  )
+```
+
+
+```{r}
+#| label: data-osm-preview
+
+advertising_nb %>% glimpse()
+```
+
+
+```{r}
+#| label: data-gps-export
+
+# 8) Ergebnis als CSV speichern (lokale Datei im Projektverzeichnis)
+write_csv(advertising_nb,
+  here("data/gps-advertings_in_nbg.csv")
+)
+```
