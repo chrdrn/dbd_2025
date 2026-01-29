@@ -55,6 +55,11 @@ website:
           - href: course-team.qmd
             text: Teaching team
 
+      - section: "Examples"
+        contents:
+          - href: showcases/04-01-data-creation_gps.qmd
+          - href: showcases/04-10-analysis-gps.qmd
+
     #   - section: "Data collection"
     #     contents:
     #       - href: data_collection/01_01-data_collection-presidential_debate.qmd
