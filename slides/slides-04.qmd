@@ -1,0 +1,475 @@
+---
+title: "From Pretest to Analysis"
+subtitle: "Block 4"
+date: 30 01 2026
+date-format: "DD.MM.YYYY"
+bibliography: references_slides.bib
+---
+
+# Begrüßung & Koordination {#intro background-image="img/slide_bg-agenda.png"}
+
+Kurzer Rückblick & Organisatorisches zum Anfang
+
+```{r}
+#| label: setup-slide-session
+#| echo: false
+
+# Load packages
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(
+    here, 
+    tidyverse,
+    gt, gtExtras,
+    reticulate,
+    countdown
+)
+
+# Load schedule
+source(here("slides/schedule.R"))
+```
+
+```{r}
+#| eval: false
+#| echo: false
+
+# Run on python setup
+reticulate::py_install("requests", pip = TRUE)
+```
+
+## Semesterplan
+
+```{r}
+#| label: table-schedule-semester
+#| echo: false 
+
+schedule %>%
+    gt::gt(id = "schedule") %>%
+    gt::fmt_markdown(columns = c(Datum, Topic)) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(
+        table.width = gt::pct(90), 
+        table.font.size = "20px"
+    ) %>%
+    gtExtras::gt_highlight_rows(
+        rows = 5,
+        fill = "#C50F3C", 
+        alpha = 0.2,
+        bold_target_only = TRUE,
+        target_col = Topic       
+    )
+```
+
+## Heutige Agenda
+
+#### Überblick über den Ablauf des heutigen Tages
+
+```{r}
+#| label: table-schedule-block
+#| echo: false
+
+block_schedule_json <- '[
+    {
+        "Slot": "",
+        "Zeit": "09:00 - 09:15",
+        "Programmpunkt": "[Begrüßung & Koordination](#intro)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "09:15 - 09:30",
+        "Programmpunkt": "Kurze Pause"
+    },
+    {
+        "Slot": "1",
+        "Zeit": "09:30 - 11:15",
+        "Programmpunkt": "[Bewertung der Feldphase](#slot1)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "11:15 - 11:30",
+        "Programmpunkt": "Kurze Pause"
+    },
+    {
+        "Slot": "2",
+        "Zeit": "11:30 - 13:00",
+        "Programmpunkt": "[Analyse im Fokus](#slot2)"
+    },
+    {
+        "Slot": "",
+        "Zeit": "13:00 - 14:00",
+        "Programmpunkt": "Mittagspause"
+    },
+    {
+        "Slot": "3",
+        "Zeit": "14:00 - 15:45",
+        "Programmpunkt": "[Hands-On: Edit & Plan](#slot3)"
+    },
+    {
+        "Slot": "4",
+        "Zeit": "15:45 - 16:00",
+        "Programmpunkt": "[Abschluss & Ausblick](#slot4)"
+    }
+]'
+
+## Load schedule to environment
+block_schedule <- fromJSON(block_schedule_json) %>% tibble()
+block_schedule %>% 
+    gt::gt(id = "block_schedule") %>%
+    gt::fmt_markdown(columns = c(Zeit, Programmpunkt)) %>% 
+    gtExtras::gt_theme_538() %>% 
+    gt::tab_options(
+        table.width = gt::pct(90), 
+        table.font.size = "20px"
+    ) 
+    # gtExtras::gt_highlight_rows(
+    #     rows = 1,
+    #     fill = "#C50F3C", 
+    #     alpha = 0.2,
+    #     bold_target_only = TRUE,
+    #     target_col = Topic       
+    # )
+```
+
+## 💬 Let's discuss
+
+#### Organisatorische Hinweise
+
+-   **Deadline** für **Implementation Report**: ***28.02.2026*** um 23:59
+-   Kurzer **Erfahrungsbericht** aus **Teilnehmenden**-Perspektive
+    -   Wie gut ließ sich die Studie **in euren Alltag integrieren**?
+    -   Wie empfandet ihr **Länge und Häufigkeit** der Befragungen?
+    -   Gab es Momente, die besonders **störend oder belastend** waren?
+    -   Was hat euch **überrascht**?
+
+# Short Break {#break1 background-image="img/slide_bg-break_short.png"}
+
+15 Minuten Pause
+
+```{r}
+#| label: countdown-break1
+#| echo: false
+
+countdown(
+    minutes = 15,
+    warn_when = 120,
+    update_every = 30,
+    bottom = 0)
+```
+
+# Bewertung der Feldphase {#slot1 background-image="img/slide_bg-section.png"}
+
+Kurze Reflexion der bisherigen Feldphase
+
+## 💻 And now … you!
+
+#### Arbeitsauftrag (20 Minuten): Reflexion der Feldphase
+
+<br>
+
+::: callout-caution
+##### Arbeitsauftrag
+
+In euren Gruppen ...
+
+-   erstellt eine **Kurzpräsentation (max. 3 Folien)**, die auf folgende Punkte eingeht:
+    -   Was lief gut, was lief nicht so gut? (1 Folie)
+    -   Was wollt/würdet ihr beim nächsten Mal anders machen? (1 Folie)
+    -   Was ist noch unklar, wozu habt ihr Fragen oder möchtet Feedback? (1 Folie)
+:::
+
+::: callout-note
+##### Folienvorlage verwenden
+
+-   Bitte nutzt die **bereitgestellte Folienvorlage (Google Slides)** auf der nächsten Folie
+:::
+
+## Get started!
+
+#### Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse
+
+<br>
+
+:::::::::: columns
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/dg3t5 qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe A *('Ansprachformen im Alltag')*](https://t1p.de/dg3t5)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/2mbsp qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe B *('Out-of-home recall')*](https://t1p.de/2mbsp)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/a0z30 qr3 width=150 height=150 colorDark='#007de5' >}} [Gruppe C *("Informelle visuelle Kommunikation")*](https://t1p.de/a0z30)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/sovur qr4 width=150 height=150 colorDark='#0094de' >}} [Gruppe D *("Sticky Politics")*](https://t1p.de/sovur)
+:::
+::::::::::
+
+```{r}
+#| label: countdown-pitch
+#| echo: false
+
+countdown(
+    minutes = 20,
+    warn_when = 300,
+    update_every = 30,
+    bottom = 0)
+```
+
+# Short Break {#break2 background-image="img/slide_bg-break_short.png"}
+
+15 Minuten Pause
+
+```{r}
+#| label: countdown-break2
+#| echo: false
+
+countdown(
+    minutes = 15,
+    warn_when = 120,
+    update_every = 30,
+    bottom = 0)
+```
+
+# Analyse im Fokus {#slot2 background-image="img/slide_bg-section.png"}
+
+Datenquellen jenseits klassischer Fragebögen: **GPS**, **Text (as data)**, **Bilder (as data)**
+
+## The missing link
+
+#### Wie neue Datenquellen die klassischen Surveys ergänzen
+
+-   Projektentwürfe folgen **klassischer Surveyforschung**: Fokus auf **Selbstberichte** und Auswertung von **Skalen**
+-   Datenquellen wie **Inhalte, Bilder und Orte** liefern zusätzlichen Kontext [@struminskaya2020; @keusch2021]
+-   Herausforderung: Wie lassen sich diese Datenmassen **systematisch auswerten?**
+-   Lösung: **(Teil-)automatisierte Analyseverfahren**
+
+## Fokus auf die "Inhalte"
+
+#### Inhaltsanalyse als methodische Brücke
+
+-   Zentrale Methode der **Kommunikationswissenschaft** [@krippendorff2018; @mayring2022]
+-   Ziel: **Systematische Analyse** von Kommunikationsinhalten
+-   Vorgehen: **manuelle Codierung** mithilfe eines **Codebuchs** mit *Definitionen*, *Kategorien* und *(Anker-)Beispielen*
+-   Anwendung auf **Text**, **Bild** und **multimodale Inhalte**
+
+## Von manuell zu automatisiert
+
+#### Zu den Vorteilen bzw. der Notwendigkeit der Automatisierung
+
+-   **Manuelle** Codierung ist **aufwendig** und **schwer skalierbar**
+-   **Automatisierung** ermöglicht:
+    -   Verarbeitung **größerer** **Datenmengen**
+    -   **Schnellere** Analyse
+    -   höhere **Reproduzierbarkeit**
+-   **Ziel**: **Unterstützung**, nicht Ersatz der "klassischen" Inhaltsanalyse [@grimmer2013; @hase2023]
+-   **Best Practice**: automatisierte Schritte **validieren** gegen manuelle Kodierung [@chan2020]
+
+## Text as data
+
+#### Automatisierte Analyse von Textinhalten
+
+-   Grundidee: **Texte** werden als **strukturierte Daten** behandelt [@grimmer2013]
+-   Anschlussfähigkeit an inhaltsanalytische Logiken [@krippendorff2018]
+-   Typische Verfahren (von einfach zu komplex):
+    -   **Keywording & Dictionaries** (z. B. Frame-/Themenlisten) [@grimmer2013]
+    -   **Topic Modeling** für thematische Cluster [@blei2003; @maier2018; @chen2023]
+    -   **Embeddings** zur Ähnlichkeitsanalyse [@reimers2019; @jurafsky2024]
+    -   **LLMs** für Kodierung(-svorschläge) oder Summary [@brown2020]
+
+## Werbeinhalte codieren und mit ESM verknüpfen
+
+#### Inhaltsanalyse im Survey- und ESM-Kontext
+
+-   **Allgemein:**
+
+    -   Ableitung von Themen, Frames oder Tonalitäten
+    -   Verknüpfung von exponierten Inhalten mit Einstellungen und Bewertungen
+
+-   **in Bezug auf das Projekt:**
+
+    -   Kodierung von **Werbebotschaften** (z. B. Thema, Frame, Call-to-Action)
+
+    -   Abgleich zwischen **Inhalt der Werbung und situativer Reaktion im ESM**
+
+    -   Frage: Welche **Inhalte triggern Aufmerksamkeit, Emotionen oder Erinnerung**?
+
+## Spezialfall Bildanalyse
+
+Inhalte jenseits von Text
+
+-   Bilder transportieren **Motive, Akteure und mehr Kontext**
+-   Aber: Automatisierte Bildanalyse ist **komplexer als Textanalyse**
+-   Typische Verfahren
+    -   **OCR**: Text aus Bildern extrahieren [@smith2007]
+    -   **Bildklassifikation**: Motive, Akteursgruppen
+    -   **Objekterkennung:** Personen, Symbole, Settings [@redmon2016]
+    -   **Multimodale Ansätze:** Bild- und Textinformationen kombinieren [@radford2021]
+
+## Bildmotive analysieren und Wirkung vergleichen
+
+#### Visuelle Inhalte als relevante Daten
+
+-   **Allgemein:**
+
+    -   Bilder als **eigenständige Bedeutungsträger** (Motive, Akteure, Symbolik)
+    -   Untersuchung **visueller Reize** jenseits bewusster Erinnerung
+
+-   **in Bezug auf das Projekt:**
+
+    -   Analyse von **Bildmotiven auf Plakaten** (z. B. Personen, Produkte, Emotionen)
+
+    -   **Verknüpfung** **visueller Merkmale** mit ESM-**Antworten** nach Exposition
+
+    -   **Vergleich** unterschiedlicher **Motivtypen** hinsichtlich **Wirkung**
+
+## Kontext des Kontextes
+
+#### Geo-Daten als analytische Dimension
+
+-   Ort **beeinflusst** Wahrnehmung, Verhalten und Erreichbarkeit
+-   GPS-Daten **ergänzen Surveys um räumlichen Kontext** (z. B. durch räumliche Muster/Cluster) [@struminskaya2020; @harari2016]
+-   **Verknüpfung** mit Umwelt-, Infrastruktur- und Strukturdaten [@keusch2021]
+
+## Aber was lässt sich auswerten?
+
+#### Analysemöglichkeiten von Geo-Daten
+
+-   **Mobilität**: Wege, Aufenthaltsorte, Routinen
+-   **Kontextzuordnung**: Umgebung, Urbanität, Nähe zu Events
+-   **Spatial Joins** mit externen Daten:
+    -   Points of Interest (POI)
+
+    -   Demografie
+
+    -   Umweltindikatoren
+
+## Geo-Daten machen Werbekontakt situativ messbar
+
+#### Räumlicher Kontext von Befragungssituationen
+
+-   Allgemein:
+
+    -   **Kontextualisierung** von Antworten durch Ort und Bewegung
+    -   Identifikation **situationsabhängiger Effekte (**z. B. unterwegs vs. stationär)
+    -   Analyse **räumlicher Muster in Befragungsdaten**
+
+-   in Bezug auf das Projekt:
+
+    -   Abschätzung von **Kontaktwahrscheinlichkeiten mit Außenwerbung**
+
+    -   Auslösen von ESM-**Remindern** in **räumlicher Nähe zu Werbeträgern**
+
+    -   **Verknüpfung** von Ort – Werbekontakt – unmittelbarer Reaktion
+
+## Was, Wo und Wie
+
+#### Daten verknüpfen für realitätsnahe (Survey-)Forschung
+
+-   **Inhalt**: Was wird kommuniziert? (Text, Bild, Motive)
+-   **Kontext**: Wo und in welcher Situation? (Ort, Bewegung)
+-   **Reaktion**: Wie wird unmittelbar reagiert? (ESM, Emotionen, Bewertungen)
+-   **Verknüpfung ermöglicht:**
+    -   **Validierung** von Selbstberichten
+
+    -   **Kontextualisierung** von Antworten
+
+    -   stärkere **Triangulation** klassischer und automatisierter Verfahren
+
+# Lunch Break {background-image="img/slide_bg-break_lunch.png"}
+
+60 Minuten Mittagspause
+
+# Hands-on: Edit & Plan {#slot3 background-image="img/slide_bg-section.png"}
+
+(Re-)Kalibrierung der Umfrage und (theoretischer) Analysefahrplan
+
+## 💻 Hands-on Zeit!
+
+#### Zwei Arbeitsaufträge (insgesamt 90 Minuten)
+
+::: callout-caution
+##### 1. Arbeitsauftrag
+
+Prüft auf Basis des Feedbacks von heute Morgen, ob **noch Anpassungen**
+
+-   am **Fragebogen(design)** notwendig sind?
+-   am **Schedule** notwendig sind?
+-   an den **Ausfüllhinweisen** notwendig sind?
+:::
+
+::: callout-caution
+##### 2. Arbeitsauftrag
+
+In euren Gruppen ...
+
+-   **sichtet** das bisherige **Datenmaterial** an & **überlegt** euch mindestens **1 Möglichkeit** des **Linking** für eure Daten(-quellen)
+-   formuliert den **Vorschlag** bis zur **nächsten Sitzung** in einer Google-Präsentation **(Vorlagen auf nächster Folie)** aus
+:::
+
+## Get started!
+
+#### Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse
+
+<br>
+
+:::::::::: columns
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/694f8 qr1 width=150 height=150 colorDark='#C50F3C' >}} [Gruppe A *('Ansprachformen im Alltag')*](https://t1p.de/694f8)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/siidr qr2 width=150 height=150 colorDark='#c22786' >}} [Gruppe B *('Out-of-home recall')*](https://t1p.de/siidr)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/55ala qr3 width=150 height=150 colorDark='#007de5' >}} [Gruppe C *("Informelle visuelle Kommunikation")*](https://t1p.de/55ala)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="20%"}
+{{< qrcode https://t1p.de/9v266 qr4 width=150 height=150 colorDark='#0094de' >}} [Gruppe D *("Sticky Politics")*](https://t1p.de/9v266)
+:::
+::::::::::
+
+## To Dos ...
+
+#### Checkliste für die Arbeitsaufträge
+
+-   Bis zum **Ende der Sitzung**
+
+    -   eventuelle **Anpassungen** an **Schedule oder .env-Variablen** (z.B. Umfragelink) per Mail an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
+    -   eventuelle **Anpassungen** der **Ausfüllhinweise** als **StudOn-Forumspost**
+
+-   Bis zur **nächsten Sitzung**
+
+    -   **Entwurf für einen Analyseplan**, der **Data-Linking** beinhaltet (auf Basis der Quellen aus der [Session Info](/sessions/session-04.html))
+
+    -   mit den **Daten der eigenen Umfrage vertraut** machen
+
+# Time for questions {#slot4 background-image="img/slide_bg-question.png"}
+
+# Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
+
+## Literatur
+
+::: {#refs}
+:::
