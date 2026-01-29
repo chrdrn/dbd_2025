@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R cheatsheets – Digital behavioral data</title>
+<title>Create data: GPS – Digital behavioral data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../computing/computing-useful_links.html" rel="next">
-<link href="../computing/computing-textbooks.html" rel="prev">
+<link href="../showcases/04-10-analysis-gps.html" rel="next">
+<link href="../course-team.html" rel="prev">
 <link href="../img/logo_fau_red.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -78,11 +113,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="R cheatsheets – Digital behavioral data">
-<meta property="og:description" content="Homepage of the course ’Digital behavioral data‘ at Friedrich-Alexander-Universtität (FAU) Erlangen-Nürnberg">
-<meta property="og:image" content="cheatsheets/data-visualization.png">
+<meta property="og:title" content="Create data: GPS – Digital behavioral data">
+<meta property="og:description" content="Advertising spots in Nürnberg based on OSM">
 <meta property="og:site_name" content="Digital behavioral data">
-<meta property="og:image:alt" content="ggplot2 cheat sheet">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +289,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Examples</a></li><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Create data: GPS</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -325,16 +358,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Examples</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../showcases/04-01-data-creation_gps.html" class="sidebar-item-text sidebar-link">
+  <a href="../showcases/04-01-data-creation_gps.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Create data: GPS</span></a>
   </div>
 </li>
@@ -348,13 +381,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Working with R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../computing/computing-instructions_R.html" class="sidebar-item-text sidebar-link">
@@ -369,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link active">
+  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R Cheatsheets</span></a>
   </div>
 </li>
@@ -386,16 +419,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#osm-api-call" id="toc-osm-api-call" class="nav-link" data-scroll-target="#osm-api-call">OSM API Call</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-01-data-creation_gps.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Examples</a></li><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Create data: GPS</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">R cheatsheets</h1>
+<h1 class="title">Create data: GPS</h1>
+<p class="subtitle lead">Advertising spots in Nürnberg based on OSM</p>
 </div>
 
 
@@ -412,60 +453,199 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The following cheatsheets come from <a href="https://posit.co/resources/cheatsheets" class="uri">https://posit.co/resources/cheatsheets</a>. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf"><img src="cheatsheets/data-visualization.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf"><img src="cheatsheets/tidyr.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf"><img src="cheatsheets/strings.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf"><img src="cheatsheets/lubridate.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf"><img src="cheatsheets/data-transformation.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf"><img src="cheatsheets/data-import.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf"><img src="cheatsheets/factors.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf"><img src="cheatsheets/rstudio-ide.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Information
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Diese Datei zeigt, wie OpenStreetMap-Daten (OSM) für Werbeträger in Nürnberg abgerufen, vereinheitlicht und als CSV gespeichert werden.</li>
+<li>Die Datenquelle ist die Overpass-API (OSM), die über das Paket <code>osmdata</code> angesprochen wird.</li>
+<li>Die Überarbeitung umfasst:
+<ul>
+<li>Vereinheitlichung verschiedener Geometrietypen (Punkt, Linie, Polygon) auf einen gemeinsamen Punkt (Koordinaten)</li>
+<li>Entfernen doppelter OSM-Objekte und eine einfache Bereinigung fehlender Namen.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Data (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>here() starts at /Users/ca/repositories/academic/dbd_2025</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ forcats   1.0.1     ✔ stringr   1.5.1
+✔ ggplot2   4.0.0     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.1.0     </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+</section>
+<section id="osm-api-call" class="level2">
+<h2 class="anchored" data-anchor-id="osm-api-call">OSM API Call</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Hintergrund: OpenStreetMap
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>OpenStreetMap (OSM) ist eine frei zugängliche, kollaborativ gepflegte Weltkarte, ähnlich zu Wikipedia für Geodaten.</li>
+<li>Die Plattform stellt verschiedene Geometrietypen bereit (Punkte, Linien, Flächen) und speichert Attribute (Tags) wie <code>amenity</code>, <code>shop</code> oder <code>advertising</code>.</li>
+<li>Die Daten sind offen lizenziert (ODbL) und können für Analysen, Karten oder Forschung genutzt werden.</li>
+<li>Eingepflegt werden die Daten durch eine weltweite Community, z.B. über Vor-Ort-Erhebungen, GPS-Tracks, Luft- und Satellitenbilder sowie öffentlich verfügbare Datensätze mit kompatibler Lizenz.</li>
+<li>Datenabdeckung und Detailgrad unterscheiden sich je nach Region.</li>
+<li>Mit Hilfe der Overpass-API können gezielte Suchanfragen an die OSM-Daten gestellt werden (z.B. „alle Objekte mit advertising=* in Nürnberg“).</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Hintergrund: <code>osmdata</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><code>osmdata</code> übernimmt diese Overpass-API Abfragen in R: Es formuliert die Overpass-Query, sendet sie an die API und gibt die Antworten als <code>sf</code>-Objekte zurück.</li>
+<li>Statt eine Karte „als Bild“ zu laden, holt <code>osmdata</code> die Daten als Tabellen. Jede Zeile steht für ein Objekt (z.B. ein Werbeträger) und hat Koordinaten plus zusätzliche Merkmale (Tags).</li>
+<li>Geodaten haben unterschiedliche Formen: Punkt (ein Standort), Linie (z.B. Straße) oder Fläche (z.B. Gebäude). <code>osmdata</code> liefert diese Formen als <code>sf</code>-Objekte, damit sie in R wie normale Datensätze bearbeitet, gefiltert und visualisiert werden können.</li>
+<li>Ein <code>sf</code>-Objekt („simple features“) ist ein spezieller Datensatz in R, der Tabellen-Spalten mit einer Geometrie-Spalte kombiniert. So bleiben räumliche Lage (Punkt/Linie/Fläche) und Attribute zusammen und können mit vielen Geodaten-Funktionen verarbeitet werden.</li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Räumliche Ausdehnung bestimmen: Bounding Box für Nürnberg</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#    (einsteigerfreundlich, da nur Ortsname nötig ist)</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>bb <span class="ot">&lt;-</span> <span class="fu">getbb</span>(<span class="st">"Nürnberg, Germany"</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) Overpass-Abfrage: alle OSM-Objekte mit Tag advertising=*</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#    (OSM-Schlüssel "advertising" umfasst z.B. billboard, column, etc.)</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="fu">opq</span>(<span class="at">bbox =</span> bb) <span class="sc">%&gt;%</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">"advertising"</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Abfrage ausführen und als sf-Objekte (Punkte/Linien/Polygone) laden</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">osmdata_sf</span>(q)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Punkte: direkt nutzbar, Koordinaten extrahieren</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>pts <span class="ot">&lt;-</span> dat<span class="sc">$</span>osm_points <span class="sc">%&gt;%</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">lon =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">1</span>],</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">2</span>],</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">geom_source =</span> <span class="st">"point"</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>()</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) Polygone: Flächen werden auf ihre Zentroiden reduziert</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="co">#    (damit alle Geometrien später einheitlich als Punkt vorliegen)</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>polys_cent <span class="ot">&lt;-</span> dat<span class="sc">$</span>osm_polygons <span class="sc">%&gt;%</span></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_centroid</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">lon =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">1</span>],</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">2</span>],</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">geom_source =</span> <span class="st">"polygon_centroid"</span></span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: st_centroid assumes attributes are constant over geometries</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 6) Linien: selten, aber möglich -&gt; ebenfalls auf Zentroiden reduzieren</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>lines_cent <span class="ot">&lt;-</span> dat<span class="sc">$</span>osm_lines <span class="sc">%&gt;%</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_centroid</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">lon =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">1</span>],</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">2</span>],</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">geom_source =</span> <span class="st">"line_centroid"</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: st_centroid assumes attributes are constant over geometries</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 7) Zusammenführen, Duplikate entfernen und Variablen vereinheitlichen</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>advertising_nb <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pts, polys_cent, lines_cent) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(osm_id, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    osm_id,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fehlende Namen werden für konsistente Auswertung ersetzt</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(name) <span class="sc">|</span> name <span class="sc">==</span> <span class="st">""</span>, <span class="st">"(ohne Name)"</span>, name),</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># advertising enthält die OSM-Klassifikation (z.B. billboard, column)</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">advertising =</span> advertising,</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    lat, lon,</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    geom_source</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>advertising_nb <span class="sc">%&gt;%</span> <span class="fu">glimpse</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 405
+Columns: 6
+$ osm_id      &lt;chr&gt; "1266669682", "1541149276", "1729605524", "1729605526", "1…
+$ name        &lt;chr&gt; "(ohne Name)", "(ohne Name)", "(ohne Name)", "(ohne Name)"…
+$ advertising &lt;chr&gt; "column", "column", NA, NA, NA, NA, "column", "column", "y…
+$ lat         &lt;dbl&gt; 49.46192, 49.40856, 49.45004, 49.45004, 49.45007, 49.45007…
+$ lon         &lt;dbl&gt; 11.09206, 11.10481, 11.07586, 11.07590, 11.07586, 11.07590…
+$ geom_source &lt;chr&gt; "point", "point", "point", "point", "point", "point", "poi…</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 8) Ergebnis als CSV speichern (lokale Datei im Projektverzeichnis)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(advertising_nb,</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(<span class="st">"data/gps-advertings_in_nbg.csv"</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -883,13 +1063,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../computing/computing-textbooks.html" class="pagination-link" aria-label="R Textbooks">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R Textbooks</span>
+      <a href="../course-team.html" class="pagination-link" aria-label="Teaching team">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Teaching team</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../computing/computing-useful_links.html" class="pagination-link" aria-label="Useful R sources">
-        <span class="nav-page-text">Useful R sources</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../showcases/04-10-analysis-gps.html" class="pagination-link" aria-label="Analyse: GPS">
+        <span class="nav-page-text">Analyse: GPS</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -901,7 +1081,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/computing/computing-cheatsheets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-01-data-creation_gps.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ☕ &amp; <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

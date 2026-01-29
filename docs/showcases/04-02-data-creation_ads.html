@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Christoph Adrian (Seminar material)">
+<meta name="dcterms.date" content="2026-01-28">
 
-<title>R cheatsheets – Digital behavioral data</title>
+<title>Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts) – Digital behavioral data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../computing/computing-useful_links.html" rel="next">
-<link href="../computing/computing-textbooks.html" rel="prev">
 <link href="../img/logo_fau_red.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -78,11 +78,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="R cheatsheets – Digital behavioral data">
+<meta property="og:title" content="Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts) – Digital behavioral data">
 <meta property="og:description" content="Homepage of the course ’Digital behavioral data‘ at Friedrich-Alexander-Universtität (FAU) Erlangen-Nürnberg">
-<meta property="og:image" content="cheatsheets/data-visualization.png">
 <meta property="og:site_name" content="Digital behavioral data">
-<meta property="og:image:alt" content="ggplot2 cheat sheet">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -348,13 +346,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Working with R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../computing/computing-instructions_R.html" class="sidebar-item-text sidebar-link">
@@ -369,7 +367,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link active">
+  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R Cheatsheets</span></a>
   </div>
 </li>
@@ -386,23 +384,76 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#scene-a-busy-city-intersection-large-billboard-4-images" id="toc-scene-a-busy-city-intersection-large-billboard-4-images" class="nav-link" data-scroll-target="#scene-a-busy-city-intersection-large-billboard-4-images"><span class="header-section-number">2</span> Scene A: Busy City Intersection — Large Billboard (4 images)</a>
+  <ul class="collapse">
+  <li><a href="#a1-energy-drink-voltrush" id="toc-a1-energy-drink-voltrush" class="nav-link" data-scroll-target="#a1-energy-drink-voltrush"><span class="header-section-number">2.1</span> A1 — Energy Drink (VoltRush)</a></li>
+  <li><a href="#a2-soft-drink-freshio" id="toc-a2-soft-drink-freshio" class="nav-link" data-scroll-target="#a2-soft-drink-freshio"><span class="header-section-number">2.2</span> A2 — Soft Drink (Freshio)</a></li>
+  <li><a href="#a3-mobile-service-linkra" id="toc-a3-mobile-service-linkra" class="nav-link" data-scroll-target="#a3-mobile-service-linkra"><span class="header-section-number">2.3</span> A3 — Mobile Service (Linkra)</a></li>
+  <li><a href="#a4-political-campaign-future-alliance" id="toc-a4-political-campaign-future-alliance" class="nav-link" data-scroll-target="#a4-political-campaign-future-alliance"><span class="header-section-number">2.4</span> A4 — Political Campaign (Future Alliance)</a></li>
+  </ul></li>
+  <li><a href="#scene-b-bus-stop-advertisement-4-images" id="toc-scene-b-bus-stop-advertisement-4-images" class="nav-link" data-scroll-target="#scene-b-bus-stop-advertisement-4-images"><span class="header-section-number">3</span> Scene B: Bus Stop Advertisement (4 images)</a>
+  <ul class="collapse">
+  <li><a href="#b1-vegan-fast-food-greenbite" id="toc-b1-vegan-fast-food-greenbite" class="nav-link" data-scroll-target="#b1-vegan-fast-food-greenbite"><span class="header-section-number">3.1</span> B1 — Vegan Fast Food (GreenBite)</a></li>
+  <li><a href="#b2-coffee-brand-roastline" id="toc-b2-coffee-brand-roastline" class="nav-link" data-scroll-target="#b2-coffee-brand-roastline"><span class="header-section-number">3.2</span> B2 — Coffee Brand (Roastline)</a></li>
+  <li><a href="#b3-fitness-app-moveon" id="toc-b3-fitness-app-moveon" class="nav-link" data-scroll-target="#b3-fitness-app-moveon"><span class="header-section-number">3.3</span> B3 — Fitness App (Moveon)</a></li>
+  <li><a href="#b4-public-health-ngo-mindopen" id="toc-b4-public-health-ngo-mindopen" class="nav-link" data-scroll-target="#b4-public-health-ngo-mindopen"><span class="header-section-number">3.4</span> B4 — Public Health NGO (MindOpen)</a></li>
+  </ul></li>
+  <li><a href="#scene-c-shopping-district-fashion-billboard-4-images" id="toc-scene-c-shopping-district-fashion-billboard-4-images" class="nav-link" data-scroll-target="#scene-c-shopping-district-fashion-billboard-4-images"><span class="header-section-number">4</span> Scene C: Shopping District — Fashion Billboard (4 images)</a>
+  <ul class="collapse">
+  <li><a href="#c1-streetwear-urbanfold" id="toc-c1-streetwear-urbanfold" class="nav-link" data-scroll-target="#c1-streetwear-urbanfold"><span class="header-section-number">4.1</span> C1 — Streetwear (UrbanFold)</a></li>
+  <li><a href="#c2-sportswear-flexa" id="toc-c2-sportswear-flexa" class="nav-link" data-scroll-target="#c2-sportswear-flexa"><span class="header-section-number">4.2</span> C2 — Sportswear (Flexa)</a></li>
+  <li><a href="#c3-sustainable-fashion-earthloom" id="toc-c3-sustainable-fashion-earthloom" class="nav-link" data-scroll-target="#c3-sustainable-fashion-earthloom"><span class="header-section-number">4.3</span> C3 — Sustainable Fashion (Earthloom)</a></li>
+  <li><a href="#c4-luxury-brand-valenor" id="toc-c4-luxury-brand-valenor" class="nav-link" data-scroll-target="#c4-luxury-brand-valenor"><span class="header-section-number">4.4</span> C4 — Luxury Brand (Valenor)</a></li>
+  </ul></li>
+  <li><a href="#scene-d-residential-street-lamp-post-posters-4-images" id="toc-scene-d-residential-street-lamp-post-posters-4-images" class="nav-link" data-scroll-target="#scene-d-residential-street-lamp-post-posters-4-images"><span class="header-section-number">5</span> Scene D: Residential Street — Lamp Post Posters (4 images)</a>
+  <ul class="collapse">
+  <li><a href="#d1-local-election-civic-future" id="toc-d1-local-election-civic-future" class="nav-link" data-scroll-target="#d1-local-election-civic-future"><span class="header-section-number">5.1</span> D1 — Local Election (Civic Future)</a></li>
+  <li><a href="#d2-environmental-ngo-cleantomorrow" id="toc-d2-environmental-ngo-cleantomorrow" class="nav-link" data-scroll-target="#d2-environmental-ngo-cleantomorrow"><span class="header-section-number">5.2</span> D2 — Environmental NGO (CleanTomorrow)</a></li>
+  <li><a href="#d3-road-safety-campaign-safesteps" id="toc-d3-road-safety-campaign-safesteps" class="nav-link" data-scroll-target="#d3-road-safety-campaign-safesteps"><span class="header-section-number">5.3</span> D3 — Road Safety Campaign (SafeSteps)</a></li>
+  <li><a href="#d4-energy-provider-gridone" id="toc-d4-energy-provider-gridone" class="nav-link" data-scroll-target="#d4-energy-provider-gridone"><span class="header-section-number">5.4</span> D4 — Energy Provider (GridOne)</a></li>
+  </ul></li>
+  <li><a href="#scene-e-small-town-roadside-billboard-4-images" id="toc-scene-e-small-town-roadside-billboard-4-images" class="nav-link" data-scroll-target="#scene-e-small-town-roadside-billboard-4-images"><span class="header-section-number">6</span> Scene E: Small Town Roadside Billboard (4 images)</a>
+  <ul class="collapse">
+  <li><a href="#e1-construction-company-stonefield-works" id="toc-e1-construction-company-stonefield-works" class="nav-link" data-scroll-target="#e1-construction-company-stonefield-works"><span class="header-section-number">6.1</span> E1 — Construction Company (Stonefield Works)</a></li>
+  <li><a href="#e2-furniture-store-homecraft" id="toc-e2-furniture-store-homecraft" class="nav-link" data-scroll-target="#e2-furniture-store-homecraft"><span class="header-section-number">6.2</span> E2 — Furniture Store (Homecraft)</a></li>
+  <li><a href="#e3-internet-provider-netway" id="toc-e3-internet-provider-netway" class="nav-link" data-scroll-target="#e3-internet-provider-netway"><span class="header-section-number">6.3</span> E3 — Internet Provider (Netway)</a></li>
+  <li><a href="#e4-regional-tourism-visit-northvale" id="toc-e4-regional-tourism-visit-northvale" class="nav-link" data-scroll-target="#e4-regional-tourism-visit-northvale"><span class="header-section-number">6.4</span> E4 — Regional Tourism (Visit Northvale)</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-02-data-creation_ads.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R cheatsheets</h1>
+<h1 class="title">Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christoph Adrian (Seminar material) </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 28, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -412,60 +463,331 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The following cheatsheets come from <a href="https://posit.co/resources/cheatsheets" class="uri">https://posit.co/resources/cheatsheets</a>. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf"><img src="cheatsheets/data-visualization.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf"><img src="cheatsheets/tidyr.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf"><img src="cheatsheets/strings.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf"><img src="cheatsheets/lubridate.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf"><img src="cheatsheets/data-transformation.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf"><img src="cheatsheets/data-import.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf"><img src="cheatsheets/factors.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf"><img src="cheatsheets/rstudio-ide.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="overview" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
+<p>This document contains a <strong>mini dataset of 20 prompts</strong> to generate photorealistic images of <strong>fictional outdoor advertising</strong> (billboards, posters) for use in <strong>computer vision / YOLO</strong> demonstrations.</p>
+<p>Design principles:</p>
+<ul>
+<li><strong>5 recurring scene templates</strong> (A–E), each with <strong>4 ad variations</strong><br>
+</li>
+<li><strong>Fictional brands/parties/NGOs</strong>, no real-world trademarks<br>
+</li>
+<li><strong>Brand name + slogan explicitly specified in English</strong> for higher text reliability<br>
+</li>
+<li>Scenes include multiple detectable objects (people, cars, buildings, traffic lights, etc.)</li>
+</ul>
+<hr>
+</section>
+<section id="scene-a-busy-city-intersection-large-billboard-4-images" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="scene-a-busy-city-intersection-large-billboard-4-images"><span class="header-section-number">2</span> Scene A: Busy City Intersection — Large Billboard (4 images)</h2>
+<section id="a1-energy-drink-voltrush" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="a1-energy-drink-voltrush"><span class="header-section-number">2.1</span> A1 — Energy Drink (VoltRush)</h3>
+<pre class="text"><code>"""
+Photorealistic outdoor advertising scene.
+Large billboard at a busy city intersection.
+
+Advertising a fictional energy drink brand called "VoltRush".
+Billboard text:
+Brand name: "VoltRush"
+Slogan: "POWER YOUR DAY"
+English language, bold capital letters.
+
+Cars, pedestrians and traffic lights visible.
+Modern buildings in the background.
+Daylight, frontal view.
+Documentary photography style.
+"""</code></pre>
+<pre class="{bash}"><code>ollama run x/z-image-turbo 
+/set seed 42
+/set width 1024
+/set height 768
+/set steps 25
+/set negative blurry, low quality, distorted text
+</code></pre>
+<pre class="{bash}"><code>"Photorealistic outdoor advertising scene.\nLarge billboard at a busy city intersection.\n\nAdvertising a fictional energy drink brand called \"VoltRush\".\nBillboard text:\nBrand name: \"VoltRush\"\nSlogan: \"POWER YOUR DAY\"\nEnglish language, bold capital letters.\n\nCars, pedestrians and traffic lights visible.\nModern buildings in the background.\nDaylight, frontal view.\nDocumentary photography style."</code></pre>
+</section>
+<section id="a2-soft-drink-freshio" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="a2-soft-drink-freshio"><span class="header-section-number">2.2</span> A2 — Soft Drink (Freshio)</h3>
+<pre class="text"><code>Photorealistic outdoor advertising scene.
+Large billboard at a busy city intersection.
+
+Advertising a fictional soft drink brand called "Freshio".
+Billboard text:
+Brand name: "Freshio"
+Slogan: "FEEL THE REFRESH"
+English language, bold capital letters.
+
+Cars, pedestrians and traffic lights visible.
+Modern buildings in the background.
+Daylight, frontal view.
+Documentary photography style.</code></pre>
+</section>
+<section id="a3-mobile-service-linkra" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="a3-mobile-service-linkra"><span class="header-section-number">2.3</span> A3 — Mobile Service (Linkra)</h3>
+<pre class="text"><code>Photorealistic outdoor advertising scene.
+Large billboard at a busy city intersection.
+
+Advertising a fictional mobile service brand called "Linkra".
+Billboard text:
+Brand name: "Linkra"
+Slogan: "CONNECTED EVERYWHERE"
+English language, bold capital letters.
+
+Cars, pedestrians and traffic lights visible.
+Modern buildings in the background.
+Daylight, frontal view.
+Documentary photography style.</code></pre>
+</section>
+<section id="a4-political-campaign-future-alliance" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="a4-political-campaign-future-alliance"><span class="header-section-number">2.4</span> A4 — Political Campaign (Future Alliance)</h3>
+<pre class="text"><code>Photorealistic outdoor advertising scene.
+Large billboard at a busy city intersection.
+
+Political campaign for a fictional party called "Future Alliance".
+Billboard text:
+Party name: "Future Alliance"
+Slogan: "FOR A FAIR TOMORROW"
+English language, bold capital letters.
+
+Cars, pedestrians and traffic lights visible.
+Modern buildings in the background.
+Daylight, frontal view.
+Documentary photography style.</code></pre>
+<hr>
+</section>
+</section>
+<section id="scene-b-bus-stop-advertisement-4-images" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="scene-b-bus-stop-advertisement-4-images"><span class="header-section-number">3</span> Scene B: Bus Stop Advertisement (4 images)</h2>
+<section id="b1-vegan-fast-food-greenbite" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="b1-vegan-fast-food-greenbite"><span class="header-section-number">3.1</span> B1 — Vegan Fast Food (GreenBite)</h3>
+<pre class="text"><code>Photorealistic outdoor poster advertisement at a bus stop.
+
+Fictional fast food brand called "GreenBite".
+Poster text:
+Brand name: "GreenBite"
+Slogan: "TASTE THE CHANGE"
+English language, bold typography.
+
+Bus stop shelter, bench, waiting people.
+Urban street environment.
+Overcast daylight, slight angle view.</code></pre>
+</section>
+<section id="b2-coffee-brand-roastline" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="b2-coffee-brand-roastline"><span class="header-section-number">3.2</span> B2 — Coffee Brand (Roastline)</h3>
+<pre class="text"><code>Photorealistic outdoor poster advertisement at a bus stop.
+
+Fictional coffee brand called "Roastline".
+Poster text:
+Brand name: "Roastline"
+Slogan: "START STRONG"
+English language, bold typography.
+
+Bus stop shelter, bench, waiting people.
+Urban street environment.
+Overcast daylight, slight angle view.</code></pre>
+</section>
+<section id="b3-fitness-app-moveon" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="b3-fitness-app-moveon"><span class="header-section-number">3.3</span> B3 — Fitness App (Moveon)</h3>
+<pre class="text"><code>Photorealistic outdoor poster advertisement at a bus stop.
+
+Fictional fitness app called "Moveon".
+Poster text:
+Brand name: "Moveon"
+Slogan: "YOUR MOVE MATTERS"
+English language, bold typography.
+
+Bus stop shelter, bench, waiting people.
+Urban street environment.
+Overcast daylight, slight angle view.</code></pre>
+</section>
+<section id="b4-public-health-ngo-mindopen" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="b4-public-health-ngo-mindopen"><span class="header-section-number">3.4</span> B4 — Public Health NGO (MindOpen)</h3>
+<pre class="text"><code>Photorealistic outdoor poster advertisement at a bus stop.
+
+Fictional NGO called "MindOpen".
+Poster text:
+Organization name: "MindOpen"
+Slogan: "TALKING HELPS"
+English language, bold typography.
+
+Bus stop shelter, bench, waiting people.
+Urban street environment.
+Overcast daylight, slight angle view.</code></pre>
+<hr>
+</section>
+</section>
+<section id="scene-c-shopping-district-fashion-billboard-4-images" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="scene-c-shopping-district-fashion-billboard-4-images"><span class="header-section-number">4</span> Scene C: Shopping District — Fashion Billboard (4 images)</h2>
+<section id="c1-streetwear-urbanfold" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="c1-streetwear-urbanfold"><span class="header-section-number">4.1</span> C1 — Streetwear (UrbanFold)</h3>
+<pre class="text"><code>Photorealistic fashion billboard in an urban shopping district.
+
+Fictional clothing brand called "UrbanFold".
+Billboard text:
+Brand name: "UrbanFold"
+Slogan: "WEAR YOUR ATTITUDE"
+English language, minimalist typography.
+
+Pedestrians, storefronts, tall buildings.
+Evening light, wide shot.</code></pre>
+</section>
+<section id="c2-sportswear-flexa" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="c2-sportswear-flexa"><span class="header-section-number">4.2</span> C2 — Sportswear (Flexa)</h3>
+<pre class="text"><code>Photorealistic fashion billboard in an urban shopping district.
+
+Fictional sportswear brand called "Flexa".
+Billboard text:
+Brand name: "Flexa"
+Slogan: "MOVE FREELY"
+English language, minimalist typography.
+
+Pedestrians, storefronts, tall buildings.
+Evening light, wide shot.</code></pre>
+</section>
+<section id="c3-sustainable-fashion-earthloom" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="c3-sustainable-fashion-earthloom"><span class="header-section-number">4.3</span> C3 — Sustainable Fashion (Earthloom)</h3>
+<pre class="text"><code>Photorealistic fashion billboard in an urban shopping district.
+
+Fictional sustainable fashion brand called "Earthloom".
+Billboard text:
+Brand name: "Earthloom"
+Slogan: "STYLE WITH PURPOSE"
+English language, minimalist typography.
+
+Pedestrians, storefronts, tall buildings.
+Evening light, wide shot.</code></pre>
+</section>
+<section id="c4-luxury-brand-valenor" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="c4-luxury-brand-valenor"><span class="header-section-number">4.4</span> C4 — Luxury Brand (Valenor)</h3>
+<pre class="text"><code>Photorealistic fashion billboard in an urban shopping district.
+
+Fictional luxury brand called "Valenor".
+Billboard text:
+Brand name: "Valenor"
+Slogan: "TIMELESS DESIGN"
+English language, minimalist typography.
+
+Pedestrians, storefronts, tall buildings.
+Evening light, wide shot.</code></pre>
+<hr>
+</section>
+</section>
+<section id="scene-d-residential-street-lamp-post-posters-4-images" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="scene-d-residential-street-lamp-post-posters-4-images"><span class="header-section-number">5</span> Scene D: Residential Street — Lamp Post Posters (4 images)</h2>
+<section id="d1-local-election-civic-future" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="d1-local-election-civic-future"><span class="header-section-number">5.1</span> D1 — Local Election (Civic Future)</h3>
+<pre class="text"><code>Photorealistic political campaign poster attached to a street lamp.
+
+Fictional party called "Civic Future".
+Poster text:
+Party name: "Civic Future"
+Slogan: "STRONG COMMUNITIES"
+English language, capital letters.
+
+Residential houses, parked cars.
+Daylight, frontal view.</code></pre>
+</section>
+<section id="d2-environmental-ngo-cleantomorrow" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="d2-environmental-ngo-cleantomorrow"><span class="header-section-number">5.2</span> D2 — Environmental NGO (CleanTomorrow)</h3>
+<pre class="text"><code>Photorealistic NGO campaign poster attached to a street lamp.
+
+Fictional organization called "CleanTomorrow".
+Poster text:
+Organization name: "CleanTomorrow"
+Slogan: "PROTECT WHAT MATTERS"
+English language, capital letters.
+
+Residential houses, parked cars.
+Daylight, frontal view.</code></pre>
+</section>
+<section id="d3-road-safety-campaign-safesteps" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="d3-road-safety-campaign-safesteps"><span class="header-section-number">5.3</span> D3 — Road Safety Campaign (SafeSteps)</h3>
+<pre class="text"><code>Photorealistic public awareness poster attached to a street lamp.
+
+Fictional NGO called "SafeSteps".
+Poster text:
+Organization name: "SafeSteps"
+Slogan: "SLOW DOWN SAVE LIVES"
+English language, capital letters.
+
+Residential houses, parked cars.
+Daylight, frontal view.</code></pre>
+</section>
+<section id="d4-energy-provider-gridone" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="d4-energy-provider-gridone"><span class="header-section-number">5.4</span> D4 — Energy Provider (GridOne)</h3>
+<pre class="text"><code>Photorealistic advertising poster attached to a street lamp.
+
+Fictional energy provider called "GridOne".
+Poster text:
+Brand name: "GridOne"
+Slogan: "POWERING TOMORROW"
+English language, capital letters.
+
+Residential houses, parked cars.
+Daylight, frontal view.</code></pre>
+<hr>
+</section>
+</section>
+<section id="scene-e-small-town-roadside-billboard-4-images" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="scene-e-small-town-roadside-billboard-4-images"><span class="header-section-number">6</span> Scene E: Small Town Roadside Billboard (4 images)</h2>
+<section id="e1-construction-company-stonefield-works" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="e1-construction-company-stonefield-works"><span class="header-section-number">6.1</span> E1 — Construction Company (Stonefield Works)</h3>
+<pre class="text"><code>Photorealistic roadside billboard in a small town.
+
+Fictional construction company called "Stonefield Works".
+Billboard text:
+Brand name: "Stonefield Works"
+Slogan: "MADE TO LAST"
+English language, bold lettering.
+
+Low buildings, parked cars, quiet street.
+Cloudy daylight, wide shot.</code></pre>
+</section>
+<section id="e2-furniture-store-homecraft" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="e2-furniture-store-homecraft"><span class="header-section-number">6.2</span> E2 — Furniture Store (Homecraft)</h3>
+<pre class="text"><code>Photorealistic roadside billboard in a small town.
+
+Fictional furniture store called "Homecraft".
+Billboard text:
+Brand name: "Homecraft"
+Slogan: "BUILT FOR LIVING"
+English language, bold lettering.
+
+Low buildings, parked cars, quiet street.
+Cloudy daylight, wide shot.</code></pre>
+</section>
+<section id="e3-internet-provider-netway" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="e3-internet-provider-netway"><span class="header-section-number">6.3</span> E3 — Internet Provider (Netway)</h3>
+<pre class="text"><code>Photorealistic roadside billboard in a small town.
+
+Fictional internet provider called "Netway".
+Billboard text:
+Brand name: "Netway"
+Slogan: "FAST RELIABLE SIMPLE"
+English language, bold lettering.
+
+Low buildings, parked cars, quiet street.
+Cloudy daylight, wide shot.</code></pre>
+</section>
+<section id="e4-regional-tourism-visit-northvale" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="e4-regional-tourism-visit-northvale"><span class="header-section-number">6.4</span> E4 — Regional Tourism (Visit Northvale)</h3>
+<pre class="text"><code>Photorealistic roadside billboard in a small town.
+
+Fictional tourism campaign called "Visit Northvale".
+Billboard text:
+Campaign name: "Visit Northvale"
+Slogan: "DISCOVER MORE"
+English language, bold lettering.
+
+Low buildings, parked cars, quiet street.
+Cloudy daylight, wide shot.</code></pre>
+<p>““”</p>
+<p>out_path = “/mnt/data/mini_dataset_outdoor_ads.qmd” with open(out_path, “w”, encoding=“utf-8”) as f: f.write(qmd)</p>
+<p>out_path</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -881,18 +1203,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../computing/computing-textbooks.html" class="pagination-link" aria-label="R Textbooks">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R Textbooks</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../computing/computing-useful_links.html" class="pagination-link" aria-label="Useful R sources">
-        <span class="nav-page-text">Useful R sources</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -901,7 +1211,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/computing/computing-cheatsheets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-02-data-creation_ads.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ☕ &amp; <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Analyse: GPS – Digital behavioral data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../computing/computing-instructions_R.html" rel="next">
+<link href="../showcases/04-01-data-creation_gps.html" rel="prev">
+<link href="../img/logo_fau_red.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a50a018e49cb5fd77689b8f5fccdba4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1e7f2d4486c1c8629b8ea114892c3221.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a50a018e49cb5fd77689b8f5fccdba4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="../site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="../site_libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
+<script src="../site_libs/lfx-heat-0.1.0/lfx-heat-prod.js"></script>
+<script src="../site_libs/lfx-heat-0.1.0/lfx-heat-bindings.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Analyse: GPS – Digital behavioral data">
+<meta property="og:description" content="Werbeträger in Nürnberg – Visualisierung mit leaflet">
+<meta property="og:site_name" content="Digital behavioral data">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Examples</a></li><li class="breadcrumb-item"><a href="../showcases/04-10-analysis-gps.html">Analyse: GPS</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/dbd_hex.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../img/dbd_hex.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://www.kommunikationswissenschaft.rw.fau.de/lehre/master/digital-behavioral-data/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-globe"></i></a>
+    <a href="https://www.studon.fau.de/studon/go/crs/6572953" title="StudOn course" class="quarto-navigation-tool px-1" aria-label="StudOn course"><i class="bi bi-bookmark"></i></a>
+    <a href="https://github.com/chrdrn/dbd_2025" title="Course repository" class="quarto-navigation-tool px-1" aria-label="Course repository"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Examples</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../showcases/04-01-data-creation_gps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Create data: GPS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../showcases/04-10-analysis-gps.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Analyse: GPS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Working with R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-instructions_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Video Tutorials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-textbooks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Textbooks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Cheatsheets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-useful_links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful R sources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#import-data" id="toc-import-data" class="nav-link" data-scroll-target="#import-data">Import data</a></li>
+  <li><a href="#create-map" id="toc-create-map" class="nav-link" data-scroll-target="#create-map">Create map</a></li>
+  <li><a href="#clusteranalyse-dbscan" id="toc-clusteranalyse-dbscan" class="nav-link" data-scroll-target="#clusteranalyse-dbscan">Clusteranalyse (DBSCAN)</a></li>
+  <li><a href="#dichteanalyse-heatmap" id="toc-dichteanalyse-heatmap" class="nav-link" data-scroll-target="#dichteanalyse-heatmap">Dichteanalyse (Heatmap)</a></li>
+  <li><a href="#vergleich-nach-kategorien" id="toc-vergleich-nach-kategorien" class="nav-link" data-scroll-target="#vergleich-nach-kategorien">Vergleich nach Kategorien</a></li>
+  <li><a href="#nearest-neighbor-distanz" id="toc-nearest-neighbor-distanz" class="nav-link" data-scroll-target="#nearest-neighbor-distanz">Nearest-Neighbor-Distanz</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-10-analysis-gps.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../showcases/04-01-data-creation_gps.html">Examples</a></li><li class="breadcrumb-item"><a href="../showcases/04-10-analysis-gps.html">Analyse: GPS</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Analyse: GPS</h1>
+<p class="subtitle lead">Werbeträger in Nürnberg – Visualisierung mit leaflet</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Zusammenfassung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Diese Datei lädt die vorbereiteten GPS-Daten der Werbeträger in Nürnberg und visualisiert sie interaktiv.</li>
+<li>Im Fokus steht eine einfache Kategorienbildung, damit die Karte übersichtlich bleibt.</li>
+<li>Die Karte wird mit dem Paket <code>leaflet</code> erstellt, inklusive Farbskala und Popups.</li>
+</ul>
+</div>
+</div>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>here() starts at /Users/ca/repositories/academic/dbd_2025</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dbscan)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dbscan'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    as.dendrogram</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet.extras)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Hintergrund: <code>leaflet</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><code>leaflet</code> ist ein R-Interface zur JavaScript-Bibliothek Leaflet und ermöglicht interaktive Webkarten.</li>
+<li>Die Karten bestehen aus Kacheln (Tiles) als Hintergrund, auf die Marker oder Punkte gelegt werden.</li>
+<li>In R wird die Karte über eine „Pipeline“ aufgebaut: erst Grundkarte, dann Ebenen wie Marker, Legenden und Popups.</li>
+<li>Der Vorteil: Karten sind zoom- und verschiebbar, und lassen sich direkt im HTML-Output erkunden.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="import-data" class="level2">
+<h2 class="anchored" data-anchor-id="import-data">Import data</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">here</span>(<span class="st">"data/gps-advertings_in_nbg.csv"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 402 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (3): name, advertising, geom_source
+dbl (3): osm_id, lat, lon
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+</div>
+</section>
+<section id="create-map" class="level2">
+<h2 class="anchored" data-anchor-id="create-map">Create map</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Daten in ein sf-Objekt überführen (Punktgeometrie aus lon/lat)</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>adv_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(df, <span class="at">coords =</span> <span class="fu">c</span>(<span class="st">"lon"</span>, <span class="st">"lat"</span>), <span class="at">crs =</span> <span class="dv">4326</span>, <span class="at">remove =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># fehlende/leer Kategorien konsistent füllen</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">advertising =</span> <span class="fu">if_else</span>(<span class="fu">is.na</span>(advertising) <span class="sc">|</span> advertising <span class="sc">==</span> <span class="st">""</span>, <span class="st">"unknown"</span>, advertising))</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) (Optional) seltene Kategorien zusammenfassen, damit die Karte nicht überfrachtet</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>top_types <span class="ot">&lt;-</span> adv_sf <span class="sc">%&gt;%</span> <span class="fu">count</span>(advertising, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">8</span>) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(advertising)</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>adv_sf <span class="ot">&lt;-</span> adv_sf <span class="sc">%&gt;%</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># alle anderen Kategorien auf "other" bündeln</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">advertising2 =</span> <span class="fu">if_else</span>(advertising <span class="sc">%in%</span> top_types, advertising, <span class="st">"other"</span>))</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Farbpalette: Set2 erlaubt max. 8 Farben -&gt; Palette dynamisch erweitern</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>n_cats <span class="ot">&lt;-</span> <span class="fu">length</span>(<span class="fu">unique</span>(adv_sf<span class="sc">$</span>advertising2))</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>pal_cols <span class="ot">&lt;-</span> <span class="fu">colorRampPalette</span>(RColorBrewer<span class="sc">::</span><span class="fu">brewer.pal</span>(<span class="dv">8</span>, <span class="st">"Set2"</span>))(n_cats)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>pal <span class="ot">&lt;-</span> <span class="fu">colorFactor</span>(pal_cols, <span class="at">domain =</span> adv_sf<span class="sc">$</span>advertising2)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Karte aufbauen: Tiles -&gt; Marker -&gt; Legende</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(adv_sf) <span class="sc">%&gt;%</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Hintergrundkarte (hell, gut für Punkte)</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"CartoDB.Positron"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Punktmarker je Standort</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>lon, <span class="at">lat =</span> <span class="sc">~</span>lat,</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="dv">5</span>,</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="sc">~</span><span class="fu">pal</span>(advertising2),</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="cn">FALSE</span>, <span class="at">fillOpacity =</span> <span class="fl">0.8</span>,</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Popup zeigt Originalkategorie + Name</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="st">"&lt;b&gt;"</span>, advertising, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>, name)</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Legende erklärt die Farben</span></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>(<span class="st">"bottomright"</span>, <span class="at">pal =</span> pal, <span class="at">values =</span> <span class="sc">~</span>advertising2, <span class="at">title =</span> <span class="st">"advertising"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-7d6e3944b9fdd7e1b466" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-7d6e3944b9fdd7e1b466">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[49.4619232,49.4085571,49.4500376,49.4500378,49.4500669,49.4500672,49.4863169,49.4868189,49.4798282,49.4466868,49.4616479,49.5017907,49.5017123,49.4384906,49.4384909,49.4384934,49.4384942,49.4384977,49.4384985,49.438501,49.4385013,49.4085271,49.4311367,49.4455323,49.36459,49.3644896,49.3645145,49.369283,49.3693931,49.3696178,49.3696795,49.3621777,49.3537547,49.5180995,49.4399235,49.4475422,49.4525319,49.4543427,49.447451,49.4483079,49.4596243,49.4415982,49.4694327,49.4120284,49.458884,49.4588797,49.4588764,49.4588761,49.4588789,49.4588832,49.4588865,49.4588868,49.438292,49.4382877,49.4382844,49.4382841,49.4382869,49.4382912,49.4382945,49.4382948,49.4832447,49.4369721,49.4372104,49.4456777,49.4568589,49.4568546,49.4568513,49.456851,49.4568538,49.4568581,49.4568614,49.4568617,49.4400315,49.4400259,49.4400232,49.4400251,49.4400304,49.4400359,49.4400386,49.4400367,49.3952211,49.3952168,49.3952135,49.3952132,49.395216,49.3952203,49.3952236,49.3952239,49.4586078,49.4441616,49.4420343,49.4256949,49.4281526,49.4588162,49.4379411,49.4405723,49.4379877,49.4391995,49.444246,49.4712126,49.4712371,49.4588458,49.4289735,49.4474024,49.4510295,49.443564,49.443484,49.435684,49.4298441,49.4304733,49.4305558,49.4305992,49.4305136,49.4305314,49.4589152,49.4589109,49.4589076,49.4589073,49.4589101,49.4589144,49.4589177,49.458918,49.4367986,49.4362156,49.4368051,49.4368867,49.4364097,49.4498349,49.4498289,49.4498238,49.4498226,49.449826,49.449832,49.4498371,49.4498383,49.4130752,49.4134119,49.4267139,49.422413,49.4485227,49.4485184,49.4485151,49.4485148,49.4485176,49.4485219,49.4485252,49.4485255,49.4415256,49.4414519,49.4410374,49.441051,49.4594837,49.4073842,49.4354201,49.4511012,49.4326942,49.4375588,49.4435419,49.4435876,49.449451,49.4513474,49.43794,49.4424143,49.4288064,49.4294046,49.4341177,49.4294735,49.4294409,49.4357185,49.4294056,49.4293708,49.4363748,49.4365105,49.4380003,49.471496,49.4712218,49.4929193,49.4928096,49.4478252,49.4459661,49.4006284,49.466826,49.3969448,49.4638424,49.4638084,49.4793662,49.4651236,49.4650728,49.4232325,49.4737366,49.4703965,49.4703922,49.4703889,49.4703886,49.4703914,49.4703957,49.470399,49.4703993,49.4236217,49.3597599,49.3525412,49.3319856,49.3319846,49.4432943,49.4351448,49.4647663,49.4265763,49.3772532,49.4510493,49.4517088,49.4498669,49.4390469,49.3917392,49.4199969,49.4206963,49.3889255,49.4122613,49.4003679,49.4229528,49.3938317,49.4247503,49.3883517,49.410366,49.3640694,49.405249,49.4052738,49.4052325,49.3538903,49.4205103,49.3502716,49.4206619,49.4020978,49.3556811,49.4481927,49.448115,49.5186472,49.5181078,49.5175758,49.5175756,49.5175753,49.4774376,49.482147,49.5181072,49.4437134,49.4437822,49.4052397,49.4804902,49.4804918,49.4389707,49.4314875,49.4162359,49.3989861,49.393531,49.4351312,49.4571883,49.4521905,49.45151,49.4742303,49.4975549,49.4975767,49.4975951,49.5010205,49.5009031,49.4202436,49.3965938,49.3967899,49.4399258,49.451706,49.4548277,49.450155,49.455901,49.4756135,49.4504815,49.4531091,49.4531364,49.4535103,49.4534959,49.4533688,49.407594,49.3827451,49.3827216,49.4210166,49.4106084,49.4106031,49.4105979,49.410596,49.4105984,49.4106038,49.4106089,49.4106108,49.4767152,49.474649,49.4746574,49.3822513,49.4077356,49.417417,49.4040772,49.4191316,49.3817383,49.365019,49.3686357,49.3668425,49.3957272,49.3944801,49.4212376,49.3512468,49.4088238,49.4054524,49.420722,49.4272314,49.4244375,49.4237624,49.4227192,49.371418,49.4101198,49.3892226,49.3937933,49.3891176,49.3891734,49.458105,49.4581389,49.4733439,49.4509186,49.4512571,49.5179266,49.5185204,49.5170113,49.5170118,49.5181055,49.5179208,49.5179275,49.518654,49.5186101,49.5185945,49.5185825,49.5182507,49.5182138,49.5169728,49.5169557,49.4119893,49.5175765,49.5186506,49.5170116,49.5169644,49.4191584,49.4373346,49.4056098,49.4248674,49.3883824,49.4046162,49.420643,49.4227316,49.4206711,49.3879418,49.3883671,49.4190712,49.3883972,49.4227524,49.4191002,49.4233472,49.4190391,49.4233388,49.4272535,49.4212189,49.4211798,49.4200236,49.4212018,49.4499128,49.4123075,49.4813933,49.4583256,49.450481,49.428613,49.45005237626808,49.43849593016789,49.45888145587661,49.43828944454488,49.45685636064258,49.44003089765563,49.39521855223371,49.45891264751867,49.44983044480386,49.44852015073487,49.4703939377703,49.41060340711723,49.36450205001611,49.36933805001837,49.36964865000519,49.44148875000015,49.44104420004316,49.4638254000089,49.46509820000908,49.45312275004039,49.47465320000772,49.51701157487814,49.51757589210887,49.51810664277578,49.51792415927494,49.51865060557928,49.51859831668078,49.51823225000003,49.51696424945463],[11.0920644,11.1048134,11.0758597,11.0759036,11.0758594,11.0759033,11.1134661,11.1120823,10.9912403,11.0816483,11.0845526,11.0472034,11.0472734,11.0995443,11.0995376,11.0995493,11.0995333,11.0995498,11.0995338,11.0995454,11.0995388,11.127344,11.0956336,11.1319219,11.0508919,11.049835,11.0499572,11.0447881,11.0446576,11.0443842,11.0443148,11.0500816,11.0551558,10.9940473,11.0626723,11.0840745,11.0714909,11.0614935,11.083313,11.082242,11.131316,11.1012403,11.0280881,11.008375,11.0963964,11.0963959,11.0964002,11.0964069,11.0964119,11.0964124,11.096408,11.0964014,11.0997617,11.0997612,11.0997655,11.0997722,11.0997772,11.0997777,11.0997733,11.0997667,11.1239817,11.0299864,11.0307714,11.0610633,11.0810376,11.0810371,11.0810414,11.0810481,11.0810531,11.0810536,11.0810492,11.0810426,11.1031845,11.1031873,11.1031954,11.103204,11.103208,11.1032052,11.1031971,11.1031885,11.0381122,11.0381117,11.038116,11.0381227,11.0381277,11.0381282,11.0381238,11.0381172,11.0736984,11.0551412,11.0509869,11.0650835,11.0661783,11.0820244,11.0739748,11.0630749,11.0695193,11.0515371,11.0603075,11.0814804,11.0814804,11.0822949,11.0862316,11.0825401,11.0749203,11.0537008,11.0536048,11.03864,11.0456395,11.0754172,11.0756437,11.0757588,11.075528,11.0755777,11.1416815,11.141681,11.1416853,11.141692,11.141697,11.1416975,11.1416931,11.1416865,11.0889801,11.0836952,11.1182231,11.1180937,11.0908182,11.0707251,11.0707232,11.0707284,11.0707376,11.0707455,11.0707474,11.0707422,11.0707329,11.1746554,11.1752281,11.0108348,11.0144592,11.0642043,11.0642038,11.0642081,11.0642148,11.0642198,11.0642203,11.0642159,11.0642093,11.0156547,11.0156661,11.0165416,11.0163415,11.0605063,11.0001133,11.0882593,11.0734315,11.0866331,11.0826597,11.094966,11.0949741,11.1300702,11.0725755,11.0820924,11.0464549,11.0683241,11.0718102,11.0762824,11.0717937,11.0718016,11.0807386,11.0715369,11.071819,11.0753819,11.0827099,11.0738715,11.1081063,11.1087514,11.051835,11.0515159,11.0717648,11.1063711,11.0165152,11.137007,11.1430025,11.0160205,11.0161114,11.1906847,11.0464882,11.04658,11.012352,11.0674426,11.106947,11.1069465,11.1069508,11.1069575,11.1069625,11.106963,11.1069586,11.106952,11.0115164,11.2531981,11.2712974,11.280842,11.2805383,11.1012219,11.0929774,11.0002317,11.0486302,11.2157937,11.0597647,11.0673097,11.0853119,11.0366769,11.0341628,11.035908,11.0357124,11.0327147,11.0337924,11.0367697,11.0188635,11.0374421,11.0099439,11.0326823,11.0345787,11.2071365,11.0349153,11.0349189,11.0349119,11.0547038,11.0188442,11.0627108,11.0333663,11.0359414,11.0530442,10.9900237,10.9900323,11.0023096,11.0024089,11.0024608,11.0024579,11.0024514,11.1064937,11.1226849,11.0023977,11.0539982,11.0542009,11.1117402,11.0609655,11.0614289,11.0356643,11.0999474,11.1212786,11.175946,11.1352018,11.0239785,11.0365894,11.0861145,11.0955585,11.0960823,11.2631727,11.2631614,11.2631668,11.2745644,11.274825,11.0369018,11.1424589,11.1428148,11.0960224,11.137751,11.0755466,11.0737289,11.0761133,11.0710768,11.1382693,11.021368,11.0211744,11.0201083,11.0202784,11.0201378,11.1362747,11.0379233,11.0381125,11.032411,11.1653998,11.1653968,11.1654005,11.1654087,11.1654166,11.1654196,11.1654159,11.1654077,11.1211364,11.1197501,11.1198347,11.2039211,11.0352273,11.036223,11.0351485,11.0360528,11.0371137,11.0489676,11.0455347,11.047842,11.0382171,11.0382365,11.0350394,11.0564073,11.0354521,11.034975,11.0339374,11.0128022,11.0092576,11.0116973,11.0137961,11.0782242,11.0345031,11.0329444,11.0374031,11.0329112,11.0329243,11.0730616,11.0729724,11.0645856,11.0666158,11.0665543,11.0007592,11.00084,11.0024377,11.0024487,11.0023649,11.0006434,11.0007776,11.0022833,11.00211,11.0021494,11.0021524,11.0022102,11.0022149,11.0020676,11.0020687,11.0759635,11.0024741,11.0022965,11.0024432,11.0020681,11.0243303,11.1332795,11.0345386,11.0247354,11.0326961,11.0348914,11.0357314,11.0138852,11.0357289,11.0328676,11.0326886,11.036073,11.0327008,11.013917,11.0360582,11.0121721,11.0360765,11.0121368,11.0127699,11.0349991,11.0349032,11.0358924,11.0349483,11.0678378,11.0338085,11.1975128,11.0655441,11.1046093,11.0161559,11.07588151890725,11.09954150009374,11.09640415532759,11.09976941796544,11.08104531106278,11.10319623825439,11.03811995358932,11.14168924227262,11.07073528858729,11.06421201251072,11.10695473390309,11.16540818411526,11.04989609998453,11.04472285007307,11.04434950002178,11.01566040000429,11.01644155001388,11.01606595001577,11.0465341000238,11.02127120002696,11.11979239999637,11.00244319731759,11.00246275073412,11.00238690090305,11.00071049890839,11.00229645342324,11.00213581930794,11.00221255000089,11.00206812985969],5,null,null,{"interactive":true,"className":"","stroke":false,"color":["#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#B3B3B3","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#F8D348","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#A89BB0","#F8D348","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#DEC197","#DEC197","#A89BB0","#DEC197","#DEC197","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#F8D348","#F8D348","#E9936A","#E9936A","#A89BB0","#A89BB0","#A89BB0","#C7D846","#F8D348","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#F8D348","#E9936A","#E9936A","#E9936A","#66C2A5","#A89BB0","#E9936A","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#F8D348","#A89BB0","#A89BB0","#66C2A5","#C7D846","#C7D846","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#F8D348","#F8D348","#F8D348","#B3B3B3","#B3B3B3","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#C6B18B","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#C6B18B","#66C2A5","#66C2A5","#C6B18B","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#C6B18B","#C6B18B","#C6B18B","#C6B18B","#A89BB0","#DEC197","#C7D846","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#DEC197","#F8D348","#F8D348","#C7D846","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#E9936A","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#C592C5","#66C2A5","#C592C5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#F8D348","#F8D348","#F8D348","#C592C5","#F8D348","#C7D846","#C7D846","#C7D846"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#B3B3B3","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#F8D348","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#A89BB0","#A89BB0","#F8D348","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#DEC197","#DEC197","#A89BB0","#DEC197","#DEC197","#66C2A5","#A89BB0","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#F8D348","#F8D348","#E9936A","#E9936A","#A89BB0","#A89BB0","#A89BB0","#C7D846","#F8D348","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#F8D348","#E9936A","#E9936A","#E9936A","#66C2A5","#A89BB0","#E9936A","#66C2A5","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#A89BB0","#F8D348","#A89BB0","#A89BB0","#66C2A5","#C7D846","#C7D846","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#F8D348","#F8D348","#F8D348","#B3B3B3","#B3B3B3","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#C6B18B","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#C6B18B","#66C2A5","#66C2A5","#C6B18B","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#66C2A5","#DEC197","#DEC197","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#C6B18B","#C6B18B","#C6B18B","#C6B18B","#A89BB0","#DEC197","#C7D846","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#DEC197","#A89BB0","#DEC197","#F8D348","#F8D348","#C7D846","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#E9936A","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#A89BB0","#66C2A5","#66C2A5","#A89BB0","#C592C5","#66C2A5","#C592C5","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#A89BB0","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#66C2A5","#F8D348","#F8D348","#F8D348","#C592C5","#F8D348","#C7D846","#C7D846","#C7D846"],"fillOpacity":0.8},null,null,["<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>yes<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>yes<\/b><br>(ohne Name)","<b>yes<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>poster_box<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>unknown<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>totem<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>board<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>screen<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>showcase<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>column<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>billboard<\/b><br>(ohne Name)","<b>totem<\/b><br>SSF-Verbindungsteile Wetzlarer Straße 15 Darahtanlieferung","<b>totem<\/b><br>SSF-Verbindungsteile Wetzlarer Straße 19","<b>totem<\/b><br>SSF-Verbindungsteile Wetzlarer Straße 21 Besucherparkplätze Anmeldung /^\\ <-- (LKW): /^\\ <-- Warenannahme /^\\ <-- Versand /^\\ <-- Wetzlarer Straße 23 (/^\\ <-- Danach geradeaus und in 70 Metern links abbiegen.)","<b>wall_painting<\/b><br>SFF Wandgemälde","<b>totem<\/b><br>SSF-Verbindungsteile Wetzlarer Straße 21 (LKW:) Warenannahme --> (Rechts) Versand --> (Rechts) Wetzlarer Straße 23 --> (Rechts) (Links) <-- Drahtanlieferung (Links) <-- Wetzlarer Straße 15","<b>sign<\/b><br>(ohne Name)","<b>sign<\/b><br>(ohne Name)","<b>sign<\/b><br>SSF-Verbindungsteile <-- Darahtanlieferung <-- Büro"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["#66C2A5","#E9936A","#A89BB0","#C592C5","#C6B18B","#C7D846","#F8D348","#DEC197","#B3B3B3"],"labels":["billboard","board","column","other","poster_box","sign","totem","unknown","yes"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomright","type":"factor","title":"advertising","extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[49.3319846,49.518654],"lng":[10.9900237,11.280842]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="clusteranalyse-dbscan" class="level2">
+<h2 class="anchored" data-anchor-id="clusteranalyse-dbscan">Clusteranalyse (DBSCAN)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Koordinaten in metrisches CRS transformieren (für Distanz in Metern)</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>adv_sf_m <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(adv_sf, <span class="dv">3857</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>coords_m <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(adv_sf_m)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) DBSCAN: eps = Radius in Metern, minPts = Mindestpunkte pro Cluster</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>db <span class="ot">&lt;-</span> <span class="fu">dbscan</span>(coords_m, <span class="at">eps =</span> <span class="dv">150</span>, <span class="at">minPts =</span> <span class="dv">6</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) Clusterlabels an die Daten hängen (0 = "noise")</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>adv_sf <span class="ot">&lt;-</span> adv_sf <span class="sc">%&gt;%</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cluster =</span> <span class="fu">if_else</span>(db<span class="sc">$</span>cluster <span class="sc">==</span> <span class="dv">0</span>L, <span class="st">"noise"</span>, <span class="fu">paste0</span>(<span class="st">"C"</span>, db<span class="sc">$</span>cluster)))</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) Karte: Clusterfarben + Legende</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>pal_cl <span class="ot">&lt;-</span> <span class="fu">colorFactor</span>(<span class="st">"Set3"</span>, <span class="at">domain =</span> adv_sf<span class="sc">$</span>cluster)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(adv_sf) <span class="sc">%&gt;%</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"CartoDB.Positron"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>lon, <span class="at">lat =</span> <span class="sc">~</span>lat,</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="dv">5</span>,</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="sc">~</span><span class="fu">pal_cl</span>(cluster),</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="cn">FALSE</span>, <span class="at">fillOpacity =</span> <span class="fl">0.8</span>,</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="st">"&lt;b&gt;Cluster:&lt;/b&gt; "</span>, cluster, <span class="st">"&lt;br&gt;"</span>, name)</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>(<span class="st">"bottomright"</span>, <span class="at">pal =</span> pal_cl, <span class="at">values =</span> <span class="sc">~</span>cluster, <span class="at">title =</span> <span class="st">"DBSCAN-Cluster"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12
+Returning the palette you asked for with that many colors
+Warning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12
+Returning the palette you asked for with that many colors
+Warning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12
+Returning the palette you asked for with that many colors</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-790ff0b613b2bc35856b" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-790ff0b613b2bc35856b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[49.4619232,49.4085571,49.4500376,49.4500378,49.4500669,49.4500672,49.4863169,49.4868189,49.4798282,49.4466868,49.4616479,49.5017907,49.5017123,49.4384906,49.4384909,49.4384934,49.4384942,49.4384977,49.4384985,49.438501,49.4385013,49.4085271,49.4311367,49.4455323,49.36459,49.3644896,49.3645145,49.369283,49.3693931,49.3696178,49.3696795,49.3621777,49.3537547,49.5180995,49.4399235,49.4475422,49.4525319,49.4543427,49.447451,49.4483079,49.4596243,49.4415982,49.4694327,49.4120284,49.458884,49.4588797,49.4588764,49.4588761,49.4588789,49.4588832,49.4588865,49.4588868,49.438292,49.4382877,49.4382844,49.4382841,49.4382869,49.4382912,49.4382945,49.4382948,49.4832447,49.4369721,49.4372104,49.4456777,49.4568589,49.4568546,49.4568513,49.456851,49.4568538,49.4568581,49.4568614,49.4568617,49.4400315,49.4400259,49.4400232,49.4400251,49.4400304,49.4400359,49.4400386,49.4400367,49.3952211,49.3952168,49.3952135,49.3952132,49.395216,49.3952203,49.3952236,49.3952239,49.4586078,49.4441616,49.4420343,49.4256949,49.4281526,49.4588162,49.4379411,49.4405723,49.4379877,49.4391995,49.444246,49.4712126,49.4712371,49.4588458,49.4289735,49.4474024,49.4510295,49.443564,49.443484,49.435684,49.4298441,49.4304733,49.4305558,49.4305992,49.4305136,49.4305314,49.4589152,49.4589109,49.4589076,49.4589073,49.4589101,49.4589144,49.4589177,49.458918,49.4367986,49.4362156,49.4368051,49.4368867,49.4364097,49.4498349,49.4498289,49.4498238,49.4498226,49.449826,49.449832,49.4498371,49.4498383,49.4130752,49.4134119,49.4267139,49.422413,49.4485227,49.4485184,49.4485151,49.4485148,49.4485176,49.4485219,49.4485252,49.4485255,49.4415256,49.4414519,49.4410374,49.441051,49.4594837,49.4073842,49.4354201,49.4511012,49.4326942,49.4375588,49.4435419,49.4435876,49.449451,49.4513474,49.43794,49.4424143,49.4288064,49.4294046,49.4341177,49.4294735,49.4294409,49.4357185,49.4294056,49.4293708,49.4363748,49.4365105,49.4380003,49.471496,49.4712218,49.4929193,49.4928096,49.4478252,49.4459661,49.4006284,49.466826,49.3969448,49.4638424,49.4638084,49.4793662,49.4651236,49.4650728,49.4232325,49.4737366,49.4703965,49.4703922,49.4703889,49.4703886,49.4703914,49.4703957,49.470399,49.4703993,49.4236217,49.3597599,49.3525412,49.3319856,49.3319846,49.4432943,49.4351448,49.4647663,49.4265763,49.3772532,49.4510493,49.4517088,49.4498669,49.4390469,49.3917392,49.4199969,49.4206963,49.3889255,49.4122613,49.4003679,49.4229528,49.3938317,49.4247503,49.3883517,49.410366,49.3640694,49.405249,49.4052738,49.4052325,49.3538903,49.4205103,49.3502716,49.4206619,49.4020978,49.3556811,49.4481927,49.448115,49.5186472,49.5181078,49.5175758,49.5175756,49.5175753,49.4774376,49.482147,49.5181072,49.4437134,49.4437822,49.4052397,49.4804902,49.4804918,49.4389707,49.4314875,49.4162359,49.3989861,49.393531,49.4351312,49.4571883,49.4521905,49.45151,49.4742303,49.4975549,49.4975767,49.4975951,49.5010205,49.5009031,49.4202436,49.3965938,49.3967899,49.4399258,49.451706,49.4548277,49.450155,49.455901,49.4756135,49.4504815,49.4531091,49.4531364,49.4535103,49.4534959,49.4533688,49.407594,49.3827451,49.3827216,49.4210166,49.4106084,49.4106031,49.4105979,49.410596,49.4105984,49.4106038,49.4106089,49.4106108,49.4767152,49.474649,49.4746574,49.3822513,49.4077356,49.417417,49.4040772,49.4191316,49.3817383,49.365019,49.3686357,49.3668425,49.3957272,49.3944801,49.4212376,49.3512468,49.4088238,49.4054524,49.420722,49.4272314,49.4244375,49.4237624,49.4227192,49.371418,49.4101198,49.3892226,49.3937933,49.3891176,49.3891734,49.458105,49.4581389,49.4733439,49.4509186,49.4512571,49.5179266,49.5185204,49.5170113,49.5170118,49.5181055,49.5179208,49.5179275,49.518654,49.5186101,49.5185945,49.5185825,49.5182507,49.5182138,49.5169728,49.5169557,49.4119893,49.5175765,49.5186506,49.5170116,49.5169644,49.4191584,49.4373346,49.4056098,49.4248674,49.3883824,49.4046162,49.420643,49.4227316,49.4206711,49.3879418,49.3883671,49.4190712,49.3883972,49.4227524,49.4191002,49.4233472,49.4190391,49.4233388,49.4272535,49.4212189,49.4211798,49.4200236,49.4212018,49.4499128,49.4123075,49.4813933,49.4583256,49.450481,49.428613,49.45005237626808,49.43849593016789,49.45888145587661,49.43828944454488,49.45685636064258,49.44003089765563,49.39521855223371,49.45891264751867,49.44983044480386,49.44852015073487,49.4703939377703,49.41060340711723,49.36450205001611,49.36933805001837,49.36964865000519,49.44148875000015,49.44104420004316,49.4638254000089,49.46509820000908,49.45312275004039,49.47465320000772,49.51701157487814,49.51757589210887,49.51810664277578,49.51792415927494,49.51865060557928,49.51859831668078,49.51823225000003,49.51696424945463],[11.0920644,11.1048134,11.0758597,11.0759036,11.0758594,11.0759033,11.1134661,11.1120823,10.9912403,11.0816483,11.0845526,11.0472034,11.0472734,11.0995443,11.0995376,11.0995493,11.0995333,11.0995498,11.0995338,11.0995454,11.0995388,11.127344,11.0956336,11.1319219,11.0508919,11.049835,11.0499572,11.0447881,11.0446576,11.0443842,11.0443148,11.0500816,11.0551558,10.9940473,11.0626723,11.0840745,11.0714909,11.0614935,11.083313,11.082242,11.131316,11.1012403,11.0280881,11.008375,11.0963964,11.0963959,11.0964002,11.0964069,11.0964119,11.0964124,11.096408,11.0964014,11.0997617,11.0997612,11.0997655,11.0997722,11.0997772,11.0997777,11.0997733,11.0997667,11.1239817,11.0299864,11.0307714,11.0610633,11.0810376,11.0810371,11.0810414,11.0810481,11.0810531,11.0810536,11.0810492,11.0810426,11.1031845,11.1031873,11.1031954,11.103204,11.103208,11.1032052,11.1031971,11.1031885,11.0381122,11.0381117,11.038116,11.0381227,11.0381277,11.0381282,11.0381238,11.0381172,11.0736984,11.0551412,11.0509869,11.0650835,11.0661783,11.0820244,11.0739748,11.0630749,11.0695193,11.0515371,11.0603075,11.0814804,11.0814804,11.0822949,11.0862316,11.0825401,11.0749203,11.0537008,11.0536048,11.03864,11.0456395,11.0754172,11.0756437,11.0757588,11.075528,11.0755777,11.1416815,11.141681,11.1416853,11.141692,11.141697,11.1416975,11.1416931,11.1416865,11.0889801,11.0836952,11.1182231,11.1180937,11.0908182,11.0707251,11.0707232,11.0707284,11.0707376,11.0707455,11.0707474,11.0707422,11.0707329,11.1746554,11.1752281,11.0108348,11.0144592,11.0642043,11.0642038,11.0642081,11.0642148,11.0642198,11.0642203,11.0642159,11.0642093,11.0156547,11.0156661,11.0165416,11.0163415,11.0605063,11.0001133,11.0882593,11.0734315,11.0866331,11.0826597,11.094966,11.0949741,11.1300702,11.0725755,11.0820924,11.0464549,11.0683241,11.0718102,11.0762824,11.0717937,11.0718016,11.0807386,11.0715369,11.071819,11.0753819,11.0827099,11.0738715,11.1081063,11.1087514,11.051835,11.0515159,11.0717648,11.1063711,11.0165152,11.137007,11.1430025,11.0160205,11.0161114,11.1906847,11.0464882,11.04658,11.012352,11.0674426,11.106947,11.1069465,11.1069508,11.1069575,11.1069625,11.106963,11.1069586,11.106952,11.0115164,11.2531981,11.2712974,11.280842,11.2805383,11.1012219,11.0929774,11.0002317,11.0486302,11.2157937,11.0597647,11.0673097,11.0853119,11.0366769,11.0341628,11.035908,11.0357124,11.0327147,11.0337924,11.0367697,11.0188635,11.0374421,11.0099439,11.0326823,11.0345787,11.2071365,11.0349153,11.0349189,11.0349119,11.0547038,11.0188442,11.0627108,11.0333663,11.0359414,11.0530442,10.9900237,10.9900323,11.0023096,11.0024089,11.0024608,11.0024579,11.0024514,11.1064937,11.1226849,11.0023977,11.0539982,11.0542009,11.1117402,11.0609655,11.0614289,11.0356643,11.0999474,11.1212786,11.175946,11.1352018,11.0239785,11.0365894,11.0861145,11.0955585,11.0960823,11.2631727,11.2631614,11.2631668,11.2745644,11.274825,11.0369018,11.1424589,11.1428148,11.0960224,11.137751,11.0755466,11.0737289,11.0761133,11.0710768,11.1382693,11.021368,11.0211744,11.0201083,11.0202784,11.0201378,11.1362747,11.0379233,11.0381125,11.032411,11.1653998,11.1653968,11.1654005,11.1654087,11.1654166,11.1654196,11.1654159,11.1654077,11.1211364,11.1197501,11.1198347,11.2039211,11.0352273,11.036223,11.0351485,11.0360528,11.0371137,11.0489676,11.0455347,11.047842,11.0382171,11.0382365,11.0350394,11.0564073,11.0354521,11.034975,11.0339374,11.0128022,11.0092576,11.0116973,11.0137961,11.0782242,11.0345031,11.0329444,11.0374031,11.0329112,11.0329243,11.0730616,11.0729724,11.0645856,11.0666158,11.0665543,11.0007592,11.00084,11.0024377,11.0024487,11.0023649,11.0006434,11.0007776,11.0022833,11.00211,11.0021494,11.0021524,11.0022102,11.0022149,11.0020676,11.0020687,11.0759635,11.0024741,11.0022965,11.0024432,11.0020681,11.0243303,11.1332795,11.0345386,11.0247354,11.0326961,11.0348914,11.0357314,11.0138852,11.0357289,11.0328676,11.0326886,11.036073,11.0327008,11.013917,11.0360582,11.0121721,11.0360765,11.0121368,11.0127699,11.0349991,11.0349032,11.0358924,11.0349483,11.0678378,11.0338085,11.1975128,11.0655441,11.1046093,11.0161559,11.07588151890725,11.09954150009374,11.09640415532759,11.09976941796544,11.08104531106278,11.10319623825439,11.03811995358932,11.14168924227262,11.07073528858729,11.06421201251072,11.10695473390309,11.16540818411526,11.04989609998453,11.04472285007307,11.04434950002178,11.01566040000429,11.01644155001388,11.01606595001577,11.0465341000238,11.02127120002696,11.11979239999637,11.00244319731759,11.00246275073412,11.00238690090305,11.00071049890839,11.00229645342324,11.00213581930794,11.00221255000089,11.00206812985969],5,null,null,{"interactive":true,"className":"","stroke":false,"color":["#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2D768","#C2D768","#C2D768","#C2D768","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#DAEFBB","#DAEFBB","#DAEFBB","#DAEFBB","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#C2BED8","#E9999C","#FFED6F","#FFED6F","#FFED6F","#CEB4CE","#FFED6F","#E9999C","#FFED6F","#FFED6F","#E78E89","#E78E89","#E78E89","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#FFED6F","#97ACC7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#CFB399","#CFB399","#CFB399","#CFB399","#CFB399","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E78E89","#C2BED8","#FFED6F","#FFED6F","#C2D768","#FFED6F","#CEB4CE","#CEB4CE","#C2BED8","#FFED6F","#FFED6F","#E78E89","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E9999C","#CEB4CE","#E9999C","#E9999C","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#FFED6F","#E78E89","#FFED6F","#E9999C","#E78E89","#C2BED8","#FFED6F","#C2BED8","#E9999C","#E9999C","#FFED6F","#E9999C","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#C2BED8","#C2BED8","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#8DD3C7","#D9D7A5","#8DD3C7","#F8CFE4","#E2D6DC","#CEB4CE","#BE87BE","#CACCC3","#E1ECA8","#EDEAC0","#F2BC63","#FFED6F","#C2D768","#C2D768","#DAEFBB","#DAEFBB","#FFED6F","#FFED6F","#CFB399","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2D768","#C2D768","#C2D768","#C2D768","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#D9D7A5","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#8DD3C7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#F8CFE4","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#E2D6DC","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#CEB4CE","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#BE87BE","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#CACCC3","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#E1ECA8","#DAEFBB","#DAEFBB","#DAEFBB","#DAEFBB","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#EDEAC0","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#C2BED8","#E9999C","#FFED6F","#FFED6F","#FFED6F","#CEB4CE","#FFED6F","#E9999C","#FFED6F","#FFED6F","#E78E89","#E78E89","#E78E89","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#FFED6F","#97ACC7","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#CFB399","#CFB399","#CFB399","#CFB399","#CFB399","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#F2BC63","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E78E89","#C2BED8","#FFED6F","#FFED6F","#C2D768","#FFED6F","#CEB4CE","#CEB4CE","#C2BED8","#FFED6F","#FFED6F","#E78E89","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#E9999C","#CEB4CE","#E9999C","#E9999C","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#FFED6F","#FFED6F","#E78E89","#FFED6F","#E9999C","#E78E89","#C2BED8","#FFED6F","#C2BED8","#E9999C","#E9999C","#FFED6F","#E9999C","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#C2BED8","#C2BED8","#C2BED8","#C2BED8","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#FFED6F","#8DD3C7","#D9D7A5","#8DD3C7","#F8CFE4","#E2D6DC","#CEB4CE","#BE87BE","#CACCC3","#E1ECA8","#EDEAC0","#F2BC63","#FFED6F","#C2D768","#C2D768","#DAEFBB","#DAEFBB","#FFED6F","#FFED6F","#CFB399","#FFED6F","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7","#97ACC7"],"fillOpacity":0.8},null,null,["<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> C14<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C13<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> C12<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C3<br>(ohne Name)","<b>Cluster:<\/b> C1<br>(ohne Name)","<b>Cluster:<\/b> C4<br>(ohne Name)","<b>Cluster:<\/b> C5<br>(ohne Name)","<b>Cluster:<\/b> C6<br>(ohne Name)","<b>Cluster:<\/b> C7<br>(ohne Name)","<b>Cluster:<\/b> C8<br>(ohne Name)","<b>Cluster:<\/b> C9<br>(ohne Name)","<b>Cluster:<\/b> C11<br>(ohne Name)","<b>Cluster:<\/b> C17<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> C2<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> C10<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C16<br>(ohne Name)","<b>Cluster:<\/b> noise<br>(ohne Name)","<b>Cluster:<\/b> C15<br>SSF-Verbindungsteile Wetzlarer Straße 15 Darahtanlieferung","<b>Cluster:<\/b> C15<br>SSF-Verbindungsteile Wetzlarer Straße 19","<b>Cluster:<\/b> C15<br>SSF-Verbindungsteile Wetzlarer Straße 21 Besucherparkplätze Anmeldung /^\\ <-- (LKW): /^\\ <-- Warenannahme /^\\ <-- Versand /^\\ <-- Wetzlarer Straße 23 (/^\\ <-- Danach geradeaus und in 70 Metern links abbiegen.)","<b>Cluster:<\/b> C15<br>SFF Wandgemälde","<b>Cluster:<\/b> C15<br>SSF-Verbindungsteile Wetzlarer Straße 21 (LKW:) Warenannahme --> (Rechts) Versand --> (Rechts) Wetzlarer Straße 23 --> (Rechts) (Links) <-- Drahtanlieferung (Links) <-- Wetzlarer Straße 15","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>(ohne Name)","<b>Cluster:<\/b> C15<br>SSF-Verbindungsteile <-- Darahtanlieferung <-- Büro"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["#8DD3C7","#DAEFBB","#EDEAC0","#C2BED8","#E9999C","#E78E89","#97ACC7","#CFB399","#F2BC63","#C2D768","#D9D7A5","#F8CFE4","#E2D6DC","#CEB4CE","#BE87BE","#CACCC3","#E1ECA8","#FFED6F"],"labels":["C1","C10","C11","C12","C13","C14","C15","C16","C17","C2","C3","C4","C5","C6","C7","C8","C9","noise"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomright","type":"factor","title":"DBSCAN-Cluster","extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[49.3319846,49.518654],"lng":[10.9900237,11.280842]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="dichteanalyse-heatmap" class="level2">
+<h2 class="anchored" data-anchor-id="dichteanalyse-heatmap">Dichteanalyse (Heatmap)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Heatmap: Dichteflächen statt Einzelpunkte</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(adv_sf) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">"CartoDB.Positron"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addHeatmap</span>(</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>lon, <span class="at">lat =</span> <span class="sc">~</span>lat,</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">blur =</span> <span class="dv">20</span>, <span class="at">radius =</span> <span class="dv">12</span>, <span class="at">max =</span> <span class="fl">0.8</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-433b7ee94b5872d2d7cb" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-433b7ee94b5872d2d7cb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addHeatmap","args":[[[49.4619232,11.0920644],[49.4085571,11.1048134],[49.4500376,11.0758597],[49.4500378,11.0759036],[49.4500669,11.0758594],[49.4500672,11.0759033],[49.4863169,11.1134661],[49.4868189,11.1120823],[49.4798282,10.9912403],[49.4466868,11.0816483],[49.4616479,11.0845526],[49.5017907,11.0472034],[49.5017123,11.0472734],[49.4384906,11.0995443],[49.4384909,11.0995376],[49.4384934,11.0995493],[49.4384942,11.0995333],[49.4384977,11.0995498],[49.4384985,11.0995338],[49.438501,11.0995454],[49.4385013,11.0995388],[49.4085271,11.127344],[49.4311367,11.0956336],[49.4455323,11.1319219],[49.36459,11.0508919],[49.3644896,11.049835],[49.3645145,11.0499572],[49.369283,11.0447881],[49.3693931,11.0446576],[49.3696178,11.0443842],[49.3696795,11.0443148],[49.3621777,11.0500816],[49.3537547,11.0551558],[49.5180995,10.9940473],[49.4399235,11.0626723],[49.4475422,11.0840745],[49.4525319,11.0714909],[49.4543427,11.0614935],[49.447451,11.083313],[49.4483079,11.082242],[49.4596243,11.131316],[49.4415982,11.1012403],[49.4694327,11.0280881],[49.4120284,11.008375],[49.458884,11.0963964],[49.4588797,11.0963959],[49.4588764,11.0964002],[49.4588761,11.0964069],[49.4588789,11.0964119],[49.4588832,11.0964124],[49.4588865,11.096408],[49.4588868,11.0964014],[49.438292,11.0997617],[49.4382877,11.0997612],[49.4382844,11.0997655],[49.4382841,11.0997722],[49.4382869,11.0997772],[49.4382912,11.0997777],[49.4382945,11.0997733],[49.4382948,11.0997667],[49.4832447,11.1239817],[49.4369721,11.0299864],[49.4372104,11.0307714],[49.4456777,11.0610633],[49.4568589,11.0810376],[49.4568546,11.0810371],[49.4568513,11.0810414],[49.456851,11.0810481],[49.4568538,11.0810531],[49.4568581,11.0810536],[49.4568614,11.0810492],[49.4568617,11.0810426],[49.4400315,11.1031845],[49.4400259,11.1031873],[49.4400232,11.1031954],[49.4400251,11.103204],[49.4400304,11.103208],[49.4400359,11.1032052],[49.4400386,11.1031971],[49.4400367,11.1031885],[49.3952211,11.0381122],[49.3952168,11.0381117],[49.3952135,11.038116],[49.3952132,11.0381227],[49.395216,11.0381277],[49.3952203,11.0381282],[49.3952236,11.0381238],[49.3952239,11.0381172],[49.4586078,11.0736984],[49.4441616,11.0551412],[49.4420343,11.0509869],[49.4256949,11.0650835],[49.4281526,11.0661783],[49.4588162,11.0820244],[49.4379411,11.0739748],[49.4405723,11.0630749],[49.4379877,11.0695193],[49.4391995,11.0515371],[49.444246,11.0603075],[49.4712126,11.0814804],[49.4712371,11.0814804],[49.4588458,11.0822949],[49.4289735,11.0862316],[49.4474024,11.0825401],[49.4510295,11.0749203],[49.443564,11.0537008],[49.443484,11.0536048],[49.435684,11.03864],[49.4298441,11.0456395],[49.4304733,11.0754172],[49.4305558,11.0756437],[49.4305992,11.0757588],[49.4305136,11.075528],[49.4305314,11.0755777],[49.4589152,11.1416815],[49.4589109,11.141681],[49.4589076,11.1416853],[49.4589073,11.141692],[49.4589101,11.141697],[49.4589144,11.1416975],[49.4589177,11.1416931],[49.458918,11.1416865],[49.4367986,11.0889801],[49.4362156,11.0836952],[49.4368051,11.1182231],[49.4368867,11.1180937],[49.4364097,11.0908182],[49.4498349,11.0707251],[49.4498289,11.0707232],[49.4498238,11.0707284],[49.4498226,11.0707376],[49.449826,11.0707455],[49.449832,11.0707474],[49.4498371,11.0707422],[49.4498383,11.0707329],[49.4130752,11.1746554],[49.4134119,11.1752281],[49.4267139,11.0108348],[49.422413,11.0144592],[49.4485227,11.0642043],[49.4485184,11.0642038],[49.4485151,11.0642081],[49.4485148,11.0642148],[49.4485176,11.0642198],[49.4485219,11.0642203],[49.4485252,11.0642159],[49.4485255,11.0642093],[49.4415256,11.0156547],[49.4414519,11.0156661],[49.4410374,11.0165416],[49.441051,11.0163415],[49.4594837,11.0605063],[49.4073842,11.0001133],[49.4354201,11.0882593],[49.4511012,11.0734315],[49.4326942,11.0866331],[49.4375588,11.0826597],[49.4435419,11.094966],[49.4435876,11.0949741],[49.449451,11.1300702],[49.4513474,11.0725755],[49.43794,11.0820924],[49.4424143,11.0464549],[49.4288064,11.0683241],[49.4294046,11.0718102],[49.4341177,11.0762824],[49.4294735,11.0717937],[49.4294409,11.0718016],[49.4357185,11.0807386],[49.4294056,11.0715369],[49.4293708,11.071819],[49.4363748,11.0753819],[49.4365105,11.0827099],[49.4380003,11.0738715],[49.471496,11.1081063],[49.4712218,11.1087514],[49.4929193,11.051835],[49.4928096,11.0515159],[49.4478252,11.0717648],[49.4459661,11.1063711],[49.4006284,11.0165152],[49.466826,11.137007],[49.3969448,11.1430025],[49.4638424,11.0160205],[49.4638084,11.0161114],[49.4793662,11.1906847],[49.4651236,11.0464882],[49.4650728,11.04658],[49.4232325,11.012352],[49.4737366,11.0674426],[49.4703965,11.106947],[49.4703922,11.1069465],[49.4703889,11.1069508],[49.4703886,11.1069575],[49.4703914,11.1069625],[49.4703957,11.106963],[49.470399,11.1069586],[49.4703993,11.106952],[49.4236217,11.0115164],[49.3597599,11.2531981],[49.3525412,11.2712974],[49.3319856,11.280842],[49.3319846,11.2805383],[49.4432943,11.1012219],[49.4351448,11.0929774],[49.4647663,11.0002317],[49.4265763,11.0486302],[49.3772532,11.2157937],[49.4510493,11.0597647],[49.4517088,11.0673097],[49.4498669,11.0853119],[49.4390469,11.0366769],[49.3917392,11.0341628],[49.4199969,11.035908],[49.4206963,11.0357124],[49.3889255,11.0327147],[49.4122613,11.0337924],[49.4003679,11.0367697],[49.4229528,11.0188635],[49.3938317,11.0374421],[49.4247503,11.0099439],[49.3883517,11.0326823],[49.410366,11.0345787],[49.3640694,11.2071365],[49.405249,11.0349153],[49.4052738,11.0349189],[49.4052325,11.0349119],[49.3538903,11.0547038],[49.4205103,11.0188442],[49.3502716,11.0627108],[49.4206619,11.0333663],[49.4020978,11.0359414],[49.3556811,11.0530442],[49.4481927,10.9900237],[49.448115,10.9900323],[49.5186472,11.0023096],[49.5181078,11.0024089],[49.5175758,11.0024608],[49.5175756,11.0024579],[49.5175753,11.0024514],[49.4774376,11.1064937],[49.482147,11.1226849],[49.5181072,11.0023977],[49.4437134,11.0539982],[49.4437822,11.0542009],[49.4052397,11.1117402],[49.4804902,11.0609655],[49.4804918,11.0614289],[49.4389707,11.0356643],[49.4314875,11.0999474],[49.4162359,11.1212786],[49.3989861,11.175946],[49.393531,11.1352018],[49.4351312,11.0239785],[49.4571883,11.0365894],[49.4521905,11.0861145],[49.45151,11.0955585],[49.4742303,11.0960823],[49.4975549,11.2631727],[49.4975767,11.2631614],[49.4975951,11.2631668],[49.5010205,11.2745644],[49.5009031,11.274825],[49.4202436,11.0369018],[49.3965938,11.1424589],[49.3967899,11.1428148],[49.4399258,11.0960224],[49.451706,11.137751],[49.4548277,11.0755466],[49.450155,11.0737289],[49.455901,11.0761133],[49.4756135,11.0710768],[49.4504815,11.1382693],[49.4531091,11.021368],[49.4531364,11.0211744],[49.4535103,11.0201083],[49.4534959,11.0202784],[49.4533688,11.0201378],[49.407594,11.1362747],[49.3827451,11.0379233],[49.3827216,11.0381125],[49.4210166,11.032411],[49.4106084,11.1653998],[49.4106031,11.1653968],[49.4105979,11.1654005],[49.410596,11.1654087],[49.4105984,11.1654166],[49.4106038,11.1654196],[49.4106089,11.1654159],[49.4106108,11.1654077],[49.4767152,11.1211364],[49.474649,11.1197501],[49.4746574,11.1198347],[49.3822513,11.2039211],[49.4077356,11.0352273],[49.417417,11.036223],[49.4040772,11.0351485],[49.4191316,11.0360528],[49.3817383,11.0371137],[49.365019,11.0489676],[49.3686357,11.0455347],[49.3668425,11.047842],[49.3957272,11.0382171],[49.3944801,11.0382365],[49.4212376,11.0350394],[49.3512468,11.0564073],[49.4088238,11.0354521],[49.4054524,11.034975],[49.420722,11.0339374],[49.4272314,11.0128022],[49.4244375,11.0092576],[49.4237624,11.0116973],[49.4227192,11.0137961],[49.371418,11.0782242],[49.4101198,11.0345031],[49.3892226,11.0329444],[49.3937933,11.0374031],[49.3891176,11.0329112],[49.3891734,11.0329243],[49.458105,11.0730616],[49.4581389,11.0729724],[49.4733439,11.0645856],[49.4509186,11.0666158],[49.4512571,11.0665543],[49.5179266,11.0007592],[49.5185204,11.00084],[49.5170113,11.0024377],[49.5170118,11.0024487],[49.5181055,11.0023649],[49.5179208,11.0006434],[49.5179275,11.0007776],[49.518654,11.0022833],[49.5186101,11.00211],[49.5185945,11.0021494],[49.5185825,11.0021524],[49.5182507,11.0022102],[49.5182138,11.0022149],[49.5169728,11.0020676],[49.5169557,11.0020687],[49.4119893,11.0759635],[49.5175765,11.0024741],[49.5186506,11.0022965],[49.5170116,11.0024432],[49.5169644,11.0020681],[49.4191584,11.0243303],[49.4373346,11.1332795],[49.4056098,11.0345386],[49.4248674,11.0247354],[49.3883824,11.0326961],[49.4046162,11.0348914],[49.420643,11.0357314],[49.4227316,11.0138852],[49.4206711,11.0357289],[49.3879418,11.0328676],[49.3883671,11.0326886],[49.4190712,11.036073],[49.3883972,11.0327008],[49.4227524,11.013917],[49.4191002,11.0360582],[49.4233472,11.0121721],[49.4190391,11.0360765],[49.4233388,11.0121368],[49.4272535,11.0127699],[49.4212189,11.0349991],[49.4211798,11.0349032],[49.4200236,11.0358924],[49.4212018,11.0349483],[49.4499128,11.0678378],[49.4123075,11.0338085],[49.4813933,11.1975128],[49.4583256,11.0655441],[49.450481,11.1046093],[49.428613,11.0161559],[49.45005237626808,11.07588151890725],[49.43849593016789,11.09954150009374],[49.45888145587661,11.09640415532759],[49.43828944454488,11.09976941796544],[49.45685636064258,11.08104531106278],[49.44003089765563,11.10319623825439],[49.39521855223371,11.03811995358932],[49.45891264751867,11.14168924227262],[49.44983044480386,11.07073528858729],[49.44852015073487,11.06421201251072],[49.4703939377703,11.10695473390309],[49.41060340711723,11.16540818411526],[49.36450205001611,11.04989609998453],[49.36933805001837,11.04472285007307],[49.36964865000519,11.04434950002178],[49.44148875000015,11.01566040000429],[49.44104420004316,11.01644155001388],[49.4638254000089,11.01606595001577],[49.46509820000908,11.0465341000238],[49.45312275004039,11.02127120002696],[49.47465320000772,11.11979239999637],[49.51701157487814,11.00244319731759],[49.51757589210887,11.00246275073412],[49.51810664277578,11.00238690090305],[49.51792415927494,11.00071049890839],[49.51865060557928,11.00229645342324],[49.51859831668078,11.00213581930794],[49.51823225000003,11.00221255000089],[49.51696424945463,11.00206812985969]],null,null,{"minOpacity":0.05,"max":0.8,"radius":12,"blur":20}]}],"limits":{"lat":[49.3319846,49.518654],"lng":[10.9900237,11.280842]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="vergleich-nach-kategorien" class="level2">
+<h2 class="anchored" data-anchor-id="vergleich-nach-kategorien">Vergleich nach Kategorien</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pro Kategorie eine eigene Karte (Top-Kategorien + other)</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>cats <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(adv_sf<span class="sc">$</span>advertising2))</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (cat <span class="cf">in</span> cats) {</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  cat_sf <span class="ot">&lt;-</span> adv_sf <span class="sc">%&gt;%</span> <span class="fu">filter</span>(advertising2 <span class="sc">==</span> cat)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">leaflet</span>(cat_sf) <span class="sc">%&gt;%</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">addProviderTiles</span>(<span class="st">"CartoDB.Positron"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">lng =</span> <span class="sc">~</span>lon, <span class="at">lat =</span> <span class="sc">~</span>lat,</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">radius =</span> <span class="dv">5</span>, <span class="at">color =</span> <span class="st">"#2c7fb8"</span>,</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">stroke =</span> <span class="cn">FALSE</span>, <span class="at">fillOpacity =</span> <span class="fl">0.8</span>,</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="st">"&lt;b&gt;"</span>, advertising, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>, name)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>      ) <span class="sc">%&gt;%</span></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">addLegend</span>(<span class="st">"bottomright"</span>, <span class="at">colors =</span> <span class="st">"#2c7fb8"</span>, <span class="at">labels =</span> cat, <span class="at">title =</span> <span class="st">"Kategorie"</span>)</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="nearest-neighbor-distanz" class="level2">
+<h2 class="anchored" data-anchor-id="nearest-neighbor-distanz">Nearest-Neighbor-Distanz</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Distanz in Metern berechnen (metrisches CRS)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>adv_sf_m <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(adv_sf, <span class="dv">3857</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Nächster Nachbar für jeden Punkt</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>nn_idx <span class="ot">&lt;-</span> <span class="fu">st_nearest_feature</span>(adv_sf_m)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>nn_dist <span class="ot">&lt;-</span> <span class="fu">st_distance</span>(adv_sf_m, adv_sf_m[nn_idx, ], <span class="at">by_element =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Ergebnis als numerische Meterwerte</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>adv_sf_m<span class="sc">$</span>nn_dist_m <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(nn_dist)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Durchschnittliche NN-Distanz je Kategorie</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>nn_summary <span class="ot">&lt;-</span> adv_sf_m <span class="sc">%&gt;%</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(advertising2) <span class="sc">%&gt;%</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">nn_mean_m =</span> <span class="fu">mean</span>(nn_dist_m, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">nn_median_m =</span> <span class="fu">median</span>(nn_dist_m, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(nn_mean_m)</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>nn_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 4
+  advertising2     n nn_mean_m nn_median_m
+  &lt;chr&gt;        &lt;int&gt;     &lt;dbl&gt;       &lt;dbl&gt;
+1 unknown        130      2.05       0.741
+2 sign             8    108.        27.4  
+3 board            7    128.        33.8  
+4 billboard      107    141.        14.8  
+5 poster_box       7    250.       122.   
+6 other            3    269.         5.44 
+7 column         121    424.       258.   
+8 totem           16    596.         3.21 
+9 yes              3    946.        35.3  </code></pre>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../showcases/04-01-data-creation_gps.html" class="pagination-link" aria-label="Create data: GPS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Create data: GPS</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../computing/computing-instructions_R.html" class="pagination-link" aria-label="R Video Tutorials">
+        <span class="nav-page-text">R Video Tutorials</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Christoph Adrian</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/showcases/04-10-analysis-gps.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with ☕ &amp; <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

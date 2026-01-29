@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R cheatsheets – Digital behavioral data</title>
+<title>Session 4 – Digital behavioral data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../computing/computing-useful_links.html" rel="next">
-<link href="../computing/computing-textbooks.html" rel="prev">
 <link href="../img/logo_fau_red.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -78,11 +76,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="R cheatsheets – Digital behavioral data">
-<meta property="og:description" content="Homepage of the course ’Digital behavioral data‘ at Friedrich-Alexander-Universtität (FAU) Erlangen-Nürnberg">
-<meta property="og:image" content="cheatsheets/data-visualization.png">
+<meta property="og:title" content="Session 4 – Digital behavioral data">
+<meta property="og:description" content="📚 From Pretest to Analysis">
 <meta property="og:site_name" content="Digital behavioral data">
-<meta property="og:image:alt" content="ggplot2 cheat sheet">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Session 4</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -348,13 +344,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">Working with R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../computing/computing-instructions_R.html" class="sidebar-item-text sidebar-link">
@@ -369,7 +365,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link active">
+  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R Cheatsheets</span></a>
   </div>
 </li>
@@ -386,16 +382,38 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#participate" id="toc-participate" class="nav-link" data-scroll-target="#participate">Participate</a></li>
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources">Useful resources</a>
+  <ul class="collapse">
+  <li><a href="#about-content-analysis-in-general" id="toc-about-content-analysis-in-general" class="nav-link" data-scroll-target="#about-content-analysis-in-general">about content analysis in general</a></li>
+  <li><a href="#about-text-as-data-automated-text-analysis-with-relation-to-surveys" id="toc-about-text-as-data-automated-text-analysis-with-relation-to-surveys" class="nav-link" data-scroll-target="#about-text-as-data-automated-text-analysis-with-relation-to-surveys">about text as data &amp; automated text analysis (with relation to surveys)</a></li>
+  <li><a href="#about-embeddings" id="toc-about-embeddings" class="nav-link" data-scroll-target="#about-embeddings">about embeddings</a></li>
+  <li><a href="#about-llms-as-coders-assistance" id="toc-about-llms-as-coders-assistance" class="nav-link" data-scroll-target="#about-llms-as-coders-assistance">about LLMs as coders (assistance)</a></li>
+  <li><a href="#about-image-analysis-ocr-object-detection-multimodal" id="toc-about-image-analysis-ocr-object-detection-multimodal" class="nav-link" data-scroll-target="#about-image-analysis-ocr-object-detection-multimodal">about image analysis (OCR, object detection, multimodal)</a></li>
+  <li><a href="#about-geospatial-data-esm-geofencing-gema" id="toc-about-geospatial-data-esm-geofencing-gema" class="nav-link" data-scroll-target="#about-geospatial-data-esm-geofencing-gema">about geospatial data &amp; ESM (geofencing &amp; GEMA)</a></li>
+  </ul></li>
+  <li><a href="#useful-tools" id="toc-useful-tools" class="nav-link" data-scroll-target="#useful-tools">Useful tools</a>
+  <ul class="collapse">
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
+  <li><a href="#python-packages" id="toc-python-packages" class="nav-link" data-scroll-target="#python-packages">Python packages</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/sessions/session-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../computing/computing-instructions_R.html">Working with R</a></li><li class="breadcrumb-item"><a href="../computing/computing-cheatsheets.html">R Cheatsheets</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R cheatsheets</h1>
+<h1 class="title">Session 4</h1>
+<p class="subtitle lead">📚 From Pretest to Analysis</p>
 </div>
 
 
@@ -412,60 +430,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The following cheatsheets come from <a href="https://posit.co/resources/cheatsheets" class="uri">https://posit.co/resources/cheatsheets</a>. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf"><img src="cheatsheets/data-visualization.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf"><img src="cheatsheets/tidyr.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf"><img src="cheatsheets/strings.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf"><img src="cheatsheets/lubridate.png" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf"><img src="cheatsheets/data-transformation.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf"><img src="cheatsheets/data-import.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf"><img src="cheatsheets/factors.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-<p><br></p>
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf"><img src="cheatsheets/rstudio-ide.png" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="ggplot2 cheat sheet" width="300"></a></p>
-</figure>
-</div>
-</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In this session we move from <strong>fieldwork / pretest</strong> to <strong>analysis planning</strong> with a focus on <em>digital behavioral data</em> and <em>text/image/geo</em> data as extensions of classic survey data.</p>
+</section>
+<section id="participate" class="level2">
+<h2 class="anchored" data-anchor-id="participate">Participate</h2>
+<p>🖥️ <a href="../slides/slides-04.html">Session 04</a></p>
+</section>
+<section id="useful-resources" class="level2">
+<h2 class="anchored" data-anchor-id="useful-resources">Useful resources</h2>
+<section id="about-content-analysis-in-general" class="level3">
+<h3 class="anchored" data-anchor-id="about-content-analysis-in-general">about content analysis in general</h3>
+<ul>
+<li><p><span class="citation" data-cites="krippendorff2019">Krippendorff, K. (2019). <em>Content analysis: An introduction to its methodology</em>. SAGE Publications, Inc. <a href="https://doi.org/10.4135/9781071878781">https://doi.org/10.4135/9781071878781</a></span></p></li>
+<li><p><span class="citation" data-cites="neuendorf2017">Neuendorf, K. A. (2017). <em>The content analysis guidebook</em>. SAGE Publications, Inc. <a href="https://doi.org/10.4135/9781071802878">https://doi.org/10.4135/9781071802878</a></span></p></li>
+<li><p><span class="citation" data-cites="rössler2017">Rössler, P. (2017). <em>Inhaltsanalyse</em> (3., völlig überarbeitete Auflage). UVK Verlagsgesellschaft mbH mit UVK/Lucius.</span></p></li>
+</ul>
+</section>
+<section id="about-text-as-data-automated-text-analysis-with-relation-to-surveys" class="level3">
+<h3 class="anchored" data-anchor-id="about-text-as-data-automated-text-analysis-with-relation-to-surveys">about text as data &amp; automated text analysis (with relation to surveys)</h3>
+<ul>
+<li><p><span class="citation" data-cites="grimmer2022">Grimmer, J., Roberts, M. E., &amp; Stewart, B. M. (2022). <em>Text as data: A new framework for machine learning and the social sciences</em>. Princeton University Press.</span></p></li>
+<li><p><span class="citation" data-cites="maier2018">Maier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., &amp; Adam, S. (2018). Applying LDA Topic Modeling in Communication Research: Toward a Valid and Reliable Methodology. <em>Communication Methods and Measures</em>, <em>12</em>(2-3), 93–118. <a href="https://doi.org/10.1080/19312458.2018.1430754">https://doi.org/10.1080/19312458.2018.1430754</a></span></p></li>
+<li><p><span class="citation" data-cites="roberts2014">Roberts, M. E., Stewart, B. M., Tingley, D., Lucas, C., Leder-Luis, J., Gadarian, S. K., Albertson, B., &amp; Rand, D. G. (2014). Structural Topic Models for Open<span>-</span>Ended Survey Responses. <em>American Journal of Political Science</em>, <em>58</em>(4), 1064–1082. <a href="https://doi.org/10.1111/ajps.12103">https://doi.org/10.1111/ajps.12103</a></span></p></li>
+</ul>
+</section>
+<section id="about-embeddings" class="level3">
+<h3 class="anchored" data-anchor-id="about-embeddings">about embeddings</h3>
+<ul>
+<li><p><span class="citation" data-cites="devlin2019">Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). <em>BERT: Pre-training of deep bidirectional transformers for language understanding</em> (J. Burstein, C. Doran, &amp; T. Solorio, Eds.; p. 41714186). Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/N19-1423">https://doi.org/10.18653/v1/N19-1423</a></span></p></li>
+<li><p><span class="citation" data-cites="mikolov2013">Mikolov, T., Chen, K., Corrado, G., &amp; Dean, J. (2013). <em>Efficient estimation of word representations in vector space</em>. <a href="https://doi.org/10.48550/ARXIV.1301.3781">https://doi.org/10.48550/ARXIV.1301.3781</a></span></p></li>
+</ul>
+</section>
+<section id="about-llms-as-coders-assistance" class="level3">
+<h3 class="anchored" data-anchor-id="about-llms-as-coders-assistance">about LLMs as coders (assistance)</h3>
+<ul>
+<li><p><span class="citation" data-cites="ashwin2025">Ashwin, J., Chhabra, A., &amp; Rao, V. (2025). Using Large Language Models for Qualitative Analysis can Introduce Serious Bias. <em>Sociological Methods &amp; Research</em>. <a href="https://doi.org/10.1177/00491241251338246">https://doi.org/10.1177/00491241251338246</a></span></p></li>
+<li><p><span class="citation" data-cites="gilardi2023">Gilardi, F., Alizadeh, M., &amp; Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <em>Proceedings of the National Academy of Sciences</em>, <em>120</em>(30). <a href="https://doi.org/10.1073/pnas.2305016120">https://doi.org/10.1073/pnas.2305016120</a></span></p></li>
+</ul>
+</section>
+<section id="about-image-analysis-ocr-object-detection-multimodal" class="level3">
+<h3 class="anchored" data-anchor-id="about-image-analysis-ocr-object-detection-multimodal">about image analysis (OCR, object detection, multimodal)</h3>
+<ul>
+<li><p><span class="citation" data-cites="smith2007">Smith, R. (2007). An overview of the tesseract OCR engine. <em>Ninth International Conference on Document Analysis and Recognition (ICDAR 2007) Vol 2</em>, 629–633. <a href="https://doi.org/10.1109/icdar.2007.4376991">https://doi.org/10.1109/icdar.2007.4376991</a></span></p></li>
+<li><p><span class="citation" data-cites="redmon2015">Redmon, J., Divvala, S., Girshick, R., &amp; Farhadi, A. (2015). <em>You only look once: Unified, real-time object detection</em>. <a href="https://doi.org/10.48550/ARXIV.1506.02640">https://doi.org/10.48550/ARXIV.1506.02640</a></span></p></li>
+<li><p><span class="citation" data-cites="radford2021">Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., &amp; Sutskever, I. (2021). <em>Learning transferable visual models from natural language supervision</em>. <a href="https://doi.org/10.48550/ARXIV.2103.00020">https://doi.org/10.48550/ARXIV.2103.00020</a></span></p></li>
+</ul>
+</section>
+<section id="about-geospatial-data-esm-geofencing-gema" class="level3">
+<h3 class="anchored" data-anchor-id="about-geospatial-data-esm-geofencing-gema">about geospatial data &amp; ESM (geofencing &amp; GEMA)</h3>
+<ul>
+<li><p><span class="citation" data-cites="haas2020">Haas, G.-C., Mark, Keusch, F., &amp; Bähr, S. (2020). Using Geofences to Collect Survey Data: Lessons Learned From the IAB-SMART Study. <em>SMIF</em>. <a href="https://doi.org/10.13094/SMIF-2020-00023">https://doi.org/10.13094/SMIF-2020-00023</a></span></p></li>
+<li><p><span class="citation" data-cites="kingsbury2024">Kingsbury, C., Buzzi, M., Chaix, B., Kanning, M., Khezri, S., Kiani, B., Kirchner, T. R., Maurel, A., Thierry, B., &amp; Kestens, Y. (2024). STROBE-GEMA: a STROBE extension for reporting of geographically explicit ecological momentary assessment studies. <em>Archives of Public Health</em>, <em>82</em>(1). <a href="https://doi.org/10.1186/s13690-024-01310-8">https://doi.org/10.1186/s13690-024-01310-8</a></span></p></li>
+<li><p><span class="citation" data-cites="zhang2024">Zhang, Y., Li, D., Li, X., Zhou, X., &amp; Newman, G. (2024). The integration of geographic methods and ecological momentary assessment in public health research: A systematic review of methods and applications. <em>Social Science &amp; Medicine</em>, <em>354</em>, 117075. <a href="https://doi.org/10.1016/j.socscimed.2024.117075">https://doi.org/10.1016/j.socscimed.2024.117075</a></span></p></li>
+</ul>
+</section>
+</section>
+<section id="useful-tools" class="level2">
+<h2 class="anchored" data-anchor-id="useful-tools">Useful tools</h2>
+<section id="r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="r-packages">R packages</h3>
+<ul>
+<li><code>tidyverse</code>, <code>stringr</code>, <code>tidyr</code> – cleaning, reshaping, string ops</li>
+<li><code>quanteda</code>, <code>quanteda.textstats</code>, <code>quanteda.textmodels</code> – text as data workflows (DFM, dictionaries, stats)</li>
+<li><code>tidytext</code> – tidy text mining, lexicons, token workflows</li>
+<li><code>stm</code> – structural topic models (STM), incl.&nbsp;open-ended responses</li>
+<li><code>udpipe</code>, <code>spacyr</code> – tokenization, POS-tagging, lemmatization</li>
+<li><code>text2vec</code> – embeddings + similarity/clustering pipelines</li>
+<li><code>sf</code>, <code>lwgeom</code>, <code>geosphere</code> – spatial data + distances/geometry</li>
+<li><code>tmap</code>, <code>leaflet</code> – interactive/static maps for exploration</li>
+</ul>
+</section>
+<section id="python-packages" class="level3">
+<h3 class="anchored" data-anchor-id="python-packages">Python packages</h3>
+<ul>
+<li><code>pandas</code>, <code>numpy</code> – data wrangling</li>
+<li><code>scikit-learn</code> – vectorization, clustering, evaluation</li>
+<li><code>spacy</code>, <code>nltk</code> – NLP preprocessing</li>
+<li><code>gensim</code> – topic models + word embeddings</li>
+<li><code>sentence-transformers</code>, <code>transformers</code> – embeddings + LLM/Transformer tooling</li>
+<li><code>bertopic</code> – topic modeling on embeddings</li>
+<li><code>pytesseract</code> + <code>opencv-python</code> – OCR pipelines + image preprocessing</li>
+<li><code>torch</code>, <code>torchvision</code> – deep learning base stack (if needed)</li>
+<li><code>ultralytics</code> (YOLO) – object detection workflows</li>
+<li><code>geopandas</code>, <code>shapely</code>, <code>pyproj</code> – geodata + projections</li>
+</ul>
+<div style="font-size: 0.875em;">
+<p>Back to <a href="../index.html" title="Course schedule">course schedule</a> ⏎</p>
 </div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -842,57 +899,8 @@ ul.task-list li input[type="checkbox"] {
             }
           });
         }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../computing/computing-textbooks.html" class="pagination-link" aria-label="R Textbooks">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R Textbooks</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../computing/computing-useful_links.html" class="pagination-link" aria-label="Useful R sources">
-        <span class="nav-page-text">Useful R sources</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -901,7 +909,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/computing/computing-cheatsheets.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/sessions/session-04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ☕ &amp; <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

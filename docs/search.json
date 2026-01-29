@@ -176,237 +176,186 @@
     ]
   },
   {
-    "objectID": "sessions/session-01.html",
-    "href": "sessions/session-01.html",
-    "title": "Session 1",
+    "objectID": "sessions/session-04.html",
+    "href": "sessions/session-04.html",
+    "title": "Session 4",
     "section": "",
-    "text": "Important\n\n\n\nPlease make sure that you answered the survey send to you by (StudOn) mail."
+    "text": "In this session we move from fieldwork / pretest to analysis planning with a focus on digital behavioral data and text/image/geo data as extensions of classic survey data."
   },
   {
-    "objectID": "sessions/session-01.html#prepare",
-    "href": "sessions/session-01.html#prepare",
-    "title": "Session 1",
-    "section": "Prepare",
-    "text": "Prepare\n✍️ Fill out the short survey before the 22.10.2025 (see  StudOn for Link)\n📖 Read the syllabus"
+    "objectID": "sessions/session-04.html#overview",
+    "href": "sessions/session-04.html#overview",
+    "title": "Session 4",
+    "section": "",
+    "text": "In this session we move from fieldwork / pretest to analysis planning with a focus on digital behavioral data and text/image/geo data as extensions of classic survey data."
   },
   {
-    "objectID": "sessions/session-01.html#participate",
-    "href": "sessions/session-01.html#participate",
-    "title": "Session 1",
+    "objectID": "sessions/session-04.html#participate",
+    "href": "sessions/session-04.html#participate",
+    "title": "Session 4",
     "section": "Participate",
-    "text": "Participate\n🖥️ Session 01"
+    "text": "Participate\n🖥️ Session 04"
   },
   {
-    "objectID": "sessions/session-01.html#literature",
-    "href": "sessions/session-01.html#literature",
-    "title": "Session 1",
-    "section": "Literature",
-    "text": "Literature\n\nwith focus on advertising\n\nFranke, G. R., & Taylor, C. R. (2017). Public Perceptions of Billboards: A Meta-Analysis. Journal of Advertising, 46(3), 395–410. https://doi.org/10.1080/00913367.2017.1334248\nNikulina, O., Van Riel, A. C. R., Lemmink, J. G. A. M., Grewal, D., & Wetzels, M. (2024). Narrate, Act, and Resonate to Tell a Visual Story: A Systematic Review of How Images Transport Viewers. Journal of Advertising, 53(4), 605–625. https://doi.org/10.1080/00913367.2024.2309921\nWilson, R. T. (2023). Out-of-Home Advertising: A Systematic Review and Research Agenda. Journal of Advertising, 52(2), 279–299. https://doi.org/10.1080/00913367.2022.2064378\n\n\n\nwith focus on analysis\n\nAraujo, T., Lock, I., & Van De Velde, B. (2020). Automated Visual Content Analysis (AVCA) in Communication Research: A Protocol for Large Scale Image Classification with Pre-Trained Computer Vision Models. Communication Methods and Measures, 14(4), 239–265. https://doi.org/10.1080/19312458.2020.1810648\nHoffmann, M., & Heft, A. (2020). “Here, There and Everywhere”: Classifying Location Information in Social Media Data - Possibilities and Limitations. Communication Methods and Measures, 14(3), 184–203. https://doi.org/10.1080/19312458.2019.1708282\nLokmanoglu, A. D., & Walter, D. (2025). Topic modeling of video and image data: a visual semantic unsupervised approach. Communication Methods and Measures, 19(3), 232–279. https://doi.org/10.1080/19312458.2025.2549707\nPeng, Y., Lock, I., & Ali Salah, A. (2024). Automated Visual Analysis for the Study of Social Media Effects: Opportunities, Approaches, and Challenges. Communication Methods and Measures, 18(2), 163–185. https://doi.org/10.1080/19312458.2023.2277956\n\n\n\nwith focus on digital behavioral data\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\nOlteanu, A., Castillo, C., Diaz, F., & Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2, 13. https://doi.org/10.3389/fdata.2019.00013\n\n\n\nwith focus on effects\n\nAlonso Dos Santos, M., Lobos, C., Muñoz, N., Romero, D., & Sanhueza, R. (2017). The Influence of Image Valence on the Attention Paid to Charity Advertising. Journal of Nonprofit & Public Sector Marketing, 29(3), 346–363. https://doi.org/10.1080/10495142.2017.1326355\nBarry, A. M. (2002). Perception and Visual Communication Theory. Journal of Visual Literacy, 22(1), 91–106. https://doi.org/10.1080/23796529.2002.11674583\nBast, J., & Oschatz, C. (2025). Which Visuals Really Matter? Effects of (Counter) Stereotypical Visual Information on Candidate Evaluations. Communication Research, 00936502241309957. https://doi.org/10.1177/00936502241309957\nBoomgaarden, H., Boukes, M., & Iorgoveanu, A. (2016). Image versus text: How newspaper reports affect evaluations of political candidates. INTERNATIONAL JOURNAL OF COMMUNICATION, 10, 2529–2555.\nCasas, A., & Williams, N. W. (2019). Images that Matter: Online Protests and the Mobilizing Role of Pictures. Political Research Quarterly, 72(2), 360–375. https://doi.org/10.1177/1065912918786805\nGeise, S., Panke, D., & Heck, A. (2021). Still ImagesMoving People? How Media Images of Protest Issues and Movements Influence Participatory Intentions. The International Journal of Press/Politics, 26(1), 92–118. https://doi.org/10.1177/1940161220968534\nKrause, A., & Bucy, E. P. (2018). Interpreting Images of Fracking: How Visual Frames and Standing Attitudes Shape Perceptions of Environmental Risk and Economic Benefit. Environmental Communication, 12(3), 322–343. https://doi.org/10.1080/17524032.2017.1412996\nPowell, T. E., Boomgaarden, H. G., De Swert, K., & De Vreese, C. H. (2015). A Clearer Picture: The Contribution of Visuals and Text to Framing Effects: Visual Framing Effects. Journal of Communication, 65(6), 997–1017. https://doi.org/10.1111/jcom.12184\n\n\n\nwith focus on images\n\nJoo, J., & Steinert-Threlkeld, Z. C. (2022). Image as Data: Automated Content Analysis for Visual Presentations of Political Actors and Events. Computational Communication Research, 4(1). https://doi.org/10.5117/CCR2022.1.001.JOO\nWebb Williams, N. (2022). What Type of Data Are Images? SSRN Electronic Journal. https://doi.org/10.2139/ssrn.4012789\nWebb Williams, N., Casas, A., & Wilkerson, J. D. (2020). Images as data for social science research: An introduction to convolutional neural nets for image classification (1st ed.). Cambridge University Press. https://www.cambridge.org/core/product/identifier/9781108860741/type/element\n\n\n\nwith focus on survey methods\n\nSchnauber-Stockmann, A., & Karnowski, V. (2020). Mobile Devices as Tools for Media and Communication Research: A Scoping Review on Collecting Self-report Data in Repeated Measurement Designs. Communication Methods and Measures, 14(3), 145–164. https://doi.org/10/gks6zf\nMasur, P. K. (2019). Capturing situational dynamics: Strength and pitfalls of the experience sampling method (P. Müller, S. Geiß, T. K. Naab, & C. Peter, Eds.; Vol. 15). Herbert von Halem Verlag. https://osf.io/vx5ha\n\n\n\nwith focus on visual communication\n\nGeise, S. (2017). Theoretical Perspectives on Visual Political Communication Through Election Posters (C. Holtz-Bacha & B. Johansson, Eds.; pp. 13–31). Springer International Publishing. http://link.springer.com/10.1007/978-3-319-32498-2_2\n\n\n\nwith focus on visibility\n\nStehle, H., Bock, A., Wilhelm, C., Springer, N., Mahrt, M., Lobinger, K., Linke, C., Engelmann, I., Detel, H., & Brantner, C. (2024). In/visibility in the digital age: A literature review from a communication studies perspective. International Journal of Communication, 18, 23.\n\n\n\nother interesting sources\n\nBodden, S., & Awcock, H. (2024). Stuck Up, Peeled Off, Covered Up, Shared and Scribbled Out: Doing Ordinary Politics with Political Stickers. GeoHumanities, 10(1), 131–149. https://doi.org/10.1080/2373566X.2024.2339848\nMcCosker, A., Kamstra, P., De Cotta, T., Farmer, J., Shaw, F., Teh, Z., & Soltani Panah, A. (2021). Social media for social good? A thematic, spatial and visual analysis of humanitarian action on Instagram. Information, Communication & Society, 24(13), 1870–1890. https://doi.org/10.1080/1369118X.2020.1748089\nMichel, S., & Pappert, S. (2018). Wahlplakat-busting. Formen und funktionen einer (neuen) textmustermischung. Zeitschrift Für Angewandte Linguistik, 2018(68), 333. https://doi.org/doi:10.1515/zfal-2018-0002\nReershemius, G. (2019). Lamppost networks: stickers as a genre in urban semiotic landscapes. Social Semiotics, 29(5), 622–644. https://doi.org/10.1080/10350330.2018.1504652\n\n\n\nBack to course schedule ⏎"
+    "objectID": "sessions/session-04.html#useful-resources",
+    "href": "sessions/session-04.html#useful-resources",
+    "title": "Session 4",
+    "section": "Useful resources",
+    "text": "Useful resources\n\nabout content analysis in general\n\nKrippendorff, K. (2019). Content analysis: An introduction to its methodology. SAGE Publications, Inc. https://doi.org/10.4135/9781071878781\nNeuendorf, K. A. (2017). The content analysis guidebook. SAGE Publications, Inc. https://doi.org/10.4135/9781071802878\nRössler, P. (2017). Inhaltsanalyse (3., völlig überarbeitete Auflage). UVK Verlagsgesellschaft mbH mit UVK/Lucius.\n\n\n\nabout text as data & automated text analysis (with relation to surveys)\n\nGrimmer, J., Roberts, M. E., & Stewart, B. M. (2022). Text as data: A new framework for machine learning and the social sciences. Princeton University Press.\nMaier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., & Adam, S. (2018). Applying LDA Topic Modeling in Communication Research: Toward a Valid and Reliable Methodology. Communication Methods and Measures, 12(2-3), 93–118. https://doi.org/10.1080/19312458.2018.1430754\nRoberts, M. E., Stewart, B. M., Tingley, D., Lucas, C., Leder-Luis, J., Gadarian, S. K., Albertson, B., & Rand, D. G. (2014). Structural Topic Models for Open-Ended Survey Responses. American Journal of Political Science, 58(4), 1064–1082. https://doi.org/10.1111/ajps.12103\n\n\n\nabout embeddings\n\nDevlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding (J. Burstein, C. Doran, & T. Solorio, Eds.; p. 41714186). Association for Computational Linguistics. https://doi.org/10.18653/v1/N19-1423\nMikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. https://doi.org/10.48550/ARXIV.1301.3781\n\n\n\nabout LLMs as coders (assistance)\n\nAshwin, J., Chhabra, A., & Rao, V. (2025). Using Large Language Models for Qualitative Analysis can Introduce Serious Bias. Sociological Methods & Research. https://doi.org/10.1177/00491241251338246\nGilardi, F., Alizadeh, M., & Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. Proceedings of the National Academy of Sciences, 120(30). https://doi.org/10.1073/pnas.2305016120\n\n\n\nabout image analysis (OCR, object detection, multimodal)\n\nSmith, R. (2007). An overview of the tesseract OCR engine. Ninth International Conference on Document Analysis and Recognition (ICDAR 2007) Vol 2, 629–633. https://doi.org/10.1109/icdar.2007.4376991\nRedmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2015). You only look once: Unified, real-time object detection. https://doi.org/10.48550/ARXIV.1506.02640\nRadford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., & Sutskever, I. (2021). Learning transferable visual models from natural language supervision. https://doi.org/10.48550/ARXIV.2103.00020\n\n\n\nabout geospatial data & ESM (geofencing & GEMA)\n\nHaas, G.-C., Mark, Keusch, F., & Bähr, S. (2020). Using Geofences to Collect Survey Data: Lessons Learned From the IAB-SMART Study. SMIF. https://doi.org/10.13094/SMIF-2020-00023\nKingsbury, C., Buzzi, M., Chaix, B., Kanning, M., Khezri, S., Kiani, B., Kirchner, T. R., Maurel, A., Thierry, B., & Kestens, Y. (2024). STROBE-GEMA: a STROBE extension for reporting of geographically explicit ecological momentary assessment studies. Archives of Public Health, 82(1). https://doi.org/10.1186/s13690-024-01310-8\nZhang, Y., Li, D., Li, X., Zhou, X., & Newman, G. (2024). The integration of geographic methods and ecological momentary assessment in public health research: A systematic review of methods and applications. Social Science & Medicine, 354, 117075. https://doi.org/10.1016/j.socscimed.2024.117075"
   },
   {
-    "objectID": "sessions/session-03.html",
-    "href": "sessions/session-03.html",
-    "title": "Session 3",
+    "objectID": "sessions/session-04.html#useful-tools",
+    "href": "sessions/session-04.html#useful-tools",
+    "title": "Session 4",
+    "section": "Useful tools",
+    "text": "Useful tools\n\nR packages\n\ntidyverse, stringr, tidyr – cleaning, reshaping, string ops\nquanteda, quanteda.textstats, quanteda.textmodels – text as data workflows (DFM, dictionaries, stats)\ntidytext – tidy text mining, lexicons, token workflows\nstm – structural topic models (STM), incl. open-ended responses\nudpipe, spacyr – tokenization, POS-tagging, lemmatization\ntext2vec – embeddings + similarity/clustering pipelines\nsf, lwgeom, geosphere – spatial data + distances/geometry\ntmap, leaflet – interactive/static maps for exploration\n\n\n\nPython packages\n\npandas, numpy – data wrangling\nscikit-learn – vectorization, clustering, evaluation\nspacy, nltk – NLP preprocessing\ngensim – topic models + word embeddings\nsentence-transformers, transformers – embeddings + LLM/Transformer tooling\nbertopic – topic modeling on embeddings\npytesseract + opencv-python – OCR pipelines + image preprocessing\ntorch, torchvision – deep learning base stack (if needed)\nultralytics (YOLO) – object detection workflows\ngeopandas, shapely, pyproj – geodata + projections\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "sessions/session-02.html",
+    "href": "sessions/session-02.html",
+    "title": "Session 2",
     "section": "",
-    "text": "Download the ntfy.sh app for your smartphone:  iOS |  Android"
+    "text": "Register an account on SoSci Survey\n Download the ntfy.sh app for your smartphone"
   },
   {
-    "objectID": "sessions/session-03.html#prepare",
-    "href": "sessions/session-03.html#prepare",
-    "title": "Session 3",
+    "objectID": "sessions/session-02.html#prepare",
+    "href": "sessions/session-02.html#prepare",
+    "title": "Session 2",
     "section": "",
-    "text": "Download the ntfy.sh app for your smartphone:  iOS |  Android"
+    "text": "Register an account on SoSci Survey\n Download the ntfy.sh app for your smartphone"
   },
   {
-    "objectID": "sessions/session-03.html#participate",
-    "href": "sessions/session-03.html#participate",
-    "title": "Session 3",
+    "objectID": "sessions/session-02.html#participate",
+    "href": "sessions/session-02.html#participate",
+    "title": "Session 2",
     "section": "Participate",
-    "text": "Participate\n🖥️ Session 03"
+    "text": "Participate\n🖥️ Session 02"
   },
   {
-    "objectID": "sessions/session-03.html#useful-tools-resources",
-    "href": "sessions/session-03.html#useful-tools-resources",
-    "title": "Session 3",
+    "objectID": "sessions/session-02.html#useful-tools-resources",
+    "href": "sessions/session-02.html#useful-tools-resources",
+    "title": "Session 2",
     "section": "Useful tools & resources",
-    "text": "Useful tools & resources\n\nSoSci Survey – Platform for creating and conducting online surveys\nSoSci Survey Manual – SoSci Survey documentation\nSoSci Survey Support – SoSci Survey support forum\n ntfy.sh – Simple notification service\n Google Colaboratory – Free Jupyter notebook environment that runs in the cloud\n\n\nBack to course schedule ⏎"
+    "text": "Useful tools & resources\n\nSoSci Survey – Platform for creating and conducting online surveys\nSoSci Survey Manual – SoSci Survey documentation\nSoSci Survey Support – SoSci Survey support forum\nntfy.sh – Simple notification service\n\n\nBack to course schedule ⏎"
   },
   {
-    "objectID": "slides/slides-02.html#visuelle-kommunikation-trifft-dbd",
-    "href": "slides/slides-02.html#visuelle-kommunikation-trifft-dbd",
-    "title": "From Theory to Questionaire",
-    "section": "Visuelle Kommunikation trifft DBD",
-    "text": "Visuelle Kommunikation trifft DBD\nHintergrund zum Seminar\n\nAußenwerbung als visuelles Kommunikationsmedium:\n\nmacht sichtbar, wie Botschaften im öffentlichen Raum gestaltet und wahrgenommen werden\nvisuelle Daten (z. B. Fotos, Motive) sind zentral, um diese Formen empirisch zu erfassen und zu analysieren.\n\nVerknüpfung mit digitalen Verhaltensdaten:\n\nermöglicht die Analyse, wie visuelle Werbereize mit digitalen Spuren (z. B. Suchverhalten, Social-Media-Aktivität oder Standortdaten) zusammenhängen"
-  },
-  {
-    "objectID": "slides/slides-02.html#semesterplan",
-    "href": "slides/slides-02.html#semesterplan",
-    "title": "From Theory to Questionaire",
+    "objectID": "slides/slides-03.html#semesterplan",
+    "href": "slides/slides-03.html#semesterplan",
+    "title": "From Questionnaire to Pretest",
     "section": "Semesterplan",
     "text": "Semesterplan\n\n\n\n\n\n\n\n\nSession\nDatum\nTime\nTopic\n\n\n\n\n1\n24.10.2024\n09:45 - 11:15\n🚀 Kick-Off\n\n\n\n\n\n✏️ Independent study and assignments\n\n\n2\n09.01.2026\n09:00 - 16:00\n📚 From Theory to Questionaire\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 From Questionaire to Pretest\n\n\n4\n30.01.2026\n09:00 - 16:00\n📚 From Pretest to Analysis\n\n\n5\n06.02.2026\n09:00 - 16:00\n📚 Analysis & Evaluation"
   },
   {
-    "objectID": "slides/slides-02.html#half-way-there",
-    "href": "slides/slides-02.html#half-way-there",
-    "title": "From Theory to Questionaire",
-    "section": "Half way there!",
-    "text": "Half way there!\nÜberblick über eure bisherigen Assigments\n\n\n\n\n\n\n\n\nAssignment\nPunkte\nDeadline\nStatus\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n18.12.2026\n✅\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n05.01.2026\n✅\n\n\n👤 Participation: Pre-Test\n20 Pts.\n01.2026\n🏗️\n\n\n👥 Written assignment: Implementation Report\n30 Pts.\n28.02.2026\n❓"
-  },
-  {
-    "objectID": "slides/slides-02.html#kurze-rückfragen",
-    "href": "slides/slides-02.html#kurze-rückfragen",
-    "title": "From Theory to Questionaire",
-    "section": "Kurze Rückfragen",
-    "text": "Kurze Rückfragen\nFragen zu euren Erfahrungen bei zu den bisherigen Assignments\n\nWie waren eure Erfahrungen bei der Erstellung des Research Project Sketch?\nWie war der Prozess des Peer Reviews (Feedback geben & erhalten)?\nWie ist der akutuelle Stand der R-Kenntnisse?\nGibt es Wünsche zu Input über bestimmten Analyseverfahren?"
-  },
-  {
-    "objectID": "slides/slides-02.html#heutige-agenda",
-    "href": "slides/slides-02.html#heutige-agenda",
-    "title": "From Theory to Questionaire",
+    "objectID": "slides/slides-03.html#heutige-agenda",
+    "href": "slides/slides-03.html#heutige-agenda",
+    "title": "From Questionnaire to Pretest",
     "section": "Heutige Agenda",
-    "text": "Heutige Agenda\nÜberblick über den Ablauf des heutigen Tages\n\n\n\n\n\n\n\n\nSlot\nZeit\nProgrammpunkt\n\n\n\n\n\n09:00 - 09:30\nBegrüßung & Koordination\n\n\n\n09:30 - 09:45\nKurze Pause\n\n\n1\n09:45 - 11:15\nResearch Sketches im Fokus\n\n\n\n11:15 - 11:30\nKurze Pause\n\n\n2\n11:30 - 12:45\nFragebogen im Fokus\n\n\n\n12:45 - 13:45\nMittagspause\n\n\n3\n13:45 - 15:45\nHands-On: Fragebogen\n\n\n4\n15:45 - 16:00\nAbschluss & Ausblick"
+    "text": "Heutige Agenda\nÜberblick über den Ablauf des heutigen Tages\n\n\n\n\n\n\n\n\nSlot\nZeit\nProgrammpunkt\n\n\n\n\n\n09:00 - 09:15\nBegrüßung & Koordination\n\n\n\n09:15 - 09:30\nKurze Pause\n\n\n1\n09:30 - 11:15\nFeldvorbereitung im Fokus\n\n\n\n11:15 - 11:30\nKurze Pause\n\n\n2\n11:30 - 13:00\nntfy im Fokus\n\n\n\n13:00 - 14:00\nMittagspause\n\n\n3\n14:00 - 15:45\nHands-On: Fragebogentest\n\n\n4\n15:45 - 16:00\nAbschluss & Ausblick"
   },
   {
-    "objectID": "slides/slides-02.html#pitch-your-project",
-    "href": "slides/slides-02.html#pitch-your-project",
-    "title": "From Theory to Questionaire",
-    "section": "Pitch your project!",
-    "text": "Pitch your project!\nGemeinsame Basis schaffen um Synergien zu finden\n\nKurze Vorstellung eurer Forschungsprojekte, um …\n\ngemeinsames Verständnis der verschiedenen Forschungsprojekte schaffen (z.B. theoretische Definitionen, methodische Operationalisierung & Forschungsdesigns)\nSynergien und Gemeinsamkeiten zu identifizieren\nHerausforderungen und offene Fragen zu diskutieren\nMöglichkeiten zur Zusammenarbeit und gegenseitigen Unterstützung zu erkunden"
+    "objectID": "slides/slides-03.html#kurze-bestandsaufnahme",
+    "href": "slides/slides-03.html#kurze-bestandsaufnahme",
+    "title": "From Questionnaire to Pretest",
+    "section": "Kurze Bestandsaufnahme",
+    "text": "Kurze Bestandsaufnahme\nArbeitsaufträge zur heutigen Sitzung\n\nFinalisiert euren Fragebogen basierend auf dem Feedback\nFinalisiert euer Forschungsdesign (insb. Schedule für Kurzfragebögen)\nTestet euren Fragebogen!\n\nGentle Reminder:\n\nWie ist der aktuelle Stand eurer R-Kenntnisse?\nGitHub Copilot beantragt?\nGibt es Analyseverfahren, zu denen Ihr Input benötigt?"
   },
   {
-    "objectID": "slides/slides-02.html#and-now-you",
-    "href": "slides/slides-02.html#and-now-you",
-    "title": "From Theory to Questionaire",
-    "section": "💻 And now … you!",
-    "text": "💻 And now … you!\nArbeitsauftrag (20 Minuten): Erstellt einen Elevator Pitch für euer Projekt\n\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nerstellt einen Kurzpräsentation (max. 4 Folien, 5–8 Minuten), die folgende Fragen beantwortet:\n\nWas untersucht ihr und warum ist das relevant? (1 Folie)\nWie wollt ihr das untersuchen? (1–2 Folien)\nWelche Herausforderungen seht ihr und wo braucht ihr Feedback? (1 Folie)\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie\n\n\n\n\n\n\n\n\n\n\nFolienvorlage verwenden\n\n\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie"
-  },
-  {
-    "objectID": "slides/slides-02.html#get-started",
-    "href": "slides/slides-02.html#get-started",
-    "title": "From Theory to Questionaire",
-    "section": "Get started!",
-    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation euerer Ergebnisse\n\n\n\n\n\n     Gruppe ‘Ansprachformen im Alltag’\n\n\n\n\n\n     Gruppe ‘Out-of-home recall’\n\n\n\n\n\n     Gruppe “Informelle visuelle Kommunikation”\n\n\n\n\n\n     Gruppe D “Sticky Politics”\n\n\n\n\n−+\n20:00"
-  },
-  {
-    "objectID": "slides/slides-02.html#statusupdate",
-    "href": "slides/slides-02.html#statusupdate",
-    "title": "From Theory to Questionaire",
-    "section": "Statusupdate",
-    "text": "Statusupdate\nUpdate zu den Herausforderungen der praktischen Umsetzung\n\nDatenschutz (DSGVO) als Endgegner\n\nBesondere Herausforderung bei der Nutzung von Bildern durch Berücksichtigung von Persönlichkeitsrechten dritter Personen\nKonsequenz: Umfragen im Seminar nur als Pre-Test/Proof of Concept, aber keine koordinierten Umfrage\n\nEinsatz von klassischen Umfragesoftware, keine Nutzung von Apps (für Befragung)\n\nApps mit zu eingeschränkten Funktionen oder zu “teuer” (weil eigene Entwicklung/Programmierung notwendig)"
-  },
-  {
-    "objectID": "slides/slides-02.html#toolbox-statt-nur-eines-tools",
-    "href": "slides/slides-02.html#toolbox-statt-nur-eines-tools",
-    "title": "From Theory to Questionaire",
-    "section": "Toolbox statt nur eines Tools",
-    "text": "Toolbox statt nur eines Tools\nDie zur Verfügung stehenden Tools\n\nKeyingress (kostenpflichtig): eine Multichannel-Toolbox zur Erstellung, Durchführung und Auswertung von Befragungen über Online-, Offline-, Telefon- (CATI) und Panel-Kanäle, mit integriertem Reporting-Dashboard, flexiblen Automatisierungs- und Schnittstellenfunktionen \nSoSci Survey (kostenlos für akademische Zwecke): flexible, DSGVO-konforme Online-Umfragesoftware aus Deutschland, mit der sich anspruchsvolle wissenschaftliche und kommerzielle Befragungen erstellen, durchführen und auswerten lassen.\nntfy.sh (kostenlos/open-source): einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien"
-  },
-  {
-    "objectID": "slides/slides-02.html#sosci-suvery-als-basis",
-    "href": "slides/slides-02.html#sosci-suvery-als-basis",
-    "title": "From Theory to Questionaire",
-    "section": "SoSci Suvery als Basis",
-    "text": "SoSci Suvery als Basis\nNutzung von SoSci Survey als Grundlage für die Umfrage(n)\n\nBei der Verwendung von SoSci Survey überwiegen die Vorteile, speziell mit Blick auf die potentielle Weiterverwendung für die Masterarbeit:\n\nEinfacher Zugang (kostenlos für akademische Zwecke)\nUmfangreiche Dokumentation & Tutorials\nGroße Community (Austausch & Support)\nIntegration mit R (Datenexport & -analyse)\n\nAber: Komplizierte Feldsteuerung (dort ggf. eines der anderen Tools nutzen)"
-  },
-  {
-    "objectID": "slides/slides-02.html#ntfy-me",
-    "href": "slides/slides-02.html#ntfy-me",
-    "title": "From Theory to Questionaire",
-    "section": "ntfy me!",
-    "text": "ntfy me!\nntfy.sh als Workaround\n\n\n\nNutzung von ntfy.sh als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien\nOpen-Source, einfach zu bedienen und flexibel anpassbar\nSkriptbasiertes Scheduling (via Server)"
-  },
-  {
-    "objectID": "slides/slides-02.html#sneak-preview",
-    "href": "slides/slides-02.html#sneak-preview",
-    "title": "From Theory to Questionaire",
-    "section": "Sneak Preview",
-    "text": "Sneak Preview\nVorstellung des aktuellen Standes der Umfrage\n\n\n\n\n\nTemplate erstellt, das folgende Fragen beinhaltete\n\nFotoaufnahme (benötigt Erlaubnis zur Nutzung der Kamera)\nGPS-Location (benötigt Erlaubnis zur Nutzung der Standortdaten)\n\nSchaut euch gerne die Debug-Vorschau an und testet den Fragebogen selbst (Daten/Antworten werden nicht gespeichert)\n\n\n\n\n\n\n     Debug-Vorschau"
-  },
-  {
-    "objectID": "slides/slides-02.html#kurze-vorstellung-des-backends",
-    "href": "slides/slides-02.html#kurze-vorstellung-des-backends",
-    "title": "From Theory to Questionaire",
-    "section": "Kurze Vorstellung des Backends",
-    "text": "Kurze Vorstellung des Backends\nVorstellung des SoSci Survey Backends"
-  },
-  {
-    "objectID": "slides/slides-02.html#lets-discuss",
-    "href": "slides/slides-02.html#lets-discuss",
-    "title": "From Theory to Questionaire",
+    "objectID": "slides/slides-03.html#lets-discuss",
+    "href": "slides/slides-03.html#lets-discuss",
+    "title": "From Questionnaire to Pretest",
     "section": "💬 Let’s discuss",
-    "text": "💬 Let’s discuss\nVorschlag zum weiteren Vorgehen\n\nJede Gruppe erstellt ihre eigene Umfrage auf Basis Ihres Fragebogens\n\nNutzung des SoSci Survey Templates als Grundlage und Erweiterung um eigene Fragen\nÜberarbeitung, Testing & Feedback im nächsten Zeitslot\nErfahrungsbericht und Finalisierung in nächster Blocksitzung\n\nFrage zum Studien-Monitoring:\n\nSerienmail vs. notify.sh?\nEigenständig oder “zentral”?"
+    "text": "💬 Let’s discuss\nOrganisatorische Hinweise\n\nHandhabung von IDs (für Teilnehmer:In und Kurzfragebogen):\n\nManuelle Eingabe der \"Teilnehmer_in ID\", ID des Kurzfragebogens via Default-Umfrageparameter von SoSci-Survey\n\nZweiteilung des Befragungszeitraums:\n\nPhase 1: Mo. (26.01) bis Do. (29.01.) &\nPhase 2: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)\n\nAblauf der Befragung:\n\nspätestens Sonntagabend erhaltet Ihr eine Mail mit einem Link zum Topic, das Ihr abonnieren müsst, und Ausfüllhinweisen\nab Montag startet die Erhebung\nbei Problemen: Umgehend Nachricht ins StudOn-Forum"
   },
   {
-    "objectID": "slides/slides-02.html#hands-on-zeit",
-    "href": "slides/slides-02.html#hands-on-zeit",
-    "title": "From Theory to Questionaire",
+    "objectID": "slides/slides-03.html#and-now-you",
+    "href": "slides/slides-03.html#and-now-you",
+    "title": "From Questionnaire to Pretest",
+    "section": "💻 And now … you!",
+    "text": "💻 And now … you!\nArbeitsauftrag (30 Minuten): Feldvorbereitung\n\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nerstellt eine Kurzpräsentation (max. 4 Folien, 5–10 Minuten), die auf folgende Punkte eingeht:\n\nWie sieht euer aktueller Kurzfragebogen aus? (1 Folie)\nDarstellung des (geplanten) Schedules für die Umfrage (1 Folie)\nVorstellung der Ausfüllhinweise (1 Folie)\nGibt es Herausforderungen oder Probleme, die Ihr diskutieren möchtet? (1 Folie)\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie\n\n\n\n\n\n\n\n\n\n\nFolienvorlage verwenden\n\n\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie"
+  },
+  {
+    "objectID": "slides/slides-03.html#get-started",
+    "href": "slides/slides-03.html#get-started",
+    "title": "From Questionnaire to Pretest",
+    "section": "Get started!",
+    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse\n\n\n\n\n\n     Gruppe A (‘Ansprachformen im Alltag’)\n\n\n\n\n\n     Gruppe B (‘Out-of-home recall’)\n\n\n\n\n\n     Gruppe C (“Informelle visuelle Kommunikation”)\n\n\n\n\n\n     Gruppe D (“Sticky Politics”)\n\n\n\n\n−+\n30:00"
+  },
+  {
+    "objectID": "slides/slides-03.html#ntfy-me",
+    "href": "slides/slides-03.html#ntfy-me",
+    "title": "From Questionnaire to Pretest",
+    "section": " ntfy me!",
+    "text": "ntfy me!\nntfy.sh als Tool für die Feldsteuerung\n\n\n\nNutzung von ntfy.sh als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien\nOpen-Source, einfach zu bedienen und flexibel anpassbar\nSkriptbasiertes Scheduling (via Server)"
+  },
+  {
+    "objectID": "slides/slides-03.html#was-ist-ntfy.sh",
+    "href": "slides/slides-03.html#was-ist-ntfy.sh",
+    "title": "From Questionnaire to Pretest",
+    "section": "Was ist ntfy.sh?",
+    "text": "Was ist ntfy.sh?\nKurze Erklärung der Funktionsweise\n\nPublish/Subscribe-Prinzip: Clients abonnieren ein Topic (bzw. einen Link) und erhalten sofort Updates\nNachrichten lassen sich per HTTP-Request (z. B. curl oder python) senden\nFunktioniert auf Smartphone & Desktop via Web-App oder native App\nKostenlos, aber mit Einschränkungen\n\n“Private” Topics nur mit Pro-Account\nWorkaround mit hochindividualisierten Themen\nAber es bleibt ein “Restrisiko”"
+  },
+  {
+    "objectID": "slides/slides-03.html#topic-als-gatekeeper",
+    "href": "slides/slides-03.html#topic-als-gatekeeper",
+    "title": "From Questionnaire to Pretest",
+    "section": "Topic als Gatekeeper",
+    "text": "Topic als Gatekeeper\nVorstellung eines typischen Workflows\n\nTopic festlegen (z. B. dbd25-20260123-block2-live-test-in-course)\nTeilnehmende abonnieren das Topic in der ntfy App\nServer sendet automatisierte & randomisierte Reminder (via systemd)\n\nBeispiel: Reminder mit Titel\n\nimport requests\n\ntopic = \"dbd25-YIP2tX54JZ-live-test-in-course\"\nurl = f\"https://ntfy.sh/{topic}\"\n\nr = requests.post(url, data=\"Zeit für deine ESM-Abfrage ✅\".encode(\"utf-8\"))\nr.raise_for_status()\nprint(\"Message Status:\", r.status_code)\n\nMessage Status: 200"
+  },
+  {
+    "objectID": "slides/slides-03.html#nfty_scheduler-als-little-helper",
+    "href": "slides/slides-03.html#nfty_scheduler-als-little-helper",
+    "title": "From Questionnaire to Pretest",
+    "section": "nfty_scheduler als little helper",
+    "text": "nfty_scheduler als little helper\nEigenes -Projekt zur Steuerung der Fragebögen\n\nPython-CLI als leichtes Paket (run.py + ntfy_reminder/)\nHelper besteht aus drei Teilen bzw. trennt Konfiguration, Planung und Versand:\n\n.env definiert die globalen Parameter,\nplan erzeugt out/schedule.json,\nsend verschickt"
+  },
+  {
+    "objectID": "slides/slides-03.html#was-der-helper-steuern-kann",
+    "href": "slides/slides-03.html#was-der-helper-steuern-kann",
+    "title": "From Questionnaire to Pretest",
+    "section": "Was der Helper steuern kann",
+    "text": "Was der Helper steuern kann\nFolgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden\n\nZeitlogik: --mode interval|windows, --start, --end, --min-gap\nDichte: --per-day, --days, --seed (reproduzierbar)\nZielgruppe: --participant-id (personalisierte Pläne)\nAusgabe: --dry-run, --explain, --out"
+  },
+  {
+    "objectID": "slides/slides-03.html#arbeiten-im-google-colab",
+    "href": "slides/slides-03.html#arbeiten-im-google-colab",
+    "title": "From Questionnaire to Pretest",
+    "section": "Arbeiten im  Google Colab",
+    "text": "Arbeiten im  Google Colab\nDemo-Notebook aus dem Helper-Repo\n\n\n\nColab ist eine cloudbasierte Jupyter-Umgebung, die direkt im Browser läuft.\nNotebooks werden auf Googles Servern ausgeführt und vereinen Code, Text und Output.\nIm Kurs nutzen wir Colab, um die notwendigen Dateien (z. B. .env, Schedule) aus dem Notebook zu exportieren.\n\n\n\n\n\nDemo-Notebook im Repo"
+  },
+  {
+    "objectID": "slides/slides-03.html#download-now",
+    "href": "slides/slides-03.html#download-now",
+    "title": "From Questionnaire to Pretest",
+    "section": "Download  now!",
+    "text": "Download  now!\nReminder: Bitte downloadet die App, um die Notifications zu testen\n\n\n\n\n\n\n    \n\n iOS\n\n\n\n\n    \n\n Android"
+  },
+  {
+    "objectID": "slides/slides-03.html#id-variable-hinzufügen",
+    "href": "slides/slides-03.html#id-variable-hinzufügen",
+    "title": "From Questionnaire to Pretest",
+    "section": " ID Variable hinzufügen!",
+    "text": "ID Variable hinzufügen!\nReminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzubauen\n\nFrage sollte auf der ersten Seite des Fragebogens stehen\nTemplate-Frage ist auf StudOn verfügbar\nPreview:"
+  },
+  {
+    "objectID": "slides/slides-03.html#hands-on-zeit",
+    "href": "slides/slides-03.html#hands-on-zeit",
+    "title": "From Questionnaire to Pretest",
     "section": "💻 Hands-on Zeit!",
-    "text": "💻 Hands-on Zeit!\nArbeitsauftrag (90 Minuten): Arbeitet an eurem Fragebogen\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\narbeitet die Checkliste für die Erstellung ab\npasst den Fragebogen an euer (überarbeitetes) Forschungsdesign an\ndenkt über den Schedule für die Versendung der Kurzfragebögen nach\ntestet euren Fragebogen (Pretest-Link), auch auf unterschiedlichen Geräten!\n\n\n\n\n\n\n\n\n\n\nWährenddessen: Feedback\n\n\n\nSucht das Gespräch zu anderen Gruppen und gebt euch gegenseitig Hilfe und Feedback\nIch bin während der gesamten Zeit für Fragen und Unterstützung verfügbar\nIch wandere von Gruppe zu Gruppe, um Feedback zu geben und Fragen zu beantworten"
+    "text": "💻 Hands-on Zeit!\nArbeitsauftrag (90 Minuten): Testet euren Fragebogen\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nöffnet das Google Colab\ngeht die Dry-Runs des Beispiels durch\nnehmt die notwendigen Anpassungen im Abschnitt Individualisierung vor\nErstellt die notwendigen Dateien (schedule.json & .env)\n\n\n\n\n\n\n\n\n\n\nWährenddessen: Feedback & Fragen\n\n\n\nSucht das Gespräch zu anderen Gruppen und gebt euch gegenseitig Hilfe und Feedback\nIch bin während der gesamten Zeit für Fragen und Unterstützung verfügbar\nIch wandere von Gruppe zu Gruppe, um Feedback zu geben und Fragen zu beantworten"
   },
   {
-    "objectID": "slides/slides-02.html#erstellung-einer-eigenen-befragung",
-    "href": "slides/slides-02.html#erstellung-einer-eigenen-befragung",
-    "title": "From Theory to Questionaire",
-    "section": "Erstellung einer eigenen Befragung",
-    "text": "Erstellung einer eigenen Befragung\nCheckliste für die Erstellung\n\nErstellung eines Accounts\nDownload des DBD-Templates von StudOn\nNeues (kostenloses) Befragungsprojekt\nBefragungsprojekt hochladen (XML-Datei)\nProjektverzeichnis/-informationen anpassen/individualisieren\nFragebogen anpassen/individualisieren\n\n\n\n“Ich forsche im Rahmen eines Studiums oder einer Tätigkeit an einer Schule oder Hochschule.”\n“Nein, die individuelle Zuordnung ist ausgeschlossen.”\n“Ein Unternehmen unterstützt die Studie, erhält dafür aber keine Gegenleistung.”\n“Die Ergebnisse werden als Seminararbeit oder Semesterarbeit abgegeben.”\n“Nein”"
+    "objectID": "slides/slides-03.html#bis-zum-ende-der-sitzung",
+    "href": "slides/slides-03.html#bis-zum-ende-der-sitzung",
+    "title": "From Questionnaire to Pretest",
+    "section": "Bis zum Ende der Sitzung",
+    "text": "Bis zum Ende der Sitzung\nCheckliste\nBis zum Ende der Sitzung benötige ich von euch …\n\nden finalen Fragebogenlink\nden finalen Schedule eurer Gruppe (exportiert aus dem Google Colab)\ndie finale .env-Datei (exportiert aus dem Google Colab)\ndie Ausfüllhinweise für die Umfrage eurer Gruppe\n\nper Mail an christoph.adrian@fau.de"
   },
   {
-    "objectID": "slides/slides-02.html#until-we-see-us-again",
-    "href": "slides/slides-02.html#until-we-see-us-again",
-    "title": "From Theory to Questionaire",
-    "section": "Until we see us again",
-    "text": "Until we see us again\nArbeitsaufträge für die nächste Sitzung\n\nFinalisiert euren Fragebogen basierend auf dem heutigen Feedback\nFinalisiert euer Forschungsdesign (insb. Schedule für Kurzfragebögen)\nOptional, aber sehr empfohlen: Testet euren Fragebogen!\n\nNutzt den Pretest-Link, um euren Fragebogen zu testen\nSammelt eigene Erfahrung in der Anwendung!"
-  },
-  {
-    "objectID": "slides/slides-02.html#literatur",
-    "href": "slides/slides-02.html#literatur",
-    "title": "From Theory to Questionaire",
-    "section": "Literatur",
-    "text": "Literatur"
-  },
-  {
-    "objectID": "course-team.html",
-    "href": "course-team.html",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
-  },
-  {
-    "objectID": "course-team.html#instructor",
-    "href": "course-team.html#instructor",
-    "title": "Teaching team",
-    "section": "",
-    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
-    "crumbs": [
-      "Course information",
-      "Teaching team"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Digital Behavioral Data",
-    "section": "",
-    "text": "NoteInformation about the course site\n\n\n\nThis page provides an outline of the topics, contents, and assignments for the semester. Please note that the contents of the course sessions ( background information,  slides,  exercises and  tutorials) will be updated continuously throughout the semester, with all changes being documented here.",
-    "crumbs": [
-      "Course information",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "index.html#copyright",
-    "href": "index.html#copyright",
-    "title": "Digital Behavioral Data",
-    "section": "Copyright",
-    "text": "Copyright\nThis content is licensed under a GPL-3.0 License.",
-    "crumbs": [
-      "Course information",
-      "Schedule"
-    ]
+    "objectID": "slides/slides-03.html#until-we-see-each-other-again",
+    "href": "slides/slides-03.html#until-we-see-each-other-again",
+    "title": "From Questionnaire to Pretest",
+    "section": "Until we see each other again",
+    "text": "Until we see each other again\nDie nächsten Schritte\n\nspätestens Sonntagabend erhaltet Ihr eine Mail mit dem Link zum Topic, das Ihr abonnieren müsst\nab Montag startet die Erhebung (vier Tage)\nschaut in die Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet\n\n(mindestens Entwurf für) Auswertungsstrategie zur nächsten Sitzung"
   },
   {
     "objectID": "slides/slides-01.html#und-nun-zu-ihnen",
@@ -619,151 +568,547 @@
     "text": "Literatur\n\n\nBolger, N., & Laurenceau, J.-P. (2013). Intensive longitudinal methods: An introduction to diary and experience sampling research. Guilford Press.\n\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\n\n\nMasur, P. K. (2019). Capturing situational dynamics: Strength and pitfalls of the experience sampling method (P. Müller, S. Geiß, T. K. Naab, & C. Peter, Eds.; Vol. 15). Herbert von Halem Verlag. https://osf.io/vx5ha\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951\n\n\nWeller, K. (2021). A short introduction to computational social science and digital behavioral data. https://www.gesis.org/fileadmin/user_upload/MeettheExperts/GESIS_Meettheexperts_Introductioncss.pdf"
   },
   {
-    "objectID": "slides/slides-03.html#semesterplan",
-    "href": "slides/slides-03.html#semesterplan",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Christoph Adrian (he/him)     is a Senior Project Manager at statArts GmbH and a Lecturer at the Chair of Communication Science at Friedrich-Alexander-Universität (FAU) Erlangen-Nürnberg.\nHis work focuses on computational methods, especially Text as Data Approaches and workin with Digital behavioral data, with an emphasis on computing, reproducible research, student-centered learning, and open-source education.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
+  },
+  {
+    "objectID": "showcases/04-01-data-creation_gps.html",
+    "href": "showcases/04-01-data-creation_gps.html",
+    "title": "Create data: GPS",
+    "section": "",
+    "text": "NoteInformation\n\n\n\n\nDiese Datei zeigt, wie OpenStreetMap-Daten (OSM) für Werbeträger in Nürnberg abgerufen, vereinheitlicht und als CSV gespeichert werden.\nDie Datenquelle ist die Overpass-API (OSM), die über das Paket osmdata angesprochen wird.\nDie Überarbeitung umfasst:\n\nVereinheitlichung verschiedener Geometrietypen (Punkt, Linie, Polygon) auf einen gemeinsamen Punkt (Koordinaten)\nEntfernen doppelter OSM-Objekte und eine einfache Bereinigung fehlender Namen.",
+    "crumbs": [
+      "Examples",
+      "Create data: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-01-data-creation_gps.html#setup",
+    "href": "showcases/04-01-data-creation_gps.html#setup",
+    "title": "Create data: GPS",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(osmdata)\n\nData (c) OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright\n\nlibrary(sf)\n\nLinking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(readr)\nlibrary(here)\n\nhere() starts at /Users/ca/repositories/academic/dbd_2025\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ forcats   1.0.1     ✔ stringr   1.5.1\n✔ ggplot2   4.0.0     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.1.0     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors",
+    "crumbs": [
+      "Examples",
+      "Create data: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-01-data-creation_gps.html#osm-api-call",
+    "href": "showcases/04-01-data-creation_gps.html#osm-api-call",
+    "title": "Create data: GPS",
+    "section": "OSM API Call",
+    "text": "OSM API Call\n\n\n\n\n\n\nNoteHintergrund: OpenStreetMap\n\n\n\n\nOpenStreetMap (OSM) ist eine frei zugängliche, kollaborativ gepflegte Weltkarte, ähnlich zu Wikipedia für Geodaten.\nDie Plattform stellt verschiedene Geometrietypen bereit (Punkte, Linien, Flächen) und speichert Attribute (Tags) wie amenity, shop oder advertising.\nDie Daten sind offen lizenziert (ODbL) und können für Analysen, Karten oder Forschung genutzt werden.\nEingepflegt werden die Daten durch eine weltweite Community, z.B. über Vor-Ort-Erhebungen, GPS-Tracks, Luft- und Satellitenbilder sowie öffentlich verfügbare Datensätze mit kompatibler Lizenz.\nDatenabdeckung und Detailgrad unterscheiden sich je nach Region.\nMit Hilfe der Overpass-API können gezielte Suchanfragen an die OSM-Daten gestellt werden (z.B. „alle Objekte mit advertising=* in Nürnberg“).\n\n\n\n\n\n\n\n\n\nNoteHintergrund: osmdata\n\n\n\n\nosmdata übernimmt diese Overpass-API Abfragen in R: Es formuliert die Overpass-Query, sendet sie an die API und gibt die Antworten als sf-Objekte zurück.\nStatt eine Karte „als Bild“ zu laden, holt osmdata die Daten als Tabellen. Jede Zeile steht für ein Objekt (z.B. ein Werbeträger) und hat Koordinaten plus zusätzliche Merkmale (Tags).\nGeodaten haben unterschiedliche Formen: Punkt (ein Standort), Linie (z.B. Straße) oder Fläche (z.B. Gebäude). osmdata liefert diese Formen als sf-Objekte, damit sie in R wie normale Datensätze bearbeitet, gefiltert und visualisiert werden können.\nEin sf-Objekt („simple features“) ist ein spezieller Datensatz in R, der Tabellen-Spalten mit einer Geometrie-Spalte kombiniert. So bleiben räumliche Lage (Punkt/Linie/Fläche) und Attribute zusammen und können mit vielen Geodaten-Funktionen verarbeitet werden.\n\n\n\n\n# 1) Räumliche Ausdehnung bestimmen: Bounding Box für Nürnberg\n#    (einsteigerfreundlich, da nur Ortsname nötig ist)\nbb &lt;- getbb(\"Nürnberg, Germany\")\n\n# 2) Overpass-Abfrage: alle OSM-Objekte mit Tag advertising=*\n#    (OSM-Schlüssel \"advertising\" umfasst z.B. billboard, column, etc.)\nq &lt;- opq(bbox = bb) %&gt;%\n  add_osm_feature(key = \"advertising\")\n\n# 3) Abfrage ausführen und als sf-Objekte (Punkte/Linien/Polygone) laden\ndat &lt;- osmdata_sf(q)\n\n# 4) Punkte: direkt nutzbar, Koordinaten extrahieren\npts &lt;- dat$osm_points %&gt;%\n  st_transform(4326) %&gt;%\n  mutate(\n    lon = st_coordinates(.)[,1],\n    lat = st_coordinates(.)[,2],\n    geom_source = \"point\"\n  ) %&gt;%\n  st_drop_geometry()\n\n# 5) Polygone: Flächen werden auf ihre Zentroiden reduziert\n#    (damit alle Geometrien später einheitlich als Punkt vorliegen)\npolys_cent &lt;- dat$osm_polygons %&gt;%\n  st_transform(4326) %&gt;%\n  st_centroid() %&gt;%\n  mutate(\n    lon = st_coordinates(.)[,1],\n    lat = st_coordinates(.)[,2],\n    geom_source = \"polygon_centroid\"\n  ) %&gt;%\n  st_drop_geometry()\n\nWarning: st_centroid assumes attributes are constant over geometries\n\n# 6) Linien: selten, aber möglich -&gt; ebenfalls auf Zentroiden reduzieren\nlines_cent &lt;- dat$osm_lines %&gt;%\n  st_transform(4326) %&gt;%\n  st_centroid() %&gt;%\n  mutate(\n    lon = st_coordinates(.)[,1],\n    lat = st_coordinates(.)[,2],\n    geom_source = \"line_centroid\"\n  ) %&gt;%\n  st_drop_geometry()\n\nWarning: st_centroid assumes attributes are constant over geometries\n\n# 7) Zusammenführen, Duplikate entfernen und Variablen vereinheitlichen\nadvertising_nb &lt;- bind_rows(pts, polys_cent, lines_cent) %&gt;%\n  distinct(osm_id, .keep_all = TRUE) %&gt;%\n  transmute(\n    osm_id,\n    # Fehlende Namen werden für konsistente Auswertung ersetzt\n    name = if_else(is.na(name) | name == \"\", \"(ohne Name)\", name),\n    # advertising enthält die OSM-Klassifikation (z.B. billboard, column)\n    advertising = advertising,\n    lat, lon,\n    geom_source\n  )\n\n\nadvertising_nb %&gt;% glimpse()\n\nRows: 405\nColumns: 6\n$ osm_id      &lt;chr&gt; \"1266669682\", \"1541149276\", \"1729605524\", \"1729605526\", \"1…\n$ name        &lt;chr&gt; \"(ohne Name)\", \"(ohne Name)\", \"(ohne Name)\", \"(ohne Name)\"…\n$ advertising &lt;chr&gt; \"column\", \"column\", NA, NA, NA, NA, \"column\", \"column\", \"y…\n$ lat         &lt;dbl&gt; 49.46192, 49.40856, 49.45004, 49.45004, 49.45007, 49.45007…\n$ lon         &lt;dbl&gt; 11.09206, 11.10481, 11.07586, 11.07590, 11.07586, 11.07590…\n$ geom_source &lt;chr&gt; \"point\", \"point\", \"point\", \"point\", \"point\", \"point\", \"poi…\n\n\n\n# 8) Ergebnis als CSV speichern (lokale Datei im Projektverzeichnis)\nwrite_csv(advertising_nb,\n  here(\"data/gps-advertings_in_nbg.csv\")\n)",
+    "crumbs": [
+      "Examples",
+      "Create data: GPS"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Digital Behavioral Data",
+    "section": "",
+    "text": "NoteInformation about the course site\n\n\n\nThis page provides an outline of the topics, contents, and assignments for the semester. Please note that the contents of the course sessions ( background information,  slides,  exercises and  tutorials) will be updated continuously throughout the semester, with all changes being documented here.",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "index.html#copyright",
+    "href": "index.html#copyright",
+    "title": "Digital Behavioral Data",
+    "section": "Copyright",
+    "text": "Copyright\nThis content is licensed under a GPL-3.0 License.",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html",
+    "href": "showcases/04-10-analysis-gps.html",
+    "title": "Analyse: GPS",
+    "section": "",
+    "text": "NoteZusammenfassung\n\n\n\n\nDiese Datei lädt die vorbereiteten GPS-Daten der Werbeträger in Nürnberg und visualisiert sie interaktiv.\nIm Fokus steht eine einfache Kategorienbildung, damit die Karte übersichtlich bleibt.\nDie Karte wird mit dem Paket leaflet erstellt, inklusive Farbskala und Popups.",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#setup",
+    "href": "showcases/04-10-analysis-gps.html#setup",
+    "title": "Analyse: GPS",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(sf)\n\nLinking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(readr)\nlibrary(here)\n\nhere() starts at /Users/ca/repositories/academic/dbd_2025\n\nlibrary(leaflet)\nlibrary(dbscan)\n\n\nAttaching package: 'dbscan'\n\n\nThe following object is masked from 'package:stats':\n\n    as.dendrogram\n\nlibrary(leaflet.extras)\n\n\n\n\n\n\n\nNoteHintergrund: leaflet\n\n\n\n\nleaflet ist ein R-Interface zur JavaScript-Bibliothek Leaflet und ermöglicht interaktive Webkarten.\nDie Karten bestehen aus Kacheln (Tiles) als Hintergrund, auf die Marker oder Punkte gelegt werden.\nIn R wird die Karte über eine „Pipeline“ aufgebaut: erst Grundkarte, dann Ebenen wie Marker, Legenden und Popups.\nDer Vorteil: Karten sind zoom- und verschiebbar, und lassen sich direkt im HTML-Output erkunden.",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#import-data",
+    "href": "showcases/04-10-analysis-gps.html#import-data",
+    "title": "Analyse: GPS",
+    "section": "Import data",
+    "text": "Import data\n\ndf &lt;- read_csv(\n    here(\"data/gps-advertings_in_nbg.csv\")\n)\n\nRows: 402 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (3): name, advertising, geom_source\ndbl (3): osm_id, lat, lon\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#create-map",
+    "href": "showcases/04-10-analysis-gps.html#create-map",
+    "title": "Analyse: GPS",
+    "section": "Create map",
+    "text": "Create map\n\n# 1) Daten in ein sf-Objekt überführen (Punktgeometrie aus lon/lat)\nadv_sf &lt;- st_as_sf(df, coords = c(\"lon\", \"lat\"), crs = 4326, remove = FALSE) %&gt;%\n  # fehlende/leer Kategorien konsistent füllen\n  mutate(advertising = if_else(is.na(advertising) | advertising == \"\", \"unknown\", advertising))\n\n# 2) (Optional) seltene Kategorien zusammenfassen, damit die Karte nicht überfrachtet\ntop_types &lt;- adv_sf %&gt;% count(advertising, sort = TRUE) %&gt;% slice_head(n = 8) %&gt;% pull(advertising)\nadv_sf &lt;- adv_sf %&gt;%\n  # alle anderen Kategorien auf \"other\" bündeln\n  mutate(advertising2 = if_else(advertising %in% top_types, advertising, \"other\"))\n\n# 3) Farbpalette: Set2 erlaubt max. 8 Farben -&gt; Palette dynamisch erweitern\nn_cats &lt;- length(unique(adv_sf$advertising2))\npal_cols &lt;- colorRampPalette(RColorBrewer::brewer.pal(8, \"Set2\"))(n_cats)\npal &lt;- colorFactor(pal_cols, domain = adv_sf$advertising2)\n\n# 4) Karte aufbauen: Tiles -&gt; Marker -&gt; Legende\nleaflet(adv_sf) %&gt;%\n  # Hintergrundkarte (hell, gut für Punkte)\n  addProviderTiles(\"CartoDB.Positron\") %&gt;%\n  # Punktmarker je Standort\n  addCircleMarkers(\n    lng = ~lon, lat = ~lat,\n    radius = 5,\n    color = ~pal(advertising2),\n    stroke = FALSE, fillOpacity = 0.8,\n    # Popup zeigt Originalkategorie + Name\n    popup = ~paste0(\"&lt;b&gt;\", advertising, \"&lt;/b&gt;&lt;br&gt;\", name)\n  ) %&gt;%\n  # Legende erklärt die Farben\n  addLegend(\"bottomright\", pal = pal, values = ~advertising2, title = \"advertising\")",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#clusteranalyse-dbscan",
+    "href": "showcases/04-10-analysis-gps.html#clusteranalyse-dbscan",
+    "title": "Analyse: GPS",
+    "section": "Clusteranalyse (DBSCAN)",
+    "text": "Clusteranalyse (DBSCAN)\n\n# 1) Koordinaten in metrisches CRS transformieren (für Distanz in Metern)\nadv_sf_m &lt;- st_transform(adv_sf, 3857)\ncoords_m &lt;- st_coordinates(adv_sf_m)\n\n# 2) DBSCAN: eps = Radius in Metern, minPts = Mindestpunkte pro Cluster\ndb &lt;- dbscan(coords_m, eps = 150, minPts = 6)\n\n# 3) Clusterlabels an die Daten hängen (0 = \"noise\")\nadv_sf &lt;- adv_sf %&gt;%\n  mutate(cluster = if_else(db$cluster == 0L, \"noise\", paste0(\"C\", db$cluster)))\n\n# 4) Karte: Clusterfarben + Legende\npal_cl &lt;- colorFactor(\"Set3\", domain = adv_sf$cluster)\n\nleaflet(adv_sf) %&gt;%\n  addProviderTiles(\"CartoDB.Positron\") %&gt;%\n  addCircleMarkers(\n    lng = ~lon, lat = ~lat,\n    radius = 5,\n    color = ~pal_cl(cluster),\n    stroke = FALSE, fillOpacity = 0.8,\n    popup = ~paste0(\"&lt;b&gt;Cluster:&lt;/b&gt; \", cluster, \"&lt;br&gt;\", name)\n  ) %&gt;%\n  addLegend(\"bottomright\", pal = pal_cl, values = ~cluster, title = \"DBSCAN-Cluster\")\n\nWarning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12\nReturning the palette you asked for with that many colors\nWarning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12\nReturning the palette you asked for with that many colors\nWarning in RColorBrewer::brewer.pal(max(3, n), palette): n too large, allowed maximum for palette Set3 is 12\nReturning the palette you asked for with that many colors",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#dichteanalyse-heatmap",
+    "href": "showcases/04-10-analysis-gps.html#dichteanalyse-heatmap",
+    "title": "Analyse: GPS",
+    "section": "Dichteanalyse (Heatmap)",
+    "text": "Dichteanalyse (Heatmap)\n\n# Heatmap: Dichteflächen statt Einzelpunkte\nleaflet(adv_sf) %&gt;%\n  addProviderTiles(\"CartoDB.Positron\") %&gt;%\n  addHeatmap(\n    lng = ~lon, lat = ~lat,\n    blur = 20, radius = 12, max = 0.8\n  )",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#vergleich-nach-kategorien",
+    "href": "showcases/04-10-analysis-gps.html#vergleich-nach-kategorien",
+    "title": "Analyse: GPS",
+    "section": "Vergleich nach Kategorien",
+    "text": "Vergleich nach Kategorien\n\n# Pro Kategorie eine eigene Karte (Top-Kategorien + other)\ncats &lt;- sort(unique(adv_sf$advertising2))\n\nfor (cat in cats) {\n  cat_sf &lt;- adv_sf %&gt;% filter(advertising2 == cat)\n  print(\n    leaflet(cat_sf) %&gt;%\n      addProviderTiles(\"CartoDB.Positron\") %&gt;%\n      addCircleMarkers(\n        lng = ~lon, lat = ~lat,\n        radius = 5, color = \"#2c7fb8\",\n        stroke = FALSE, fillOpacity = 0.8,\n        popup = ~paste0(\"&lt;b&gt;\", advertising, \"&lt;/b&gt;&lt;br&gt;\", name)\n      ) %&gt;%\n      addLegend(\"bottomright\", colors = \"#2c7fb8\", labels = cat, title = \"Kategorie\")\n  )\n}",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-10-analysis-gps.html#nearest-neighbor-distanz",
+    "href": "showcases/04-10-analysis-gps.html#nearest-neighbor-distanz",
+    "title": "Analyse: GPS",
+    "section": "Nearest-Neighbor-Distanz",
+    "text": "Nearest-Neighbor-Distanz\n\n# Distanz in Metern berechnen (metrisches CRS)\nadv_sf_m &lt;- st_transform(adv_sf, 3857)\n\n# Nächster Nachbar für jeden Punkt\nnn_idx &lt;- st_nearest_feature(adv_sf_m)\nnn_dist &lt;- st_distance(adv_sf_m, adv_sf_m[nn_idx, ], by_element = TRUE)\n\n# Ergebnis als numerische Meterwerte\nadv_sf_m$nn_dist_m &lt;- as.numeric(nn_dist)\n\n# Durchschnittliche NN-Distanz je Kategorie\nnn_summary &lt;- adv_sf_m %&gt;%\n  st_drop_geometry() %&gt;%\n  group_by(advertising2) %&gt;%\n  summarize(\n    n = n(),\n    nn_mean_m = mean(nn_dist_m, na.rm = TRUE),\n    nn_median_m = median(nn_dist_m, na.rm = TRUE)\n  ) %&gt;%\n  arrange(nn_mean_m)\n\nnn_summary\n\n# A tibble: 9 × 4\n  advertising2     n nn_mean_m nn_median_m\n  &lt;chr&gt;        &lt;int&gt;     &lt;dbl&gt;       &lt;dbl&gt;\n1 unknown        130      2.05       0.741\n2 sign             8    108.        27.4  \n3 board            7    128.        33.8  \n4 billboard      107    141.        14.8  \n5 poster_box       7    250.       122.   \n6 other            3    269.         5.44 \n7 column         121    424.       258.   \n8 totem           16    596.         3.21 \n9 yes              3    946.        35.3",
+    "crumbs": [
+      "Examples",
+      "Analyse: GPS"
+    ]
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html",
+    "href": "showcases/04-02-data-creation_ads.html",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "",
+    "text": "This document contains a mini dataset of 20 prompts to generate photorealistic images of fictional outdoor advertising (billboards, posters) for use in computer vision / YOLO demonstrations.\nDesign principles:\n\n5 recurring scene templates (A–E), each with 4 ad variations\n\nFictional brands/parties/NGOs, no real-world trademarks\n\nBrand name + slogan explicitly specified in English for higher text reliability\n\nScenes include multiple detectable objects (people, cars, buildings, traffic lights, etc.)"
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#overview",
+    "href": "showcases/04-02-data-creation_ads.html#overview",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "",
+    "text": "This document contains a mini dataset of 20 prompts to generate photorealistic images of fictional outdoor advertising (billboards, posters) for use in computer vision / YOLO demonstrations.\nDesign principles:\n\n5 recurring scene templates (A–E), each with 4 ad variations\n\nFictional brands/parties/NGOs, no real-world trademarks\n\nBrand name + slogan explicitly specified in English for higher text reliability\n\nScenes include multiple detectable objects (people, cars, buildings, traffic lights, etc.)"
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#scene-a-busy-city-intersection-large-billboard-4-images",
+    "href": "showcases/04-02-data-creation_ads.html#scene-a-busy-city-intersection-large-billboard-4-images",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "2 Scene A: Busy City Intersection — Large Billboard (4 images)",
+    "text": "2 Scene A: Busy City Intersection — Large Billboard (4 images)\n\n2.1 A1 — Energy Drink (VoltRush)\n\"\"\"\nPhotorealistic outdoor advertising scene.\nLarge billboard at a busy city intersection.\n\nAdvertising a fictional energy drink brand called \"VoltRush\".\nBillboard text:\nBrand name: \"VoltRush\"\nSlogan: \"POWER YOUR DAY\"\nEnglish language, bold capital letters.\n\nCars, pedestrians and traffic lights visible.\nModern buildings in the background.\nDaylight, frontal view.\nDocumentary photography style.\n\"\"\"\nollama run x/z-image-turbo \n/set seed 42\n/set width 1024\n/set height 768\n/set steps 25\n/set negative blurry, low quality, distorted text\n\n\"Photorealistic outdoor advertising scene.\\nLarge billboard at a busy city intersection.\\n\\nAdvertising a fictional energy drink brand called \\\"VoltRush\\\".\\nBillboard text:\\nBrand name: \\\"VoltRush\\\"\\nSlogan: \\\"POWER YOUR DAY\\\"\\nEnglish language, bold capital letters.\\n\\nCars, pedestrians and traffic lights visible.\\nModern buildings in the background.\\nDaylight, frontal view.\\nDocumentary photography style.\"\n\n\n2.2 A2 — Soft Drink (Freshio)\nPhotorealistic outdoor advertising scene.\nLarge billboard at a busy city intersection.\n\nAdvertising a fictional soft drink brand called \"Freshio\".\nBillboard text:\nBrand name: \"Freshio\"\nSlogan: \"FEEL THE REFRESH\"\nEnglish language, bold capital letters.\n\nCars, pedestrians and traffic lights visible.\nModern buildings in the background.\nDaylight, frontal view.\nDocumentary photography style.\n\n\n2.3 A3 — Mobile Service (Linkra)\nPhotorealistic outdoor advertising scene.\nLarge billboard at a busy city intersection.\n\nAdvertising a fictional mobile service brand called \"Linkra\".\nBillboard text:\nBrand name: \"Linkra\"\nSlogan: \"CONNECTED EVERYWHERE\"\nEnglish language, bold capital letters.\n\nCars, pedestrians and traffic lights visible.\nModern buildings in the background.\nDaylight, frontal view.\nDocumentary photography style.\n\n\n2.4 A4 — Political Campaign (Future Alliance)\nPhotorealistic outdoor advertising scene.\nLarge billboard at a busy city intersection.\n\nPolitical campaign for a fictional party called \"Future Alliance\".\nBillboard text:\nParty name: \"Future Alliance\"\nSlogan: \"FOR A FAIR TOMORROW\"\nEnglish language, bold capital letters.\n\nCars, pedestrians and traffic lights visible.\nModern buildings in the background.\nDaylight, frontal view.\nDocumentary photography style."
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#scene-b-bus-stop-advertisement-4-images",
+    "href": "showcases/04-02-data-creation_ads.html#scene-b-bus-stop-advertisement-4-images",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "3 Scene B: Bus Stop Advertisement (4 images)",
+    "text": "3 Scene B: Bus Stop Advertisement (4 images)\n\n3.1 B1 — Vegan Fast Food (GreenBite)\nPhotorealistic outdoor poster advertisement at a bus stop.\n\nFictional fast food brand called \"GreenBite\".\nPoster text:\nBrand name: \"GreenBite\"\nSlogan: \"TASTE THE CHANGE\"\nEnglish language, bold typography.\n\nBus stop shelter, bench, waiting people.\nUrban street environment.\nOvercast daylight, slight angle view.\n\n\n3.2 B2 — Coffee Brand (Roastline)\nPhotorealistic outdoor poster advertisement at a bus stop.\n\nFictional coffee brand called \"Roastline\".\nPoster text:\nBrand name: \"Roastline\"\nSlogan: \"START STRONG\"\nEnglish language, bold typography.\n\nBus stop shelter, bench, waiting people.\nUrban street environment.\nOvercast daylight, slight angle view.\n\n\n3.3 B3 — Fitness App (Moveon)\nPhotorealistic outdoor poster advertisement at a bus stop.\n\nFictional fitness app called \"Moveon\".\nPoster text:\nBrand name: \"Moveon\"\nSlogan: \"YOUR MOVE MATTERS\"\nEnglish language, bold typography.\n\nBus stop shelter, bench, waiting people.\nUrban street environment.\nOvercast daylight, slight angle view.\n\n\n3.4 B4 — Public Health NGO (MindOpen)\nPhotorealistic outdoor poster advertisement at a bus stop.\n\nFictional NGO called \"MindOpen\".\nPoster text:\nOrganization name: \"MindOpen\"\nSlogan: \"TALKING HELPS\"\nEnglish language, bold typography.\n\nBus stop shelter, bench, waiting people.\nUrban street environment.\nOvercast daylight, slight angle view."
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#scene-c-shopping-district-fashion-billboard-4-images",
+    "href": "showcases/04-02-data-creation_ads.html#scene-c-shopping-district-fashion-billboard-4-images",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "4 Scene C: Shopping District — Fashion Billboard (4 images)",
+    "text": "4 Scene C: Shopping District — Fashion Billboard (4 images)\n\n4.1 C1 — Streetwear (UrbanFold)\nPhotorealistic fashion billboard in an urban shopping district.\n\nFictional clothing brand called \"UrbanFold\".\nBillboard text:\nBrand name: \"UrbanFold\"\nSlogan: \"WEAR YOUR ATTITUDE\"\nEnglish language, minimalist typography.\n\nPedestrians, storefronts, tall buildings.\nEvening light, wide shot.\n\n\n4.2 C2 — Sportswear (Flexa)\nPhotorealistic fashion billboard in an urban shopping district.\n\nFictional sportswear brand called \"Flexa\".\nBillboard text:\nBrand name: \"Flexa\"\nSlogan: \"MOVE FREELY\"\nEnglish language, minimalist typography.\n\nPedestrians, storefronts, tall buildings.\nEvening light, wide shot.\n\n\n4.3 C3 — Sustainable Fashion (Earthloom)\nPhotorealistic fashion billboard in an urban shopping district.\n\nFictional sustainable fashion brand called \"Earthloom\".\nBillboard text:\nBrand name: \"Earthloom\"\nSlogan: \"STYLE WITH PURPOSE\"\nEnglish language, minimalist typography.\n\nPedestrians, storefronts, tall buildings.\nEvening light, wide shot.\n\n\n4.4 C4 — Luxury Brand (Valenor)\nPhotorealistic fashion billboard in an urban shopping district.\n\nFictional luxury brand called \"Valenor\".\nBillboard text:\nBrand name: \"Valenor\"\nSlogan: \"TIMELESS DESIGN\"\nEnglish language, minimalist typography.\n\nPedestrians, storefronts, tall buildings.\nEvening light, wide shot."
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#scene-d-residential-street-lamp-post-posters-4-images",
+    "href": "showcases/04-02-data-creation_ads.html#scene-d-residential-street-lamp-post-posters-4-images",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "5 Scene D: Residential Street — Lamp Post Posters (4 images)",
+    "text": "5 Scene D: Residential Street — Lamp Post Posters (4 images)\n\n5.1 D1 — Local Election (Civic Future)\nPhotorealistic political campaign poster attached to a street lamp.\n\nFictional party called \"Civic Future\".\nPoster text:\nParty name: \"Civic Future\"\nSlogan: \"STRONG COMMUNITIES\"\nEnglish language, capital letters.\n\nResidential houses, parked cars.\nDaylight, frontal view.\n\n\n5.2 D2 — Environmental NGO (CleanTomorrow)\nPhotorealistic NGO campaign poster attached to a street lamp.\n\nFictional organization called \"CleanTomorrow\".\nPoster text:\nOrganization name: \"CleanTomorrow\"\nSlogan: \"PROTECT WHAT MATTERS\"\nEnglish language, capital letters.\n\nResidential houses, parked cars.\nDaylight, frontal view.\n\n\n5.3 D3 — Road Safety Campaign (SafeSteps)\nPhotorealistic public awareness poster attached to a street lamp.\n\nFictional NGO called \"SafeSteps\".\nPoster text:\nOrganization name: \"SafeSteps\"\nSlogan: \"SLOW DOWN SAVE LIVES\"\nEnglish language, capital letters.\n\nResidential houses, parked cars.\nDaylight, frontal view.\n\n\n5.4 D4 — Energy Provider (GridOne)\nPhotorealistic advertising poster attached to a street lamp.\n\nFictional energy provider called \"GridOne\".\nPoster text:\nBrand name: \"GridOne\"\nSlogan: \"POWERING TOMORROW\"\nEnglish language, capital letters.\n\nResidential houses, parked cars.\nDaylight, frontal view."
+  },
+  {
+    "objectID": "showcases/04-02-data-creation_ads.html#scene-e-small-town-roadside-billboard-4-images",
+    "href": "showcases/04-02-data-creation_ads.html#scene-e-small-town-roadside-billboard-4-images",
+    "title": "Mini Dataset: Synthetic Outdoor Advertising (20 Image Prompts)",
+    "section": "6 Scene E: Small Town Roadside Billboard (4 images)",
+    "text": "6 Scene E: Small Town Roadside Billboard (4 images)\n\n6.1 E1 — Construction Company (Stonefield Works)\nPhotorealistic roadside billboard in a small town.\n\nFictional construction company called \"Stonefield Works\".\nBillboard text:\nBrand name: \"Stonefield Works\"\nSlogan: \"MADE TO LAST\"\nEnglish language, bold lettering.\n\nLow buildings, parked cars, quiet street.\nCloudy daylight, wide shot.\n\n\n6.2 E2 — Furniture Store (Homecraft)\nPhotorealistic roadside billboard in a small town.\n\nFictional furniture store called \"Homecraft\".\nBillboard text:\nBrand name: \"Homecraft\"\nSlogan: \"BUILT FOR LIVING\"\nEnglish language, bold lettering.\n\nLow buildings, parked cars, quiet street.\nCloudy daylight, wide shot.\n\n\n6.3 E3 — Internet Provider (Netway)\nPhotorealistic roadside billboard in a small town.\n\nFictional internet provider called \"Netway\".\nBillboard text:\nBrand name: \"Netway\"\nSlogan: \"FAST RELIABLE SIMPLE\"\nEnglish language, bold lettering.\n\nLow buildings, parked cars, quiet street.\nCloudy daylight, wide shot.\n\n\n6.4 E4 — Regional Tourism (Visit Northvale)\nPhotorealistic roadside billboard in a small town.\n\nFictional tourism campaign called \"Visit Northvale\".\nBillboard text:\nCampaign name: \"Visit Northvale\"\nSlogan: \"DISCOVER MORE\"\nEnglish language, bold lettering.\n\nLow buildings, parked cars, quiet street.\nCloudy daylight, wide shot.\n““”\nout_path = “/mnt/data/mini_dataset_outdoor_ads.qmd” with open(out_path, “w”, encoding=“utf-8”) as f: f.write(qmd)\nout_path"
+  },
+  {
+    "objectID": "slides/slides-04.html#semesterplan",
+    "href": "slides/slides-04.html#semesterplan",
+    "title": "From Pretest to Analysis",
     "section": "Semesterplan",
     "text": "Semesterplan\n\n\n\n\n\n\n\n\nSession\nDatum\nTime\nTopic\n\n\n\n\n1\n24.10.2024\n09:45 - 11:15\n🚀 Kick-Off\n\n\n\n\n\n✏️ Independent study and assignments\n\n\n2\n09.01.2026\n09:00 - 16:00\n📚 From Theory to Questionaire\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 From Questionaire to Pretest\n\n\n4\n30.01.2026\n09:00 - 16:00\n📚 From Pretest to Analysis\n\n\n5\n06.02.2026\n09:00 - 16:00\n📚 Analysis & Evaluation"
   },
   {
-    "objectID": "slides/slides-03.html#heutige-agenda",
-    "href": "slides/slides-03.html#heutige-agenda",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "slides/slides-04.html#heutige-agenda",
+    "href": "slides/slides-04.html#heutige-agenda",
+    "title": "From Pretest to Analysis",
     "section": "Heutige Agenda",
-    "text": "Heutige Agenda\nÜberblick über den Ablauf des heutigen Tages\n\n\n\n\n\n\n\n\nSlot\nZeit\nProgrammpunkt\n\n\n\n\n\n09:00 - 09:15\nBegrüßung & Koordination\n\n\n\n09:15 - 09:30\nKurze Pause\n\n\n1\n09:30 - 11:15\nFeldvorbereitung im Fokus\n\n\n\n11:15 - 11:30\nKurze Pause\n\n\n2\n11:30 - 13:00\nntfy im Fokus\n\n\n\n13:00 - 14:00\nMittagspause\n\n\n3\n14:00 - 15:45\nHands-On: Fragebogentest\n\n\n4\n15:45 - 16:00\nAbschluss & Ausblick"
+    "text": "Heutige Agenda\nÜberblick über den Ablauf des heutigen Tages\n\n\n\n\n\n\n\n\nSlot\nZeit\nProgrammpunkt\n\n\n\n\n\n09:00 - 09:15\nBegrüßung & Koordination\n\n\n\n09:15 - 09:30\nKurze Pause\n\n\n1\n09:30 - 11:15\nBewertung der Feldphase\n\n\n\n11:15 - 11:30\nKurze Pause\n\n\n2\n11:30 - 13:00\nAnalyse im Fokus\n\n\n\n13:00 - 14:00\nMittagspause\n\n\n3\n14:00 - 15:45\nHands-On: Edit & Plan\n\n\n4\n15:45 - 16:00\nAbschluss & Ausblick"
   },
   {
-    "objectID": "slides/slides-03.html#kurze-bestandsaufnahme",
-    "href": "slides/slides-03.html#kurze-bestandsaufnahme",
-    "title": "From Questionnaire to Pretest",
-    "section": "Kurze Bestandsaufnahme",
-    "text": "Kurze Bestandsaufnahme\nArbeitsaufträge zur heutigen Sitzung\n\nFinalisiert euren Fragebogen basierend auf dem Feedback\nFinalisiert euer Forschungsdesign (insb. Schedule für Kurzfragebögen)\nTestet euren Fragebogen!\n\nGentle Reminder:\n\nWie ist der aktuelle Stand eurer R-Kenntnisse?\nGitHub Copilot beantragt?\nGibt es Analyseverfahren, zu denen Ihr Input benötigt?"
-  },
-  {
-    "objectID": "slides/slides-03.html#lets-discuss",
-    "href": "slides/slides-03.html#lets-discuss",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "slides/slides-04.html#lets-discuss",
+    "href": "slides/slides-04.html#lets-discuss",
+    "title": "From Pretest to Analysis",
     "section": "💬 Let’s discuss",
-    "text": "💬 Let’s discuss\nOrganisatorische Hinweise\n\nHandhabung von IDs (für Teilnehmer:In und Kurzfragebogen):\n\nManuelle Eingabe der \"Teilnehmer_in ID\", ID des Kurzfragebogens via Default-Umfrageparameter von SoSci-Survey\n\nZweiteilung des Befragungszeitraums:\n\nPhase 1: Mo. (26.01) bis Do. (29.01.) &\nPhase 2: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)\n\nAblauf der Befraung:\n\nspätestens Sonntagabend erhaltet Ihr eine Mail mit Link zum Topic, dass Ihr abonnieren müsst & Ausfüllhinweisen\nab Montag startet die Erhebung\nbei Problemen: Umgehend Nachricht ins StudOn-Forum"
+    "text": "💬 Let’s discuss\nOrganisatorische Hinweise\n\nDeadline für Implementation Report: 28.02.2026 um 23:59\nKurzer Erfahrungsbericht aus Teilnehmenden-Perspektive\n\nWie gut ließ sich die Studie in euren Alltag integrieren?\nWie empfandet ihr Länge und Häufigkeit der Befragungen?\nGab es Momente, die besonders störend oder belastend waren?\nWas hat euch überrascht?"
   },
   {
-    "objectID": "slides/slides-03.html#and-now-you",
-    "href": "slides/slides-03.html#and-now-you",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "slides/slides-04.html#and-now-you",
+    "href": "slides/slides-04.html#and-now-you",
+    "title": "From Pretest to Analysis",
     "section": "💻 And now … you!",
-    "text": "💻 And now … you!\nArbeitsauftrag (30 Minuten): Feldvorbereitung\n\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nerstellt eine Kurzpräsentation (max. 4 Folien, 5–10 Minuten), die auf folgende Punkte eingeht:\n\nWie sieht euer aktueller Kurzfragebogen aus? (1 Folie)\nDarstellung des (geplanten) Schedules für die Umfrage (1 Folie)\nVorstellung der Ausfüllhinweise (1 Folie)\nGibt es Herausforderungen oder Probleme, die Ihr diskutieren möchtet? (1 Folie)\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie\n\n\n\n\n\n\n\n\n\n\nFolienvorlage verwenden\n\n\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie"
+    "text": "💻 And now … you!\nArbeitsauftrag (20 Minuten): Reflexion der Feldphase\n\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nerstellt eine Kurzpräsentation (max. 3 Folien), die auf folgende Punkte eingeht:\n\nWas lief gut, was lief nicht so gut? (1 Folie)\nWas wollt/würdet ihr beim nächsten Mal anders machen? (1 Folie)\nWas ist noch unklar, wozu habt ihr Fragen oder möchtet Feedback? (1 Folie)\n\n\n\n\n\n\n\n\n\n\n\nFolienvorlage verwenden\n\n\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie"
   },
   {
-    "objectID": "slides/slides-03.html#get-started",
-    "href": "slides/slides-03.html#get-started",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "slides/slides-04.html#get-started",
+    "href": "slides/slides-04.html#get-started",
+    "title": "From Pretest to Analysis",
     "section": "Get started!",
-    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse\n\n\n\n\n\n     Gruppe A (‘Ansprachformen im Alltag’)\n\n\n\n\n\n     Gruppe B (‘Out-of-home recall’)\n\n\n\n\n\n     Gruppe C (“Informelle visuelle Kommunikation”)\n\n\n\n\n\n     Gruppe D (“Sticky Politics”)\n\n\n\n\n−+\n30:00"
+    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse\n\n\n\n\n\n     Gruppe A (‘Ansprachformen im Alltag’)\n\n\n\n\n\n     Gruppe B (‘Out-of-home recall’)\n\n\n\n\n\n     Gruppe C (“Informelle visuelle Kommunikation”)\n\n\n\n\n\n     Gruppe D (“Sticky Politics”)\n\n\n\n\n−+\n20:00"
   },
   {
-    "objectID": "slides/slides-03.html#ntfy-me",
-    "href": "slides/slides-03.html#ntfy-me",
-    "title": "From Questionnaire to Pretest",
-    "section": " ntfy me!",
-    "text": "ntfy me!\nntfy.sh als Tool für die Feldsteuerung\n\n\n\nNutzung von ntfy.sh als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien\nOpen-Source, einfach zu bedienen und flexibel anpassbar\nSkriptbasiertes Scheduling (via Server)"
+    "objectID": "slides/slides-04.html#the-missing-link",
+    "href": "slides/slides-04.html#the-missing-link",
+    "title": "From Pretest to Analysis",
+    "section": "The missing link",
+    "text": "The missing link\nWie neue Datenquellen die klassischen Surveys ergänzen\n\nProjektentwürfe folgen klassischer Surveyforschung: Fokus auf Selbstberichte und Auswertung von Skalen\nDatenquellen wie Inhalte, Bilder und Orte liefern zusätzlichen Kontext (Engel et al., 2021; Struminskaya et al., 2020)\nHerausforderung: Wie lassen sich diese Datenmassen systematisch auswerten?\nLösung: (Teil-)automatisierte Analyseverfahren"
   },
   {
-    "objectID": "slides/slides-03.html#was-ist-ntfy.sh",
-    "href": "slides/slides-03.html#was-ist-ntfy.sh",
-    "title": "From Questionnaire to Pretest",
-    "section": "Was ist ntfy.sh?",
-    "text": "Was ist ntfy.sh?\nKurze Erklärung der Funktionsweise\n\nPublish/Subscribe-Prinzip: Clients abonnieren ein Topic (bzw. einen Link) und erhalten sofort Updates\nNachrichten lassen sich per HTTP-Request (z. B. curl oder python) senden\nFunktioniert auf Smartphone & Desktop via Web-App oder native App\nKostenlos, aber mit Einschränkungen\n\n“Private” Topics nur mit Pro-Account\nWorkaround mit hochindividualisierten Themen\nAber es bleibt ein “Restrisiko”"
+    "objectID": "slides/slides-04.html#fokus-auf-die-inhalte",
+    "href": "slides/slides-04.html#fokus-auf-die-inhalte",
+    "title": "From Pretest to Analysis",
+    "section": "Fokus auf die “Inhalte”",
+    "text": "Fokus auf die “Inhalte”\nInhaltsanalyse als methodische Brücke\n\nZentrale Methode der Kommunikationswissenschaft (Krippendorff, 2018; Mayring, 2022)\nZiel: Systematische Analyse von Kommunikationsinhalten\nVorgehen: manuelle Codierung mithilfe eines Codebuchs mit Definitionen, Kategorien und (Anker-)Beispielen\nAnwendung auf Text, Bild und multimodale Inhalte"
   },
   {
-    "objectID": "slides/slides-03.html#topic-als-gatekeeper",
-    "href": "slides/slides-03.html#topic-als-gatekeeper",
-    "title": "From Questionnaire to Pretest",
-    "section": "Topic als Gatekeeper",
-    "text": "Topic als Gatekeeper\nVorstellung eines typischen Workflows\n\nTopic festlegen (z. B. dbd25-20260123-block2-live-test-in-course)\nTeilnehmende abonnieren das Topic in der ntfy App\nServer sendet automatisierte & randomisierte Reminder (via systemd)\n\nBeispiel: Reminder mit Titel\n\nimport requests\n\ntopic = \"dbd25-YIP2tX54JZ-live-test-in-course\"\nurl = f\"https://ntfy.sh/{topic}\"\n\nr = requests.post(url, data=\"Zeit für deine ESM-Abfrage ✅\".encode(\"utf-8\"))\nr.raise_for_status()\nprint(\"Message Status:\", r.status_code)\n\nMessage Status: 200"
+    "objectID": "slides/slides-04.html#von-manuell-zu-automatisiert",
+    "href": "slides/slides-04.html#von-manuell-zu-automatisiert",
+    "title": "From Pretest to Analysis",
+    "section": "Von manuell zu automatisiert",
+    "text": "Von manuell zu automatisiert\nZu den Vorteilen bzw. der Notwendigkeit der Automatisierung\n\nManuelle Codierung ist aufwendig und schwer skalierbar\nAutomatisierung ermöglicht:\n\nVerarbeitung größerer Datenmengen\nSchnellere Analyse\nhöhere Reproduzierbarkeit\n\nZiel: Unterstützung, nicht Ersatz der “klassischen” Inhaltsanalyse (Grimmer & Stewart, 2013; Hase, 2023)\nBest Practice: automatisierte Schritte validieren gegen manuelle Kodierung (Chan & Sältzer, 2020)"
   },
   {
-    "objectID": "slides/slides-03.html#nfty_scheduler-als-little-helper",
-    "href": "slides/slides-03.html#nfty_scheduler-als-little-helper",
-    "title": "From Questionnaire to Pretest",
-    "section": "nfty_scheduler als little helper",
-    "text": "nfty_scheduler als little helper\nEigenes -Projekt zur Steuerung der Fragebögen\n\nPython-CLI als leichtes Paket (run.py + ntfy_reminder/)\nHelper besteht aus drei Teilen bzw. trennt Konfiguration, Planung und Versand:\n\n.env definiert die globalen Parameter,\nplan erzeugt out/schedule.json,\nsend verschickt"
+    "objectID": "slides/slides-04.html#text-as-data",
+    "href": "slides/slides-04.html#text-as-data",
+    "title": "From Pretest to Analysis",
+    "section": "Text as data",
+    "text": "Text as data\nAutomatisierte Analyse von Textinhalten\n\nGrundidee: Texte werden als strukturierte Daten behandelt (Grimmer & Stewart, 2013)\nAnschlussfähigkeit an inhaltsanalytische Logiken (Krippendorff, 2018)\nTypische Verfahren (von einfach zu komplex):\n\nKeywording & Dictionaries (z. B. Frame-/Themenlisten) (Grimmer & Stewart, 2013)\nTopic Modeling für thematische Cluster (Blei et al., 2003; Chen et al., 2023; Maier et al., 2018)\nEmbeddings zur Ähnlichkeitsanalyse (Jurafsky & Martin, 2024; Reimers & Gurevych, 2019)\nLLMs für Kodierung(-svorschläge) oder Summary (Brown et al., 2020)"
   },
   {
-    "objectID": "slides/slides-03.html#was-der-helper-steuer-kann",
-    "href": "slides/slides-03.html#was-der-helper-steuer-kann",
-    "title": "From Questionnaire to Pretest",
-    "section": "Was der Helper steuer kann",
-    "text": "Was der Helper steuer kann\nFolgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden\n\nZeitlogik: --mode interval|windows, --start, --end, --min-gap\nDichte: --per-day, --days, --seed (reproduzierbar)\nZielgruppe: --participant-id (personalisierte Pläne)\nAusgabe: --dry-run, --explain, --out"
+    "objectID": "slides/slides-04.html#werbeinhalte-codieren-und-mit-esm-verknüpfen",
+    "href": "slides/slides-04.html#werbeinhalte-codieren-und-mit-esm-verknüpfen",
+    "title": "From Pretest to Analysis",
+    "section": "Werbeinhalte codieren und mit ESM verknüpfen",
+    "text": "Werbeinhalte codieren und mit ESM verknüpfen\nInhaltsanalyse im Survey- und ESM-Kontext\n\nAllgemein:\n\nAbleitung von Themen, Frames oder Tonalitäten\nVerknüpfung von exponierten Inhalten mit Einstellungen und Bewertungen\n\nin Bezug auf das Projekt:\n\nKodierung von Werbebotschaften (z. B. Thema, Frame, Call-to-Action)\nAbgleich zwischen Inhalt der Werbung und situativer Reaktion im ESM\nFrage: Welche Inhalte triggern Aufmerksamkeit, Emotionen oder Erinnerung?"
   },
   {
-    "objectID": "slides/slides-03.html#arbeiten-im-google-colab",
-    "href": "slides/slides-03.html#arbeiten-im-google-colab",
-    "title": "From Questionnaire to Pretest",
-    "section": "Arbeiten im  Google Colab",
-    "text": "Arbeiten im  Google Colab\nDemo-Notebook aus dem Helper-Repo\n\n\n\nColab ist eine cloudbasierte Jupyter-Umgebung, die direkt im Browser läuft.\nNotebooks werden auf Googles Servern ausgeführt und vereinen Code, Text und Output.\nIm Kurs nutzen wir Colab, um die notwendigen Dateien (z. B. .env, Schedule) aus dem Notebook zu exportieren.\n\n\n\n\n\nDemo-Notebook im Repo"
+    "objectID": "slides/slides-04.html#spezialfall-bildanalyse",
+    "href": "slides/slides-04.html#spezialfall-bildanalyse",
+    "title": "From Pretest to Analysis",
+    "section": "Spezialfall Bildanalyse",
+    "text": "Spezialfall Bildanalyse\nInhalte jenseits von Text\n\nBilder transportieren Motive, Akteure und mehr Kontext\nAber: Automatisierte Bildanalyse ist komplexer als Textanalyse\nTypische Verfahren\n\nOCR: Text aus Bildern extrahieren (Smith, 2007)\nBildklassifikation: Motive, Akteursgruppen\nObjekterkennung: Personen, Symbole, Settings (Redmon et al., 2016)\nMultimodale Ansätze: Bild- und Textinformationen kombinieren (Radford et al., 2021)"
   },
   {
-    "objectID": "slides/slides-03.html#download-now",
-    "href": "slides/slides-03.html#download-now",
-    "title": "From Questionnaire to Pretest",
-    "section": "Download  now!",
-    "text": "Download  now!\nReminder: Bitte downloaded die App um die Notifications zu testen\n\n\n\n\n\n\n    \n\n iOS\n\n\n\n\n    \n\n Android"
+    "objectID": "slides/slides-04.html#bildmotive-analysieren-und-wirkung-vergleichen",
+    "href": "slides/slides-04.html#bildmotive-analysieren-und-wirkung-vergleichen",
+    "title": "From Pretest to Analysis",
+    "section": "Bildmotive analysieren und Wirkung vergleichen",
+    "text": "Bildmotive analysieren und Wirkung vergleichen\nVisuelle Inhalte als relevante Daten\n\nAllgemein:\n\nBilder als eigenständige Bedeutungsträger (Motive, Akteure, Symbolik)\nUntersuchung visueller Reize jenseits bewusster Erinnerung\n\nin Bezug auf das Projekt:\n\nAnalyse von Bildmotiven auf Plakaten (z. B. Personen, Produkte, Emotionen)\nVerknüpfung visueller Merkmale mit ESM-Antworten nach Exposition\nVergleich unterschiedlicher Motivtypen hinsichtlich Wirkung"
   },
   {
-    "objectID": "slides/slides-03.html#id-variable-hinzufügen",
-    "href": "slides/slides-03.html#id-variable-hinzufügen",
-    "title": "From Questionnaire to Pretest",
-    "section": " ID Variable hinzufügen!",
-    "text": "ID Variable hinzufügen!\nReminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzbauen\n\nFrage sollte auf der ersten Seite des Fragebogens stehen\nTemplate-Frage ist auf StudOn verfügbar\nPreview:"
+    "objectID": "slides/slides-04.html#kontext-des-kontextes",
+    "href": "slides/slides-04.html#kontext-des-kontextes",
+    "title": "From Pretest to Analysis",
+    "section": "Kontext des Kontextes",
+    "text": "Kontext des Kontextes\nGeo-Daten als analytische Dimension\n\nOrt beeinflusst Wahrnehmung, Verhalten und Erreichbarkeit\nGPS-Daten ergänzen Surveys um räumlichen Kontext (z. B. durch räumliche Muster/Cluster) (Harari et al., 2016; Struminskaya et al., 2020)\nVerknüpfung mit Umwelt-, Infrastruktur- und Strukturdaten (Engel et al., 2021)"
   },
   {
-    "objectID": "slides/slides-03.html#hands-on-zeit",
-    "href": "slides/slides-03.html#hands-on-zeit",
-    "title": "From Questionnaire to Pretest",
+    "objectID": "slides/slides-04.html#aber-was-lässt-sich-auswerten",
+    "href": "slides/slides-04.html#aber-was-lässt-sich-auswerten",
+    "title": "From Pretest to Analysis",
+    "section": "Aber was lässt sich auswerten?",
+    "text": "Aber was lässt sich auswerten?\nAnalysemöglichkeiten von Geo-Daten\n\nMobilität: Wege, Aufenthaltsorte, Routinen\nKontextzuordnung: Umgebung, Urbanität, Nähe zu Events\nSpatial Joins mit externen Daten:\n\nPoints of Interest (POI)\nDemografie\nUmweltindikatoren"
+  },
+  {
+    "objectID": "slides/slides-04.html#geo-daten-machen-werbekontakt-situativ-messbar",
+    "href": "slides/slides-04.html#geo-daten-machen-werbekontakt-situativ-messbar",
+    "title": "From Pretest to Analysis",
+    "section": "Geo-Daten machen Werbekontakt situativ messbar",
+    "text": "Geo-Daten machen Werbekontakt situativ messbar\nRäumlicher Kontext von Befragungssituationen\n\nAllgemein:\n\nKontextualisierung von Antworten durch Ort und Bewegung\nIdentifikation situationsabhängiger Effekte (z. B. unterwegs vs. stationär)\nAnalyse räumlicher Muster in Befragungsdaten\n\nin Bezug auf das Projekt:\n\nAbschätzung von Kontaktwahrscheinlichkeiten mit Außenwerbung\nAuslösen von ESM-Remindern in räumlicher Nähe zu Werbeträgern\nVerknüpfung von Ort – Werbekontakt – unmittelbarer Reaktion"
+  },
+  {
+    "objectID": "slides/slides-04.html#was-wo-und-wie",
+    "href": "slides/slides-04.html#was-wo-und-wie",
+    "title": "From Pretest to Analysis",
+    "section": "Was, Wo und Wie",
+    "text": "Was, Wo und Wie\nDaten verknüpfen für realitätsnahe (Survey-)Forschung\n\nInhalt: Was wird kommuniziert? (Text, Bild, Motive)\nKontext: Wo und in welcher Situation? (Ort, Bewegung)\nReaktion: Wie wird unmittelbar reagiert? (ESM, Emotionen, Bewertungen)\nVerknüpfung ermöglicht:\n\nValidierung von Selbstberichten\nKontextualisierung von Antworten\nstärkere Triangulation klassischer und automatisierter Verfahren"
+  },
+  {
+    "objectID": "slides/slides-04.html#hands-on-zeit",
+    "href": "slides/slides-04.html#hands-on-zeit",
+    "title": "From Pretest to Analysis",
     "section": "💻 Hands-on Zeit!",
-    "text": "💻 Hands-on Zeit!\nArbeitsauftrag (90 Minuten): Testet euren Fragebogen\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nöffnet das Google Collab\ngeht die Dry-Runs des Beispiels durch\nnehmt die notwendigen Anpassung im Abschnitt Individualisierung vor\nErstellt die notwendigen Dateien (schedule.json & .env)\n\n\n\n\n\n\n\n\n\n\nWährenddessen: Feedback & Fragen\n\n\n\nSucht das Gespräch zu anderen Gruppen und gebt euch gegenseitig Hilfe und Feedback\nIch bin während der gesamten Zeit für Fragen und Unterstützung verfügbar\nIch wandere von Gruppe zu Gruppe, um Feedback zu geben und Fragen zu beantworten"
+    "text": "💻 Hands-on Zeit!\nZwei Arbeitsaufträge (insgesamt 90 Minuten)\n\n\n\n\n\n\n1. Arbeitsauftrag\n\n\nPrüft auf Basis des Feedbacks von heute Morgen, ob noch Anpassungen\n\nam Fragebogen(design) notwendig sind?\nam Schedule notwendig sind?\nan den Ausfüllhinweisen notwendig sind?\n\n\n\n\n\n\n\n\n\n\n2. Arbeitsauftrag\n\n\nIn euren Gruppen …\n\nsichtet das bisherige Datenmaterial an & überlegt euch mindestens 1 Möglichkeit des Linking für eure Daten(-quellen)\nformuliert den Vorschlag bis zur nächsten Sitzung in einer Google-Präsentation (Vorlagen auf nächster Folie) aus"
   },
   {
-    "objectID": "slides/slides-03.html#bis-zum-ende-der-sitzung",
-    "href": "slides/slides-03.html#bis-zum-ende-der-sitzung",
-    "title": "From Questionnaire to Pretest",
-    "section": "Bis zum Ende der Sitzung",
-    "text": "Bis zum Ende der Sitzung\nCheckliste\nBis zum Ende der Sitzung benötige ich von euch …\n\nden finalen Fragebogenlink\nden finalen Schedule eurer Gruppe (exportiert aus dem Google Colab)\ndie finale .env-Datei (exportiert aus dem Google Colab)\ndie Ausfüllhinweise für die Umfrage eurer Gruppe\n\nper Mail an christoph.adrian@fau.de"
+    "objectID": "slides/slides-04.html#get-started-1",
+    "href": "slides/slides-04.html#get-started-1",
+    "title": "From Pretest to Analysis",
+    "section": "Get started!",
+    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse\n\n\n\n\n\n     Gruppe A (‘Ansprachformen im Alltag’)\n\n\n\n\n\n     Gruppe B (‘Out-of-home recall’)\n\n\n\n\n\n     Gruppe C (“Informelle visuelle Kommunikation”)\n\n\n\n\n\n     Gruppe D (“Sticky Politics”)"
   },
   {
-    "objectID": "slides/slides-03.html#until-we-see-each-other-again",
-    "href": "slides/slides-03.html#until-we-see-each-other-again",
-    "title": "From Questionnaire to Pretest",
-    "section": "Until we see each other again",
-    "text": "Until we see each other again\nDie nächsten Schritte\n\nspätestens Sonntagabend erhaltet Ihr eine Mail mit den Link zum Topic, dass ihr abonnieren müsst\nab Montag startet die Erhebung (vier Tage)\nschaut in die Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet\n\n(mindetens Entwurf für) Auswertungsstrategie zur nächsten Sitzung"
+    "objectID": "slides/slides-04.html#to-dos",
+    "href": "slides/slides-04.html#to-dos",
+    "title": "From Pretest to Analysis",
+    "section": "To Dos …",
+    "text": "To Dos …\nCheckliste für die Arbeitsaufträge\n\nBis zum Ende der Sitzung\n\neventuelle Anpassungen an Schedule oder .env-Variablen (z.B. Umfragelink) per Mail an christoph.adrian@fau.de\neventuelle Anpassungen der Ausfüllhinweise als StudOn-Forumspost\n\nBis zur nächsten Sitzung\n\nEntwurf für einen Analyseplan, der Data-Linking beinhaltet (auf Basis der Quellen aus der Session Info)\nmit den Daten der eigenen Umfrage vertraut machen"
   },
   {
-    "objectID": "sessions/session-02.html",
-    "href": "sessions/session-02.html",
-    "title": "Session 2",
+    "objectID": "slides/slides-04.html#literatur",
+    "href": "slides/slides-04.html#literatur",
+    "title": "From Pretest to Analysis",
+    "section": "Literatur",
+    "text": "Literatur\n\n\nBlei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent dirichlet allocation. The Journal of Machine Learning Research, 3, 9931022.\n\n\nBrown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., … Amodei, D. (2020). Language Models are Few-Shot Learners. https://arxiv.org/abs/2005.14165\n\n\nChan, C., & Sältzer, M. (2020). Oolong: An r package for validating automated content analysis tools. Journal of Open Source Software, 5(55), 2461. https://doi.org/10.21105/joss.02461\n\n\nChen, Y., Peng, Z., Kim, S.-H., & Choi, C. W. (2023). What We Can Do and Cannot Do with Topic Modeling: A Systematic Review. Communication Methods and Measures, 17(2), 111–130. https://doi.org/10.1080/19312458.2023.2167965\n\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\n\n\nGrimmer, J., & Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. Political Analysis, 21(3), 267–297. https://doi.org/10/f458q9\n\n\nHarari, G. M., Lane, N. D., Wang, R., Crosier, B. S., Campbell, A. T., & Gosling, S. D. (2016). Using Smartphones to Collect Behavioral Data in Psychological Science: Opportunities, Practical Considerations, and Challenges. Perspectives on Psychological Science, 11(6), 838–854. https://doi.org/10.1177/1745691616650285\n\n\nHase, V. (2023). Automated Content Analysis (F. Oehmer-Pedrazzi, S. H. Kessler, E. Humprecht, K. Sommer, & L. Castro, Eds.; pp. 23–36). Springer Fachmedien Wiesbaden. https://link.springer.com/10.1007/978-3-658-36179-2_3\n\n\nJurafsky, D., & Martin, J. H. (2024). Speech and language processing: An introduction to natural language processing, computational linguistics, and speech recognition with language models (3rd ed.). https://web.stanford.edu/~jurafsky/slp3/\n\n\nKrippendorff, K. (2018). Content Analysis: An Introduction to Its Methodology (4th ed.). SAGE Publications.\n\n\nMaier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., & Adam, S. (2018). Applying LDA Topic Modeling in Communication Research: Toward a Valid and Reliable Methodology. Communication Methods and Measures, 12(2-3), 93–118. https://doi.org/10.1080/19312458.2018.1430754\n\n\nMayring, P. (2022). Qualitative Inhaltsanalyse: Grundlagen und Techniken (13th ed.). Beltz.\n\n\nRadford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., & Sutskever, I. (2021). Learning Transferable Visual Models From Natural Language Supervision. https://arxiv.org/abs/2103.00020\n\n\nRedmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). You Only Look Once: Unified, Real-Time Object Detection. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). https://arxiv.org/abs/1506.02640\n\n\nReimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). https://arxiv.org/abs/1908.10084\n\n\nSmith, R. (2007). An Overview of the Tesseract OCR Engine. Proceedings of the Ninth International Conference on Document Analysis and Recognition (ICDAR), 629–633. https://research.google/pubs/an-overview-of-the-tesseract-ocr-engine/\n\n\nStruminskaya, B., Lugtig, P., Keusch, F., & Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. Social Science Computer Review, 089443932097995. https://doi.org/10.1177/0894439320979951"
+  },
+  {
+    "objectID": "slides/slides-02.html#visuelle-kommunikation-trifft-dbd",
+    "href": "slides/slides-02.html#visuelle-kommunikation-trifft-dbd",
+    "title": "From Theory to Questionaire",
+    "section": "Visuelle Kommunikation trifft DBD",
+    "text": "Visuelle Kommunikation trifft DBD\nHintergrund zum Seminar\n\nAußenwerbung als visuelles Kommunikationsmedium:\n\nmacht sichtbar, wie Botschaften im öffentlichen Raum gestaltet und wahrgenommen werden\nvisuelle Daten (z. B. Fotos, Motive) sind zentral, um diese Formen empirisch zu erfassen und zu analysieren.\n\nVerknüpfung mit digitalen Verhaltensdaten:\n\nermöglicht die Analyse, wie visuelle Werbereize mit digitalen Spuren (z. B. Suchverhalten, Social-Media-Aktivität oder Standortdaten) zusammenhängen"
+  },
+  {
+    "objectID": "slides/slides-02.html#semesterplan",
+    "href": "slides/slides-02.html#semesterplan",
+    "title": "From Theory to Questionaire",
+    "section": "Semesterplan",
+    "text": "Semesterplan\n\n\n\n\n\n\n\n\nSession\nDatum\nTime\nTopic\n\n\n\n\n1\n24.10.2024\n09:45 - 11:15\n🚀 Kick-Off\n\n\n\n\n\n✏️ Independent study and assignments\n\n\n2\n09.01.2026\n09:00 - 16:00\n📚 From Theory to Questionaire\n\n\n3\n23.01.2026\n09:00 - 16:00\n📚 From Questionaire to Pretest\n\n\n4\n30.01.2026\n09:00 - 16:00\n📚 From Pretest to Analysis\n\n\n5\n06.02.2026\n09:00 - 16:00\n📚 Analysis & Evaluation"
+  },
+  {
+    "objectID": "slides/slides-02.html#half-way-there",
+    "href": "slides/slides-02.html#half-way-there",
+    "title": "From Theory to Questionaire",
+    "section": "Half way there!",
+    "text": "Half way there!\nÜberblick über eure bisherigen Assigments\n\n\n\n\n\n\n\n\nAssignment\nPunkte\nDeadline\nStatus\n\n\n\n\n👥 Written assignment: Research Project Sketch\n30 Pts.\n18.12.2026\n✅\n\n\n👤 Peer Review: Research Project Sketch\n20 Pts.\n05.01.2026\n✅\n\n\n👤 Participation: Pre-Test\n20 Pts.\n01.2026\n🏗️\n\n\n👥 Written assignment: Implementation Report\n30 Pts.\n28.02.2026\n❓"
+  },
+  {
+    "objectID": "slides/slides-02.html#kurze-rückfragen",
+    "href": "slides/slides-02.html#kurze-rückfragen",
+    "title": "From Theory to Questionaire",
+    "section": "Kurze Rückfragen",
+    "text": "Kurze Rückfragen\nFragen zu euren Erfahrungen bei zu den bisherigen Assignments\n\nWie waren eure Erfahrungen bei der Erstellung des Research Project Sketch?\nWie war der Prozess des Peer Reviews (Feedback geben & erhalten)?\nWie ist der akutuelle Stand der R-Kenntnisse?\nGibt es Wünsche zu Input über bestimmten Analyseverfahren?"
+  },
+  {
+    "objectID": "slides/slides-02.html#heutige-agenda",
+    "href": "slides/slides-02.html#heutige-agenda",
+    "title": "From Theory to Questionaire",
+    "section": "Heutige Agenda",
+    "text": "Heutige Agenda\nÜberblick über den Ablauf des heutigen Tages\n\n\n\n\n\n\n\n\nSlot\nZeit\nProgrammpunkt\n\n\n\n\n\n09:00 - 09:30\nBegrüßung & Koordination\n\n\n\n09:30 - 09:45\nKurze Pause\n\n\n1\n09:45 - 11:15\nResearch Sketches im Fokus\n\n\n\n11:15 - 11:30\nKurze Pause\n\n\n2\n11:30 - 12:45\nFragebogen im Fokus\n\n\n\n12:45 - 13:45\nMittagspause\n\n\n3\n13:45 - 15:45\nHands-On: Fragebogen\n\n\n4\n15:45 - 16:00\nAbschluss & Ausblick"
+  },
+  {
+    "objectID": "slides/slides-02.html#pitch-your-project",
+    "href": "slides/slides-02.html#pitch-your-project",
+    "title": "From Theory to Questionaire",
+    "section": "Pitch your project!",
+    "text": "Pitch your project!\nGemeinsame Basis schaffen um Synergien zu finden\n\nKurze Vorstellung eurer Forschungsprojekte, um …\n\ngemeinsames Verständnis der verschiedenen Forschungsprojekte schaffen (z.B. theoretische Definitionen, methodische Operationalisierung & Forschungsdesigns)\nSynergien und Gemeinsamkeiten zu identifizieren\nHerausforderungen und offene Fragen zu diskutieren\nMöglichkeiten zur Zusammenarbeit und gegenseitigen Unterstützung zu erkunden"
+  },
+  {
+    "objectID": "slides/slides-02.html#and-now-you",
+    "href": "slides/slides-02.html#and-now-you",
+    "title": "From Theory to Questionaire",
+    "section": "💻 And now … you!",
+    "text": "💻 And now … you!\nArbeitsauftrag (20 Minuten): Erstellt einen Elevator Pitch für euer Projekt\n\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\nerstellt einen Kurzpräsentation (max. 4 Folien, 5–8 Minuten), die folgende Fragen beantwortet:\n\nWas untersucht ihr und warum ist das relevant? (1 Folie)\nWie wollt ihr das untersuchen? (1–2 Folien)\nWelche Herausforderungen seht ihr und wo braucht ihr Feedback? (1 Folie)\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie\n\n\n\n\n\n\n\n\n\n\nFolienvorlage verwenden\n\n\n\nBitte nutzt die bereitgestellte Folienvorlage (Google Slides) auf der nächsten Folie"
+  },
+  {
+    "objectID": "slides/slides-02.html#get-started",
+    "href": "slides/slides-02.html#get-started",
+    "title": "From Theory to Questionaire",
+    "section": "Get started!",
+    "text": "Get started!\nBitte nutzt die jeweilige Folienvorlage für die Dokumentation euerer Ergebnisse\n\n\n\n\n\n     Gruppe ‘Ansprachformen im Alltag’\n\n\n\n\n\n     Gruppe ‘Out-of-home recall’\n\n\n\n\n\n     Gruppe “Informelle visuelle Kommunikation”\n\n\n\n\n\n     Gruppe D “Sticky Politics”\n\n\n\n\n−+\n20:00"
+  },
+  {
+    "objectID": "slides/slides-02.html#statusupdate",
+    "href": "slides/slides-02.html#statusupdate",
+    "title": "From Theory to Questionaire",
+    "section": "Statusupdate",
+    "text": "Statusupdate\nUpdate zu den Herausforderungen der praktischen Umsetzung\n\nDatenschutz (DSGVO) als Endgegner\n\nBesondere Herausforderung bei der Nutzung von Bildern durch Berücksichtigung von Persönlichkeitsrechten dritter Personen\nKonsequenz: Umfragen im Seminar nur als Pre-Test/Proof of Concept, aber keine koordinierten Umfrage\n\nEinsatz von klassischen Umfragesoftware, keine Nutzung von Apps (für Befragung)\n\nApps mit zu eingeschränkten Funktionen oder zu “teuer” (weil eigene Entwicklung/Programmierung notwendig)"
+  },
+  {
+    "objectID": "slides/slides-02.html#toolbox-statt-nur-eines-tools",
+    "href": "slides/slides-02.html#toolbox-statt-nur-eines-tools",
+    "title": "From Theory to Questionaire",
+    "section": "Toolbox statt nur eines Tools",
+    "text": "Toolbox statt nur eines Tools\nDie zur Verfügung stehenden Tools\n\nKeyingress (kostenpflichtig): eine Multichannel-Toolbox zur Erstellung, Durchführung und Auswertung von Befragungen über Online-, Offline-, Telefon- (CATI) und Panel-Kanäle, mit integriertem Reporting-Dashboard, flexiblen Automatisierungs- und Schnittstellenfunktionen \nSoSci Survey (kostenlos für akademische Zwecke): flexible, DSGVO-konforme Online-Umfragesoftware aus Deutschland, mit der sich anspruchsvolle wissenschaftliche und kommerzielle Befragungen erstellen, durchführen und auswerten lassen.\nntfy.sh (kostenlos/open-source): einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien"
+  },
+  {
+    "objectID": "slides/slides-02.html#sosci-suvery-als-basis",
+    "href": "slides/slides-02.html#sosci-suvery-als-basis",
+    "title": "From Theory to Questionaire",
+    "section": "SoSci Suvery als Basis",
+    "text": "SoSci Suvery als Basis\nNutzung von SoSci Survey als Grundlage für die Umfrage(n)\n\nBei der Verwendung von SoSci Survey überwiegen die Vorteile, speziell mit Blick auf die potentielle Weiterverwendung für die Masterarbeit:\n\nEinfacher Zugang (kostenlos für akademische Zwecke)\nUmfangreiche Dokumentation & Tutorials\nGroße Community (Austausch & Support)\nIntegration mit R (Datenexport & -analyse)\n\nAber: Komplizierte Feldsteuerung (dort ggf. eines der anderen Tools nutzen)"
+  },
+  {
+    "objectID": "slides/slides-02.html#ntfy-me",
+    "href": "slides/slides-02.html#ntfy-me",
+    "title": "From Theory to Questionaire",
+    "section": "ntfy me!",
+    "text": "ntfy me!\nntfy.sh als Workaround\n\n\n\nNutzung von ntfy.sh als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien\nOpen-Source, einfach zu bedienen und flexibel anpassbar\nSkriptbasiertes Scheduling (via Server)"
+  },
+  {
+    "objectID": "slides/slides-02.html#sneak-preview",
+    "href": "slides/slides-02.html#sneak-preview",
+    "title": "From Theory to Questionaire",
+    "section": "Sneak Preview",
+    "text": "Sneak Preview\nVorstellung des aktuellen Standes der Umfrage\n\n\n\n\n\nTemplate erstellt, das folgende Fragen beinhaltete\n\nFotoaufnahme (benötigt Erlaubnis zur Nutzung der Kamera)\nGPS-Location (benötigt Erlaubnis zur Nutzung der Standortdaten)\n\nSchaut euch gerne die Debug-Vorschau an und testet den Fragebogen selbst (Daten/Antworten werden nicht gespeichert)\n\n\n\n\n\n\n     Debug-Vorschau"
+  },
+  {
+    "objectID": "slides/slides-02.html#kurze-vorstellung-des-backends",
+    "href": "slides/slides-02.html#kurze-vorstellung-des-backends",
+    "title": "From Theory to Questionaire",
+    "section": "Kurze Vorstellung des Backends",
+    "text": "Kurze Vorstellung des Backends\nVorstellung des SoSci Survey Backends"
+  },
+  {
+    "objectID": "slides/slides-02.html#lets-discuss",
+    "href": "slides/slides-02.html#lets-discuss",
+    "title": "From Theory to Questionaire",
+    "section": "💬 Let’s discuss",
+    "text": "💬 Let’s discuss\nVorschlag zum weiteren Vorgehen\n\nJede Gruppe erstellt ihre eigene Umfrage auf Basis Ihres Fragebogens\n\nNutzung des SoSci Survey Templates als Grundlage und Erweiterung um eigene Fragen\nÜberarbeitung, Testing & Feedback im nächsten Zeitslot\nErfahrungsbericht und Finalisierung in nächster Blocksitzung\n\nFrage zum Studien-Monitoring:\n\nSerienmail vs. notify.sh?\nEigenständig oder “zentral”?"
+  },
+  {
+    "objectID": "slides/slides-02.html#hands-on-zeit",
+    "href": "slides/slides-02.html#hands-on-zeit",
+    "title": "From Theory to Questionaire",
+    "section": "💻 Hands-on Zeit!",
+    "text": "💻 Hands-on Zeit!\nArbeitsauftrag (90 Minuten): Arbeitet an eurem Fragebogen\n\n\n\n\n\n\nArbeitsauftrag\n\n\nIn euren Gruppen …\n\narbeitet die Checkliste für die Erstellung ab\npasst den Fragebogen an euer (überarbeitetes) Forschungsdesign an\ndenkt über den Schedule für die Versendung der Kurzfragebögen nach\ntestet euren Fragebogen (Pretest-Link), auch auf unterschiedlichen Geräten!\n\n\n\n\n\n\n\n\n\n\nWährenddessen: Feedback\n\n\n\nSucht das Gespräch zu anderen Gruppen und gebt euch gegenseitig Hilfe und Feedback\nIch bin während der gesamten Zeit für Fragen und Unterstützung verfügbar\nIch wandere von Gruppe zu Gruppe, um Feedback zu geben und Fragen zu beantworten"
+  },
+  {
+    "objectID": "slides/slides-02.html#erstellung-einer-eigenen-befragung",
+    "href": "slides/slides-02.html#erstellung-einer-eigenen-befragung",
+    "title": "From Theory to Questionaire",
+    "section": "Erstellung einer eigenen Befragung",
+    "text": "Erstellung einer eigenen Befragung\nCheckliste für die Erstellung\n\nErstellung eines Accounts\nDownload des DBD-Templates von StudOn\nNeues (kostenloses) Befragungsprojekt\nBefragungsprojekt hochladen (XML-Datei)\nProjektverzeichnis/-informationen anpassen/individualisieren\nFragebogen anpassen/individualisieren\n\n\n\n“Ich forsche im Rahmen eines Studiums oder einer Tätigkeit an einer Schule oder Hochschule.”\n“Nein, die individuelle Zuordnung ist ausgeschlossen.”\n“Ein Unternehmen unterstützt die Studie, erhält dafür aber keine Gegenleistung.”\n“Die Ergebnisse werden als Seminararbeit oder Semesterarbeit abgegeben.”\n“Nein”"
+  },
+  {
+    "objectID": "slides/slides-02.html#until-we-see-us-again",
+    "href": "slides/slides-02.html#until-we-see-us-again",
+    "title": "From Theory to Questionaire",
+    "section": "Until we see us again",
+    "text": "Until we see us again\nArbeitsaufträge für die nächste Sitzung\n\nFinalisiert euren Fragebogen basierend auf dem heutigen Feedback\nFinalisiert euer Forschungsdesign (insb. Schedule für Kurzfragebögen)\nOptional, aber sehr empfohlen: Testet euren Fragebogen!\n\nNutzt den Pretest-Link, um euren Fragebogen zu testen\nSammelt eigene Erfahrung in der Anwendung!"
+  },
+  {
+    "objectID": "slides/slides-02.html#literatur",
+    "href": "slides/slides-02.html#literatur",
+    "title": "From Theory to Questionaire",
+    "section": "Literatur",
+    "text": "Literatur"
+  },
+  {
+    "objectID": "sessions/session-03.html",
+    "href": "sessions/session-03.html",
+    "title": "Session 3",
     "section": "",
-    "text": "Register an account on SoSci Survey\n Download the ntfy.sh app for your smartphone"
+    "text": "Download the ntfy.sh app for your smartphone:  iOS |  Android"
   },
   {
-    "objectID": "sessions/session-02.html#prepare",
-    "href": "sessions/session-02.html#prepare",
-    "title": "Session 2",
+    "objectID": "sessions/session-03.html#prepare",
+    "href": "sessions/session-03.html#prepare",
+    "title": "Session 3",
     "section": "",
-    "text": "Register an account on SoSci Survey\n Download the ntfy.sh app for your smartphone"
+    "text": "Download the ntfy.sh app for your smartphone:  iOS |  Android"
   },
   {
-    "objectID": "sessions/session-02.html#participate",
-    "href": "sessions/session-02.html#participate",
-    "title": "Session 2",
+    "objectID": "sessions/session-03.html#participate",
+    "href": "sessions/session-03.html#participate",
+    "title": "Session 3",
     "section": "Participate",
-    "text": "Participate\n🖥️ Session 02"
+    "text": "Participate\n🖥️ Session 03"
   },
   {
-    "objectID": "sessions/session-02.html#useful-tools-resources",
-    "href": "sessions/session-02.html#useful-tools-resources",
-    "title": "Session 2",
+    "objectID": "sessions/session-03.html#useful-tools-resources",
+    "href": "sessions/session-03.html#useful-tools-resources",
+    "title": "Session 3",
     "section": "Useful tools & resources",
-    "text": "Useful tools & resources\n\nSoSci Survey – Platform for creating and conducting online surveys\nSoSci Survey Manual – SoSci Survey documentation\nSoSci Survey Support – SoSci Survey support forum\nntfy.sh – Simple notification service\n\n\nBack to course schedule ⏎"
+    "text": "Useful tools & resources\n\nSoSci Survey – Platform for creating and conducting online surveys\nSoSci Survey Manual – SoSci Survey documentation\nSoSci Survey Support – SoSci Survey support forum\n ntfy.sh – Simple notification service\n Google Colaboratory – Free Jupyter notebook environment that runs in the cloud\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "sessions/session-01.html",
+    "href": "sessions/session-01.html",
+    "title": "Session 1",
+    "section": "",
+    "text": "Important\n\n\n\nPlease make sure that you answered the survey send to you by (StudOn) mail."
+  },
+  {
+    "objectID": "sessions/session-01.html#prepare",
+    "href": "sessions/session-01.html#prepare",
+    "title": "Session 1",
+    "section": "Prepare",
+    "text": "Prepare\n✍️ Fill out the short survey before the 22.10.2025 (see  StudOn for Link)\n📖 Read the syllabus"
+  },
+  {
+    "objectID": "sessions/session-01.html#participate",
+    "href": "sessions/session-01.html#participate",
+    "title": "Session 1",
+    "section": "Participate",
+    "text": "Participate\n🖥️ Session 01"
+  },
+  {
+    "objectID": "sessions/session-01.html#literature",
+    "href": "sessions/session-01.html#literature",
+    "title": "Session 1",
+    "section": "Literature",
+    "text": "Literature\n\nwith focus on advertising\n\nFranke, G. R., & Taylor, C. R. (2017). Public Perceptions of Billboards: A Meta-Analysis. Journal of Advertising, 46(3), 395–410. https://doi.org/10.1080/00913367.2017.1334248\nNikulina, O., Van Riel, A. C. R., Lemmink, J. G. A. M., Grewal, D., & Wetzels, M. (2024). Narrate, Act, and Resonate to Tell a Visual Story: A Systematic Review of How Images Transport Viewers. Journal of Advertising, 53(4), 605–625. https://doi.org/10.1080/00913367.2024.2309921\nWilson, R. T. (2023). Out-of-Home Advertising: A Systematic Review and Research Agenda. Journal of Advertising, 52(2), 279–299. https://doi.org/10.1080/00913367.2022.2064378\n\n\n\nwith focus on analysis\n\nAraujo, T., Lock, I., & Van De Velde, B. (2020). Automated Visual Content Analysis (AVCA) in Communication Research: A Protocol for Large Scale Image Classification with Pre-Trained Computer Vision Models. Communication Methods and Measures, 14(4), 239–265. https://doi.org/10.1080/19312458.2020.1810648\nHoffmann, M., & Heft, A. (2020). “Here, There and Everywhere”: Classifying Location Information in Social Media Data - Possibilities and Limitations. Communication Methods and Measures, 14(3), 184–203. https://doi.org/10.1080/19312458.2019.1708282\nLokmanoglu, A. D., & Walter, D. (2025). Topic modeling of video and image data: a visual semantic unsupervised approach. Communication Methods and Measures, 19(3), 232–279. https://doi.org/10.1080/19312458.2025.2549707\nPeng, Y., Lock, I., & Ali Salah, A. (2024). Automated Visual Analysis for the Study of Social Media Effects: Opportunities, Approaches, and Challenges. Communication Methods and Measures, 18(2), 163–185. https://doi.org/10.1080/19312458.2023.2277956\n\n\n\nwith focus on digital behavioral data\n\nEngel, U., Quan-Haase, A., Liu, S. X., & Lyberg, L. (2021). Digital trace data (1st ed., pp. 100–118). Routledge. https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8\nOlteanu, A., Castillo, C., Diaz, F., & Kıcıman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2, 13. https://doi.org/10.3389/fdata.2019.00013\n\n\n\nwith focus on effects\n\nAlonso Dos Santos, M., Lobos, C., Muñoz, N., Romero, D., & Sanhueza, R. (2017). The Influence of Image Valence on the Attention Paid to Charity Advertising. Journal of Nonprofit & Public Sector Marketing, 29(3), 346–363. https://doi.org/10.1080/10495142.2017.1326355\nBarry, A. M. (2002). Perception and Visual Communication Theory. Journal of Visual Literacy, 22(1), 91–106. https://doi.org/10.1080/23796529.2002.11674583\nBast, J., & Oschatz, C. (2025). Which Visuals Really Matter? Effects of (Counter) Stereotypical Visual Information on Candidate Evaluations. Communication Research, 00936502241309957. https://doi.org/10.1177/00936502241309957\nBoomgaarden, H., Boukes, M., & Iorgoveanu, A. (2016). Image versus text: How newspaper reports affect evaluations of political candidates. INTERNATIONAL JOURNAL OF COMMUNICATION, 10, 2529–2555.\nCasas, A., & Williams, N. W. (2019). Images that Matter: Online Protests and the Mobilizing Role of Pictures. Political Research Quarterly, 72(2), 360–375. https://doi.org/10.1177/1065912918786805\nGeise, S., Panke, D., & Heck, A. (2021). Still ImagesMoving People? How Media Images of Protest Issues and Movements Influence Participatory Intentions. The International Journal of Press/Politics, 26(1), 92–118. https://doi.org/10.1177/1940161220968534\nKrause, A., & Bucy, E. P. (2018). Interpreting Images of Fracking: How Visual Frames and Standing Attitudes Shape Perceptions of Environmental Risk and Economic Benefit. Environmental Communication, 12(3), 322–343. https://doi.org/10.1080/17524032.2017.1412996\nPowell, T. E., Boomgaarden, H. G., De Swert, K., & De Vreese, C. H. (2015). A Clearer Picture: The Contribution of Visuals and Text to Framing Effects: Visual Framing Effects. Journal of Communication, 65(6), 997–1017. https://doi.org/10.1111/jcom.12184\n\n\n\nwith focus on images\n\nJoo, J., & Steinert-Threlkeld, Z. C. (2022). Image as Data: Automated Content Analysis for Visual Presentations of Political Actors and Events. Computational Communication Research, 4(1). https://doi.org/10.5117/CCR2022.1.001.JOO\nWebb Williams, N. (2022). What Type of Data Are Images? SSRN Electronic Journal. https://doi.org/10.2139/ssrn.4012789\nWebb Williams, N., Casas, A., & Wilkerson, J. D. (2020). Images as data for social science research: An introduction to convolutional neural nets for image classification (1st ed.). Cambridge University Press. https://www.cambridge.org/core/product/identifier/9781108860741/type/element\n\n\n\nwith focus on survey methods\n\nSchnauber-Stockmann, A., & Karnowski, V. (2020). Mobile Devices as Tools for Media and Communication Research: A Scoping Review on Collecting Self-report Data in Repeated Measurement Designs. Communication Methods and Measures, 14(3), 145–164. https://doi.org/10/gks6zf\nMasur, P. K. (2019). Capturing situational dynamics: Strength and pitfalls of the experience sampling method (P. Müller, S. Geiß, T. K. Naab, & C. Peter, Eds.; Vol. 15). Herbert von Halem Verlag. https://osf.io/vx5ha\n\n\n\nwith focus on visual communication\n\nGeise, S. (2017). Theoretical Perspectives on Visual Political Communication Through Election Posters (C. Holtz-Bacha & B. Johansson, Eds.; pp. 13–31). Springer International Publishing. http://link.springer.com/10.1007/978-3-319-32498-2_2\n\n\n\nwith focus on visibility\n\nStehle, H., Bock, A., Wilhelm, C., Springer, N., Mahrt, M., Lobinger, K., Linke, C., Engelmann, I., Detel, H., & Brantner, C. (2024). In/visibility in the digital age: A literature review from a communication studies perspective. International Journal of Communication, 18, 23.\n\n\n\nother interesting sources\n\nBodden, S., & Awcock, H. (2024). Stuck Up, Peeled Off, Covered Up, Shared and Scribbled Out: Doing Ordinary Politics with Political Stickers. GeoHumanities, 10(1), 131–149. https://doi.org/10.1080/2373566X.2024.2339848\nMcCosker, A., Kamstra, P., De Cotta, T., Farmer, J., Shaw, F., Teh, Z., & Soltani Panah, A. (2021). Social media for social good? A thematic, spatial and visual analysis of humanitarian action on Instagram. Information, Communication & Society, 24(13), 1870–1890. https://doi.org/10.1080/1369118X.2020.1748089\nMichel, S., & Pappert, S. (2018). Wahlplakat-busting. Formen und funktionen einer (neuen) textmustermischung. Zeitschrift Für Angewandte Linguistik, 2018(68), 333. https://doi.org/doi:10.1515/zfal-2018-0002\nReershemius, G. (2019). Lamppost networks: stickers as a genre in urban semiotic landscapes. Social Semiotics, 29(5), 622–644. https://doi.org/10.1080/10350330.2018.1504652\n\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "computing/computing-useful_links.html",

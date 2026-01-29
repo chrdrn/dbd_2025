@@ -8,15 +8,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2a367172f4fe7d9182ebf8e09f85cb4e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
-<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
-<link href="../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Christoph Adrian">
-  <title>Digital behavioral data – From Questionnaire to Pretest</title>
+  <title>Digital behavioral data – From Pretest to Analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -34,73 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
     }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
     }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #383a42;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
     }
-    code span { color: #383a42; } /* Normal */
-    code span.al { color: #95da4c; background-color: #4d1f24; font-weight: bold; } /* Alert */
-    code span.an { color: #50a14f; } /* Annotation */
-    code span.at { color: #a626a4; } /* Attribute */
-    code span.bn { color: #986801; } /* BaseN */
-    code span.bu { color: #a626a4; } /* BuiltIn */
-    code span.cf { color: #a626a4; } /* ControlFlow */
-    code span.ch { color: #50a14f; } /* Char */
-    code span.cn { color: #986801; } /* Constant */
-    code span.co { color: #a0a1a7; font-style: italic; } /* Comment */
-    code span.cv { color: #e45649; font-style: italic; } /* CommentVar */
-    code span.do { color: #e45649; } /* Documentation */
-    code span.dt { color: #a626a4; } /* DataType */
-    code span.dv { color: #986801; } /* DecVal */
-    code span.er { color: #f44747; text-decoration: underline; } /* Error */
-    code span.ex { color: #4078f2; font-weight: bold; } /* Extension */
-    code span.fl { color: #986801; } /* Float */
-    code span.fu { color: #4078f2; } /* Function */
-    code span.im { color: #50a14f; } /* Import */
-    code span.in { color: #c45b00; } /* Information */
-    code span.kw { color: #a626a4; } /* Keyword */
-    code span.op { color: #a626a4; } /* Operator */
-    code span.ot { color: #27ae60; } /* Other */
-    code span.pp { color: #a626a4; } /* Preprocessor */
-    code span.re { color: #2980b9; background-color: #153042; } /* RegionMarker */
-    code span.sc { color: #0184bc; } /* SpecialChar */
-    code span.ss { color: #da4453; } /* SpecialString */
-    code span.st { color: #50a14f; } /* String */
-    code span.va { color: #e45649; } /* Variable */
-    code span.vs { color: #da4453; } /* VerbatimString */
-    code span.wa { color: #da4453; } /* Warning */
-  </style>
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-66dbeddfd40014fd93eea0b058e620ea.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -197,8 +147,8 @@
   </style>
   <link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../site_libs/countdown-0.4.0/countdown.js"></script>
-<meta property="og:title" content="From Questionnaire to Pretest – Digital behavioral data">
-<meta property="og:description" content="Block 3">
+<meta property="og:title" content="From Pretest to Analysis – Digital behavioral data">
+<meta property="og:description" content="Block 4">
 <meta property="og:site_name" content="Digital behavioral data">
 </head>
 <body class="quarto-light">
@@ -206,8 +156,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#04316a" data-background-image="img/slide_bg-title.png" slide-logo="false" class="quarto-title-block center">
-  <h1 class="title">From Questionnaire to Pretest</h1>
-  <p class="subtitle">Block 3</p>
+  <h1 class="title">From Pretest to Analysis</h1>
+  <p class="subtitle">Block 4</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -222,7 +172,7 @@
     </div>
 </div>
 
-  <p class="date">23.01.2026</p>
+  <p class="date">30.01.2026</p>
 </section>
 <section>
 <section id="intro" class="title-slide slide level1 center" data-background-image="img/slide_bg-agenda.png">
@@ -720,16 +670,16 @@
 <td class="gt_row gt_left" headers="Topic">📚 From Theory to Questionaire</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_right" headers="Session" style="background-color: rgba(197,15,60,0.2)">3</td>
-<td class="gt_row gt_right" headers="Datum" style="background-color: rgba(197,15,60,0.2)">23.01.2026</td>
-<td class="gt_row gt_right" headers="Time" style="background-color: rgba(197,15,60,0.2)">09:00 - 16:00</td>
-<td class="gt_row gt_left" headers="Topic" style="background-color: rgba(197,15,60,0.2); color: #000000; font-weight: bold">📚 From Questionaire to Pretest</td>
+<td class="gt_row gt_right" headers="Session">3</td>
+<td class="gt_row gt_right" headers="Datum">23.01.2026</td>
+<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic">📚 From Questionaire to Pretest</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_right" headers="Session">4</td>
-<td class="gt_row gt_right" headers="Datum">30.01.2026</td>
-<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
-<td class="gt_row gt_left" headers="Topic">📚 From Pretest to Analysis</td>
+<td class="gt_row gt_right" headers="Session" style="background-color: rgba(197,15,60,0.2)">4</td>
+<td class="gt_row gt_right" headers="Datum" style="background-color: rgba(197,15,60,0.2)">30.01.2026</td>
+<td class="gt_row gt_right" headers="Time" style="background-color: rgba(197,15,60,0.2)">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic" style="background-color: rgba(197,15,60,0.2); color: #000000; font-weight: bold">📚 From Pretest to Analysis</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Session">5</td>
@@ -1229,7 +1179,7 @@
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">1</td>
 <td class="gt_row gt_right" headers="Zeit">09:30 - 11:15</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot1">Feldvorbereitung im Fokus</a></td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot1">Bewertung der Feldphase</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot"></td>
@@ -1239,7 +1189,7 @@
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">2</td>
 <td class="gt_row gt_right" headers="Zeit">11:30 - 13:00</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot2">ntfy im Fokus</a></td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot2">Analyse im Fokus</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot"></td>
@@ -1249,7 +1199,7 @@
 <tr class="odd">
 <td class="gt_row gt_right" headers="Slot">3</td>
 <td class="gt_row gt_right" headers="Zeit">14:00 - 15:45</td>
-<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot3">Hands-On: Fragebogentest</a></td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#/slot3">Hands-On: Edit &amp; Plan</a></td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="Slot">4</td>
@@ -1263,39 +1213,17 @@
 </div>
 </div>
 </section>
-<section id="kurze-bestandsaufnahme" class="slide level2">
-<h2>Kurze Bestandsaufnahme</h2>
-<h4 id="arbeitsaufträge-zur-heutigen-sitzung">Arbeitsaufträge zur heutigen Sitzung</h4>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>Finalisiert euren Fragebogen</strong> basierend auf dem Feedback</label></li>
-<li><label><input type="checkbox"><strong>Finalisiert euer Forschungsdesign</strong> (insb. Schedule für Kurzfragebögen)</label></li>
-<li><label><input type="checkbox"><strong>Testet euren Fragebogen</strong>!</label></li>
-</ul>
-<h5 id="gentle-reminder">Gentle Reminder:</h5>
-<ul>
-<li><p>Wie ist der aktuelle Stand eurer R-Kenntnisse?</p></li>
-<li><p>GitHub Copilot beantragt?</p></li>
-<li><p>Gibt es Analyseverfahren, zu denen Ihr Input benötigt?</p></li>
-</ul>
-</section>
 <section id="lets-discuss" class="slide level2">
 <h2>💬 Let’s discuss</h2>
 <h4 id="organisatorische-hinweise">Organisatorische Hinweise</h4>
 <ul>
-<li><strong>Handhabung von IDs</strong> (für Teilnehmer:In und Kurzfragebogen):
+<li><strong>Deadline</strong> für <strong>Implementation Report</strong>: <strong><em>28.02.2026</em></strong> um 23:59</li>
+<li>Kurzer <strong>Erfahrungsbericht</strong> aus <strong>Teilnehmenden</strong>-Perspektive
 <ul>
-<li>Manuelle Eingabe der <code>"Teilnehmer_in ID"</code>, ID des Kurzfragebogens via Default-Umfrageparameter von SoSci-Survey</li>
-</ul></li>
-<li><strong>Zweiteilung des Befragungszeitraums:</strong>
-<ul>
-<li><em>Phase 1:</em> Mo. (26.01) bis Do. (29.01.) &amp;</li>
-<li><em>Phase 2</em>: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)</li>
-</ul></li>
-<li><strong>Ablauf der Befragung</strong>:
-<ul>
-<li><p>spätestens Sonntagabend erhaltet Ihr eine Mail mit einem Link zum Topic, das Ihr abonnieren müsst, und Ausfüllhinweisen</p></li>
-<li><p>ab Montag startet die Erhebung</p></li>
-<li><p>bei Problemen: Umgehend Nachricht ins StudOn-Forum</p></li>
+<li>Wie gut ließ sich die Studie <strong>in euren Alltag integrieren</strong>?</li>
+<li>Wie empfandet ihr <strong>Länge und Häufigkeit</strong> der Befragungen?</li>
+<li>Gab es Momente, die besonders <strong>störend oder belastend</strong> waren?</li>
+<li>Was hat euch <strong>überrascht</strong>?</li>
 </ul></li>
 </ul>
 </section></section>
@@ -1304,7 +1232,7 @@
 <p>15 Minuten Pause</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_a1183c06" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_55a79da4" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1314,12 +1242,12 @@
 
 <section>
 <section id="slot1" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1>Feldvorbereitung im Fokus</h1>
-<p>Kurze Präsentation des aktuellen Stands der Umfrage, Problemen &amp; Herausforderungen</p>
+<h1>Bewertung der Feldphase</h1>
+<p>Kurze Reflexion der bisherigen Feldphase</p>
 </section>
 <section id="and-now-you" class="slide level2">
 <h2>💻 And now … you!</h2>
-<h4 id="arbeitsauftrag-30-minuten-feldvorbereitung">Arbeitsauftrag (30 Minuten): Feldvorbereitung</h4>
+<h4 id="arbeitsauftrag-20-minuten-reflexion-der-feldphase">Arbeitsauftrag (20 Minuten): Reflexion der Feldphase</h4>
 <p><br></p>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
@@ -1332,14 +1260,12 @@
 <div class="callout-content">
 <p>In euren Gruppen …</p>
 <ul>
-<li>erstellt eine <strong>Kurzpräsentation (max. 4 Folien, 5–10 Minuten)</strong>, die auf folgende Punkte eingeht:
+<li>erstellt eine <strong>Kurzpräsentation (max. 3 Folien)</strong>, die auf folgende Punkte eingeht:
 <ul>
-<li>Wie sieht euer <strong>aktueller Kurzfragebogen</strong> aus? (1 Folie)</li>
-<li>Darstellung des (geplanten) <strong>Schedules für die Umfrage</strong> (1 Folie)</li>
-<li>Vorstellung der <strong>Ausfüllhinweise</strong> (1 Folie)</li>
-<li>Gibt es Herausforderungen oder Probleme, die Ihr diskutieren möchtet? (1 Folie)</li>
+<li>Was lief gut, was lief nicht so gut? (1 Folie)</li>
+<li>Was wollt/würdet ihr beim nächsten Mal anders machen? (1 Folie)</li>
+<li>Was ist noch unklar, wozu habt ihr Fragen oder möchtet Feedback? (1 Folie)</li>
 </ul></li>
-<li>Bitte nutzt die <strong>bereitgestellte Folienvorlage (Google Slides)</strong> auf der nächsten Folie</li>
 </ul>
 </div>
 </div>
@@ -1371,11 +1297,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"150","text":"https://t1p.de/gukhu","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"150","text":"https://t1p.de/dg3t5","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/gukhu">Gruppe A <em>(‘Ansprachformen im Alltag’)</em></a><p></p>
+     <a href="https://t1p.de/dg3t5">Gruppe A <em>(‘Ansprachformen im Alltag’)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1384,11 +1310,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"150","text":"https://t1p.de/muy33","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"150","text":"https://t1p.de/2mbsp","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/muy33">Gruppe B <em>(‘Out-of-home recall’)</em></a><p></p>
+     <a href="https://t1p.de/2mbsp">Gruppe B <em>(‘Out-of-home recall’)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1397,11 +1323,11 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"150","text":"https://t1p.de/ayudy","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"150","text":"https://t1p.de/a0z30","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/ayudy">Gruppe C <em>(“Informelle visuelle Kommunikation”)</em></a><p></p>
+     <a href="https://t1p.de/a0z30">Gruppe C <em>(“Informelle visuelle Kommunikation”)</em></a><p></p>
 </div><div class="column" style="width:5%;">
 
 </div><div class="column" style="width:20%;">
@@ -1410,17 +1336,17 @@
 (function() {
   var script = document.currentScript;
   var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"150","text":"https://t1p.de/t9pbd","width":"150"});
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"150","text":"https://t1p.de/sovur","width":"150"});
   script.remove();
 })();
 </script>
-     <a href="https://t1p.de/t9pbd">Gruppe D <em>(“Sticky Politics”</em>)</a><p></p>
+     <a href="https://t1p.de/sovur">Gruppe D <em>(“Sticky Politics”)</em></a><p></p>
 </div></div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_fd776cec" data-warn-when="300" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ec1fb93e" data-warn-when="300" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">20</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
@@ -1430,7 +1356,7 @@
 <p>15 Minuten Pause</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_54f0c6c3" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_98f5d344" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1440,127 +1366,163 @@
 
 <section>
 <section id="slot2" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1><iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> <code>ntfy</code> im Fokus</h1>
-<p>Vorstellung der Tools für die Feldsteuerung: Planung &amp; Durchführung</p>
+<h1>Analyse im Fokus</h1>
+<p>Datenquellen jenseits klassischer Fragebögen: <strong>GPS</strong>, <strong>Text (as data)</strong>, <strong>Bilder (as data)</strong></p>
 </section>
-<section id="ntfy-me" class="slide level2">
-<h2><iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> <code>ntfy</code> me!</h2>
-<h4 id="ntfy.sh-als-tool-für-die-feldsteuerung">ntfy.sh als Tool für die Feldsteuerung</h4>
-<div class="columns">
-<div class="column" style="width:45%;">
+<section id="the-missing-link" class="slide level2">
+<h2>The missing link</h2>
+<h4 id="wie-neue-datenquellen-die-klassischen-surveys-ergänzen">Wie neue Datenquellen die klassischen Surveys ergänzen</h4>
 <ul>
-<li>Nutzung von <strong>ntfy.sh</strong> als einfacher Push-Benachrichtigungsdienst zur Übermittlung von Erinnerungen für ESM-Studien</li>
-<li>Open-Source, einfach zu bedienen und flexibel anpassbar</li>
-<li>Skriptbasiertes Scheduling (via Server)</li>
+<li>Projektentwürfe folgen <strong>klassischer Surveyforschung</strong>: Fokus auf <strong>Selbstberichte</strong> und Auswertung von <strong>Skalen</strong></li>
+<li>Datenquellen wie <strong>Inhalte, Bilder und Orte</strong> liefern zusätzlichen Kontext <span class="citation" data-cites="struminskaya2020 keusch2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Engel et al., 2021</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Struminskaya et al., 2020</a>)</span></li>
+<li>Herausforderung: Wie lassen sich diese Datenmassen <strong>systematisch auswerten?</strong></li>
+<li>Lösung: <strong>(Teil-)automatisierte Analyseverfahren</strong></li>
 </ul>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:45%;">
-<p><img data-src="img/session-02/ntfy.png" width="400"></p>
-</div></div>
 </section>
-<section id="was-ist-ntfy.sh" class="slide level2">
-<h2>Was ist ntfy.sh?</h2>
-<h4 id="kurze-erklärung-der-funktionsweise">Kurze Erklärung der Funktionsweise</h4>
+<section id="fokus-auf-die-inhalte" class="slide level2">
+<h2>Fokus auf die “Inhalte”</h2>
+<h4 id="inhaltsanalyse-als-methodische-brücke">Inhaltsanalyse als methodische Brücke</h4>
 <ul>
-<li><strong>Publish/Subscribe-Prinzip</strong>: Clients abonnieren ein <code>Topic</code> (bzw. einen Link) und erhalten sofort Updates</li>
-<li>Nachrichten lassen sich per <strong>HTTP-Request</strong> (z. B. <code>curl</code> oder <code>python</code>) senden</li>
-<li>Funktioniert auf Smartphone &amp; Desktop via <strong>Web-App oder native App</strong></li>
-<li><strong>Kostenlos</strong>, aber mit <strong>Einschränkungen</strong>
+<li>Zentrale Methode der <strong>Kommunikationswissenschaft</strong> <span class="citation" data-cites="krippendorff2018 mayring2022">(<a href="#/literatur" role="doc-biblioref" onclick="">Krippendorff, 2018</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Mayring, 2022</a>)</span></li>
+<li>Ziel: <strong>Systematische Analyse</strong> von Kommunikationsinhalten</li>
+<li>Vorgehen: <strong>manuelle Codierung</strong> mithilfe eines <strong>Codebuchs</strong> mit <em>Definitionen</em>, <em>Kategorien</em> und <em>(Anker-)Beispielen</em></li>
+<li>Anwendung auf <strong>Text</strong>, <strong>Bild</strong> und <strong>multimodale Inhalte</strong></li>
+</ul>
+</section>
+<section id="von-manuell-zu-automatisiert" class="slide level2">
+<h2>Von manuell zu automatisiert</h2>
+<h4 id="zu-den-vorteilen-bzw.-der-notwendigkeit-der-automatisierung">Zu den Vorteilen bzw. der Notwendigkeit der Automatisierung</h4>
 <ul>
-<li>“Private” Topics nur mit Pro-Account</li>
-<li>Workaround mit <strong>hochindividualisierten Themen</strong></li>
-<li>Aber es bleibt ein <strong>“Restrisiko”</strong></li>
+<li><strong>Manuelle</strong> Codierung ist <strong>aufwendig</strong> und <strong>schwer skalierbar</strong></li>
+<li><strong>Automatisierung</strong> ermöglicht:
+<ul>
+<li>Verarbeitung <strong>größerer</strong> <strong>Datenmengen</strong></li>
+<li><strong>Schnellere</strong> Analyse</li>
+<li>höhere <strong>Reproduzierbarkeit</strong></li>
+</ul></li>
+<li><strong>Ziel</strong>: <strong>Unterstützung</strong>, nicht Ersatz der “klassischen” Inhaltsanalyse <span class="citation" data-cites="grimmer2013 hase2023">(<a href="#/literatur" role="doc-biblioref" onclick="">Grimmer &amp; Stewart, 2013</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Hase, 2023</a>)</span></li>
+<li><strong>Best Practice</strong>: automatisierte Schritte <strong>validieren</strong> gegen manuelle Kodierung <span class="citation" data-cites="chan2020">(<a href="#/literatur" role="doc-biblioref" onclick="">Chan &amp; Sältzer, 2020</a>)</span></li>
+</ul>
+</section>
+<section id="text-as-data" class="slide level2">
+<h2>Text as data</h2>
+<h4 id="automatisierte-analyse-von-textinhalten">Automatisierte Analyse von Textinhalten</h4>
+<ul>
+<li>Grundidee: <strong>Texte</strong> werden als <strong>strukturierte Daten</strong> behandelt <span class="citation" data-cites="grimmer2013">(<a href="#/literatur" role="doc-biblioref" onclick="">Grimmer &amp; Stewart, 2013</a>)</span></li>
+<li>Anschlussfähigkeit an inhaltsanalytische Logiken <span class="citation" data-cites="krippendorff2018">(<a href="#/literatur" role="doc-biblioref" onclick="">Krippendorff, 2018</a>)</span></li>
+<li>Typische Verfahren (von einfach zu komplex):
+<ul>
+<li><strong>Keywording &amp; Dictionaries</strong> (z. B. Frame-/Themenlisten) <span class="citation" data-cites="grimmer2013">(<a href="#/literatur" role="doc-biblioref" onclick="">Grimmer &amp; Stewart, 2013</a>)</span></li>
+<li><strong>Topic Modeling</strong> für thematische Cluster <span class="citation" data-cites="blei2003 maier2018 chen2023">(<a href="#/literatur" role="doc-biblioref" onclick="">Blei et al., 2003</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Chen et al., 2023</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Maier et al., 2018</a>)</span></li>
+<li><strong>Embeddings</strong> zur Ähnlichkeitsanalyse <span class="citation" data-cites="reimers2019 jurafsky2024">(<a href="#/literatur" role="doc-biblioref" onclick="">Jurafsky &amp; Martin, 2024</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Reimers &amp; Gurevych, 2019</a>)</span></li>
+<li><strong>LLMs</strong> für Kodierung(-svorschläge) oder Summary <span class="citation" data-cites="brown2020">(<a href="#/literatur" role="doc-biblioref" onclick="">Brown et al., 2020</a>)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="topic-als-gatekeeper" class="slide level2">
-<h2>Topic als Gatekeeper</h2>
-<h4 id="vorstellung-eines-typischen-workflows">Vorstellung eines typischen Workflows</h4>
+<section id="werbeinhalte-codieren-und-mit-esm-verknüpfen" class="slide level2">
+<h2>Werbeinhalte codieren und mit ESM verknüpfen</h2>
+<h4 id="inhaltsanalyse-im-survey--und-esm-kontext">Inhaltsanalyse im Survey- und ESM-Kontext</h4>
 <ul>
-<li>Topic festlegen (z. B. <code>dbd25-20260123-block2-live-test-in-course</code>)</li>
-<li>Teilnehmende <strong>abonnieren</strong> das Topic in der ntfy App</li>
-<li><em>Server sendet automatisierte &amp; randomisierte Reminder (via systemd)</em></li>
-</ul>
-<h5 id="beispiel-reminder-mit-titel">Beispiel: Reminder mit Titel</h5>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> requests</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>topic <span class="op">=</span> <span class="st">"dbd25-YIP2tX54JZ-live-test-in-course"</span></span>
-<span id="cb1-4"><a></a>url <span class="op">=</span> <span class="ss">f"https://ntfy.sh/</span><span class="sc">{</span>topic<span class="sc">}</span><span class="ss">"</span></span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a>r <span class="op">=</span> requests.post(url, data<span class="op">=</span><span class="st">"Zeit für deine ESM-Abfrage ✅"</span>.encode(<span class="st">"utf-8"</span>))</span>
-<span id="cb1-7"><a></a>r.raise_for_status()</span>
-<span id="cb1-8"><a></a><span class="bu">print</span>(<span class="st">"Message Status:"</span>, r.status_code)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Message Status: 200</code></pre>
-</div>
-</div>
-<!-- ✅ Live-Button (läuft auf GitHub Pages) -->
-<!-- <div style="margin-top: 0.8rem;">
-  <button id="send-ntfy" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">
-    🔔 Live senden (ntfy)
-  </button>
-  <span id="ntfy-result" style="margin-left: 0.6rem; font-family: monospace;"></span>
-</div>
-
-<script>
-document.getElementById("send-ntfy").onclick = async () => {
-  const topic = "dbd25-20260123-block2-live-test-in-course";
-  const url = `https://ntfy.sh/${topic}`;
-  const msg = "Zeit für deine ESM-Abfrage ✅ (von GitHub Pages)";
-
-  const out = document.getElementById("ntfy-result");
-  out.textContent = "sending...";
-
-  try {
-    const res = await fetch(url, { method: "POST", body: msg });
-    out.textContent = `HTTP ${res.status}`;
-  } catch (e) {
-    out.textContent = `Error`;
-  }
-};
-</script> -->
-</section>
-<section id="nfty_scheduler-als-little-helper" class="slide level2">
-<h2><code>nfty_scheduler</code> als little helper</h2>
-<h4 id="eigenes--projekt-zur-steuerung-der-fragebögen">Eigenes <a href="https://github.com/chrdrn/dbd25-nfty_scheduler"><i class="bi-github " style="" role="img" aria-hidden="true"></i>-Projekt</a> zur Steuerung der Fragebögen</h4>
+<li><p><strong>Allgemein:</strong></p>
 <ul>
-<li>Python-CLI als leichtes Paket (<code>run.py</code> + <code>ntfy_reminder/</code>)</li>
-<li>Helper besteht aus drei Teilen bzw. trennt <strong>Konfiguration, Planung</strong> und <strong>Versand</strong>:
+<li>Ableitung von Themen, Frames oder Tonalitäten</li>
+<li>Verknüpfung von exponierten Inhalten mit Einstellungen und Bewertungen</li>
+</ul></li>
+<li><p><strong>in Bezug auf das Projekt:</strong></p>
 <ul>
-<li><p><code>.env</code> definiert die globalen Parameter,</p></li>
-<li><p><code>plan</code> erzeugt <code>out/schedule.json</code>,</p></li>
-<li><p><code>send</code> verschickt</p></li>
+<li><p>Kodierung von <strong>Werbebotschaften</strong> (z. B. Thema, Frame, Call-to-Action)</p></li>
+<li><p>Abgleich zwischen <strong>Inhalt der Werbung und situativer Reaktion im ESM</strong></p></li>
+<li><p>Frage: Welche <strong>Inhalte triggern Aufmerksamkeit, Emotionen oder Erinnerung</strong>?</p></li>
 </ul></li>
 </ul>
 </section>
-<section id="was-der-helper-steuern-kann" class="slide level2">
-<h2>Was der Helper steuern kann</h2>
-<h4 id="folgende-argumente-werden-mit-dem-helper-abgebildet-bzw.-können-definiert-werden">Folgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden</h4>
+<section id="spezialfall-bildanalyse" class="slide level2">
+<h2>Spezialfall Bildanalyse</h2>
+<p>Inhalte jenseits von Text</p>
 <ul>
-<li><p>Zeitlogik: <code>--mode interval|windows</code>, <code>--start</code>, <code>--end</code>, <code>--min-gap</code></p></li>
-<li><p>Dichte: <code>--per-day</code>, <code>--days</code>, <code>--seed</code> (reproduzierbar)</p></li>
-<li><p>Zielgruppe: <code>--participant-id</code> (personalisierte Pläne)</p></li>
-<li><p>Ausgabe: <code>--dry-run</code>, <code>--explain</code>, <code>--out</code></p></li>
+<li>Bilder transportieren <strong>Motive, Akteure und mehr Kontext</strong></li>
+<li>Aber: Automatisierte Bildanalyse ist <strong>komplexer als Textanalyse</strong></li>
+<li>Typische Verfahren
+<ul>
+<li><strong>OCR</strong>: Text aus Bildern extrahieren <span class="citation" data-cites="smith2007">(<a href="#/literatur" role="doc-biblioref" onclick="">Smith, 2007</a>)</span></li>
+<li><strong>Bildklassifikation</strong>: Motive, Akteursgruppen</li>
+<li><strong>Objekterkennung:</strong> Personen, Symbole, Settings <span class="citation" data-cites="redmon2016">(<a href="#/literatur" role="doc-biblioref" onclick="">Redmon et al., 2016</a>)</span></li>
+<li><strong>Multimodale Ansätze:</strong> Bild- und Textinformationen kombinieren <span class="citation" data-cites="radford2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Radford et al., 2021</a>)</span></li>
+</ul></li>
 </ul>
 </section>
-<section id="arbeiten-im-google-colab" class="slide level2">
-<h2>Arbeiten im <iconify-icon role="img" inline="" icon="simple-icons:googlecolab" aria-label="Icon googlecolab from simple-icons Iconify.design set." title="Icon googlecolab from simple-icons Iconify.design set."></iconify-icon> Google Colab</h2>
-<h4 id="demo-notebook-aus-dem-helper-repo">Demo-Notebook aus dem Helper-Repo</h4>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="bildmotive-analysieren-und-wirkung-vergleichen" class="slide level2">
+<h2>Bildmotive analysieren und Wirkung vergleichen</h2>
+<h4 id="visuelle-inhalte-als-relevante-daten">Visuelle Inhalte als relevante Daten</h4>
 <ul>
-<li>Colab ist eine <strong>cloudbasierte Jupyter-Umgebung</strong>, die <strong>direkt im Browser</strong> läuft.</li>
-<li>Notebooks werden auf Googles Servern ausgeführt und <strong>vereinen Code, Text und Output.</strong></li>
-<li>Im Kurs nutzen wir Colab, um die <strong>notwendigen Dateien</strong> (z. B. <code>.env</code>, Schedule) aus dem Notebook zu <strong>exportieren</strong>.</li>
+<li><p><strong>Allgemein:</strong></p>
+<ul>
+<li>Bilder als <strong>eigenständige Bedeutungsträger</strong> (Motive, Akteure, Symbolik)</li>
+<li>Untersuchung <strong>visueller Reize</strong> jenseits bewusster Erinnerung</li>
+</ul></li>
+<li><p><strong>in Bezug auf das Projekt:</strong></p>
+<ul>
+<li><p>Analyse von <strong>Bildmotiven auf Plakaten</strong> (z. B. Personen, Produkte, Emotionen)</p></li>
+<li><p><strong>Verknüpfung</strong> <strong>visueller Merkmale</strong> mit ESM-<strong>Antworten</strong> nach Exposition</p></li>
+<li><p><strong>Vergleich</strong> unterschiedlicher <strong>Motivtypen</strong> hinsichtlich <strong>Wirkung</strong></p></li>
+</ul></li>
 </ul>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:25%;">
-<p><iconify-icon role="img" inline="" icon="devicon:googlecolab" aria-label="Icon googlecolab from devicon Iconify.design set." title="Icon googlecolab from devicon Iconify.design set." width="180px" height="180px"></iconify-icon><br>
-<a href="https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb">Demo-Notebook im Repo</a></p>
-</div></div>
+</section>
+<section id="kontext-des-kontextes" class="slide level2">
+<h2>Kontext des Kontextes</h2>
+<h4 id="geo-daten-als-analytische-dimension">Geo-Daten als analytische Dimension</h4>
+<ul>
+<li>Ort <strong>beeinflusst</strong> Wahrnehmung, Verhalten und Erreichbarkeit</li>
+<li>GPS-Daten <strong>ergänzen Surveys um räumlichen Kontext</strong> (z. B. durch räumliche Muster/Cluster) <span class="citation" data-cites="struminskaya2020 harari2016">(<a href="#/literatur" role="doc-biblioref" onclick="">Harari et al., 2016</a>; <a href="#/literatur" role="doc-biblioref" onclick="">Struminskaya et al., 2020</a>)</span></li>
+<li><strong>Verknüpfung</strong> mit Umwelt-, Infrastruktur- und Strukturdaten <span class="citation" data-cites="keusch2021">(<a href="#/literatur" role="doc-biblioref" onclick="">Engel et al., 2021</a>)</span></li>
+</ul>
+</section>
+<section id="aber-was-lässt-sich-auswerten" class="slide level2">
+<h2>Aber was lässt sich auswerten?</h2>
+<h4 id="analysemöglichkeiten-von-geo-daten">Analysemöglichkeiten von Geo-Daten</h4>
+<ul>
+<li><strong>Mobilität</strong>: Wege, Aufenthaltsorte, Routinen</li>
+<li><strong>Kontextzuordnung</strong>: Umgebung, Urbanität, Nähe zu Events</li>
+<li><strong>Spatial Joins</strong> mit externen Daten:
+<ul>
+<li><p>Points of Interest (POI)</p></li>
+<li><p>Demografie</p></li>
+<li><p>Umweltindikatoren</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="geo-daten-machen-werbekontakt-situativ-messbar" class="slide level2">
+<h2>Geo-Daten machen Werbekontakt situativ messbar</h2>
+<h4 id="räumlicher-kontext-von-befragungssituationen">Räumlicher Kontext von Befragungssituationen</h4>
+<ul>
+<li><p>Allgemein:</p>
+<ul>
+<li><strong>Kontextualisierung</strong> von Antworten durch Ort und Bewegung</li>
+<li>Identifikation <strong>situationsabhängiger Effekte (</strong>z. B. unterwegs vs.&nbsp;stationär)</li>
+<li>Analyse <strong>räumlicher Muster in Befragungsdaten</strong></li>
+</ul></li>
+<li><p>in Bezug auf das Projekt:</p>
+<ul>
+<li><p>Abschätzung von <strong>Kontaktwahrscheinlichkeiten mit Außenwerbung</strong></p></li>
+<li><p>Auslösen von ESM-<strong>Remindern</strong> in <strong>räumlicher Nähe zu Werbeträgern</strong></p></li>
+<li><p><strong>Verknüpfung</strong> von Ort – Werbekontakt – unmittelbarer Reaktion</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="was-wo-und-wie" class="slide level2">
+<h2>Was, Wo und Wie</h2>
+<h4 id="daten-verknüpfen-für-realitätsnahe-survey-forschung">Daten verknüpfen für realitätsnahe (Survey-)Forschung</h4>
+<ul>
+<li><strong>Inhalt</strong>: Was wird kommuniziert? (Text, Bild, Motive)</li>
+<li><strong>Kontext</strong>: Wo und in welcher Situation? (Ort, Bewegung)</li>
+<li><strong>Reaktion</strong>: Wie wird unmittelbar reagiert? (ESM, Emotionen, Bewertungen)</li>
+<li><strong>Verknüpfung ermöglicht:</strong>
+<ul>
+<li><p><strong>Validierung</strong> von Selbstberichten</p></li>
+<li><p><strong>Kontextualisierung</strong> von Antworten</p></li>
+<li><p>stärkere <strong>Triangulation</strong> klassischer und automatisierter Verfahren</p></li>
+</ul></li>
+</ul>
 </section></section>
 <section id="lunch-break" class="title-slide slide level1 center" data-background-image="img/slide_bg-break_lunch.png">
 <h1>Lunch Break</h1>
@@ -1569,128 +1531,189 @@ document.getElementById("send-ntfy").onclick = async () => {
 
 <section>
 <section id="slot3" class="title-slide slide level1 center" data-background-image="img/slide_bg-section.png">
-<h1>Hands-on: Testet euren Fragebogen</h1>
-<p>Nutzung des Google Colab Notebooks zur Überprüfung</p>
+<h1>Hands-on: Edit &amp; Plan</h1>
+<p>(Re-)Kalibrierung der Umfrage und (theoretischer) Analysefahrplan</p>
 </section>
-<section id="download-now" class="slide level2">
-<h2>Download <iconify-icon role="img" inline="" icon="simple-icons:ntfy" aria-label="Icon ntfy from simple-icons Iconify.design set." title="Icon ntfy from simple-icons Iconify.design set."></iconify-icon> now!</h2>
-<h4 id="reminder-bitte-downloadet-die-app-um-die-notifications-zu-testen">Reminder: Bitte downloadet die App, um die Notifications zu testen</h4>
-<p><br></p>
-<div class="columns">
-<div class="column" style="text-align: center;">
-<div style="display: flex; justify-content: center;">
-<div id="id=" "="" class="qrcode"></div>
-<script type="text/javascript">
-(function() {
-  var script = document.currentScript;
-  var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#388D7B","colorLight":"#ffffff","height":"220","text":"https://apps.apple.com/us/app/ntfy/id1625396347","width":"220"});
-  script.remove();
-})();
-</script>
-    
-</div>
-<p><a href="https://apps.apple.com/us/app/ntfy/id1625396347"><i class="fa-brands fa-apple" aria-label="apple"></i> iOS</a></p>
-</div><div class="column" style="text-align: center;">
-<div style="display: flex; justify-content: center;">
-<div id="id=" "="" class="qrcode"></div>
-<script type="text/javascript">
-(function() {
-  var script = document.currentScript;
-  var qrcode = script.previousElementSibling;
-  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#52B7A2","colorLight":"#ffffff","height":"220","text":"https://play.google.com/store/apps/details?id=io.heckel.ntfy","width":"220"});
-  script.remove();
-})();
-</script>
-    
-</div>
-<p><a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy"><i class="fa-brands fa-google-play" aria-label="google-play"></i> Android</a></p>
-</div></div>
-</section>
-<section id="id-variable-hinzufügen" class="slide level2">
-<h2><iconify-icon role="img" inline="" icon="material-symbols:notification-important" aria-label="Icon notification-important from material-symbols Iconify.design set." title="Icon notification-important from material-symbols Iconify.design set."></iconify-icon> <code>ID</code> Variable hinzufügen!</h2>
-<h4 id="reminder-bitte-denkt-daran-die-frage-nach-der-teilnehmerin-id-einzubauen">Reminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzubauen</h4>
-<ul>
-<li>Frage sollte auf der <strong>ersten Seite des Fragebogens</strong> stehen</li>
-<li><strong>Template-Frage</strong> ist auf <strong>StudOn</strong> verfügbar</li>
-<li>Preview:</li>
-</ul>
-
-<img data-src="img/session-03/question-student_id.png" class="quarto-figure quarto-figure-center r-stretch" width="500"></section>
 <section id="hands-on-zeit" class="slide level2">
 <h2>💻 Hands-on Zeit!</h2>
-<h4 id="arbeitsauftrag-90-minuten-testet-euren-fragebogen">Arbeitsauftrag (90 Minuten): Testet euren Fragebogen</h4>
+<h4 id="zwei-arbeitsaufträge-insgesamt-90-minuten">Zwei Arbeitsaufträge (insgesamt 90 Minuten)</h4>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Arbeitsauftrag</strong></p>
+<p><strong>1. Arbeitsauftrag</strong></p>
 </div>
 <div class="callout-content">
-<p>In euren Gruppen …</p>
+<p>Prüft auf Basis des Feedbacks von heute Morgen, ob <strong>noch Anpassungen</strong></p>
 <ul>
-<li>öffnet das <a href="https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb">Google Colab</a></li>
-<li>geht die <strong>Dry-Runs des Beispiels</strong> durch</li>
-<li>nehmt die notwendigen Anpassungen im Abschnitt <strong>Individualisierung</strong> vor</li>
-<li>Erstellt die notwendigen Dateien (<code>schedule.json</code> &amp; <code>.env</code>)</li>
+<li>am <strong>Fragebogen(design)</strong> notwendig sind?</li>
+<li>am <strong>Schedule</strong> notwendig sind?</li>
+<li>an den <strong>Ausfüllhinweisen</strong> notwendig sind?</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Währenddessen: Feedback &amp; Fragen</strong></p>
+<p><strong>2. Arbeitsauftrag</strong></p>
 </div>
 <div class="callout-content">
+<p>In euren Gruppen …</p>
 <ul>
-<li>Sucht das Gespräch zu anderen Gruppen und <strong>gebt euch gegenseitig Hilfe und Feedback</strong></li>
-<li>Ich bin während der gesamten Zeit für <strong>Fragen und Unterstützung</strong> verfügbar</li>
-<li>Ich wandere von Gruppe zu Gruppe, um <strong>Feedback zu geben</strong> und <strong>Fragen zu beantworten</strong></li>
+<li><strong>sichtet</strong> das bisherige <strong>Datenmaterial</strong> an &amp; <strong>überlegt</strong> euch mindestens <strong>1 Möglichkeit</strong> des <strong>Linking</strong> für eure Daten(-quellen)</li>
+<li>formuliert den <strong>Vorschlag</strong> bis zur <strong>nächsten Sitzung</strong> in einer Google-Präsentation <strong>(Vorlagen auf nächster Folie)</strong> aus</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
-<section id="bis-zum-ende-der-sitzung" class="slide level2">
-<h2>Bis zum Ende der Sitzung</h2>
-<h4 id="checkliste">Checkliste</h4>
-<p>Bis zum Ende der Sitzung benötige ich von euch …</p>
-<ul class="task-list">
-<li><label><input type="checkbox">den finalen <strong>Fragebogenlink</strong></label></li>
-<li><label><input type="checkbox">den finalen <strong>Schedule</strong> eurer Gruppe (exportiert aus dem Google Colab)</label></li>
-<li><label><input type="checkbox">die finale <strong><code>.env</code>-Datei</strong> (exportiert aus dem Google Colab)</label></li>
-<li><label><input type="checkbox">die <strong>Ausfüllhinweise</strong> für die Umfrage eurer Gruppe</label></li>
+<section id="get-started-1" class="slide level2">
+<h2>Get started!</h2>
+<h4 id="bitte-nutzt-die-jeweilige-folienvorlage-für-die-dokumentation-eurer-ergebnisse-1">Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse</h4>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:20%;">
+<p></p><div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"150","text":"https://t1p.de/694f8","width":"150"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/694f8">Gruppe A <em>(‘Ansprachformen im Alltag’)</em></a><p></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:20%;">
+<p></p><div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"150","text":"https://t1p.de/siidr","width":"150"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/siidr">Gruppe B <em>(‘Out-of-home recall’)</em></a><p></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:20%;">
+<p></p><div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"150","text":"https://t1p.de/55ala","width":"150"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/55ala">Gruppe C <em>(“Informelle visuelle Kommunikation”)</em></a><p></p>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:20%;">
+<p></p><div id="id=" "="" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"150","text":"https://t1p.de/9v266","width":"150"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/9v266">Gruppe D <em>(“Sticky Politics”)</em></a><p></p>
+</div></div>
+</section>
+<section id="to-dos" class="slide level2">
+<h2>To Dos …</h2>
+<h4 id="checkliste-für-die-arbeitsaufträge">Checkliste für die Arbeitsaufträge</h4>
+<ul>
+<li><p>Bis zum <strong>Ende der Sitzung</strong></p>
+<ul>
+<li>eventuelle <strong>Anpassungen</strong> an <strong>Schedule oder .env-Variablen</strong> (z.B. Umfragelink) per Mail an <a href="mailto:christoph.adrian@fau.de">christoph.adrian@fau.de</a></li>
+<li>eventuelle <strong>Anpassungen</strong> der <strong>Ausfüllhinweise</strong> als <strong>StudOn-Forumspost</strong></li>
+</ul></li>
+<li><p>Bis zur <strong>nächsten Sitzung</strong></p>
+<ul>
+<li><p><strong>Entwurf für einen Analyseplan</strong>, der <strong>Data-Linking</strong> beinhaltet (auf Basis der Quellen aus der <a href="../sessions/session-04.html">Session Info</a>)</p></li>
+<li><p>mit den <strong>Daten der eigenen Umfrage vertraut</strong> machen</p></li>
+</ul></li>
 </ul>
-<p>per Mail an <a href="mailto:christoph.adrian@fau.de">christoph.adrian@fau.de</a></p>
 </section></section>
-<section>
 <section id="slot4" class="title-slide slide level1 center" data-background-image="img/slide_bg-question.png">
 <h1>Time for questions</h1>
 
 </section>
-<section id="until-we-see-each-other-again" class="slide level2">
-<h2>Until we see each other again</h2>
-<h4 id="die-nächsten-schritte">Die nächsten Schritte</h4>
-<ul>
-<li>spätestens <strong>Sonntagabend</strong> erhaltet Ihr eine <strong>Mail mit dem Link zum Topic,</strong> das Ihr abonnieren müsst</li>
-<li>ab <strong>Montag</strong> startet die <strong>Erhebung</strong> (vier Tage)</li>
-<li>schaut in die <strong>Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet</strong>
-<ul>
-<li>(mindestens Entwurf für) Auswertungsstrategie zur nächsten Sitzung</li>
-</ul></li>
-</ul>
-</section></section>
+
+<section>
 <section id="bis-zur-nächsten-sitzung" class="title-slide slide level1 center" data-background-image="img/slide_bg-end_session.png">
 <h1>Bis zur nächsten Sitzung!</h1>
 
-
 </section>
+<section id="literatur" class="slide level2 smaller scrollable">
+<h2>Literatur</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-blei2003" class="csl-entry" role="listitem">
+Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent dirichlet allocation. <em>The Journal of Machine Learning Research</em>, <em>3</em>, 9931022.
+</div>
+<div id="ref-brown2020" class="csl-entry" role="listitem">
+Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S., Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A., Ziegler, D. M., Wu, J., Winter, C., … Amodei, D. (2020). <em>Language Models are Few-Shot Learners</em>. <a href="https://arxiv.org/abs/2005.14165">https://arxiv.org/abs/2005.14165</a>
+</div>
+<div id="ref-chan2020" class="csl-entry" role="listitem">
+Chan, C., &amp; Sältzer, M. (2020). Oolong: An r package for validating automated content analysis tools. <em>Journal of Open Source Software</em>, <em>5</em>(55), 2461. <a href="https://doi.org/10.21105/joss.02461">https://doi.org/10.21105/joss.02461</a>
+</div>
+<div id="ref-chen2023" class="csl-entry" role="listitem">
+Chen, Y., Peng, Z., Kim, S.-H., &amp; Choi, C. W. (2023). What We Can Do and Cannot Do with Topic Modeling: A Systematic Review. <em>Communication Methods and Measures</em>, <em>17</em>(2), 111–130. <a href="https://doi.org/10.1080/19312458.2023.2167965">https://doi.org/10.1080/19312458.2023.2167965</a>
+</div>
+<div id="ref-keusch2021" class="csl-entry" role="listitem">
+Engel, U., Quan-Haase, A., Liu, S. X., &amp; Lyberg, L. (2021). <em>Digital trace data</em> (1st ed., pp. 100–118). Routledge. <a href="https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8">https://www.taylorfrancis.com/books/9781003024583/chapters/10.4324/9781003024583-8</a>
+</div>
+<div id="ref-grimmer2013" class="csl-entry" role="listitem">
+Grimmer, J., &amp; Stewart, B. M. (2013). Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts. <em>Political Analysis</em>, <em>21</em>(3), 267–297. <a href="https://doi.org/10/f458q9">https://doi.org/10/f458q9</a>
+</div>
+<div id="ref-harari2016" class="csl-entry" role="listitem">
+Harari, G. M., Lane, N. D., Wang, R., Crosier, B. S., Campbell, A. T., &amp; Gosling, S. D. (2016). Using Smartphones to Collect Behavioral Data in Psychological Science: Opportunities, Practical Considerations, and Challenges. <em>Perspectives on Psychological Science</em>, <em>11</em>(6), 838–854. <a href="https://doi.org/10.1177/1745691616650285">https://doi.org/10.1177/1745691616650285</a>
+</div>
+<div id="ref-hase2023" class="csl-entry" role="listitem">
+Hase, V. (2023). <em>Automated Content Analysis</em> (F. Oehmer-Pedrazzi, S. H. Kessler, E. Humprecht, K. Sommer, &amp; L. Castro, Eds.; pp. 23–36). Springer Fachmedien Wiesbaden. <a href="https://link.springer.com/10.1007/978-3-658-36179-2_3">https://link.springer.com/10.1007/978-3-658-36179-2_3</a>
+</div>
+<div id="ref-jurafsky2024" class="csl-entry" role="listitem">
+Jurafsky, D., &amp; Martin, J. H. (2024). <em>Speech and language processing: An introduction to natural language processing, computational linguistics, and speech recognition with language models</em> (3rd ed.). <a href="https://web.stanford.edu/~jurafsky/slp3/">https://web.stanford.edu/~jurafsky/slp3/</a>
+</div>
+<div id="ref-krippendorff2018" class="csl-entry" role="listitem">
+Krippendorff, K. (2018). <em>Content Analysis: An Introduction to Its Methodology</em> (4th ed.). SAGE Publications.
+</div>
+<div id="ref-maier2018" class="csl-entry" role="listitem">
+Maier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., &amp; Adam, S. (2018). Applying LDA Topic Modeling in Communication Research: Toward a Valid and Reliable Methodology. <em>Communication Methods and Measures</em>, <em>12</em>(2-3), 93–118. <a href="https://doi.org/10.1080/19312458.2018.1430754">https://doi.org/10.1080/19312458.2018.1430754</a>
+</div>
+<div id="ref-mayring2022" class="csl-entry" role="listitem">
+Mayring, P. (2022). <em>Qualitative Inhaltsanalyse: Grundlagen und Techniken</em> (13th ed.). Beltz.
+</div>
+<div id="ref-radford2021" class="csl-entry" role="listitem">
+Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., &amp; Sutskever, I. (2021). <em>Learning Transferable Visual Models From Natural Language Supervision</em>. <a href="https://arxiv.org/abs/2103.00020">https://arxiv.org/abs/2103.00020</a>
+</div>
+<div id="ref-redmon2016" class="csl-entry" role="listitem">
+Redmon, J., Divvala, S., Girshick, R., &amp; Farhadi, A. (2016). You Only Look Once: Unified, Real-Time Object Detection. <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>. <a href="https://arxiv.org/abs/1506.02640">https://arxiv.org/abs/1506.02640</a>
+</div>
+<div id="ref-reimers2019" class="csl-entry" role="listitem">
+Reimers, N., &amp; Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. <em>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</em>. <a href="https://arxiv.org/abs/1908.10084">https://arxiv.org/abs/1908.10084</a>
+</div>
+<div id="ref-smith2007" class="csl-entry" role="listitem">
+Smith, R. (2007). An Overview of the Tesseract OCR Engine. <em>Proceedings of the Ninth International Conference on Document Analysis and Recognition (ICDAR)</em>, 629–633. <a href="https://research.google/pubs/an-overview-of-the-tesseract-ocr-engine/">https://research.google/pubs/an-overview-of-the-tesseract-ocr-engine/</a>
+</div>
+<div id="ref-struminskaya2020" class="csl-entry" role="listitem">
+Struminskaya, B., Lugtig, P., Keusch, F., &amp; Höhne, J. K. (2020). Augmenting Surveys With Data From Sensors and Apps: Opportunities and Challenges. <em>Social Science Computer Review</em>, 089443932097995. <a href="https://doi.org/10.1177/0894439320979951">https://doi.org/10.1177/0894439320979951</a>
+</div>
+</div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../img/dbd_hex.png" class="slide-logo"></p>
