@@ -1,6 +1,6 @@
 ---
 title: "From Questionnaire to Pretest"
-subtitle: "Block 2"
+subtitle: "Block 3"
 date: 23 01 2026
 date-format: "DD.MM.YYYY"
 bibliography: references_slides.bib
@@ -154,8 +154,8 @@ block_schedule %>%
 -   **Zweiteilung des Befragungszeitraums:**
     -   *Phase 1:* Mo. (26.01) bis Do. (29.01.) &
     -   *Phase 2*: Sa. (31.01) bis Mo. (02.02) / Do. (05.02)
--   **Ablauf der Befraung**:
-    -   spätestens Sonntagabend erhaltet Ihr eine Mail mit Link zum Topic, dass Ihr abonnieren müsst & Ausfüllhinweisen
+-   **Ablauf der Befragung**:
+    -   spätestens Sonntagabend erhaltet Ihr eine Mail mit einem Link zum Topic, das Ihr abonnieren müsst, und Ausfüllhinweisen
 
     -   ab Montag startet die Erhebung
 
@@ -361,7 +361,7 @@ document.getElementById("send-ntfy").onclick = async () => {
 
     -   `send` verschickt
 
-## Was der Helper steuer kann
+## Was der Helper steuern kann
 
 #### Folgende Argumente werden mit dem Helper abgebildet bzw. können definiert werden
 
@@ -399,11 +399,11 @@ document.getElementById("send-ntfy").onclick = async () => {
 
 # Hands-on: Testet euren Fragebogen {#slot3 background-image="img/slide_bg-section.png"}
 
-Nutzung des Google Collabs Notebooks zur Überprüfung
+Nutzung des Google Colab Notebooks zur Überprüfung
 
 ## Download {{< iconify simple-icons:ntfy >}} now!
 
-#### Reminder: Bitte downloaded die App um die Notifications zu testen
+#### Reminder: Bitte downloadet die App, um die Notifications zu testen
 
 <br>
 
@@ -427,7 +427,7 @@ Nutzung des Google Collabs Notebooks zur Überprüfung
 
 ## {{< iconify material-symbols:notification-important >}} `ID` Variable hinzufügen!
 
-#### Reminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzbauen
+#### Reminder: Bitte denkt daran, die Frage nach der Teilnehmer:In ID einzubauen
 
 -   Frage sollte auf der **ersten Seite des Fragebogens** stehen
 -   **Template-Frage** ist auf **StudOn** verfügbar
@@ -444,9 +444,9 @@ Nutzung des Google Collabs Notebooks zur Überprüfung
 
 In euren Gruppen ...
 
--   öffnet das [Google Collab](https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb)
+-   öffnet das [Google Colab](https://colab.research.google.com/github/chrdrn/dbd25-nfty_scheduler/blob/main/demo.ipynb)
 -   geht die **Dry-Runs des Beispiels** durch
--   nehmt die notwendigen Anpassung im Abschnitt **Individualisierung** vor
+-   nehmt die notwendigen Anpassungen im Abschnitt **Individualisierung** vor
 -   Erstellt die notwendigen Dateien (`schedule.json` & `.env`)
 :::
 
@@ -477,9 +477,9 @@ per Mail an [christoph.adrian\@fau.de](mailto:christoph.adrian@fau.de)
 
 #### Die nächsten Schritte
 
--   spätestens **Sonntagabend** erhaltet Ihr eine **Mail mit den Link zum Topic,** dass ihr abonnieren müsst
+-   spätestens **Sonntagabend** erhaltet Ihr eine **Mail mit dem Link zum Topic,** das Ihr abonnieren müsst
 -   ab **Montag** startet die **Erhebung** (vier Tage)
 -   schaut in die **Datenvorschau und überlegt, wie ihr die Daten auswerten möchtet**
-    -   (mindetens Entwurf für) Auswertungsstrategie zur nächsten Sitzung
+    -   (mindestens Entwurf für) Auswertungsstrategie zur nächsten Sitzung
 
 # Bis zur nächsten Sitzung! {background-image="img/slide_bg-end_session.png"}
