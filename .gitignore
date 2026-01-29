@@ -54,3 +54,4 @@ _freeze
 /.luarc.json
 .DS_Store
 _archive
+.venv
