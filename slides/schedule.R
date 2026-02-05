@@ -22,13 +22,13 @@ schedule_json <- '[
         "Session": "2",
         "Datum": "09.01.2026",
         "Time": "09:00 - 16:00",
-        "Topic": "📚 From Theory to Questionaire"
+        "Topic": "📚 From Theory to Questionnaire"
     },
     {
         "Session": "3",
         "Datum": "23.01.2026",
         "Time": "09:00 - 16:00",
-        "Topic": "📚 From Questionaire to Pretest"
+        "Topic": "📚 From Questionnaire to Pretest"
     },
     {
         "Session": "4",
