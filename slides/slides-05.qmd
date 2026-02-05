@@ -4,7 +4,6 @@ subtitle: "Block 5"
 date: 2026-02-06
 date-format: "DD.MM.YYYY"
 bibliography: references_slides.bib
-lang: de
 ---
 
 # Begrüßung & Koordination {#intro background-image="img/slide_bg-agenda.png"}
