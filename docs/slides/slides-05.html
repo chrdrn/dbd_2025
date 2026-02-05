@@ -1,0 +1,2794 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christoph Adrian">
+
+<title>Analysis &amp; Evaluation – Digital behavioral data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/logo_fau_red.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2a367172f4fe7d9182ebf8e09f85cb4e.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-7fb59815a1c41eec7c034637f0c35ff0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2a367172f4fe7d9182ebf8e09f85cb4e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b5df3c5538459b42e3ad93bd53d9bf63.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2a38e64519366727c642d83a74c537b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b5df3c5538459b42e3ad93bd53d9bf63.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+<script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Analysis &amp; Evaluation – Digital behavioral data">
+<meta property="og:description" content="Block 5">
+<meta property="og:site_name" content="Digital behavioral data">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Analysis &amp; Evaluation</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/dbd_hex.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../img/dbd_hex.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://www.kommunikationswissenschaft.rw.fau.de/lehre/master/digital-behavioral-data/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-globe"></i></a>
+    <a href="https://www.studon.fau.de/studon/go/crs/6572953" title="StudOn course" class="quarto-navigation-tool px-1" aria-label="StudOn course"><i class="bi bi-bookmark"></i></a>
+    <a href="https://github.com/chrdrn/dbd_2025" title="Course repository" class="quarto-navigation-tool px-1" aria-label="Course repository"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Examples</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../showcases/04-01-data-creation_gps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Create data: GPS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../showcases/04-10-analysis-gps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyse: GPS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Working with R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-instructions_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Video Tutorials</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-textbooks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Textbooks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R Cheatsheets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../computing/computing-useful_links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful R sources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Begrüßung &amp; Koordination</a>
+  <ul class="collapse">
+  <li><a href="#semesterplan" id="toc-semesterplan" class="nav-link" data-scroll-target="#semesterplan">Semesterplan</a></li>
+  <li><a href="#heutige-agenda" id="toc-heutige-agenda" class="nav-link" data-scroll-target="#heutige-agenda">Heutige Agenda</a></li>
+  <li><a href="#lets-discuss" id="toc-lets-discuss" class="nav-link" data-scroll-target="#lets-discuss">💬 Let’s discuss</a></li>
+  </ul></li>
+  <li><a href="#slot1" id="toc-slot1" class="nav-link" data-scroll-target="#slot1">Analyseplan im Fokus</a>
+  <ul class="collapse">
+  <li><a href="#kurzer-recap" id="toc-kurzer-recap" class="nav-link" data-scroll-target="#kurzer-recap">💻 Kurzer Recap</a></li>
+  <li><a href="#los-gehts" id="toc-los-gehts" class="nav-link" data-scroll-target="#los-gehts">Los geht’s!</a></li>
+  </ul></li>
+  <li><a href="#break2" id="toc-break2" class="nav-link" data-scroll-target="#break2">Kurze Pause</a></li>
+  <li><a href="#slot2" id="toc-slot2" class="nav-link" data-scroll-target="#slot2">Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#was-kann-ich-mitnehmen-und-verbessern" id="toc-was-kann-ich-mitnehmen-und-verbessern" class="nav-link" data-scroll-target="#was-kann-ich-mitnehmen-und-verbessern">Was kann ich mitnehmen und verbessern?</a></li>
+  <li><a href="#damit-wir-schnell-zu-konkreten-punkten-kommen" id="toc-damit-wir-schnell-zu-konkreten-punkten-kommen" class="nav-link" data-scroll-target="#damit-wir-schnell-zu-konkreten-punkten-kommen">Damit wir schnell zu konkreten Punkten kommen</a></li>
+  <li><a href="#was-hat-euch-geholfen-und-was-nicht" id="toc-was-hat-euch-geholfen-und-was-nicht" class="nav-link" data-scroll-target="#was-hat-euch-geholfen-und-was-nicht">Was hat euch geholfen (und was nicht)?</a></li>
+  <li><a href="#wie-gut-hat-der-ablauf-für-euch-funktioniert" id="toc-wie-gut-hat-der-ablauf-für-euch-funktioniert" class="nav-link" data-scroll-target="#wie-gut-hat-der-ablauf-für-euch-funktioniert">Wie gut hat der Ablauf für euch funktioniert?</a></li>
+  <li><a href="#was-sollte-beim-nächsten-mal-berücksichtigt-werden" id="toc-was-sollte-beim-nächsten-mal-berücksichtigt-werden" class="nav-link" data-scroll-target="#was-sollte-beim-nächsten-mal-berücksichtigt-werden">Was sollte beim nächsten Mal berücksichtigt werden?</a></li>
+  </ul></li>
+  <li><a href="#slot2_2" id="toc-slot2_2" class="nav-link" data-scroll-target="#slot2_2">Gibt es weitere Anmerkungen &amp; Kommentare?</a></li>
+  <li><a href="#slot2_3" id="toc-slot2_3" class="nav-link" data-scroll-target="#slot2_3">Auf der Zielgeraden</a>
+  <ul class="collapse">
+  <li><a href="#fast-geschafft" id="toc-fast-geschafft" class="nav-link" data-scroll-target="#fast-geschafft">Fast geschafft!</a></li>
+  <li><a href="#reflexion-der-ergebnisse" id="toc-reflexion-der-ergebnisse" class="nav-link" data-scroll-target="#reflexion-der-ergebnisse">Reflexion der Ergebnisse</a></li>
+  <li><a href="#should-i-stay-or-should-i-go" id="toc-should-i-stay-or-should-i-go" class="nav-link" data-scroll-target="#should-i-stay-or-should-i-go">Should I stay or should I go?</a></li>
+  </ul></li>
+  <li><a href="#vielen-dank-für-eure-teilnahme" id="toc-vielen-dank-für-eure-teilnahme" class="nav-link" data-scroll-target="#vielen-dank-für-eure-teilnahme">Vielen Dank für eure Teilnahme!</a></li>
+  <li><a href="#slot3" id="toc-slot3" class="nav-link" data-scroll-target="#slot3">Feedback &amp; Fragen</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/slides/slides-05.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div><div class="quarto-alternate-formats"><h2>Andere Formate</h2><ul><li><a href="slides-05.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analysis &amp; Evaluation</h1>
+<p class="subtitle lead">Block 5</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://chrdrn.github.io/dbd_2025/course-team.html">Christoph Adrian</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.statarts.de/">
+            statArts GmbH <br> Chair of Communication Science
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">06.02.2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="intro" class="level1" data-background-image="img/slide_bg-agenda.png">
+<h1 data-background-image="img/slide_bg-agenda.png">Begrüßung &amp; Koordination</h1>
+<p>Organisatorisches zu Beginn</p>
+<section id="semesterplan" class="level2">
+<h2 class="anchored" data-anchor-id="semesterplan">Semesterplan</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="schedule" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#schedule table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#schedule thead, #schedule tbody, #schedule tfoot, #schedule tr, #schedule td, #schedule th {
+  border-style: none;
+}
+
+#schedule p {
+  margin: 0;
+  padding: 0;
+}
+
+#schedule .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: none;
+  border-top-width: 3px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#schedule .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#schedule .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#schedule .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#schedule .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#schedule .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#schedule .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#schedule .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#schedule .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#schedule .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#schedule .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#schedule .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#schedule .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#schedule .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#schedule .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#schedule .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#schedule .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#schedule .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#schedule .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#schedule .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#schedule .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#schedule .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#schedule .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#schedule .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#schedule .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#schedule .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#schedule .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#schedule .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#schedule .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#schedule .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#schedule .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#schedule .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#schedule .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#schedule .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#schedule .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#schedule .gt_left {
+  text-align: left;
+}
+
+#schedule .gt_center {
+  text-align: center;
+}
+
+#schedule .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#schedule .gt_font_normal {
+  font-weight: normal;
+}
+
+#schedule .gt_font_bold {
+  font-weight: bold;
+}
+
+#schedule .gt_font_italic {
+  font-style: italic;
+}
+
+#schedule .gt_super {
+  font-size: 65%;
+}
+
+#schedule .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#schedule .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#schedule .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#schedule .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#schedule .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#schedule .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#schedule .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#schedule .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#schedule div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+#schedule tbody tr:last-child {
+  border-bottom: 2px solid #ffffff00;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Session" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Session</th>
+<th id="Datum" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Datum</th>
+<th id="Time" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Time</th>
+<th id="Topic" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Topic</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="Session">1</td>
+<td class="gt_row gt_right" headers="Datum">24.10.2024</td>
+<td class="gt_row gt_right" headers="Time">09:45 - 11:15</td>
+<td class="gt_row gt_left" headers="Topic">🚀 Kick-Off</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Session"></td>
+<td class="gt_row gt_right" headers="Datum"></td>
+<td class="gt_row gt_right" headers="Time"></td>
+<td class="gt_row gt_left" headers="Topic">✏️ Independent study and assignments</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Session">2</td>
+<td class="gt_row gt_right" headers="Datum">09.01.2026</td>
+<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic">📚 From Theory to Questionnaire</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Session">3</td>
+<td class="gt_row gt_right" headers="Datum">23.01.2026</td>
+<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic">📚 From Questionnaire to Pretest</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Session">4</td>
+<td class="gt_row gt_right" headers="Datum">30.01.2026</td>
+<td class="gt_row gt_right" headers="Time">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic">📚 From Pretest to Analysis</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Session" style="background-color: rgba(197,15,60,0.2)">5</td>
+<td class="gt_row gt_right" headers="Datum" style="background-color: rgba(197,15,60,0.2)">06.02.2026</td>
+<td class="gt_row gt_right" headers="Time" style="background-color: rgba(197,15,60,0.2)">09:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Topic" style="background-color: rgba(197,15,60,0.2); color: #000000; font-weight: bold">📚 Analysis &amp; Evaluation</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="heutige-agenda" class="level2">
+<h2 class="anchored" data-anchor-id="heutige-agenda">Heutige Agenda</h2>
+<section id="überblick-über-den-ablauf-des-heutigen-tages" class="level4">
+<h4 class="anchored" data-anchor-id="überblick-über-den-ablauf-des-heutigen-tages">Überblick über den Ablauf des heutigen Tages</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div id="block_schedule" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#block_schedule table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#block_schedule thead, #block_schedule tbody, #block_schedule tfoot, #block_schedule tr, #block_schedule td, #block_schedule th {
+  border-style: none;
+}
+
+#block_schedule p {
+  margin: 0;
+  padding: 0;
+}
+
+#block_schedule .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: none;
+  border-top-width: 3px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#block_schedule .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#block_schedule .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#block_schedule .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#block_schedule .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#block_schedule .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#block_schedule .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#block_schedule .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#block_schedule .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#block_schedule .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#block_schedule .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#block_schedule .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#block_schedule .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#block_schedule .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#block_schedule .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#block_schedule .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#block_schedule .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#block_schedule .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#block_schedule .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#block_schedule .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#block_schedule .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#block_schedule .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#block_schedule .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#block_schedule .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#block_schedule .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#block_schedule .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#block_schedule .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#block_schedule .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#block_schedule .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#block_schedule .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#block_schedule .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#block_schedule .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#block_schedule .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#block_schedule .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#block_schedule .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#block_schedule .gt_left {
+  text-align: left;
+}
+
+#block_schedule .gt_center {
+  text-align: center;
+}
+
+#block_schedule .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#block_schedule .gt_font_normal {
+  font-weight: normal;
+}
+
+#block_schedule .gt_font_bold {
+  font-weight: bold;
+}
+
+#block_schedule .gt_font_italic {
+  font-style: italic;
+}
+
+#block_schedule .gt_super {
+  font-size: 65%;
+}
+
+#block_schedule .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#block_schedule .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#block_schedule .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#block_schedule .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#block_schedule .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#block_schedule .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#block_schedule .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#block_schedule .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#block_schedule div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+#block_schedule tbody tr:last-child {
+  border-bottom: 2px solid #ffffff00;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Slot" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Slot</th>
+<th id="Zeit" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Zeit</th>
+<th id="Programmpunkt" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Programmpunkt</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="Slot"></td>
+<td class="gt_row gt_right" headers="Zeit">09:00 - 09:15</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#intro">Begrüßung &amp; Koordination</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Slot"></td>
+<td class="gt_row gt_right" headers="Zeit">09:15 - 09:30</td>
+<td class="gt_row gt_left" headers="Programmpunkt">Kurze Pause</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Slot">1</td>
+<td class="gt_row gt_right" headers="Zeit">09:30 - 11:15</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#slot1">Analyseplan im Fokus</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Slot"></td>
+<td class="gt_row gt_right" headers="Zeit">11:15 - 11:30</td>
+<td class="gt_row gt_left" headers="Programmpunkt">Kurze Pause</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Slot">2</td>
+<td class="gt_row gt_right" headers="Zeit">11:30 - 13:00</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#slot2">Evaluation</a></td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="Slot"></td>
+<td class="gt_row gt_right" headers="Zeit">13:00 - 14:00</td>
+<td class="gt_row gt_left" headers="Programmpunkt">Mittagspause</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="Slot">3</td>
+<td class="gt_row gt_right" headers="Zeit">14:00 - 16:00</td>
+<td class="gt_row gt_left" headers="Programmpunkt"><a href="#slot3">Optional: Feedback &amp; Fragen</a></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="lets-discuss" class="level2">
+<h2 class="anchored" data-anchor-id="lets-discuss">💬 Let’s discuss</h2>
+<section id="organisatorische-hinweise" class="level4">
+<h4 class="anchored" data-anchor-id="organisatorische-hinweise">Organisatorische Hinweise</h4>
+<ul>
+<li>Kurzer <strong>Erfahrungsbericht</strong> zur Feldphase
+<ul>
+<li><strong>Gesamtfazit</strong>: Wie war es, sowohl bei Teilnahme als auch bei Durchführung?</li>
+<li>Wie <em>bewusst</em> war eure <strong>Bildauswahl</strong>?</li>
+<li>Was <strong>nehmt ihr mit</strong>?</li>
+</ul></li>
+<li><strong>Ethik &amp; Datenschutz</strong>: Viele (potenziell) <em>unbrauchbare</em> Bilder?</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="slot1" class="level1" data-background-image="img/slide_bg-section.png">
+<h1 data-background-image="img/slide_bg-section.png">Analyseplan im Fokus</h1>
+<p>Kurze Reflexion des letzten Arbeitsauftrags</p>
+<section id="kurzer-recap" class="level2">
+<h2 class="anchored" data-anchor-id="kurzer-recap">💻 Kurzer Recap</h2>
+<section id="arbeitsauftrag-15-minuten-analyseplan-im-fokus" class="level4">
+<h4 class="anchored" data-anchor-id="arbeitsauftrag-15-minuten-analyseplan-im-fokus">Arbeitsauftrag (15 Minuten): Analyseplan im Fokus</h4>
+<p><br></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Vorsicht</span>Arbeitsauftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In euren Gruppen …</p>
+<ul>
+<li><strong>überprüft</strong> bzw. <strong>überarbeitet</strong> den Arbeitsauftrag aus der letzten Woche
+<ul>
+<li><strong>sichtet</strong> das bisherige <strong>Datenmaterial</strong> an &amp; <strong>überlegt</strong> euch mindestens <strong>1 Möglichkeit</strong> des <strong>Linking</strong> für eure Daten(-quellen)</li>
+<li>formuliert den <strong>Vorschlag</strong> bis zur <strong>nächsten Sitzung</strong> in einer Google-Präsentation <strong>(Vorlagen auf nächster Folie)</strong> aus</li>
+</ul></li>
+<li><em>optional</em>: Fügt eine Folie mit <strong>ersten (deskriptiven) Ergebnissen</strong> hinzu (z.B. Anzahl der (validen) Kurzfragebögen, Einschätzung zu GPS-/Bildmaterial etc.)</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Folienvorlage verwenden
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Bitte nutzt die <strong>bereitgestellte Folienvorlage (Google Slides)</strong> auf der nächsten Folie</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="los-gehts" class="level2">
+<h2 class="anchored" data-anchor-id="los-gehts">Los geht’s!</h2>
+<section id="bitte-nutzt-die-jeweilige-folienvorlage-für-die-dokumentation-eurer-ergebnisse" class="level4">
+<h4 class="anchored" data-anchor-id="bitte-nutzt-die-jeweilige-folienvorlage-für-die-dokumentation-eurer-ergebnisse">Bitte nutzt die jeweilige Folienvorlage für die Dokumentation eurer Ergebnisse</h4>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div style="text-align: center;">
+<p></p><div id="qr_a" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#C50F3C","colorLight":"#ffffff","height":"140","text":"https://t1p.de/694f8","width":"140"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/694f8">Gruppe A <em>(Ansprachformen im Alltag)</em></a><p></p>
+</div>
+</div><div class="column" style="width:25%;">
+<div style="text-align: center;">
+<p></p><div id="qr_b" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"140","text":"https://t1p.de/siidr","width":"140"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/siidr">Gruppe B <em>(Out-of-home recall)</em></a><p></p>
+</div>
+</div><div class="column" style="width:25%;">
+<div style="text-align: center;">
+<p></p><div id="qr_c" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#007de5","colorLight":"#ffffff","height":"140","text":"https://t1p.de/55ala","width":"140"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/55ala">Gruppe C <em>(Informelle visuelle Kommunikation)</em></a><p></p>
+</div>
+</div><div class="column" style="width:25%;">
+<div style="text-align: center;">
+<p></p><div id="qr_d" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#0094de","colorLight":"#ffffff","height":"140","text":"https://t1p.de/9v266","width":"140"});
+  script.remove();
+})();
+</script>
+     <a href="https://t1p.de/9v266">Gruppe D <em>(Sticky Politics)</em></a><p></p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_66fd43d9" data-warn-when="300" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="break2" class="level1" data-background-image="img/slide_bg-break_short.png">
+<h1 data-background-image="img/slide_bg-break_short.png">Kurze Pause</h1>
+<p>15 Minuten Pause</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_780cfbf6" data-warn-when="120" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="slot2" class="level1" data-background-image="img/slide_bg-evaluation.png">
+<h1 data-background-image="img/slide_bg-evaluation.png">Evaluation</h1>
+<p>Euer Feedback zum Seminar</p>
+<section id="was-kann-ich-mitnehmen-und-verbessern" class="level2">
+<h2 class="anchored" data-anchor-id="was-kann-ich-mitnehmen-und-verbessern">Was kann ich mitnehmen und verbessern?</h2>
+<section id="arbeitsauftrag-510-minuten-offene-seminarevaluation" class="level4">
+<h4 class="anchored" data-anchor-id="arbeitsauftrag-510-minuten-offene-seminarevaluation">Arbeitsauftrag (5–10 Minuten): Offene Seminarevaluation</h4>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Vorsicht</span>Mini-Arbeitsauftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>2 Minuten <strong>still</strong>: Notiert euch Stichpunkte (für euch)</li>
+<li>Danach offene Runde: <strong>teilt</strong>, was euch wichtig ist (positiv &amp; kritisch)</li>
+<li>Wenn euch etwas nicht angenehm ist (oder euch später noch etwas einfällt): sagt es gern <strong>anonym mit Hilfe eines Google Forms</strong> (siehe QR-Code)</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Hintergrund
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Euer Feedback hilft,</p>
+<ul>
+<li><p>das Seminar (Inhalt, Aufbau, Organisation) <strong>für zukünftige Durchgänge</strong> zu verbessern und</p></li>
+<li><p>den Ablauf und meinen Input besser einordnen zu können.</p></li>
+</ul>
+</div>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:35%;">
+<div style="text-align: center;">
+<p><br> </p><div id="qr_feedback" class="qrcode"></div>
+<script type="text/javascript">
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"colorDark":"#c22786","colorLight":"#ffffff","height":"200","text":"https://forms.gle/b5fQkq8UrT5ikuAV6","width":"200"});
+  script.remove();
+})();
+</script>
+     <a href="https://forms.gle/b5fQkq8UrT5ikuAV6">Google Forms</a><p></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_62eb847c" data-warn-when="60" data-update-every="30" data-blink-colon="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="damit-wir-schnell-zu-konkreten-punkten-kommen" class="level2">
+<h2 class="anchored" data-anchor-id="damit-wir-schnell-zu-konkreten-punkten-kommen">Damit wir schnell zu konkreten Punkten kommen</h2>
+<section id="feedback-format-start-stop-continue" class="level4">
+<h4 class="anchored" data-anchor-id="feedback-format-start-stop-continue">Feedback-Format: Start · Stop · Continue</h4>
+<ul>
+<li><p><strong>Start:</strong> Was sollten beim nächsten Mal <em>neu</em> gemacht werden?</p></li>
+<li><p><strong>Stop:</strong> Was war <em>nicht hilfreich</em> oder hat unnötig Zeit gekostet?</p></li>
+<li><p><strong>Continue:</strong> Was soll unbedingt <em>so bleiben</em>?</p></li>
+</ul>
+</section>
+</section>
+<section id="was-hat-euch-geholfen-und-was-nicht" class="level2">
+<h2 class="anchored" data-anchor-id="was-hat-euch-geholfen-und-was-nicht">Was hat euch geholfen (und was nicht)?</h2>
+<section id="leitfragen-inhalte-methoden" class="level4">
+<h4 class="anchored" data-anchor-id="leitfragen-inhalte-methoden">Leitfragen: Inhalte &amp; Methoden</h4>
+<ul>
+<li><p>Welche <strong>Sitzungen/Inputs</strong> waren am hilfreichsten – warum?</p></li>
+<li><p>War der Mix aus <strong>Theorie ↔︎ Praxis</strong> passend?</p></li>
+<li><p>Wie hilfreich waren <strong>R/Python-Demos</strong>, Templates und Materialien?</p></li>
+<li><p>Gab es Themen, die ihr euch <strong>früher/mehr</strong> gewünscht hättet (z.B. Analyse, Visualisierung, Linking)?</p></li>
+</ul>
+</section>
+</section>
+<section id="wie-gut-hat-der-ablauf-für-euch-funktioniert" class="level2">
+<h2 class="anchored" data-anchor-id="wie-gut-hat-der-ablauf-für-euch-funktioniert">Wie gut hat der Ablauf für euch funktioniert?</h2>
+<section id="leitfragen-organisation-betreuung" class="level4">
+<h4 class="anchored" data-anchor-id="leitfragen-organisation-betreuung">Leitfragen: Organisation &amp; Betreuung</h4>
+<ul>
+<li><p><strong>Tempo</strong> der Blocktermine: zu schnell/zu langsam/okay?</p></li>
+<li><p><strong>Prüfungsleistungen</strong> (Umfang, Deadlines, Transparenz): passend?</p></li>
+<li><p><strong>Gruppenarbeit</strong>: Rollen, Koordination, Unterstützung – was lief gut/schlecht?</p></li>
+<li><p>Wie hilfreich waren <strong>Feedback</strong> (Peer Review, Sprechstunden, Rückfragen im Plenum)?</p></li>
+</ul>
+</section>
+</section>
+<section id="was-sollte-beim-nächsten-mal-berücksichtigt-werden" class="level2">
+<h2 class="anchored" data-anchor-id="was-sollte-beim-nächsten-mal-berücksichtigt-werden">Was sollte beim nächsten Mal berücksichtigt werden?</h2>
+<section id="leitfragen-forschungsprozess-feldphase" class="level4">
+<h4 class="anchored" data-anchor-id="leitfragen-forschungsprozess-feldphase">Leitfragen: Forschungsprozess &amp; Feldphase</h4>
+<ul>
+<li><p>Was waren die größten <strong>Hürden</strong> bei Planung, Pretest und Datenerhebung?</p></li>
+<li><p>Wo brauchtet ihr mehr <strong>Orientierung</strong> (z.B. Ethik/Datenschutz, Sampling, Datensicherung, Dokumentation)?</p></li>
+<li><p>Was würdet ihr beim nächsten Mal <strong>anders priorisieren</strong>?</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="slot2_2" class="level1" data-background-image="img/slide_bg-participation.png">
+<h1 data-background-image="img/slide_bg-participation.png">Gibt es weitere Anmerkungen &amp; Kommentare?</h1>
+</section>
+<section id="slot2_3" class="level1" data-background-image="img/slide_bg-group_activity.png">
+<h1 data-background-image="img/slide_bg-group_activity.png">Auf der Zielgeraden</h1>
+<p>Die letzten Schritte zum Abschluss des Seminars</p>
+<section id="fast-geschafft" class="level2">
+<h2 class="anchored" data-anchor-id="fast-geschafft">Fast geschafft!</h2>
+<section id="überblick-über-eure-bisherigen-assignments" class="level4">
+<h4 class="anchored" data-anchor-id="überblick-über-eure-bisherigen-assignments">Überblick über eure bisherigen Assignments</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div id="assignments" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#assignments table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#assignments thead, #assignments tbody, #assignments tfoot, #assignments tr, #assignments td, #assignments th {
+  border-style: none;
+}
+
+#assignments p {
+  margin: 0;
+  padding: 0;
+}
+
+#assignments .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 90%;
+  border-top-style: none;
+  border-top-width: 3px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#assignments .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#assignments .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#assignments .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#assignments .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#assignments .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#assignments .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#assignments .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#assignments .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#assignments .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#assignments .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#assignments .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#assignments .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#assignments .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#assignments .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#assignments .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#assignments .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#assignments .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#assignments .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#assignments .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#assignments .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#assignments .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#assignments .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#assignments .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#assignments .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#assignments .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#assignments .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#assignments .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#assignments .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#assignments .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#assignments .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#assignments .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#assignments .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#assignments .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#assignments .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#assignments .gt_left {
+  text-align: left;
+}
+
+#assignments .gt_center {
+  text-align: center;
+}
+
+#assignments .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#assignments .gt_font_normal {
+  font-weight: normal;
+}
+
+#assignments .gt_font_bold {
+  font-weight: bold;
+}
+
+#assignments .gt_font_italic {
+  font-style: italic;
+}
+
+#assignments .gt_super {
+  font-size: 65%;
+}
+
+#assignments .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#assignments .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#assignments .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#assignments .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#assignments .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#assignments .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#assignments .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#assignments .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#assignments div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+
+#assignments tbody tr:last-child {
+  border-bottom: 2px solid #ffffff00;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Assignment" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Assignment</th>
+<th id="Punkte" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Punkte</th>
+<th id="Deadline" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Deadline</th>
+<th id="Status" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Status</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-sketch">👥 Written assignment: Research Project Sketch</a></td>
+<td class="gt_row gt_left" headers="Punkte">30 Pts.</td>
+<td class="gt_row gt_right" headers="Deadline">18.12.2025</td>
+<td class="gt_row gt_left" headers="Status">✅</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-peer-review">👤 Peer Review: Research Project Sketch</a></td>
+<td class="gt_row gt_left" headers="Punkte">20 Pts.</td>
+<td class="gt_row gt_right" headers="Deadline">05.01.2026</td>
+<td class="gt_row gt_left" headers="Status">✅</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-participation">👤 Participation: Pre-Test</a></td>
+<td class="gt_row gt_left" headers="Punkte">20 Pts.</td>
+<td class="gt_row gt_right" headers="Deadline">01.2026</td>
+<td class="gt_row gt_left" headers="Status">✅</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Assignment"><a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation">👥 Written assignment: Implementation Report</a></td>
+<td class="gt_row gt_left" headers="Punkte">30 Pts.</td>
+<td class="gt_row gt_right" headers="Deadline">28.02.2026</td>
+<td class="gt_row gt_left" headers="Status">🏗️</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="reflexion-der-ergebnisse" class="level2">
+<h2 class="anchored" data-anchor-id="reflexion-der-ergebnisse">Reflexion der Ergebnisse</h2>
+<section id="informationen-zum-implementation-report-gruppenleistung---30-pkt." class="level4">
+<h4 class="anchored" data-anchor-id="informationen-zum-implementation-report-gruppenleistung---30-pkt.">Informationen zum <a href="https://chrdrn.github.io/dbd_2025/course-assignments.html#sec-project-implementation">Implementation Report (Gruppenleistung - 30 Pkt.)</a></h4>
+<ul>
+<li><strong>Arbeitsauftrag</strong>:
+<ul>
+<li>Beschreibung, Interpretation und kritische Reflexion der Vorgehensweise und/oder der ersten Ergebnisse (1.000–1.500 Wörter pro Gruppe)</li>
+<li>Fokus liegt auf der praktischen Umsetzung des Forschungsprojekts und den Erfahrungen aus der Pretest-Phase - keine neue Theoriearbeit</li>
+</ul></li>
+<li><strong>Abgabefrist:</strong> <strong>28.02.2026, 23:59 Uhr</strong> als (gerendertes) PDF an <a href="mailto:christoph.adrian@fau.de">christoph.adrian@fau.de</a>
+<ul>
+<li>ggf. inklusive Auswertung (Syntax, Codierungen etc.)</li>
+<li>ggf. inklusive (Roh-)Daten(-verweis)</li>
+<li>Wichtig: (externe) Datensätze mitschicken, bei Fotos genügt Dateiname als “Verweis”</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="should-i-stay-or-should-i-go" class="level2">
+<h2 class="anchored" data-anchor-id="should-i-stay-or-should-i-go">Should I stay or should I go?</h2>
+<section id="informationen-zum-letzten-slot-zeit-bis-zur-abgabe" class="level4">
+<h4 class="anchored" data-anchor-id="informationen-zum-letzten-slot-zeit-bis-zur-abgabe">Informationen zum letzten Slot &amp; Zeit bis zur Abgabe</h4>
+<ul>
+<li>Der letzte Slot ist freiwillig und dient für (gruppen-)individuelle Nachfragen
+<ul>
+<li>Gibt es noch Unklarheiten zur euer Analysestrategie?</li>
+<li>Habt ihr konkrete Fragen zur Umsetzung euer Analyse?</li>
+</ul></li>
+<li>Bei organisatorischen Fragen (bis zur Abgabe): Bitte stellt sie im StudOn-Forum!</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="vielen-dank-für-eure-teilnahme" class="level1" data-background-image="img/slide_bg-end_semester.png">
+<h1 data-background-image="img/slide_bg-end_semester.png">Vielen Dank für eure Teilnahme!</h1>
+</section>
+<section id="slot3" class="level1" data-background-image="img/slide_bg-question.png">
+<h1 data-background-image="img/slide_bg-question.png">Feedback &amp; Fragen</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Christoph Adrian</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chrdrn/dbd_2025/edit/main/slides/slides-05.qmd" class="toc-action"><i class="bi bi-github"></i>Seite editieren</a></li><li><a href="https://github.com/chrdrn/dbd_2025/issues/new" class="toc-action"><i class="bi empty"></i>Problem melden</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with ☕ &amp; <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+</body></html>
