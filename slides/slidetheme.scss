@@ -75,3 +75,15 @@ $presentation-heading-font: News Cycle, sans-serif !default;
 .reveal div.sourceCode {
   margin-bottom: 10px !important;
 }
+
+// QR codes (quarto-contrib/qrcode)
+.reveal .qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .qrcode canvas,
+.reveal .qrcode img {
+  margin: 0 auto;
+}
