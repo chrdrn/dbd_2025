@@ -70,7 +70,7 @@ return {
       local url = pandoc.utils.stringify(args[1])
       local id = ""
       if args[2] ~= nil then
-        id = f('id="${id}" ', { id = pandoc.utils.stringify(id) })
+        id = pandoc.utils.stringify(args[2])
       end
       local options = mergeOptions(url, kwargs)
       local text = wrapInlineDiv(options)
@@ -94,7 +94,7 @@ return {
           opts = opts .. v .. ", "
         end
       end
-      if string.len(opts) then
+      if string.len(opts) > 0 then
         opts = string.sub(opts, 1, string.len(opts) - 2)
       end
       local text = wrapInlineTex(url, opts)
